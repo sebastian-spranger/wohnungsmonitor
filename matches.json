@@ -2069,5 +2069,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4cb8730a7d73e1",
+    "titel": "Am St.Anna-Platz: Sanierte und helle 1,5-Zimmer-Wohnung",
+    "preis_warm": 1700.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/am-st-anna-platz-sanierte-und-helle-1-5-zimmer-wohnung/3436611475-203-12894",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80538 München/​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 21:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.41,
+    "verfuegbar_ab": ""
   }
 ]
