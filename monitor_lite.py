@@ -32,20 +32,26 @@ MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2000"))
 MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1750"))
 MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
+# Geografischer Filter: nur Wohnungen im Umkreis um die Innenstadt (Marienplatz)
+MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "3.0"))  # km Luftlinie
 
 SEEN_FILE           = Path("seen.json")
 MATCHES_FILE        = Path("matches.json")
 FAHRTZEIT_CACHE_FILE = Path("fahrtzeit_cache.json")
+GEOCODE_CACHE_FILE   = Path("geocode_cache.json")
 
 # TUM Hauptcampus Arcisstraße 21 (Länge:Breite:WGS84)
 TUM_COORD = "11.568290:48.149640:WGS84"
+# Innenstadt-Zentrum = Marienplatz (Breite, Länge)
+ZENTRUM_LAT, ZENTRUM_LON = 48.137154, 11.575924
 
-# NUR diese Stadtteile sind erlaubt – alles andere wird verworfen.
-# Substrings genügen: "giesing" deckt Ober-/Untergiesing ab,
-# "isarvorstadt"/"ludwigsvorstadt" auch "Ludwigsvorstadt-Isarvorstadt".
-ALLOWED_KEYWORDS = {
-    "lehel", "maxvorstadt", "maximilianvorstadt", "giesing",
-    "ludwigsvorstadt", "isarvorstadt", "theresienwiese",
+# Fallback, falls der Geocoder nicht erreichbar ist: zentrale Stadtteile
+# (~2 km um den Marienplatz). Nur dann genutzt, wenn keine Koordinaten kommen.
+ZENTRAL_KEYWORDS = {
+    "altstadt", "lehel", "maxvorstadt", "maximilian", "ludwigsvorstadt",
+    "isarvorstadt", "glockenbach", "gärtnerplatz", "theresienwiese",
+    "schwanthalerhöhe", "westend", "au-haidhausen", "haidhausen",
+    "angerviertel", "kreuzviertel", "hackenviertel", "graggenau",
 }
 
 BLOCKED_KEYWORDS = {
@@ -112,6 +118,7 @@ class Wohnung:
     gefunden_um: str = ""
     fahrtzeit_min: int | None = None
     preis_ist_warm: bool = False   # True = Preis ist Warmmiete, False = kalt/unklar
+    entfernung_km: float | None = None   # Luftlinie zum Marienplatz (None = noch nicht geprüft)
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
@@ -125,8 +132,8 @@ class Wohnung:
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
             fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
         combined = (self.titel + " " + self.adresse).lower()
-        if not any(d in combined for d in ALLOWED_KEYWORDS):
-            fails.append("Nicht in Wunsch-Stadtteil (oder Stadtteil unbekannt)")
+        if self.entfernung_km is not None and self.entfernung_km > MAX_RADIUS_KM:
+            fails.append(f"{self.entfernung_km:.1f} km vom Zentrum > {MAX_RADIUS_KM:.0f} km")
         ausland = next((a for a in AUSLAND_KEYWORDS if a in combined), None)
         if ausland:
             fails.append(f"Nicht München ('{ausland}')")
@@ -136,6 +143,8 @@ class Wohnung:
             fails.append(f"Kein Angebot ('{blocked_titel}')")
         if re.match(r'^suche\b', titel_lower):
             fails.append("Kein Angebot (Gesuche)")
+        if ist_kurzzeit(self.titel):
+            fails.append("Kurzzeit-/Wochenmiete (zu kurz)")
         if not self.titel.strip():
             fails.append("Kein Titel – kein echtes Inserat")
         if self.fahrtzeit_min is not None and self.fahrtzeit_min > MAX_FAHRTZEIT:
@@ -162,6 +171,8 @@ class Wohnung:
         if self.adresse:
             q = self.adresse.replace(' ', '+').replace(',', '%2C')
             zeilen.append(f"📍 [{self.adresse}](https://maps.google.com/?q={q})")
+        if self.entfernung_km is not None and self.entfernung_km < 900:
+            zeilen.append(f"📌 {self.entfernung_km:.1f} km zum Zentrum")
         if self.fahrtzeit_min is not None:
             zeilen.append(f"🚇 {self.fahrtzeit_min} Min zur TUM")
         flags = []
@@ -258,6 +269,19 @@ def ist_warmmiete(text: str) -> bool:
     return any(k in t for k in schluessel) or bool(re.search(r"\bwarm\b", t))
 
 
+# Sehr kurze Miet-/Zwischenmietzeiträume (Wochen/Tage) → unbrauchbar.
+# Mehrmonatige Zwischenmieten werden NICHT geblockt.
+_KURZZEIT_PATTERNS = [
+    r"wochenweise", r"tageweise", r"tagesweise", r"\bkurzzeit", r"kurzfristig",
+    r"kurze\s+zeit", r"monatsweise", r"\bübernachtung", r"pro\s+(woche|nacht|tag)",
+    r"/\s*(woche|nacht|tag)\b", r"\bweekly\b", r"\bnightly\b", r"per\s+night",
+    r"\b\d{1,2}\s*wochen?\b", r"\b(eine|ein paar|wenige|paar)\s+wochen?\b",
+]
+def ist_kurzzeit(text: str) -> bool:
+    t = text.lower()
+    return any(re.search(p, t) for p in _KURZZEIT_PATTERNS)
+
+
 def wggesucht_adresse(card) -> str:
     """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
     Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
@@ -346,6 +370,73 @@ def load_fahrtzeit_cache() -> dict:
 
 def save_fahrtzeit_cache(cache: dict):
     FAHRTZEIT_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+
+
+# ─── Geocoding & Radius zum Zentrum ──────────────────────────────────────────
+
+import math
+
+def load_geocode_cache() -> dict:
+    if GEOCODE_CACHE_FILE.exists():
+        try:
+            return json.loads(GEOCODE_CACHE_FILE.read_text())
+        except Exception:
+            return {}
+    return {}
+
+def save_geocode_cache(cache: dict):
+    GEOCODE_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+
+def haversine_km(lat1, lon1, lat2, lon2) -> float:
+    r = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp = math.radians(lat2 - lat1)
+    dl = math.radians(lon2 - lon1)
+    a = math.sin(dp/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dl/2)**2
+    return 2 * r * math.asin(math.sqrt(a))
+
+async def geocode(adresse: str, client: httpx.AsyncClient):
+    """Liefert [lat, lon], None (nicht gefunden/zu vage) oder 'error' (Geocoder down)."""
+    key = (adresse or "").lower().strip()
+    # zu vage (nur 'München' o.ä.) → kein verifizierbarer Ort
+    rest = re.sub(r"[,\s]+", " ", key.replace("münchen", "").replace("munich", "")).strip()
+    if len(rest) < 3:
+        return None
+    query = adresse if "münchen" in key else f"{adresse}, München"
+    try:
+        r = await client.get(
+            "https://nominatim.openstreetmap.org/search",
+            params={"q": query, "format": "json", "limit": 1, "countrycodes": "de"},
+            headers={"User-Agent": "wohnungsmonitor/1.0 (privat)"},
+            timeout=15,
+        )
+        if r.status_code != 200:
+            return "error"
+        arr = r.json()
+        if not arr:
+            return None
+        return [float(arr[0]["lat"]), float(arr[0]["lon"])]
+    except Exception as e:
+        print(f"Geocode Fehler ({adresse!r}): {e}")
+        return "error"
+
+async def entfernung_zum_zentrum(w, cache: dict, client: httpx.AsyncClient) -> float:
+    """Setzt und liefert die Luftlinie (km) zum Marienplatz.
+    Bei Geocoder-Ausfall: Fallback auf zentrale Stadtteil-Keywords."""
+    key = (w.adresse or "").lower().strip()
+    if key in cache:
+        coord = cache[key]
+    else:
+        coord = await geocode(w.adresse, client)
+        if coord != "error":
+            cache[key] = coord            # nur stabile Ergebnisse cachen
+            await asyncio.sleep(1.1)       # Nominatim: max 1 Anfrage/Sekunde
+    if coord == "error":
+        combined = (w.titel + " " + w.adresse).lower()
+        return 0.0 if any(z in combined for z in ZENTRAL_KEYWORDS) else 999.0
+    if not coord:
+        return 999.0
+    return round(haversine_km(coord[0], coord[1], ZENTRUM_LAT, ZENTRUM_LON), 2)
 
 async def mvv_fahrtzeit(adresse: str, client: httpx.AsyncClient) -> int | None:
     """Gibt Fahrtzeit in Minuten von der Adresse zur TUM zurück, oder None falls unbekannt."""
@@ -664,6 +755,51 @@ async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
     return out
 
 
+async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
+    """Mr. Lodge (möbliertes Wohnen auf Zeit). Daten aus JSON-LD (@type Apartment).
+    Hinweis: Mr. Lodge nennt keine Preise öffentlich → preis_warm bleibt 0."""
+    url = "https://www.mrlodge.de/wohnungen-muenchen"
+    out = []
+    try:
+        r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
+        soup = BeautifulSoup(r.text, "html.parser")
+        apts = []
+        for s in soup.find_all("script", type="application/ld+json"):
+            try:
+                d = json.loads(s.string or "")
+            except Exception:
+                continue
+            for it in (d if isinstance(d, list) else [d]):
+                if isinstance(it, dict) and it.get("@type") == "Apartment":
+                    apts.append(it)
+        print(f"Mr. Lodge: {len(apts)} Einträge")
+        for it in apts[:30]:
+            try:
+                titel = (it.get("name") or "").replace(" | ", " · ").strip()
+                href = it.get("url") or ""
+                if not href or not titel:
+                    continue
+                groesse = float((it.get("floorSize") or {}).get("value", 0) or 0)
+                zimmer = float(it.get("numberOfRooms", 0) or 0)
+                addr = it.get("address") or {}
+                strasse = addr.get("streetAddress", "")
+                plz = addr.get("postalCode", "")
+                # Stadtteil steht im Namen: "... | München-Schwabing | 9209"
+                stadtteil_m = re.search(r"münchen[-\s]([\wäöüß-]+)", titel, re.IGNORECASE)
+                stadtteil = stadtteil_m.group(1) if stadtteil_m else ""
+                teile = [t for t in (strasse, stadtteil, f"{plz} München".strip()) if t]
+                adresse = ", ".join(teile) if teile else "München"
+                desc = it.get("description", "")
+                uid = listing_id(href, titel)
+                out.append(make_wohnung(uid, titel, 0.0, groesse, zimmer, href,
+                                        "Mr. Lodge", adresse, titel + " " + desc))
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"Mr. Lodge Fehler: {e}")
+    return out
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 async def main():
@@ -672,6 +808,7 @@ async def main():
 
     seen = load_seen()
     fahrtzeit_cache = load_fahrtzeit_cache()
+    geocode_cache = load_geocode_cache()
     print(f"Bereits bekannte Inserate: {len(seen)}")
 
     async with httpx.AsyncClient(http2=True) as client:
@@ -683,6 +820,7 @@ async def main():
             scrape_wohnungsboerse(client),
             scrape_is24_lite(client),
             scrape_immowelt_lite(client),
+            scrape_mrlodge(client),
             return_exceptions=True,
         )
         for r in results:
@@ -703,17 +841,13 @@ async def main():
             if w.id in seen:
                 continue
             seen.add(w.id)
-            # Erstcheck ohne Fahrtzeit (spart API-Calls für unpassende Inserate)
+            # Erstcheck ohne Geo (spart Geocoder-Calls für unpassende Inserate)
             passt, gruende = w.passt()
             if not passt:
                 print(f"  ✗ {w.titel[:55]} → {', '.join(gruende)}")
                 continue
-            # Fahrtzeit zur TUM prüfen
-            if w.adresse:
-                cache_key = w.adresse.lower().strip()
-                if cache_key not in fahrtzeit_cache:
-                    fahrtzeit_cache[cache_key] = await mvv_fahrtzeit(w.adresse, client)
-                w.fahrtzeit_min = fahrtzeit_cache[cache_key]
+            # Entfernung zum Zentrum (Marienplatz) prüfen
+            w.entfernung_km = await entfernung_zum_zentrum(w, geocode_cache, client)
             passt, gruende = w.passt()
             if passt:
                 neue_wohnungen.append(w)
@@ -741,6 +875,7 @@ async def main():
 
         save_seen(seen)
         save_fahrtzeit_cache(fahrtzeit_cache)
+        save_geocode_cache(geocode_cache)
 
     print(f"\n=== Fertig: {neue_matches} neue Match{'es' if neue_matches != 1 else ''} ===")
 

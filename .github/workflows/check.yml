@@ -33,13 +33,14 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           MAX_WARM_MIETE:   "2000"
           MIN_GROESSE:      "45"
+          MAX_RADIUS_KM:    "3.0"
         run: python monitor_lite.py
 
       - name: seen.json speichern
         run: |
           git config user.name  "Wohnungsmonitor[bot]"
           git config user.email "bot@noreply.github.com"
-          git add seen.json matches.json fahrtzeit_cache.json 2>/dev/null || true
+          git add seen.json matches.json fahrtzeit_cache.json geocode_cache.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Keine Änderungen zu speichern."
             exit 0
