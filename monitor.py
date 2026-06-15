@@ -35,10 +35,10 @@ from pathlib import Path
 TELEGRAM_TOKEN   = "8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY"
 TELEGRAM_CHAT_ID = "7647141150"
 
-MAX_WARM_MIETE = 2000   # € Gesamtmiete warm (inkl. Nebenkosten)
+MAX_WARM_MIETE = 2200   # € Gesamtmiete warm (inkl. Nebenkosten)
 # Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
 # liegt die echte Warmmiete meist 15-20% höher → niedrigeres Limit anwenden.
-MAX_KALT_MIETE = 1750   # € Limit für Kaltmiete-/unklare Inserate
+MAX_KALT_MIETE = 1950   # € Limit für Kaltmiete-/unklare Inserate
 MIN_GROESSE    = 45     # qm Mindestfläche
 MIN_ZIMMER     = 1.5    # Mindestzimmer (1.5 = 1-Zimmer mit Wohnküche)
 

@@ -26,17 +26,17 @@ from bs4 import BeautifulSoup
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
 
-MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2000"))
+MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2200"))
 # Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
 # liegt die echte Warmmiete meist 15-20% höher → niedrigeres Limit anwenden.
-MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1800"))
+MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1950"))
 MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 # Geografischer Filter: nur Wohnungen im Umkreis um die Innenstadt (Marienplatz)
 MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "3.0"))  # km Luftlinie
 # Spätestes Einzugs-/Verfügbarkeitsdatum (ISO). Inserate mit erkennbar späterem
 # "Verfügbar ab"-Datum werden verworfen. Unbekannte Verfügbarkeit bleibt drin.
-VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-01")
+VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-15")
 
 SEEN_FILE           = Path("seen.json")
 MATCHES_FILE        = Path("matches.json")
