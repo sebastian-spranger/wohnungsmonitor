@@ -29,7 +29,7 @@ TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "
 MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2000"))
 # Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
 # liegt die echte Warmmiete meist 15-20% höher → niedrigeres Limit anwenden.
-MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1750"))
+MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1800"))
 MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 # Geografischer Filter: nur Wohnungen im Umkreis um die Innenstadt (Marienplatz)
@@ -117,7 +117,8 @@ class Wohnung:
     mit_kueche: bool = False
     gefunden_um: str = ""
     fahrtzeit_min: int | None = None
-    preis_ist_warm: bool = False   # True = Preis ist Warmmiete, False = kalt/unklar
+    preis_ist_warm: bool = False   # Preis erkennbar Warmmiete (inkl. NK)
+    preis_ist_kalt: bool = False   # Preis erkennbar Kaltmiete (zzgl. NK)
     entfernung_km: float | None = None   # Luftlinie zum Marienplatz (None = noch nicht geprüft)
 
     def passt(self) -> tuple[bool, list[str]]:
@@ -125,9 +126,13 @@ class Wohnung:
         if self.preis_warm == 0 and self.groesse == 0:
             fails.append("Kein Preis und keine Größe – kein echtes Inserat")
         if self.preis_warm > 0:
-            limit = MAX_WARM_MIETE if self.preis_ist_warm else MAX_KALT_MIETE
+            # klar kalt → strenger (Warm ≈ +NK); warm oder unklar → großzügig (nichts verpassen)
+            if self.preis_ist_kalt and not self.preis_ist_warm:
+                limit, label = MAX_KALT_MIETE, "kalt"
+            else:
+                limit = MAX_WARM_MIETE
+                label = "warm" if self.preis_ist_warm else "unklar"
             if self.preis_warm > limit:
-                label = "warm" if self.preis_ist_warm else "kalt/unklar"
                 fails.append(f"Preis {self.preis_warm:.0f}€ ({label}) > {limit}€")
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
             fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
@@ -161,7 +166,7 @@ class Wohnung:
         zeilen.append("")
         if self.preis_warm > 0:
             pqm_str = f"  _({self.preis_warm/self.groesse:.0f}€/qm)_" if self.groesse > 0 else ""
-            miet_label = "warm" if self.preis_ist_warm else "kalt"
+            miet_label = "warm" if self.preis_ist_warm else ("kalt" if self.preis_ist_kalt else "ca.")
             zeilen.append(f"💰 {self.preis_warm:.0f}€ {miet_label}{pqm_str}")
         groesse_str = f"📐 {self.groesse:.0f} qm" if self.groesse > 0 else ""
         if self.zimmer > 0:
@@ -269,6 +274,15 @@ def ist_warmmiete(text: str) -> bool:
     return any(k in t for k in schluessel) or bool(re.search(r"\bwarm\b", t))
 
 
+def ist_kaltmiete(text: str) -> bool:
+    """True, wenn der Preis erkennbar die Kaltmiete ist (Nebenkosten kommen obendrauf)."""
+    t = text.lower()
+    schluessel = ["kaltmiete", "kalt-miete", "nettokalt", "netto kalt", "nettomiete",
+                  "zzgl. nk", "zzgl nk", "zzgl. nebenkosten", "+ nk", "ohne nk",
+                  "ohne nebenkosten", "exkl. nebenkosten", "zzgl. heizung"]
+    return any(k in t for k in schluessel) or bool(re.search(r"\bkalt\b", t))
+
+
 # Sehr kurze Miet-/Zwischenmietzeiträume (Wochen/Tage) → unbrauchbar.
 # Mehrmonatige Zwischenmieten werden NICHT geblockt.
 _KURZZEIT_PATTERNS = [
@@ -305,6 +319,7 @@ def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text)
         url=url, quelle=quelle, adresse=adresse, mit_kueche=k, moebliert=m,
         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
         preis_ist_warm=ist_warmmiete(text),
+        preis_ist_kalt=ist_kaltmiete(text),
     )
 
 
@@ -431,11 +446,11 @@ async def entfernung_zum_zentrum(w, cache: dict, client: httpx.AsyncClient) -> f
         if coord != "error":
             cache[key] = coord            # nur stabile Ergebnisse cachen
             await asyncio.sleep(1.1)       # Nominatim: max 1 Anfrage/Sekunde
-    if coord == "error":
+    if not isinstance(coord, list):
+        # Geocoder down ("error") oder Adresse nicht auflösbar (None):
+        # Fallback auf zentrale Stadtteil-Namen, damit zentrale Inserate nicht verloren gehen.
         combined = (w.titel + " " + w.adresse).lower()
         return 0.0 if any(z in combined for z in ZENTRAL_KEYWORDS) else 999.0
-    if not coord:
-        return 999.0
     return round(haversine_km(coord[0], coord[1], ZENTRUM_LAT, ZENTRUM_LON), 2)
 
 async def mvv_fahrtzeit(adresse: str, client: httpx.AsyncClient) -> int | None:
@@ -763,6 +778,22 @@ async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
     try:
         r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
         soup = BeautifulSoup(r.text, "html.parser")
+
+        # Preis steht nur in den sichtbaren Karten ("2.590 €/Monat"), nicht im JSON-LD.
+        # Karte über den Listing-Link finden und Preis daraus ziehen.
+        preis_pro_pfad = {}
+        for a in soup.find_all("a", href=re.compile(r"/wohnen-auf-zeit/")):
+            pfad = a["href"].split("?")[0].rstrip("/")
+            node = a
+            for _ in range(6):
+                node = node.parent
+                if node is None:
+                    break
+                pm = re.search(r"([\d.]+)\s*€\s*/\s*Monat", node.get_text(" "))
+                if pm:
+                    preis_pro_pfad.setdefault(pfad, parse_preis(pm.group(1)))
+                    break
+
         apts = []
         for s in soup.find_all("script", type="application/ld+json"):
             try:
@@ -781,6 +812,8 @@ async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
                     continue
                 groesse = float((it.get("floorSize") or {}).get("value", 0) or 0)
                 zimmer = float(it.get("numberOfRooms", 0) or 0)
+                pfad = href.split("mrlodge.de")[-1].split("?")[0].rstrip("/")
+                preis = preis_pro_pfad.get(pfad, 0.0)
                 addr = it.get("address") or {}
                 strasse = addr.get("streetAddress", "")
                 plz = addr.get("postalCode", "")
@@ -790,9 +823,11 @@ async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
                 teile = [t for t in (strasse, stadtteil, f"{plz} München".strip()) if t]
                 adresse = ", ".join(teile) if teile else "München"
                 desc = it.get("description", "")
-                uid = listing_id(href, titel)
-                out.append(make_wohnung(uid, titel, 0.0, groesse, zimmer, href,
-                                        "Mr. Lodge", adresse, titel + " " + desc))
+                w = make_wohnung(listing_id(href, titel), titel, preis, groesse, zimmer,
+                                 href, "Mr. Lodge", adresse, titel + " " + desc)
+                w.preis_ist_warm = True   # möblierte Monatspauschale = All-in
+                w.moebliert = True
+                out.append(w)
             except Exception:
                 continue
     except Exception as e:
