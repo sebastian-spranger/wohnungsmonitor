@@ -27,6 +27,9 @@ TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
 
 MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2000"))
+# Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
+# liegt die echte Warmmiete meist 15-20% höher → niedrigeres Limit anwenden.
+MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1750"))
 MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 
@@ -92,13 +95,17 @@ class Wohnung:
     mit_kueche: bool = False
     gefunden_um: str = ""
     fahrtzeit_min: int | None = None
+    preis_ist_warm: bool = False   # True = Preis ist Warmmiete, False = kalt/unklar
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
         if self.preis_warm == 0 and self.groesse == 0:
             fails.append("Kein Preis und keine Größe – kein echtes Inserat")
-        if self.preis_warm > 0 and self.preis_warm > MAX_WARM_MIETE:
-            fails.append(f"Preis {self.preis_warm:.0f}€ > {MAX_WARM_MIETE}€")
+        if self.preis_warm > 0:
+            limit = MAX_WARM_MIETE if self.preis_ist_warm else MAX_KALT_MIETE
+            if self.preis_warm > limit:
+                label = "warm" if self.preis_ist_warm else "kalt/unklar"
+                fails.append(f"Preis {self.preis_warm:.0f}€ ({label}) > {limit}€")
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
             fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
         combined = (self.titel + " " + self.adresse).lower()
@@ -127,7 +134,8 @@ class Wohnung:
         zeilen.append("")
         if self.preis_warm > 0:
             pqm_str = f"  _({self.preis_warm/self.groesse:.0f}€/qm)_" if self.groesse > 0 else ""
-            zeilen.append(f"💰 {self.preis_warm:.0f}€ warm{pqm_str}")
+            miet_label = "warm" if self.preis_ist_warm else "kalt"
+            zeilen.append(f"💰 {self.preis_warm:.0f}€ {miet_label}{pqm_str}")
         groesse_str = f"📐 {self.groesse:.0f} qm" if self.groesse > 0 else ""
         if self.zimmer > 0:
             groesse_str += f" · {self.zimmer:.0f} Zi."
@@ -224,6 +232,14 @@ def kueche_moebliert(text: str) -> tuple[bool, bool]:
     return k, m
 
 
+def ist_warmmiete(text: str) -> bool:
+    """True, wenn der angezeigte Preis erkennbar die Warmmiete ist (inkl. NK)."""
+    t = text.lower().replace("warmwasser", "")  # 'Warmwasser' nicht als 'warm' werten
+    schluessel = ["warmmiete", "gesamtmiete", "inkl. nk", "inkl. nebenkosten",
+                  "inklusive nebenkosten", "brutto", "all-in", "warmmieten"]
+    return any(k in t for k in schluessel) or bool(re.search(r"\bwarm\b", t))
+
+
 def wggesucht_adresse(card) -> str:
     """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
     Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
@@ -246,6 +262,7 @@ def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text)
         id=uid, titel=titel, preis_warm=preis, groesse=groesse, zimmer=zimmer,
         url=url, quelle=quelle, adresse=adresse, mit_kueche=k, moebliert=m,
         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+        preis_ist_warm=ist_warmmiete(text),
     )
 
 

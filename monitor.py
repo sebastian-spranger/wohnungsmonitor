@@ -36,6 +36,9 @@ TELEGRAM_TOKEN   = "8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY"
 TELEGRAM_CHAT_ID = "7647141150"
 
 MAX_WARM_MIETE = 2000   # € Gesamtmiete warm (inkl. Nebenkosten)
+# Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
+# liegt die echte Warmmiete meist 15-20% höher → niedrigeres Limit anwenden.
+MAX_KALT_MIETE = 1750   # € Limit für Kaltmiete-/unklare Inserate
 MIN_GROESSE    = 45     # qm Mindestfläche
 MIN_ZIMMER     = 1.5    # Mindestzimmer (1.5 = 1-Zimmer mit Wohnküche)
 
@@ -134,13 +137,17 @@ class Wohnung:
     moebliert: bool = False
     mit_kueche: bool = False
     gefunden_um: str = ""
+    preis_ist_warm: bool = False   # True = Preis ist Warmmiete, False = kalt/unklar
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
         if self.preis_warm == 0 and self.groesse == 0:
             fails.append("Kein Preis und keine Größe – kein echtes Inserat")
-        if self.preis_warm > 0 and self.preis_warm > MAX_WARM_MIETE:
-            fails.append(f"Miete {self.preis_warm:.0f}€ > {MAX_WARM_MIETE}€")
+        if self.preis_warm > 0:
+            limit = MAX_WARM_MIETE if self.preis_ist_warm else MAX_KALT_MIETE
+            if self.preis_warm > limit:
+                label = "warm" if self.preis_ist_warm else "kalt/unklar"
+                fails.append(f"Miete {self.preis_warm:.0f}€ ({label}) > {limit}€")
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
             fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
         combined = (self.titel + " " + self.adresse).lower()
@@ -167,7 +174,8 @@ class Wohnung:
         zeilen.append("")
         if self.preis_warm > 0:
             pqm_str = f"  _({self.preis_warm/self.groesse:.0f}€/qm)_" if self.groesse > 0 else ""
-            zeilen.append(f"💰 {self.preis_warm:.0f}€ warm{pqm_str}")
+            miet_label = "warm" if self.preis_ist_warm else "kalt"
+            zeilen.append(f"💰 {self.preis_warm:.0f}€ {miet_label}{pqm_str}")
         groesse_str = f"📐 {self.groesse:.0f} qm" if self.groesse > 0 else ""
         if self.zimmer > 0:
             groesse_str += f" · {self.zimmer:.0f} Zi."
@@ -301,6 +309,14 @@ def kueche_moebliert(text: str) -> tuple[bool, bool]:
     return kueche, moebliert
 
 
+def ist_warmmiete(text: str) -> bool:
+    """True, wenn der angezeigte Preis erkennbar die Warmmiete ist (inkl. NK)."""
+    t = text.lower().replace("warmwasser", "")  # 'Warmwasser' nicht als 'warm' werten
+    schluessel = ["warmmiete", "gesamtmiete", "inkl. nk", "inkl. nebenkosten",
+                  "inklusive nebenkosten", "brutto", "all-in", "warmmieten"]
+    return any(k in t for k in schluessel) or bool(re.search(r"\bwarm\b", t))
+
+
 def wggesucht_adresse(card) -> str:
     """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
     Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
@@ -397,6 +413,7 @@ async def scrape_immoscout(page: Page) -> list[Wohnung]:
                                         zimmer=zimmer, url=href, quelle="ImmobilienScout24",
                                         adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                                         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                                        preis_ist_warm=ist_warmmiete(titel),
                                     ))
                                 except Exception:
                                     continue
@@ -457,6 +474,7 @@ async def scrape_immoscout(page: Page) -> list[Wohnung]:
                     zimmer=zimmer, url=href, quelle="ImmobilienScout24",
                     adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                     gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                    preis_ist_warm=ist_warmmiete(text),
                 ))
             except Exception as e:
                 log.debug(f"IS24 item-Fehler: {e}")
@@ -509,6 +527,7 @@ async def scrape_immowelt(page: Page) -> list[Wohnung]:
                                 zimmer=zimmer, url=href, quelle="ImmoWelt",
                                 adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                                 gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                                preis_ist_warm=ist_warmmiete(titel),
                             ))
                         except Exception:
                             continue
@@ -561,6 +580,7 @@ async def scrape_immowelt(page: Page) -> list[Wohnung]:
                     zimmer=zimmer, url=href, quelle="ImmoWelt",
                     adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                     gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                    preis_ist_warm=ist_warmmiete(text),
                 ))
             except Exception as e:
                 log.debug(f"ImmoWelt item-Fehler: {e}")
@@ -621,6 +641,7 @@ async def scrape_kleinanzeigen(client: httpx.AsyncClient) -> list[Wohnung]:
                     zimmer=zimmer, url=href, quelle="Kleinanzeigen",
                     adresse=adresse or "München", mit_kueche=kueche, moebliert=moebliert,
                     gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                    preis_ist_warm=ist_warmmiete(text),
                 ))
             except Exception as e:
                 log.debug(f"Kleinanzeigen item-Fehler: {e}")
@@ -682,6 +703,7 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
                     zimmer=zimmer, url=href, quelle="WG-Gesucht",
                     adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                     gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                    preis_ist_warm=ist_warmmiete(text),
                 ))
             except Exception as e:
                 log.debug(f"WG-Gesucht item-Fehler: {e}")
@@ -731,6 +753,7 @@ async def scrape_wohnungsboerse(client: httpx.AsyncClient) -> list[Wohnung]:
                     zimmer=zimmer, url=href, quelle="Wohnungsboerse",
                     adresse=adresse, mit_kueche=kueche, moebliert=moebliert,
                     gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+                    preis_ist_warm=ist_warmmiete(text),
                 ))
             except Exception as e:
                 log.debug(f"Wohnungsboerse item-Fehler: {e}")
@@ -869,6 +892,7 @@ async def run_test():
         quelle="Test", adresse="Maxvorstadt, München",
         verfuegbar="sofort", moebliert=True, mit_kueche=True,
         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
+        preis_ist_warm=True,
     )
     ok = await telegram_senden(w.als_nachricht(berechne_score(w)))
     macos_notification("🏠 Wohnungsmonitor Test", "Telegram-Test-Nachricht gesendet")
