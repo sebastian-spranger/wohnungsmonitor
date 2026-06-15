@@ -103,6 +103,10 @@ class Wohnung:
         blocked_titel = next((k for k in BLOCKED_TITLE_KEYWORDS if k in titel_lower), None)
         if blocked_titel:
             fails.append(f"Kein Angebot ('{blocked_titel}')")
+        if re.match(r'^suche\b', titel_lower):
+            fails.append("Kein Angebot (Gesuche)")
+        if not self.titel.strip():
+            fails.append("Kein Titel – kein echtes Inserat")
         return len(fails) == 0, fails
 
     def als_nachricht(self, score: int = 0) -> str:
@@ -336,8 +340,11 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
                 href = link["href"]
                 if not href.startswith("http"):
                     href = "https://www.wg-gesucht.de" + href
-                titel_el = item.select_one("h3, h4, [class*='headline']")
+                titel_el = (item.select_one("h3, h4, [class*='headline']") or
+                            item.select_one("[class*='title']") or
+                            item.select_one("strong"))
                 titel = titel_el.get_text(strip=True) if titel_el else link.get_text(strip=True)[:80]
+                titel = titel.strip()
                 if not titel:
                     continue
                 text = item.get_text(" ", strip=True)
