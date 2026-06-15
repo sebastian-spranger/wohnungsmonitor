@@ -1997,5 +1997,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "50f09197175b95",
+    "titel": "1 Zimmer, Küche, Bad - ruhig, grün, schön gelegen",
+    "preis_warm": 630.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/1-zimmer-kueche-bad-ruhig-gruen-schoen-gelegen/3436525258-203-6458",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Ramersdorf-​Perlach",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.06. 19:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.66,
+    "verfuegbar_ab": ""
   }
 ]
