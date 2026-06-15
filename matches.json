@@ -2033,5 +2033,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e8eabddad5c927",
+    "titel": "1-Zimmerappartment in der Klagenfurter Str 3 in München",
+    "preis_warm": 800.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/1-zimmerappartment-in-der-klagenfurter-str-3-in-muenchen/3436544159-203-6458",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Ramersdorf-​Perlach",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 19:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.66,
+    "verfuegbar_ab": ""
   }
 ]
