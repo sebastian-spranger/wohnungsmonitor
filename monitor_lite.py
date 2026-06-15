@@ -26,7 +26,7 @@ from bs4 import BeautifulSoup
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
 
-MAX_WARM_MIETE = int(os.environ.get("MAX_WARM_MIETE", "2300"))
+MAX_WARM_MIETE = int(os.environ.get("MAX_WARM_MIETE", "2000"))
 MIN_GROESSE    = int(os.environ.get("MIN_GROESSE",    "45"))
 
 SEEN_FILE    = Path("seen.json")
