@@ -24,7 +24,7 @@ from bs4 import BeautifulSoup
 # ─── Konfiguration ────────────────────────────────────────────────────────────
 # Werte kommen aus GitHub Secrets (nie im Code speichern!)
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
 
 MAX_WARM_MIETE = int(os.environ.get("MAX_WARM_MIETE", "2300"))
 MIN_GROESSE    = int(os.environ.get("MIN_GROESSE",    "45"))
@@ -148,17 +148,21 @@ async def telegram(text: str, client: httpx.AsyncClient) -> bool:
     if not TELEGRAM_TOKEN:
         print("⚠  TELEGRAM_TOKEN nicht gesetzt")
         return False
-    try:
-        r = await client.post(
-            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            json={"chat_id": TELEGRAM_CHAT_ID, "text": text,
-                  "parse_mode": "Markdown", "disable_web_page_preview": False},
-            timeout=10,
-        )
-        return r.status_code == 200
-    except Exception as e:
-        print(f"Telegram-Fehler: {e}")
-        return False
+    success = True
+    for chat_id in TELEGRAM_CHAT_IDS:
+        try:
+            r = await client.post(
+                f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+                json={"chat_id": chat_id, "text": text,
+                      "parse_mode": "Markdown", "disable_web_page_preview": False},
+                timeout=10,
+            )
+            if r.status_code != 200:
+                success = False
+        except Exception as e:
+            print(f"Telegram-Fehler ({chat_id}): {e}")
+            success = False
+    return success
 
 
 # ─── Deduplication ───────────────────────────────────────────────────────────
