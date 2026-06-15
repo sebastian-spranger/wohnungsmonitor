@@ -224,6 +224,22 @@ def kueche_moebliert(text: str) -> tuple[bool, bool]:
     return k, m
 
 
+def wggesucht_adresse(card) -> str:
+    """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
+    Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
+    el = card.select_one("[class*='col-xs-11'][class*='hidable_content']")
+    if not el:
+        return "München"
+    raw = re.sub(r"\s+", " ", el.get_text(" ", strip=True))
+    parts = [p.strip() for p in raw.split("|")]
+    stadtteil = re.sub(r"(^München\s*|\s*München$)", "", parts[1]).strip() if len(parts) >= 2 else ""
+    strasse = parts[2].strip() if len(parts) >= 3 else ""
+    teile = [t for t in (strasse, stadtteil) if t]
+    if len(teile) == 2 and teile[0].lower() == teile[1].lower():
+        teile = teile[:1]
+    return (", ".join(teile) + ", München") if teile else "München"
+
+
 def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text) -> Wohnung:
     k, m = kueche_moebliert(text)
     return Wohnung(
@@ -413,8 +429,7 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
                 preis = parse_preis(preis_m.group() if preis_m else "")
                 groesse = parse_groesse(text)
                 zimmer = parse_zimmer(text)
-                addr_el = item.select_one("[class*='col-sm-5'], [class*='location']")
-                adresse = addr_el.get_text(strip=True) if addr_el else "München"
+                adresse = wggesucht_adresse(item)
                 uid = listing_id(href, titel)
                 out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "WG-Gesucht", adresse, text))
             except Exception:

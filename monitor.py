@@ -35,7 +35,7 @@ from pathlib import Path
 TELEGRAM_TOKEN   = "8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY"
 TELEGRAM_CHAT_ID = "7647141150"
 
-MAX_WARM_MIETE = 2300   # € Gesamtmiete warm (inkl. Nebenkosten)
+MAX_WARM_MIETE = 2000   # € Gesamtmiete warm (inkl. Nebenkosten)
 MIN_GROESSE    = 45     # qm Mindestfläche
 MIN_ZIMMER     = 1.5    # Mindestzimmer (1.5 = 1-Zimmer mit Wohnküche)
 
@@ -299,6 +299,22 @@ def kueche_moebliert(text: str) -> tuple[bool, bool]:
     kueche = any(w in t for w in ["küche", "kueche", "einbauküche", " ekü", "kitchen"])
     moebliert = any(w in t for w in ["möbliert", "moebliert", "furnished", "möbel"])
     return kueche, moebliert
+
+
+def wggesucht_adresse(card) -> str:
+    """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
+    Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
+    el = card.select_one("[class*='col-xs-11'][class*='hidable_content']")
+    if not el:
+        return "München"
+    raw = re.sub(r"\s+", " ", el.get_text(" ", strip=True))
+    parts = [p.strip() for p in raw.split("|")]
+    stadtteil = re.sub(r"(^München\s*|\s*München$)", "", parts[1]).strip() if len(parts) >= 2 else ""
+    strasse = parts[2].strip() if len(parts) >= 3 else ""
+    teile = [t for t in (strasse, stadtteil) if t]
+    if len(teile) == 2 and teile[0].lower() == teile[1].lower():
+        teile = teile[:1]
+    return (", ".join(teile) + ", München") if teile else "München"
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -657,8 +673,7 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
                 zimmer_m = re.search(r"(\d[\d,.]?)\s*Zimmer", text, re.IGNORECASE)
                 zimmer = parse_zimmer(zimmer_m.group(1) if zimmer_m else "")
 
-                addr_el = item.select_one("[class*='col-sm-5'], [class*='location'], [class*='address']")
-                adresse = addr_el.get_text(strip=True) if addr_el else "München"
+                adresse = wggesucht_adresse(item)
 
                 kueche, moebliert = kueche_moebliert(text)
                 uid = listing_id(href, titel)
