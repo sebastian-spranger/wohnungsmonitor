@@ -2015,5 +2015,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.66,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3a11c17b85b636",
+    "titel": "ImmoScout24 MieterPlus / Suche+ Account",
+    "preis_warm": 60.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/immoscout24-mieterplus-suche-account/3436533012-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 19:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
