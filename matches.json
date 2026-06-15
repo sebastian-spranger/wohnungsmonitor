@@ -1655,5 +1655,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9755b967657ae4",
+    "titel": "Apartment Zentral München Hauptbahhof",
+    "preis_warm": 1220.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/apartment-zentral-muenchen-hauptbahhof/3427305826-203-6440",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 18:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "7fa6ed2d9af0d1",
+    "titel": "Zuverlässige Mieterin sucht 3-Zimmer-Wohnung",
+    "preis_warm": 1300.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zuverlaessige-mieterin-sucht-3-zimmer-wohnung/3434879913-203-6441",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 18:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.04,
+    "verfuegbar_ab": ""
   }
 ]
