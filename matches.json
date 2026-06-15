@@ -1637,5 +1637,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d32e70a1dc18b4",
+    "titel": "Mietwohnung",
+    "preis_warm": 1200.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/mietwohnung/3436478241-203-16353",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.06. 18:44",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.47,
+    "verfuegbar_ab": ""
   }
 ]
