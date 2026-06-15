@@ -40,5 +40,16 @@ jobs:
           git config user.name  "Wohnungsmonitor[bot]"
           git config user.email "bot@noreply.github.com"
           git add seen.json matches.json fahrtzeit_cache.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "chore: update seen [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen zu speichern."
+            exit 0
+          fi
+          git commit -m "chore: update seen [skip ci]"
+          # Remote kann inzwischen weitergewandert sein → rebase + retry
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "Push fehlgeschlagen (Versuch $i), neuer Versuch..."
+            sleep 5
+          done
+          echo "Push endgültig fehlgeschlagen" >&2
+          exit 1

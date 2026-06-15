@@ -40,6 +40,14 @@ FAHRTZEIT_CACHE_FILE = Path("fahrtzeit_cache.json")
 # TUM Hauptcampus Arcisstraße 21 (Länge:Breite:WGS84)
 TUM_COORD = "11.568290:48.149640:WGS84"
 
+# NUR diese Stadtteile sind erlaubt – alles andere wird verworfen.
+# Substrings genügen: "giesing" deckt Ober-/Untergiesing ab,
+# "isarvorstadt"/"ludwigsvorstadt" auch "Ludwigsvorstadt-Isarvorstadt".
+ALLOWED_KEYWORDS = {
+    "lehel", "maxvorstadt", "maximilianvorstadt", "giesing",
+    "ludwigsvorstadt", "isarvorstadt", "theresienwiese",
+}
+
 BLOCKED_KEYWORDS = {
     "feldmoching", "hasenbergl", "am hart", "moosach", "pasing", "aubing",
     "lochhausen", "langwied", "riem", "trudering", "neuperlach",
@@ -117,9 +125,8 @@ class Wohnung:
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
             fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
         combined = (self.titel + " " + self.adresse).lower()
-        blocked_ort = next((b for b in BLOCKED_KEYWORDS if b in combined), None)
-        if blocked_ort:
-            fails.append(f"Bezirk '{blocked_ort}' zu weit")
+        if not any(d in combined for d in ALLOWED_KEYWORDS):
+            fails.append("Nicht in Wunsch-Stadtteil (oder Stadtteil unbekannt)")
         ausland = next((a for a in AUSLAND_KEYWORDS if a in combined), None)
         if ausland:
             fails.append(f"Nicht München ('{ausland}')")
