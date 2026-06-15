@@ -51,6 +51,16 @@ BLOCKED_TITLE_KEYWORDS = {
     "biete tausch", "biete wg-zimmer",
 }
 
+TOPLAGE = {
+    "schwabing", "maxvorstadt", "glockenbachviertel", "glockenbach",
+    "haidhausen", "au-haidhausen", "isarvorstadt", "lehel", "au ",
+    "neuhausen", "nymphenburg", "bogenhausen", "westend", "ludwigsvorstadt",
+}
+GUTE_LAGE = {
+    "obergiesing", "untergiesing", "giesing", "ramersdorf",
+    "schwabing-west", "sendling", "schwanthalerhöhe", "maximilianvorstadt",
+}
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -95,21 +105,34 @@ class Wohnung:
             fails.append(f"Kein Angebot ('{blocked_titel}')")
         return len(fails) == 0, fails
 
-    def als_nachricht(self) -> str:
-        z = [f"🏠 *Neue Wohnung – {self.quelle}*", f"📍 {self.titel}"]
+    def als_nachricht(self, score: int = 0) -> str:
+        sterne = "⭐" * max(1, min(5, 1 + (score + 5) // 10))
+        zeilen = [f"🏠 *{self.titel[:70]}*  {sterne}"]
+        quelle_zeit = f"🏷 {self.quelle}"
+        if hasattr(self, 'gefunden_um') and self.gefunden_um:
+            quelle_zeit += f" · {self.gefunden_um}"
+        zeilen.append(quelle_zeit)
+        zeilen.append("")
         if self.preis_warm > 0:
-            z.append(f"💰 {self.preis_warm:.0f}€ warm")
-        if self.groesse > 0:
-            z.append(f"📐 {self.groesse:.0f} qm")
+            pqm_str = f"  _({self.preis_warm/self.groesse:.0f}€/qm)_" if self.groesse > 0 else ""
+            zeilen.append(f"💰 {self.preis_warm:.0f}€ warm{pqm_str}")
+        groesse_str = f"📐 {self.groesse:.0f} qm" if self.groesse > 0 else ""
         if self.zimmer > 0:
-            z.append(f"🛏 {self.zimmer} Zimmer")
+            groesse_str += f" · {self.zimmer:.0f} Zi."
+        if groesse_str:
+            zeilen.append(groesse_str)
         if self.adresse:
-            z.append(f"🗺 {self.adresse}")
-        flags = (["möbliert"] if self.moebliert else []) + (["Küche"] if self.mit_kueche else [])
+            q = self.adresse.replace(' ', '+').replace(',', '%2C')
+            zeilen.append(f"📍 [{self.adresse}](https://maps.google.com/?q={q})")
+        flags = []
+        if self.moebliert:
+            flags.append("möbliert")
+        if self.mit_kueche:
+            flags.append("EBK")
         if flags:
-            z.append("✓ " + " · ".join(flags))
-        z.append(f"\n🔗 [Zum Inserat]({self.url})")
-        return "\n".join(z)
+            zeilen.append("✅ " + " · ".join(flags))
+        zeilen.append(f"\n🔗 [Zum Inserat]({self.url})")
+        return "\n".join(zeilen)
 
     def to_dict(self) -> dict:
         return self.__dict__
@@ -190,6 +213,56 @@ def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text)
         url=url, quelle=quelle, adresse=adresse, mit_kueche=k, moebliert=m,
         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
     )
+
+
+# ─── Score & Cross-Portal-Dedup ──────────────────────────────────────────────
+
+def berechne_score(w) -> int:
+    s = 0
+    combined = (w.titel + " " + w.adresse).lower()
+    if any(b in combined for b in TOPLAGE):
+        s += 20
+    elif any(b in combined for b in GUTE_LAGE):
+        s += 10
+    if w.mit_kueche:
+        s += 10
+    if "balkon" in combined or "terrasse" in combined:
+        s += 8
+    if any(x in combined for x in ["altbau", "gründerzeit", "stuckdecke"]):
+        s += 5
+    if any(x in combined for x in ["u-bahn", "ubahn", "u1 ", "u2 ", "u3 ", "u4 ", "u5 ", "u6 "]):
+        s += 5
+    if w.moebliert:
+        s -= 5
+    if "neubau" in combined:
+        s -= 5
+    if w.preis_warm > 0 and w.groesse > 0:
+        pqm = w.preis_warm / w.groesse
+        if pqm < 20:
+            s += 15
+        elif pqm < 25:
+            s += 8
+        elif pqm > 32:
+            s -= 5
+    return s
+
+
+def dedup(listings: list) -> list:
+    seen_sigs: dict = {}
+    result = []
+    for w in listings:
+        if w.preis_warm > 0 and w.groesse > 0:
+            pb = round(w.preis_warm / 50) * 50
+            gb = round(w.groesse / 5) * 5
+            sig = (pb, gb)
+            words = frozenset(w.titel.lower().split()[:6])
+            if sig in seen_sigs:
+                overlap = len(words & seen_sigs[sig]) / max(len(words), 1)
+                if overlap > 0.4:
+                    continue
+            seen_sigs[sig] = words
+        result.append(w)
+    return result
 
 
 # ─── Scraper ─────────────────────────────────────────────────────────────────
@@ -497,30 +570,44 @@ async def main():
             if isinstance(r, list):
                 alle.extend(r)
 
-        print(f"\nGesamt: {len(alle)} Inserate geladen")
+        # Cross-portal deduplication
+        alle = dedup(alle)
 
-        neue_matches = 0
+        print(f"\nGesamt: {len(alle)} Inserate geladen (nach Dedup)")
+
+        # Precompute scores for all listings
+        scores = {w.id: berechne_score(w) for w in alle}
+
+        # Collect new matches, sort by score descending before sending
+        neue_wohnungen = []
         for w in alle:
             if w.id in seen:
                 continue
             seen.add(w.id)
             passt, gruende = w.passt()
             if passt:
-                neue_matches += 1
-                print(f"  ✅ MATCH: {w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
-                ok = await telegram(w.als_nachricht(), client)
-                print(f"     Telegram: {'✓' if ok else '✗'}")
-                # Backup
-                matches = []
-                if MATCHES_FILE.exists():
-                    try:
-                        matches = json.loads(MATCHES_FILE.read_text())
-                    except Exception:
-                        pass
-                matches.append(w.to_dict())
-                MATCHES_FILE.write_text(json.dumps(matches, ensure_ascii=False, indent=2))
+                neue_wohnungen.append(w)
             else:
                 print(f"  ✗ {w.titel[:55]} → {', '.join(gruende)}")
+
+        neue_wohnungen.sort(key=lambda w: scores.get(w.id, 0), reverse=True)
+
+        neue_matches = 0
+        for w in neue_wohnungen:
+            sc = scores.get(w.id, 0)
+            neue_matches += 1
+            print(f"  ✅ MATCH [score={sc:+d}]: {w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
+            ok = await telegram(w.als_nachricht(sc), client)
+            print(f"     Telegram: {'✓' if ok else '✗'}")
+            # Backup
+            matches = []
+            if MATCHES_FILE.exists():
+                try:
+                    matches = json.loads(MATCHES_FILE.read_text())
+                except Exception:
+                    pass
+            matches.append(w.to_dict())
+            MATCHES_FILE.write_text(json.dumps(matches, ensure_ascii=False, indent=2))
 
         save_seen(seen)
 
