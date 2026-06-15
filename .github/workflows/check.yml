@@ -1,0 +1,42 @@
+name: Wohnungsmonitor
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # alle 5 Minuten, 24/7
+  workflow_dispatch:          # auch manuell startbar über GitHub UI
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4        # kill-switch: läuft nie länger als 4 Min
+
+    steps:
+      - name: Checkout (inkl. seen.json)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Abhängigkeiten installieren
+        run: pip install httpx[http2] beautifulsoup4 h2
+
+      - name: Monitor ausführen
+        env:
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAX_WARM_MIETE:   "2300"
+          MIN_GROESSE:      "45"
+        run: python monitor_lite.py
+
+      - name: seen.json speichern
+        run: |
+          git config user.name  "Wohnungsmonitor[bot]"
+          git config user.email "bot@noreply.github.com"
+          git add seen.json matches.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update seen [skip ci]"
+          git push
