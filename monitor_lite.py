@@ -79,6 +79,8 @@ class Wohnung:
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
+        if self.preis_warm == 0 and self.groesse == 0:
+            fails.append("Kein Preis und keine Größe – kein echtes Inserat")
         if self.preis_warm > 0 and self.preis_warm > MAX_WARM_MIETE:
             fails.append(f"Preis {self.preis_warm:.0f}€ > {MAX_WARM_MIETE}€")
         if self.groesse > 0 and self.groesse < MIN_GROESSE:
@@ -195,7 +197,7 @@ def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text)
 async def scrape_kleinanzeigen(client: httpx.AsyncClient) -> list[Wohnung]:
     # l3207 = München, c203 = Wohnungen zur Miete, Radius 0 = nur Stadt
     url = (
-        f"https://www.kleinanzeigen.de/s-wohnung-mieten/muenchen/c203l3207"
+        f"https://www.kleinanzeigen.de/s-wohnung-mieten/muenchen/c203l6411"
         f"?maxPrice={MAX_WARM_MIETE}&minSize={MIN_GROESSE}"
         f"&sortingField=INSERTION_TIME&pageNum=1"
     )
@@ -224,8 +226,9 @@ async def scrape_kleinanzeigen(client: httpx.AsyncClient) -> list[Wohnung]:
                 addr_el = item.select_one(".aditem-main--top--left, [class*='location']")
                 adresse = addr_el.get_text(strip=True) if addr_el else ""
 
-                # Nur München-Listings – kein anderer Ort
-                if adresse and "münchen" not in adresse.lower() and "munich" not in adresse.lower():
+                # Nur München-Listings – PLZ 8xxxx = München, oder Name enthält München
+                plz_m = re.search(r'\b8[01]\d{3}\b', adresse)
+                if adresse and "münchen" not in adresse.lower() and "munich" not in adresse.lower() and not plz_m:
                     print(f"  ✗ Kleinanzeigen: übersprungen ({adresse} – nicht München)")
                     continue
 
@@ -249,7 +252,7 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
     try:
         r = await client.get(url, headers=HEADERS, timeout=20, follow_redirects=True)
         soup = BeautifulSoup(r.text, "html.parser")
-        items = (soup.select(".wgg-card") or soup.select(".offer-list-item")
+        items = (soup.select("[class*='wgg_card']") or soup.select("[class*='offer_list_item']")
                  or soup.select("tr.list-body-row"))
         print(f"WG-Gesucht: {len(items)} Einträge")
         for item in items[:30]:
@@ -281,37 +284,32 @@ async def scrape_wggesucht(client: httpx.AsyncClient) -> list[Wohnung]:
 
 
 async def scrape_wohnungsboerse(client: httpx.AsyncClient) -> list[Wohnung]:
-    url = (
-        "https://www.wohnungsboerse.net/search/index"
-        f"?estateType=1&marketingType=rent&city=M%C3%BCnchen"
-        f"&priceTo={MAX_WARM_MIETE}&areaFrom={MIN_GROESSE}&sort=created"
-    )
+    url = "https://www.wohnungsboerse.net/Muenchen/mieten/wohnungen"
     out = []
     try:
         r = await client.get(url, headers=HEADERS, timeout=20, follow_redirects=True)
         soup = BeautifulSoup(r.text, "html.parser")
-        items = (soup.select(".estate-list-item") or soup.select("[class*='EstateItem']")
-                 or soup.select(".search-result-entry"))
+        # Each listing is a full <a> tag pointing to immodetail
+        items = soup.select("a[href*='/immodetail/']")
         print(f"Wohnungsboerse: {len(items)} Einträge")
         for item in items[:30]:
             try:
-                link = item.select_one("a[href*='/immodetail/']") or item.select_one("a[href]")
-                if not link:
-                    continue
-                href = link["href"]
+                href = item["href"]
                 if not href.startswith("http"):
                     href = "https://www.wohnungsboerse.net" + href
-                titel_el = item.select_one("h2, h3, [class*='title']")
-                titel = titel_el.get_text(strip=True) if titel_el else ""
+                text = item.get_text(" ", strip=True)
+                if not text:
+                    continue
+                # Title is the first line / bold part before price info
+                titel = re.sub(r"\s+", " ", text.split("Kaltmiete")[0]).strip()[:120]
                 if not titel:
                     continue
-                text = item.get_text(" ", strip=True)
                 preis_m = re.search(r"([\d.]+(?:,\d+)?)\s*€", text)
                 preis = parse_preis(preis_m.group() if preis_m else "")
                 groesse = parse_groesse(text)
                 zimmer = parse_zimmer(text)
-                addr_el = item.select_one("[class*='address'], [class*='location']")
-                adresse = addr_el.get_text(strip=True) if addr_el else "München"
+                adresse_m = re.search(r"München\s*[-–]\s*([^\n€\d]+)", text)
+                adresse = "München" + (" - " + adresse_m.group(1).strip() if adresse_m else "")
                 uid = listing_id(href, titel)
                 out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "Wohnungsboerse", adresse, text))
             except Exception:
