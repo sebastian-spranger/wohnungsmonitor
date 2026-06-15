@@ -26,11 +26,16 @@ from bs4 import BeautifulSoup
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
 
-MAX_WARM_MIETE = int(os.environ.get("MAX_WARM_MIETE", "2000"))
-MIN_GROESSE    = int(os.environ.get("MIN_GROESSE",    "45"))
+MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2000"))
+MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
+MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 
-SEEN_FILE    = Path("seen.json")
-MATCHES_FILE = Path("matches.json")
+SEEN_FILE           = Path("seen.json")
+MATCHES_FILE        = Path("matches.json")
+FAHRTZEIT_CACHE_FILE = Path("fahrtzeit_cache.json")
+
+# TUM Hauptcampus Arcisstraße 21 (Länge:Breite:WGS84)
+TUM_COORD = "11.568290:48.149640:WGS84"
 
 BLOCKED_KEYWORDS = {
     "feldmoching", "hasenbergl", "am hart", "moosach", "pasing", "aubing",
@@ -86,6 +91,7 @@ class Wohnung:
     moebliert: bool = False
     mit_kueche: bool = False
     gefunden_um: str = ""
+    fahrtzeit_min: int | None = None
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
@@ -107,6 +113,8 @@ class Wohnung:
             fails.append("Kein Angebot (Gesuche)")
         if not self.titel.strip():
             fails.append("Kein Titel – kein echtes Inserat")
+        if self.fahrtzeit_min is not None and self.fahrtzeit_min > MAX_FAHRTZEIT:
+            fails.append(f"Fahrtzeit {self.fahrtzeit_min} Min > {MAX_FAHRTZEIT} Min zur TUM")
         return len(fails) == 0, fails
 
     def als_nachricht(self, score: int = 0) -> str:
@@ -128,6 +136,8 @@ class Wohnung:
         if self.adresse:
             q = self.adresse.replace(' ', '+').replace(',', '%2C')
             zeilen.append(f"📍 [{self.adresse}](https://maps.google.com/?q={q})")
+        if self.fahrtzeit_min is not None:
+            zeilen.append(f"🚇 {self.fahrtzeit_min} Min zur TUM")
         flags = []
         if self.moebliert:
             flags.append("möbliert")
@@ -271,6 +281,53 @@ def dedup(listings: list) -> list:
             seen_sigs[sig] = words
         result.append(w)
     return result
+
+
+# ─── Fahrtzeit-Cache & MVV-API ───────────────────────────────────────────────
+
+def load_fahrtzeit_cache() -> dict:
+    if FAHRTZEIT_CACHE_FILE.exists():
+        try:
+            return json.loads(FAHRTZEIT_CACHE_FILE.read_text())
+        except Exception:
+            return {}
+    return {}
+
+def save_fahrtzeit_cache(cache: dict):
+    FAHRTZEIT_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+
+async def mvv_fahrtzeit(adresse: str, client: httpx.AsyncClient) -> int | None:
+    """Gibt Fahrtzeit in Minuten von der Adresse zur TUM zurück, oder None falls unbekannt."""
+    if not adresse or len(adresse) < 5:
+        return None
+    try:
+        r = await client.get(
+            "https://efa.mvv-muenchen.de/mvv/XML_TRIP_REQUEST2",
+            params={
+                "outputFormat": "rapidJSON",
+                "type_origin": "any",
+                "name_origin": adresse,
+                "anyObjFilter_origin": "2",
+                "type_destination": "coord",
+                "name_destination": TUM_COORD,
+                "itdDate": "20260622",
+                "itdTime": "0830",
+                "calcNumberOfTrips": "1",
+                "ptOptionsActive": "1",
+                "useRealtime": "0",
+            },
+            timeout=15,
+        )
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        trips = data.get("trips", [])
+        if not trips:
+            return None
+        return round(trips[0].get("duration", 0) / 60)
+    except Exception as e:
+        print(f"MVV Fehler ({adresse!r}): {e}")
+        return None
 
 
 # ─── Scraper ─────────────────────────────────────────────────────────────────
@@ -564,6 +621,7 @@ async def main():
     print(f"Filter: max {MAX_WARM_MIETE}€ warm, min {MIN_GROESSE}qm")
 
     seen = load_seen()
+    fahrtzeit_cache = load_fahrtzeit_cache()
     print(f"Bereits bekannte Inserate: {len(seen)}")
 
     async with httpx.AsyncClient(http2=True) as client:
@@ -595,6 +653,17 @@ async def main():
             if w.id in seen:
                 continue
             seen.add(w.id)
+            # Erstcheck ohne Fahrtzeit (spart API-Calls für unpassende Inserate)
+            passt, gruende = w.passt()
+            if not passt:
+                print(f"  ✗ {w.titel[:55]} → {', '.join(gruende)}")
+                continue
+            # Fahrtzeit zur TUM prüfen
+            if w.adresse:
+                cache_key = w.adresse.lower().strip()
+                if cache_key not in fahrtzeit_cache:
+                    fahrtzeit_cache[cache_key] = await mvv_fahrtzeit(w.adresse, client)
+                w.fahrtzeit_min = fahrtzeit_cache[cache_key]
             passt, gruende = w.passt()
             if passt:
                 neue_wohnungen.append(w)
@@ -621,6 +690,7 @@ async def main():
             MATCHES_FILE.write_text(json.dumps(matches, ensure_ascii=False, indent=2))
 
         save_seen(seen)
+        save_fahrtzeit_cache(fahrtzeit_cache)
 
     print(f"\n=== Fertig: {neue_matches} neue Match{'es' if neue_matches != 1 else ''} ===")
 
