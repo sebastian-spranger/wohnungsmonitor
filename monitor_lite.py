@@ -15,7 +15,7 @@ import re
 import subprocess
 import sys
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
 
 import httpx
@@ -34,6 +34,9 @@ MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 # Geografischer Filter: nur Wohnungen im Umkreis um die Innenstadt (Marienplatz)
 MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "3.0"))  # km Luftlinie
+# Spätestes Einzugs-/Verfügbarkeitsdatum (ISO). Inserate mit erkennbar späterem
+# "Verfügbar ab"-Datum werden verworfen. Unbekannte Verfügbarkeit bleibt drin.
+VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-01")
 
 SEEN_FILE           = Path("seen.json")
 MATCHES_FILE        = Path("matches.json")
@@ -120,6 +123,7 @@ class Wohnung:
     preis_ist_warm: bool = False   # Preis erkennbar Warmmiete (inkl. NK)
     preis_ist_kalt: bool = False   # Preis erkennbar Kaltmiete (zzgl. NK)
     entfernung_km: float | None = None   # Luftlinie zum Marienplatz (None = noch nicht geprüft)
+    verfuegbar_ab: str = ""               # ISO-Datum "YYYY-MM-DD" oder "" (unbekannt)
 
     def passt(self) -> tuple[bool, list[str]]:
         fails = []
@@ -150,6 +154,8 @@ class Wohnung:
             fails.append("Kein Angebot (Gesuche)")
         if ist_kurzzeit(self.titel):
             fails.append("Kurzzeit-/Wochenmiete (zu kurz)")
+        if self.verfuegbar_ab and self.verfuegbar_ab > VERFUEGBAR_BIS:
+            fails.append(f"Verfügbar erst {self.verfuegbar_ab} (> {VERFUEGBAR_BIS})")
         if not self.titel.strip():
             fails.append("Kein Titel – kein echtes Inserat")
         if self.fahrtzeit_min is not None and self.fahrtzeit_min > MAX_FAHRTZEIT:
@@ -178,6 +184,9 @@ class Wohnung:
             zeilen.append(f"📍 [{self.adresse}](https://maps.google.com/?q={q})")
         if self.entfernung_km is not None and self.entfernung_km < 900:
             zeilen.append(f"📌 {self.entfernung_km:.1f} km zum Zentrum")
+        if self.verfuegbar_ab:
+            y, mo, d = self.verfuegbar_ab.split("-")
+            zeilen.append(f"🗓 ab {d}.{mo}.{y}")
         if self.fahrtzeit_min is not None:
             zeilen.append(f"🚇 {self.fahrtzeit_min} Min zur TUM")
         flags = []
@@ -296,6 +305,47 @@ def ist_kurzzeit(text: str) -> bool:
     return any(re.search(p, t) for p in _KURZZEIT_PATTERNS)
 
 
+_MONATE = {"januar": 1, "februar": 2, "märz": 3, "maerz": 3, "april": 4, "mai": 5,
+           "juni": 6, "juli": 7, "august": 8, "september": 9, "oktober": 10,
+           "november": 11, "dezember": 12}
+
+def parse_verfuegbar(text: str) -> str:
+    """Extrahiert das Verfügbar-ab-Datum als ISO-String 'YYYY-MM-DD' oder '' (unbekannt)."""
+    t = text.lower()
+    # 1. explizit: "Verfügbar: 01.07.2026", "frei ab 1.8.26", "bezugsfrei ab ..."
+    m = re.search(r"(?:verfügbar|frei|bezugsfrei|beziehbar)\s*(?:ab|:)?\s*(\d{1,2})\.(\d{1,2})\.(\d{2,4})", t)
+    # 2. "ab 01.08.2026"
+    if not m:
+        m = re.search(r"\bab\s+(\d{1,2})\.(\d{1,2})\.(\d{2,4})", t)
+    # 3. Zeitraum "01.07.2026 - 30.08.2026" → Startdatum
+    if not m:
+        m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{2,4})\s*[-–]\s*\d{1,2}\.\d{1,2}\.\d{2,4}", t)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if y < 100:
+            y += 2000
+        try:
+            return date(y, mo, d).isoformat()
+        except ValueError:
+            return ""
+    # 4. sofort verfügbar
+    if re.search(r"\b(ab sofort|sofort frei|sofort beziehbar|sofort verfügbar|ab heute|bezugsfrei)\b", t):
+        return date.today().isoformat()
+    # 5. Monatsname: "ab August", "ab Juli 2026"
+    mm = re.search(r"\bab\s+(" + "|".join(_MONATE) + r")\s*(\d{4})?", t)
+    if mm:
+        mo = _MONATE[mm.group(1)]
+        y = int(mm.group(2)) if mm.group(2) else date.today().year
+        try:
+            cand = date(y, mo, 1)
+            if not mm.group(2) and cand < date.today():
+                cand = date(y + 1, mo, 1)
+            return cand.isoformat()
+        except ValueError:
+            return ""
+    return ""
+
+
 def wggesucht_adresse(card) -> str:
     """Extrahiert Stadtteil + Straße aus einer WG-Gesucht-Karte.
     Format der Zeile: '<Zimmertyp> | München <Stadtteil> | <Straße>'."""
@@ -320,6 +370,7 @@ def make_wohnung(uid, titel, preis, groesse, zimmer, url, quelle, adresse, text)
         gefunden_um=datetime.now().strftime("%d.%m. %H:%M"),
         preis_ist_warm=ist_warmmiete(text),
         preis_ist_kalt=ist_kaltmiete(text),
+        verfuegbar_ab=parse_verfuegbar(text),
     )
 
 
