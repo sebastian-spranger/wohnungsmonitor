@@ -52,11 +52,19 @@ BLOCKED_KEYWORDS = {
 
 # Tauschwohnungen und Gesuche (kein echtes Angebot) rausfiltern
 BLOCKED_TITLE_KEYWORDS = {
-    "tausch", "wohnungstausch", "tauschwohnung",
+    "tausch", "tausche", "wohnungstausch", "tauschwohnung",
+    "swap", "wohnungsswap", "apartment swap",
     "suche wohnung", "suche eine wohnung", "suche dringend wohnung",
     "suche 1-zimmer", "suche 2-zimmer", "suche 3-zimmer",
     "suche apartment", "wir suchen", "ich suche",
     "biete tausch", "biete wg-zimmer",
+}
+
+# Inserate im Ausland / fremden Städten, die durch den Orts-Filter rutschen
+AUSLAND_KEYWORDS = {
+    "bulgarien", "varna", "sonnenstrand", "spanien", "mallorca", "italien",
+    "kroatien", "türkei", "ungarn", "österreich", "portugal", "griechenland",
+    "thailand", "ägypten", "dubai", "polen", "tschechien",
 }
 
 TOPLAGE = {
@@ -112,6 +120,9 @@ class Wohnung:
         blocked_ort = next((b for b in BLOCKED_KEYWORDS if b in combined), None)
         if blocked_ort:
             fails.append(f"Bezirk '{blocked_ort}' zu weit")
+        ausland = next((a for a in AUSLAND_KEYWORDS if a in combined), None)
+        if ausland:
+            fails.append(f"Nicht München ('{ausland}')")
         titel_lower = self.titel.lower()
         blocked_titel = next((k for k in BLOCKED_TITLE_KEYWORDS if k in titel_lower), None)
         if blocked_titel:
