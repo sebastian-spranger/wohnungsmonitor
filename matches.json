@@ -2555,5 +2555,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.77,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "36306569da0dc4",
+    "titel": "Zur UNTERMIETE: schöne Altbauwohnung in Haidhausen",
+    "preis_warm": 1800.0,
+    "groesse": 71.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168632500",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Einsteinstraße 121, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "16.06. 15:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.38,
+    "verfuegbar_ab": ""
   }
 ]
