@@ -2501,5 +2501,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7a3995a2e976de",
+    "titel": "2-Zimmer-Altbauwohnung in der Tengstraße",
+    "preis_warm": 2020.0,
+    "groesse": 89.31,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168618951",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tengstr. 29, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "16.06. 11:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
