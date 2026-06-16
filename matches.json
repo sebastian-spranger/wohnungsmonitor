@@ -2483,5 +2483,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "875110b2ee8c77",
+    "titel": "MÖBLIERTE - 1-ZIM.-APPARTEMENT IN MÜNCHEN GIESING & BALKON",
+    "preis_warm": 1240.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-1-zim-appartement-in-muenchen-giesing-balkon/3436882193-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
