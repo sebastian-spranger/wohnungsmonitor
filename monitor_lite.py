@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Wohnungsmonitor Lite – Single-Run Version für GitHub Actions.
-Kein Playwright/Browser nötig. Läuft in <15 Sekunden.
-Portale: Kleinanzeigen, WG-Gesucht, Wohnungsboerse, IS24 (Lite), ImmoWelt (Lite)
+Portale via httpx: Kleinanzeigen, WG-Gesucht, Wohnungsboerse, ImmoWelt, Mr. Lodge, Wunderflats.
+Portale via Browser (Playwright, optional): ImmobilienScout24, HousingAnywhere.
+In CI läuft Chromium headful über xvfb – nur so umgeht IS24 die Bot-Sperre.
 """
 
 from __future__ import annotations
@@ -20,6 +21,14 @@ from pathlib import Path
 
 import httpx
 from bs4 import BeautifulSoup
+
+# Playwright ist optional: nur für die JS-/Bot-geschützten Portale (IS24, HousingAnywhere).
+# Fehlt es (z.B. lokaler Schnell-Lauf ohne Browser), laufen einfach nur die httpx-Portale.
+try:
+    from playwright.async_api import async_playwright
+    PLAYWRIGHT_OK = True
+except ImportError:
+    PLAYWRIGHT_OK = False
 
 # ─── Konfiguration ────────────────────────────────────────────────────────────
 # Werte kommen aus GitHub Secrets (nie im Code speichern!)
@@ -693,85 +702,6 @@ async def scrape_wohnungsboerse(client: httpx.AsyncClient) -> list[Wohnung]:
     return out
 
 
-async def scrape_is24_lite(client: httpx.AsyncClient) -> list[Wohnung]:
-    """IS24 ohne Browser – extrahiert eingebettetes JSON aus dem HTML-Source."""
-    url = (
-        "https://www.immobilienscout24.de/Suche/de/bayern/muenchen/wohnung-mieten"
-        f"?price=-{MAX_WARM_MIETE}.0&livingspace={MIN_GROESSE}.0-&sorting=2"
-    )
-    out = []
-    try:
-        r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
-        text = r.text
-
-        # IS24 bettet Listing-Daten als JSON in einen <script>-Tag ein
-        # Versuche verschiedene bekannte Patterns
-        json_data = None
-        for pattern in [
-            r'"resultList"\s*:\s*\{.*?"realEstateList"\s*:\s*(\[.*?\])\s*,\s*"[a-z]',
-            r'__REACT_QUERY_STATE__\s*=\s*(\{.*?\})\s*;',
-            r'window\.__reactQSD\s*=\s*(\{.*?\})\s*;',
-        ]:
-            m = re.search(pattern, text, re.DOTALL)
-            if m:
-                try:
-                    json_data = json.loads(m.group(1))
-                    break
-                except Exception:
-                    continue
-
-        if json_data:
-            # Versuche Listings aus dem JSON zu extrahieren
-            listings = json_data if isinstance(json_data, list) else []
-            print(f"IS24 (JSON): {len(listings)} Einträge")
-            for item in listings[:20]:
-                try:
-                    expose_id = item.get("id", "") or item.get("realEstateId", "")
-                    titel = item.get("title", "") or item.get("address", {}).get("description", {}).get("text", "")
-                    preis = float(item.get("price", {}).get("value", 0) or 0)
-                    groesse = float(item.get("livingSpace", 0) or 0)
-                    zimmer = float(item.get("numberOfRooms", 0) or 0)
-                    href = f"https://www.immobilienscout24.de/expose/{expose_id}"
-                    addr = item.get("address", {})
-                    adresse = f"{addr.get('street', '')} {addr.get('houseNumber', '')}, {addr.get('city', 'München')}".strip(", ")
-                    uid = listing_id(href, titel)
-                    out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "ImmobilienScout24", adresse, titel))
-                except Exception:
-                    continue
-        else:
-            # Fallback: HTML-Parsing
-            soup = BeautifulSoup(text, "html.parser")
-            items = (soup.select("li[class*='result-list__listing']") or
-                     soup.select("article[class*='result-list']") or
-                     soup.select(".result-list-entry"))
-            print(f"IS24 (HTML-Fallback): {len(items)} Einträge")
-            for item in items[:20]:
-                try:
-                    link = item.select_one("a[href*='/expose/']")
-                    if not link:
-                        continue
-                    href = link["href"]
-                    if not href.startswith("http"):
-                        href = "https://www.immobilienscout24.de" + href
-                    titel_el = item.select_one("h2, h3, [class*='title']")
-                    titel = titel_el.get_text(strip=True) if titel_el else link.get_text(strip=True)
-                    t = item.get_text(" ", strip=True)
-                    preis_m = re.search(r"([\d.]+(?:,\d+)?)\s*€", t)
-                    preis = parse_preis(preis_m.group() if preis_m else "")
-                    groesse = parse_groesse(t)
-                    zimmer = parse_zimmer(t)
-                    addr_el = item.select_one("[class*='address']")
-                    adresse = addr_el.get_text(strip=True) if addr_el else ""
-                    uid = listing_id(href, titel)
-                    out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "ImmobilienScout24", adresse, t))
-                except Exception:
-                    continue
-
-    except Exception as e:
-        print(f"IS24 Fehler: {e}")
-    return out
-
-
 async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
     """ImmoWelt ohne Browser. Die Suchergebnis-Seite (AVIV/React) rendert die
     Inserate serverseitig als Karten mit stabilen data-testid-Attributen."""
@@ -929,6 +859,157 @@ async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
     return out
 
 
+# ─── Browser-Portale (Playwright) ────────────────────────────────────────────
+# IS24 (Imperva) und HousingAnywhere (client-gerendert) gehen NUR mit echtem,
+# nicht-headless Browser. In GitHub Actions läuft Chromium headful via xvfb.
+
+_STEALTH_JS = (
+    "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+    "Object.defineProperty(navigator,'languages',{get:()=>['de-DE','de','en']});"
+    "window.chrome={runtime:{}};"
+)
+
+
+async def scrape_is24_browser(page) -> list[Wohnung]:
+    """IS24 über headful Chromium. Daten aus dem eingebetteten searchResponseModel-JSON.
+    Liefert die echte Warmmiete (calculatedTotalRent) und Koordinaten mit."""
+    url = (
+        "https://www.immobilienscout24.de/Suche/de/bayern/muenchen/wohnung-mieten"
+        f"?price=-{MAX_WARM_MIETE}.0&livingspace={MIN_GROESSE}.0-&sorting=2"
+    )
+    out = []
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=35000)
+        await page.wait_for_timeout(4500)
+        raw = await page.evaluate(
+            "() => { const s=[...document.querySelectorAll('script:not([src])')]"
+            ".find(s=>(s.textContent||'').includes('searchResponseModel'));"
+            "return s ? s.textContent : ''; }"
+        )
+        if not raw:
+            print("IS24: kein searchResponseModel (evtl. Captcha)")
+            return out
+        i = raw.find('"searchResponseModel"')
+        j = raw.find("{", i)
+        depth, end = 0, len(raw)
+        for k in range(j, len(raw)):
+            if raw[k] == "{":
+                depth += 1
+            elif raw[k] == "}":
+                depth -= 1
+                if depth == 0:
+                    end = k + 1
+                    break
+        data = json.loads(raw[j:end])
+        groups = data["resultlist.resultlist"]["resultlistEntries"][0]["resultlistEntry"]
+        print(f"IS24 (Browser): {len(groups)} Einträge")
+        for g in groups[:25]:
+            try:
+                re_ = g.get("resultlist.realEstate") or {}
+                eid = g.get("@id") or re_.get("@id") or ""
+                titel = re_.get("title", "")
+                warm = ((re_.get("calculatedTotalRent") or {}).get("totalRent") or {}).get("value", 0)
+                kalt = (re_.get("price") or {}).get("value", 0)
+                preis = float(warm or kalt or 0)
+                ist_warm = bool(warm)
+                groesse = float(re_.get("livingSpace", 0) or 0)
+                zimmer = float(re_.get("numberOfRooms", 0) or 0)
+                a = re_.get("address") or {}
+                adresse = " ".join(x for x in [a.get("street", ""), a.get("houseNumber", "")] if x).strip()
+                adresse = (adresse + ", " if adresse else "") + (a.get("quarter") or "") + ", München"
+                href = f"https://www.immobilienscout24.de/expose/{eid}"
+                text = f"{titel} {'warmmiete' if ist_warm else ''}"
+                w = make_wohnung(listing_id(href, titel), titel, preis, groesse, zimmer,
+                                 href, "ImmobilienScout24", re.sub(r"^,\s*", "", adresse), text)
+                w.preis_ist_warm = ist_warm
+                if re_.get("builtInKitchen"):
+                    w.mit_kueche = True
+                out.append(w)
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"IS24 (Browser) Fehler: {e}")
+    return out
+
+
+async def scrape_ha_browser(page) -> list[Wohnung]:
+    """HousingAnywhere (möbliert auf Zeit) über Browser. Best-effort: liest die
+    gerenderten Karten; HA-München sind meist kleine Studios."""
+    out = []
+    try:
+        await page.goto("https://housinganywhere.com/s/Munich--Germany",
+                        wait_until="domcontentloaded", timeout=35000)
+        await page.wait_for_timeout(5000)
+        for _ in range(6):
+            await page.mouse.wheel(0, 3500)
+            await page.wait_for_timeout(800)
+        cards = await page.evaluate(r"""() => {
+            const out=[]; const seen=new Set();
+            for(const a of document.querySelectorAll('a[href*="/room/"]')){
+              const href=a.href.split('?')[0];
+              if(seen.has(href))continue; seen.add(href);
+              let n=a, best='';
+              for(let i=0;i<5 && n;i++){ n=n.parentElement;
+                if(n){const t=n.innerText||''; if(t.length>best.length)best=t; if(t.length>40)break;} }
+              out.push({href, txt:best.replace(/\s+/g,' ').trim()});
+            }
+            return out;
+        }""")
+        print(f"HousingAnywhere (Browser): {len(cards)} Einträge")
+        for c in cards[:25]:
+            try:
+                txt = c["txt"]
+                if "m²" not in txt:
+                    continue
+                preis = parse_preis(txt[txt.find("€"):txt.find("€") + 12]) if "€" in txt else 0.0
+                groesse = parse_groesse(txt)
+                # Titel/Adresse aus "... in <Straße>, Munich"
+                tm = re.search(r"((?:Studio|Private room|Apartment|Entire)[^|]*?in\s+([^,]+),\s*Munich)", txt)
+                titel = (tm.group(1).strip() if tm else "Wohnung HousingAnywhere")
+                strasse = tm.group(2).strip() if tm else ""
+                adresse = (f"{strasse}, München" if strasse else "München")
+                text = f"{titel} möbliert inkl. nebenkosten warmmiete"
+                w = make_wohnung(listing_id(c["href"], titel), titel, preis, groesse, 0,
+                                 c["href"], "HousingAnywhere", adresse, text)
+                w.preis_ist_warm = True
+                w.moebliert = True
+                out.append(w)
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"HousingAnywhere (Browser) Fehler: {e}")
+    return out
+
+
+async def scrape_browser_portale() -> list[Wohnung]:
+    """Startet einen headful Chromium (xvfb in CI) und scrapt die Browser-Portale.
+    Fehler hier dürfen den restlichen Lauf nie killen."""
+    if not PLAYWRIGHT_OK:
+        print("Playwright nicht installiert – überspringe IS24/HousingAnywhere.")
+        return []
+    out = []
+    try:
+        async with async_playwright() as pw:
+            browser = await pw.chromium.launch(
+                headless=False,
+                args=["--no-sandbox", "--disable-blink-features=AutomationControlled",
+                      "--disable-dev-shm-usage"],
+            )
+            ctx = await browser.new_context(
+                locale="de-DE", timezone_id="Europe/Berlin",
+                viewport={"width": 1366, "height": 900},
+                user_agent=HEADERS["User-Agent"],
+            )
+            await ctx.add_init_script(_STEALTH_JS)
+            page = await ctx.new_page()
+            out += await scrape_is24_browser(page)
+            out += await scrape_ha_browser(page)
+            await browser.close()
+    except Exception as e:
+        print(f"Browser-Portale Fehler: {e}")
+    return out
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 async def main():
@@ -942,15 +1023,15 @@ async def main():
 
     async with httpx.AsyncClient(http2=True) as client:
         alle: list[Wohnung] = []
-        # Alle Scraper parallel ausführen
+        # httpx-Portale parallel + Browser-Portale (IS24/HA) gemeinsam ausführen
         results = await asyncio.gather(
             scrape_kleinanzeigen(client),
             scrape_wggesucht(client),
             scrape_wohnungsboerse(client),
-            scrape_is24_lite(client),
             scrape_immowelt_lite(client),
             scrape_mrlodge(client),
             scrape_wunderflats(client),
+            scrape_browser_portale(),
             return_exceptions=True,
         )
         for r in results:

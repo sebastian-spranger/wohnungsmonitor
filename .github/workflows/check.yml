@@ -8,7 +8,7 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 4        # kill-switch: läuft nie länger als 4 Min
+    timeout-minutes: 9        # kill-switch (Browser-Portale brauchen länger)
     permissions:
       contents: write
 
@@ -25,7 +25,12 @@ jobs:
           cache: 'pip'
 
       - name: Abhängigkeiten installieren
-        run: pip install httpx[http2] beautifulsoup4 h2
+        run: pip install httpx[http2] beautifulsoup4 h2 playwright
+
+      - name: Chromium + xvfb installieren
+        run: |
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y xvfb
 
       - name: Monitor ausführen
         env:
@@ -36,7 +41,8 @@ jobs:
           MIN_GROESSE:      "45"
           MAX_RADIUS_KM:    "4.0"
           VERFUEGBAR_BIS:   "2026-07-15"
-        run: python monitor_lite.py
+        # xvfb-run: virtueller Bildschirm → Chromium läuft headful (IS24 umgeht so die Bot-Sperre)
+        run: xvfb-run -a python monitor_lite.py
 
       - name: seen.json speichern
         run: |
