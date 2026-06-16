@@ -771,6 +771,11 @@ async def scrape_wunderflats(client: httpx.AsyncClient) -> list[Wohnung]:
             return out
         data = json.loads(node.string)
         items = (data.get("pageData", {}).get("listingResults", {}).get("items", []) or [])
+        # Echte Detail-Links aus den <a>-Tags: Format /en/furnished-apartment/<slug>/<_id>
+        href_by_id = {}
+        for a in soup.select('a[href*="/furnished-apartment/"]'):
+            clean = a["href"].split("?")[0]
+            href_by_id[clean.rstrip("/").split("/")[-1]] = clean
         print(f"Wunderflats: {len(items)} Einträge")
         for it in items[:25]:
             try:
@@ -779,7 +784,10 @@ async def scrape_wunderflats(client: httpx.AsyncClient) -> list[Wohnung]:
                 groesse = float(it.get("area", 0) or 0)
                 zimmer = float(it.get("rooms", 0) or 0)
                 _id = it.get("_id", "")
-                href = f"https://wunderflats.com/en/furnished-apartment/{_id}"
+                pfad = href_by_id.get(_id)
+                if not pfad:
+                    continue   # ohne gültigen Detail-Link überspringen (Link wäre tot)
+                href = "https://wunderflats.com" + pfad
                 addr = it.get("address", {}) or {}
                 strasse = addr.get("street", "")
                 adresse = (f"{strasse}, München" if strasse else "München")
