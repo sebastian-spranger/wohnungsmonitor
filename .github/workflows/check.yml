@@ -34,7 +34,7 @@ jobs:
           MAX_WARM_MIETE:   "2200"
           MAX_KALT_MIETE:   "1950"
           MIN_GROESSE:      "45"
-          MAX_RADIUS_KM:    "3.0"
+          MAX_RADIUS_KM:    "4.0"
           VERFUEGBAR_BIS:   "2026-07-15"
         run: python monitor_lite.py
 

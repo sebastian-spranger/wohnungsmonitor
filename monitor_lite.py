@@ -33,7 +33,7 @@ MAX_KALT_MIETE   = int(os.environ.get("MAX_KALT_MIETE",   "1950"))
 MIN_GROESSE      = int(os.environ.get("MIN_GROESSE",      "45"))
 MAX_FAHRTZEIT    = int(os.environ.get("MAX_FAHRTZEIT",    "20"))   # Minuten zur TUM
 # Geografischer Filter: nur Wohnungen im Umkreis um die Innenstadt (Marienplatz)
-MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "3.0"))  # km Luftlinie
+MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "4.0"))  # km Luftlinie
 # Spätestes Einzugs-/Verfügbarkeitsdatum (ISO). Inserate mit erkennbar späterem
 # "Verfügbar ab"-Datum werden verworfen. Unbekannte Verfügbarkeit bleibt drin.
 VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-15")
@@ -150,8 +150,8 @@ class Wohnung:
         blocked_titel = next((k for k in BLOCKED_TITLE_KEYWORDS if k in titel_lower), None)
         if blocked_titel:
             fails.append(f"Kein Angebot ('{blocked_titel}')")
-        if re.match(r'^suche\b', titel_lower):
-            fails.append("Kein Angebot (Gesuche)")
+        if ist_gesuch(self.titel):
+            fails.append("Kein Angebot (Gesuch)")
         if ist_kurzzeit(self.titel):
             fails.append("Kurzzeit-/Wochenmiete (zu kurz)")
         if self.verfuegbar_ab and self.verfuegbar_ab > VERFUEGBAR_BIS:
@@ -302,7 +302,33 @@ _KURZZEIT_PATTERNS = [
 ]
 def ist_kurzzeit(text: str) -> bool:
     t = text.lower()
-    return any(re.search(p, t) for p in _KURZZEIT_PATTERNS)
+    if any(re.search(p, t) for p in _KURZZEIT_PATTERNS):
+        return True
+    # Datumsbereich "01.07. bis 31.08." / "04.-26.07." → Dauer < ~50 Tage = zu kurz
+    m = re.search(r"(\d{1,2})\.(\d{1,2})?\.?\s*(?:bis|-|–|to)\s*(\d{1,2})\.(\d{1,2})\.", t)
+    if m:
+        d1, mo1, d2, mo2 = (int(m.group(1)), int(m.group(2) or 0),
+                            int(m.group(3)), int(m.group(4)))
+        if mo1 == 0:
+            mo1 = mo2
+        tage = (mo2 - mo1) * 30 + (d2 - d1)
+        if 0 < tage < 50:
+            return True
+    return False
+
+
+def ist_gesuch(titel: str) -> bool:
+    """True für Wohnungs-Gesuche ('… sucht Wohnung', 'Wohnung gesucht').
+    'Nachmieter/Zwischenmieter gesucht' ist ein echtes Angebot → False."""
+    t = titel.lower()
+    if "nachmieter" in t or "zwischenmieter" in t:
+        return False
+    if re.search(r"\bgesucht\b", t):
+        return True
+    if (re.search(r"\b(suche|suchen|sucht)\b", t) and
+            re.search(r"\b(wohnung|zimmer|apartment|appartement|bleibe|unterkunft|zuhause)\b", t)):
+        return True
+    return False
 
 
 _MONATE = {"januar": 1, "februar": 2, "märz": 3, "maerz": 3, "april": 4, "mai": 5,
@@ -747,7 +773,8 @@ async def scrape_is24_lite(client: httpx.AsyncClient) -> list[Wohnung]:
 
 
 async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
-    """ImmoWelt ohne Browser – HTML-Fallback."""
+    """ImmoWelt ohne Browser. Die Suchergebnis-Seite (AVIV/React) rendert die
+    Inserate serverseitig als Karten mit stabilen data-testid-Attributen."""
     url = (
         "https://www.immowelt.de/suche/muenchen/wohnungen/mieten"
         f"?ma={MAX_WARM_MIETE}&mia={MIN_GROESSE}&sort=createdate"
@@ -757,62 +784,41 @@ async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
         r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
         soup = BeautifulSoup(r.text, "html.parser")
 
-        # ImmoWelt bettet manchmal JSON in __NEXT_DATA__ ein
-        next_data = soup.find("script", id="__NEXT_DATA__")
-        if next_data:
+        cards = (soup.select('div[data-testid="serp-core-classified-card-testid"]') or
+                 soup.select('div[id^="classified-card-"]'))
+        print(f"ImmoWelt: {len(cards)} Einträge")
+        for card in cards[:25]:
             try:
-                data = json.loads(next_data.string)
-                # Pfad durch die Datenstruktur suchen
-                props = data.get("props", {}).get("pageProps", {})
-                listings = (props.get("listings", []) or
-                            props.get("searchResult", {}).get("listings", []) or [])
-                print(f"ImmoWelt (JSON): {len(listings)} Einträge")
-                for item in listings[:20]:
-                    try:
-                        expose_id = item.get("globalObjectKey", "") or item.get("id", "")
-                        titel = item.get("title", "")
-                        preis = float(item.get("prices", {}).get("rent", {}).get("value", 0) or 0)
-                        groesse = float(item.get("areas", {}).get("living", {}).get("value", 0) or 0)
-                        zimmer = float(item.get("rooms", 0) or 0)
-                        href = f"https://www.immowelt.de/expose/{expose_id}"
-                        loc = item.get("locationAddress", {})
-                        adresse = f"{loc.get('street', '')} {loc.get('houseNumber', '')}, {loc.get('city', 'München')}".strip(", ")
-                        uid = listing_id(href, titel)
-                        out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "ImmoWelt", adresse, titel))
-                    except Exception:
-                        continue
-                return out
-            except Exception:
-                pass
-
-        # HTML-Fallback
-        items = (soup.select("[class*='EstateItem']") or
-                 soup.select("[data-testid='estate-item']") or
-                 soup.select("article[class*='estate']"))
-        print(f"ImmoWelt (HTML-Fallback): {len(items)} Einträge")
-        for item in items[:20]:
-            try:
-                link = item.select_one("a[href*='/expose/']") or item.select_one("a[href]")
+                link = card.select_one("a[href*='/expose/']")
                 if not link:
                     continue
-                href = link["href"]
+                href = link["href"].split("?")[0]
                 if not href.startswith("http"):
                     href = "https://www.immowelt.de" + href
-                if "immowelt.de" not in href:
-                    continue
-                titel_el = item.select_one("h2, h3, [class*='title']")
-                titel = titel_el.get_text(strip=True) if titel_el else ""
+
+                def tid(name):
+                    el = card.select_one(f'[data-testid="{name}"]')
+                    return el.get_text(" ", strip=True) if el else ""
+
+                preis_txt   = tid("cardmfe-price-testid")          # "1.450 € Kaltmiete"
+                keyfacts    = tid("cardmfe-keyfacts-testid")        # "3,5 Zimmer · 103 m² · EG · frei ab sofort"
+                adresse     = tid("cardmfe-description-box-address")
+                box_txt     = tid("cardmfe-description-box-text-test-id")
+
+                preis   = parse_preis(preis_txt)
+                groesse = parse_groesse(keyfacts)
+                zimmer  = parse_zimmer(keyfacts)
+
+                # Titel = Objekttyp (Teil des Beschreibungstexts ohne Preis/Keyfacts)
+                titel = box_txt.replace(preis_txt, "").strip()
+                titel = re.split(r"\s+\d+(?:[.,]\d+)?\s*Zimmer|·", titel)[0].strip()
                 if not titel:
-                    continue
-                t = item.get_text(" ", strip=True)
-                preis_m = re.search(r"([\d.]+(?:,\d+)?)\s*€", t)
-                preis = parse_preis(preis_m.group() if preis_m else "")
-                groesse = parse_groesse(t)
-                zimmer = parse_zimmer(t)
-                addr_el = item.select_one("[class*='address'], [class*='location']")
-                adresse = addr_el.get_text(strip=True) if addr_el else ""
+                    titel = (adresse or "Wohnung").split(",")[0]
+
+                # Volltext für Kaltmiete-/Verfügbar-/Möbliert-Erkennung
+                text = " ".join([preis_txt, keyfacts, box_txt, adresse])
                 uid = listing_id(href, titel)
-                out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "ImmoWelt", adresse, t))
+                out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "ImmoWelt", adresse, text))
             except Exception:
                 continue
 
