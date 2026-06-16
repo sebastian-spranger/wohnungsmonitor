@@ -2537,5 +2537,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bcc52524048244",
+    "titel": "Befristet 2 Zimmmer mit Balkon zum grünen Innenhof in der Maxvorstadt",
+    "preis_warm": 950.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168623809",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Adalbertstraße 41a, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "16.06. 12:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.77,
+    "verfuegbar_ab": ""
   }
 ]
