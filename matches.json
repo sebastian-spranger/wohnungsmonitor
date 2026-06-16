@@ -2123,5 +2123,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "304ad6c71809fb",
+    "titel": "1-Zimmerwohnung zur Untermiete von 01.07. bis 31.08.",
+    "preis_warm": 1105.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/1-zimmerwohnung-zur-untermiete-von-01-07-bis-31-08-/3436796776-203-16374",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80801 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 09:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
