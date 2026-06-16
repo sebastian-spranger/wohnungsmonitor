@@ -2141,5 +2141,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5ceb361d4627eb",
+    "titel": "Schwabing-West von seiner schönsten Seite: Helle 3-Zimmer-Wohnung zur Miete in ruhiger Lage",
+    "preis_warm": 2200.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schwabing-west-von-seiner-schoensten-seite-helle-3-zimmer-wohnung-zur-miete-in-ruhiger-lage/3436827557-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 09:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
