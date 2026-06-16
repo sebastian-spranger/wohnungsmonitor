@@ -603,11 +603,14 @@ async def scrape_kleinanzeigen(client: httpx.AsyncClient) -> list[Wohnung]:
                     continue
                 preis_el = item.select_one("[class*='price']")
                 preis = parse_preis(preis_el.get_text(strip=True) if preis_el else "")
-                # qm + Zimmer stehen in den Tags ("Gesuch · 70 m² · 3 Zi.")
+                # qm + Zimmer stehen in den Tags ("Gesuch · 70 m² · 3 Zi.").
+                # Fallback auf den ganzen Kartentext, falls sich das Markup ändert –
+                # "m²/qm/m2" ist eindeutig, da kann nichts anderes reinrutschen.
                 tags = item.select_one(".aditem-main--middle--tags") or item.select_one("[class*='tag']")
-                detail_text = tags.get_text(" ", strip=True) if tags else item.get_text(" ", strip=True)
-                groesse = parse_groesse(detail_text)
-                zimmer = parse_zimmer(detail_text)
+                karten_text = item.get_text(" ", strip=True)
+                detail_text = tags.get_text(" ", strip=True) if tags else karten_text
+                groesse = parse_groesse(detail_text) or parse_groesse(karten_text)
+                zimmer = parse_zimmer(detail_text) or parse_zimmer(karten_text)
                 addr_el = item.select_one(".aditem-main--top--left, [class*='location']")
                 adresse = addr_el.get_text(strip=True) if addr_el else ""
 
