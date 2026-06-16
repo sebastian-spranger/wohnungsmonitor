@@ -827,6 +827,43 @@ async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
     return out
 
 
+async def scrape_wunderflats(client: httpx.AsyncClient) -> list[Wohnung]:
+    """Wunderflats (möbliertes Wohnen auf Zeit). Daten aus dem eingebetteten
+    'data-hydrant'-JSON. Preise sind All-in (warm) und in Cent angegeben."""
+    url = "https://wunderflats.com/en/furnished-apartments/munich"
+    out = []
+    try:
+        r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
+        soup = BeautifulSoup(r.text, "html.parser")
+        node = soup.find("script", id="data-hydrant")
+        if not node:
+            print("Wunderflats: kein data-hydrant gefunden")
+            return out
+        data = json.loads(node.string)
+        items = (data.get("pageData", {}).get("listingResults", {}).get("items", []) or [])
+        print(f"Wunderflats: {len(items)} Einträge")
+        for it in items[:25]:
+            try:
+                titel = (it.get("title", {}) or {}).get("de") or (it.get("title", {}) or {}).get("en") or "Wohnung"
+                preis = float(it.get("price", 0) or 0) / 100.0      # Cent → €, all-in (warm)
+                groesse = float(it.get("area", 0) or 0)
+                zimmer = float(it.get("rooms", 0) or 0)
+                _id = it.get("_id", "")
+                href = f"https://wunderflats.com/en/furnished-apartment/{_id}"
+                addr = it.get("address", {}) or {}
+                strasse = addr.get("street", "")
+                adresse = (f"{strasse}, München" if strasse else "München")
+                # All-in-Preis → als Warmmiete kennzeichnen
+                text = f"{titel} möbliert inkl. Nebenkosten warmmiete {adresse}"
+                uid = listing_id(href, titel)
+                out.append(make_wohnung(uid, titel, preis, groesse, zimmer, href, "Wunderflats", adresse, text))
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"Wunderflats Fehler: {e}")
+    return out
+
+
 async def scrape_mrlodge(client: httpx.AsyncClient) -> list[Wohnung]:
     """Mr. Lodge (möbliertes Wohnen auf Zeit). Daten aus JSON-LD (@type Apartment).
     Hinweis: Mr. Lodge nennt keine Preise öffentlich → preis_warm bleibt 0."""
@@ -913,6 +950,7 @@ async def main():
             scrape_is24_lite(client),
             scrape_immowelt_lite(client),
             scrape_mrlodge(client),
+            scrape_wunderflats(client),
             return_exceptions=True,
         )
         for r in results:
