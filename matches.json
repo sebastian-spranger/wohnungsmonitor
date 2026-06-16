@@ -2627,5 +2627,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.97,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a13728522e8d7a",
+    "titel": "Helle 1-Zimmer-Wohnung in München",
+    "preis_warm": 380.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-1-zimmer-wohnung-in-muenchen/3437178124-203-16340",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 16:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
