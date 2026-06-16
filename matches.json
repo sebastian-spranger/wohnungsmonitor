@@ -2771,5 +2771,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": "2026-06-16"
+  },
+  {
+    "id": "82885835df6017",
+    "titel": "FRISCH RENOVIERTE 2-ZIMMER-WOHNUNG MIT SÜDWEST-BALKON UND EINZELGARAGE",
+    "preis_warm": 1190.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168644455",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tegernseer Landstraße 178A, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "16.06. 21:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.35,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f515bb3f57a2ff",
+    "titel": "Nachmieter gesucht für 2 Zimmer Wohnung in Untergiesing",
+    "preis_warm": 1100.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168644331",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "16.06. 21:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
