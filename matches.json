@@ -2267,5 +2267,41 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8035889810c807",
+    "titel": "Super schöne Wohnung in bester Lage (möbliert)",
+    "preis_warm": 1950.0,
+    "groesse": 52.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/657ffad0d841bbd983c8422a",
+    "quelle": "Wunderflats",
+    "adresse": "Kapuzinerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 10:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.68,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "866124c5e8f90a",
+    "titel": "Gemütliche, wunderschöne Wohnung auf Zeit (München)",
+    "preis_warm": 1890.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/5b65bee4a6795553b3193701",
+    "quelle": "Wunderflats",
+    "adresse": "Georgenstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 10:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.96,
+    "verfuegbar_ab": ""
   }
 ]

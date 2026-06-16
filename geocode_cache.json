@@ -292,5 +292,26 @@
   "bogenhausen, münchen (81925)": [
     48.1452222,
     11.6149771
+  ],
+  "georginenstraße, münchen": [
+    48.1271699,
+    11.4847756
+  ],
+  "kapuzinerstraße, münchen": [
+    48.124628,
+    11.563369
+  ],
+  "eschenrieder straße, münchen": [
+    48.1945703,
+    11.4085653
+  ],
+  "helmunistraße, münchen": [
+    48.2244471,
+    11.5223811
+  ],
+  "burgsteinstraße, münchen": null,
+  "georgenstraße, münchen": [
+    48.1543182,
+    11.5817646
   ]
 }
