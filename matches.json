@@ -2591,5 +2591,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "aba7df9b2f2754",
+    "titel": "Wiesen Zeit Wohnung 14tage frei für bedinun/ Service- kräfte 2026",
+    "preis_warm": 800.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wiesen-zeit-wohnung-14tage-frei-fuer-bedinun-service-kraefte-2026/3437148949-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 16:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
