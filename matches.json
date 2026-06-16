@@ -2663,5 +2663,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f40c028b26c50e",
+    "titel": "NEU Zur UNTERMIETE: schöne Altbauwohnung in Haidhausen München - Haidhausen",
+    "preis_warm": 1430.0,
+    "groesse": 71.0,
+    "zimmer": 0.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40086426",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Haidhausen Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 17:33",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "85040e78f368a8",
+    "titel": "Wohnung in der Maxvorstadt ab 1.07 frei",
+    "preis_warm": 1800.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-in-der-maxvorstadt-ab-1-07-frei/3437238030-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 17:33",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
