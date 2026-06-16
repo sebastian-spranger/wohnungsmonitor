@@ -2573,5 +2573,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.38,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3aedc6c85458ed",
+    "titel": "4er WG Neugründung - 6 min zur Innenstadt",
+    "preis_warm": 740.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/4er-wg-neugruendung-6-min-zur-innenstadt/3437143246-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 15:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
