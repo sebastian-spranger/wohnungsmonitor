@@ -2087,5 +2087,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a434e00167a0ec",
+    "titel": "Helles komplett möbliertes 1-Zimmer-Apartment Schwabing-West",
+    "preis_warm": 1150.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helles-komplett-moebliertes-1-zimmer-apartment-schwabing-west/3423352082-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 05:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
