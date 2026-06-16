@@ -2645,5 +2645,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "16e77a67aaf434",
+    "titel": "2 Zimmer 48m2  - Solln Komplett saniert",
+    "preis_warm": 1800.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-48m2-solln-komplett-saniert/3437228195-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 17:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
