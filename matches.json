@@ -2717,5 +2717,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a3d52fc20caa31",
+    "titel": "WG-Platz am Wettersteinplatz",
+    "preis_warm": 490.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-platz-am-wettersteinplatz/3437330819-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 19:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
