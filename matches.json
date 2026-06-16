@@ -2753,5 +2753,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f1ee07e253f9fe",
+    "titel": "Zwischenmiete ab sofort - möbliertes Appartement Nymphenburg",
+    "preis_warm": 1050.0,
+    "groesse": 0.0,
+    "zimmer": 0.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zwischenmiete-ab-sofort-moebliertes-appartement-nymphenburg/3437361609-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.06. 19:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": "2026-06-16"
   }
 ]
