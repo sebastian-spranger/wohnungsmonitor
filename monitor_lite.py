@@ -273,7 +273,10 @@ def parse_groesse(text: str) -> float:
 
 
 def parse_zimmer(text: str) -> float:
-    m = re.search(r"(\d+(?:[.,]\d+)?)\s*Zimmer", text.replace(",", "."), re.IGNORECASE)
+    t = text.replace(",", ".")
+    # "3 Zimmer", "3-Zimmer", "3 Zi.", "3 Zi"
+    m = (re.search(r"(\d+(?:\.\d+)?)[\s-]*zimmer", t, re.IGNORECASE) or
+         re.search(r"(\d+(?:\.\d+)?)[\s-]*zi\.?(?![a-zäöü])", t, re.IGNORECASE))
     return float(m.group(1)) if m else 0.0
 
 
@@ -598,10 +601,11 @@ async def scrape_kleinanzeigen(client: httpx.AsyncClient) -> list[Wohnung]:
                 titel = titel_el.get_text(strip=True) if titel_el else ""
                 if not titel:
                     continue
-                preis_el = item.select_one(".aditem-details strong, .price-small, [class*='price']")
+                preis_el = item.select_one("[class*='price']")
                 preis = parse_preis(preis_el.get_text(strip=True) if preis_el else "")
-                detail = item.select_one(".aditem-details")
-                detail_text = detail.get_text(" ") if detail else ""
+                # qm + Zimmer stehen in den Tags ("Gesuch · 70 m² · 3 Zi.")
+                tags = item.select_one(".aditem-main--middle--tags") or item.select_one("[class*='tag']")
+                detail_text = tags.get_text(" ", strip=True) if tags else item.get_text(" ", strip=True)
                 groesse = parse_groesse(detail_text)
                 zimmer = parse_zimmer(detail_text)
                 addr_el = item.select_one(".aditem-main--top--left, [class*='location']")
@@ -887,15 +891,36 @@ async def scrape_is24_browser(page) -> list[Wohnung]:
     )
     out = []
     try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=35000)
-        await page.wait_for_timeout(4500)
-        raw = await page.evaluate(
-            "() => { const s=[...document.querySelectorAll('script:not([src])')]"
-            ".find(s=>(s.textContent||'').includes('searchResponseModel'));"
-            "return s ? s.textContent : ''; }"
-        )
+        # Warmup: erst die Startseite besuchen (setzt Imperva-Cookies) – erhöht die
+        # Erfolgsquote vor der eigentlichen Suche.
+        try:
+            await page.goto("https://www.immobilienscout24.de/", wait_until="domcontentloaded", timeout=30000)
+            await page.wait_for_timeout(2000)
+        except Exception:
+            pass
+
+        # Bis zu 3 Versuche: Imperva zeigt sporadisch eine "Ich bin kein Roboter"-Seite.
+        raw = ""
+        for versuch in range(1, 4):
+            await page.goto(url, wait_until="domcontentloaded", timeout=35000)
+            await page.wait_for_timeout(4000 + versuch * 1500)
+            titel_seite = (await page.title()) or ""
+            if "roboter" in titel_seite.lower() or "robot" in titel_seite.lower():
+                print(f"IS24: Captcha bei Versuch {versuch}/3 – neuer Versuch")
+                await page.wait_for_timeout(2500)
+                continue
+            raw = await page.evaluate(
+                "() => { const s=[...document.querySelectorAll('script:not([src])')]"
+                ".find(s=>(s.textContent||'').includes('searchResponseModel'));"
+                "return s ? s.textContent : ''; }"
+            )
+            if raw:
+                break
+            print(f"IS24: kein searchResponseModel bei Versuch {versuch}/3")
+            await page.wait_for_timeout(2000)
+
         if not raw:
-            print("IS24: kein searchResponseModel (evtl. Captcha)")
+            print("IS24: nach 3 Versuchen blockiert/leer – übersprungen")
             return out
         i = raw.find('"searchResponseModel"')
         j = raw.find("{", i)
