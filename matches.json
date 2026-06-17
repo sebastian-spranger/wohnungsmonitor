@@ -2807,5 +2807,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.91,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3b2be3909ef8eb",
+    "titel": "Schwanthalerhöhe, ruhige 3 Zimmer Wohnung im Rückgebäude",
+    "preis_warm": 1500.0,
+    "groesse": 68.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168652617",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Landsberger Straße 75RGB, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 07:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "a4487151dda37d",
+    "titel": "Nachmieter gesucht für 2 Zimmer Wohnung in Untergiesing-gegen Möbelablöse",
+    "preis_warm": 1100.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168644331",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 07:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
