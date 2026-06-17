@@ -2897,5 +2897,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.5,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9ce7c1ac907b24",
+    "titel": "Gemütliche 2,5-Zimmer Wohnung in Neuhausen",
+    "preis_warm": 1579.0,
+    "groesse": 69.38,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168656026",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Trivastr. 2, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 08:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.5,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "d133cba0f98756",
+    "titel": "Maxvorstadt: 2-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 2180.0,
+    "groesse": 73.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168655682",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 08:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
