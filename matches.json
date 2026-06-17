@@ -2933,5 +2933,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "79de8a303d88aa",
+    "titel": "Zuhause mit 2 Zimmern in der lebendigen Maxvorstadt",
+    "preis_warm": 1859.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168657534",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Görresstraße 20, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.18,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f7ffd47edee468",
+    "titel": "Maxvorstadt,  2 Zi. Whg.",
+    "preis_warm": 1760.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/154544784",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
