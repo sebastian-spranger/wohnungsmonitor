@@ -3059,5 +3059,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "243ffd984cd96a",
+    "titel": "Möblierte Maisonette-Wohnung in München – Ihr stilvolles Zuhause auf Zeit mit All-Inclusive-Komfort!",
+    "preis_warm": 2000.0,
+    "groesse": 48.85,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/165779167",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Marsstraße 6, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 12:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.41,
+    "verfuegbar_ab": ""
   }
 ]
