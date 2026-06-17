@@ -2843,5 +2843,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.91,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8242fc2018f6aa",
+    "titel": "Über den Dächern von Giesing - 2 Zimmer mit Wohnküche",
+    "preis_warm": 1450.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168653273",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Winterstr. 10, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 07:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.38,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "2feb9c36614748",
+    "titel": "Modernes Zuhause: Hochwertig voll möblierte 2-Zimmer-Wohnung in Obergiesing",
+    "preis_warm": 1690.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168653242",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schlierseestraße 3, Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 07:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.54,
+    "verfuegbar_ab": ""
   }
 ]
