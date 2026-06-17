@@ -3221,5 +3221,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a94ecd187347ae",
+    "titel": "Wohnung zu Vermieten in Solln München",
+    "preis_warm": 1650.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-zu-vermieten-in-solln-muenchen/3438094119-203-16394",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.06. 18:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
