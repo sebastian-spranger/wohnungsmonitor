@@ -3203,5 +3203,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f38be71196cfe4",
+    "titel": "Charmante 3-Zimmer-Wohnung mit  ruhiger Innenhoflage",
+    "preis_warm": 1620.0,
+    "groesse": 64.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168655268",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Spixstraße 20, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 18:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.94,
+    "verfuegbar_ab": ""
   }
 ]
