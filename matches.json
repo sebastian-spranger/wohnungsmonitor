@@ -3023,5 +3023,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1f06960b94edc2",
+    "titel": "Möbliert: Luxusapartment im Van B ",
+    "preis_warm": 1950.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/168662553",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 12:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
