@@ -3095,5 +3095,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0ae50a61d50bfd",
+    "titel": "Helle 2-Zimmer Dachgeschosswohnung mit großem Balkon in München Maxvorstadt",
+    "preis_warm": 1719.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/166679802",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Erzgießereistraße 34, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 13:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.24,
+    "verfuegbar_ab": ""
   }
 ]
