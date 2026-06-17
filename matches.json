@@ -3257,5 +3257,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.3,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "44f99dd8e7b6f4",
+    "titel": " 2-Zimmer-Altbauwohnung in München-Neuhausen",
+    "preis_warm": 1670.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168673297",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Leonrodstraße 73, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 20:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.3,
+    "verfuegbar_ab": ""
   }
 ]
