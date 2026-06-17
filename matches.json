@@ -2969,5 +2969,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a3c6e53149ee46",
+    "titel": "ELVIRA - Schwabing-West, stilvoll möblierte 2-Zimmer-Wohnung mit sonniger Westterrasse und Gartenant",
+    "preis_warm": 1900.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168660652",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
