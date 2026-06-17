@@ -2879,5 +2879,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.54,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "50267d3c368576",
+    "titel": "Zuhause mit möblierten 2 Zimmern in Schwabing-West",
+    "preis_warm": 1650.0,
+    "groesse": 51.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168655252",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleißheimer Straße 181 b, Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 08:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.5,
+    "verfuegbar_ab": ""
   }
 ]
