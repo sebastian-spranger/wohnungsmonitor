@@ -3131,5 +3131,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "eb820fbe623a7a",
+    "titel": "Geschmackvolle, gepflegte 2-Zimmer-Wohnung in München Neuhausen",
+    "preis_warm": 1648.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168666992",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Leonrodstraße 28, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 14:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.39,
+    "verfuegbar_ab": ""
   }
 ]
