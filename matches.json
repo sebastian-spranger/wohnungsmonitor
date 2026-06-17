@@ -3149,5 +3149,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.39,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b04205e182d402",
+    "titel": "2-Zimmer-Wohnung in Obergiesing",
+    "preis_warm": 1550.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-obergiesing/3437861500-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.06. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
