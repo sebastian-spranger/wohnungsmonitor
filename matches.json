@@ -3239,5 +3239,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8a5941090b84fe",
+    "titel": "    Wohnen mit Charakter: 2-Zimmer-Altbau-Loft in München-Neuhause",
+    "preis_warm": 1695.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168673297",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Leonrodstraße 73, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 19:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.3,
+    "verfuegbar_ab": ""
   }
 ]
