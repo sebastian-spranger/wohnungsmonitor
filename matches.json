@@ -2987,5 +2987,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "748888fb7e6a5a",
+    "titel": "Neuhausen, 2-Zi, gr. Südbalkon, Erstbezug nach Sanierung",
+    "preis_warm": 1900.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/44041160",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Nymphenburgerstrasse 75, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.65,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "ae9070843f580d",
+    "titel": "Möbliert: 2‑Zimmer Wohnung im Erstbezug nach Renovierung – hell und mit Balkon",
+    "preis_warm": 2200.0,
+    "groesse": 59.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168661818",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
