@@ -3167,5 +3167,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "841557fc8069d0",
+    "titel": "Möbliert: Voll möblierte Balkonwohnung",
+    "preis_warm": 2200.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168671133",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "17.06. 17:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
