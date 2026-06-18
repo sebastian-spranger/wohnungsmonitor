@@ -3473,5 +3473,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.87,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "66d3457ce2ad2d",
+    "titel": "Bestlage mit 3 schönen Zimmern in Neustrelitz",
+    "preis_warm": 779.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/bestlage-mit-3-schoenen-zimmern-in-neustrelitz/3438707431-203-16355",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 16:23",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.69,
+    "verfuegbar_ab": ""
   }
 ]
