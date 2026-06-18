@@ -751,5 +751,13 @@
   "münchen - freimann kaltmiete": null,
   "münchen - pasing münchen - pasing kaltmiete": null,
   "schlierseestraße 31, ramersdorf, münchen": null,
-  "80803 schwabing-&#8203freimann": null
+  "80803 schwabing-&#8203freimann": null,
+  "sailerstr 3, schwabing-west, münchen": [
+    48.1735487,
+    11.5616412
+  ],
+  "obergiesing, münchen": [
+    48.1111557,
+    11.5889093
+  ]
 }

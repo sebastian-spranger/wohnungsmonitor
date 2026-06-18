@@ -3419,5 +3419,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.86,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e14f5efe055b5f",
+    "titel": "2er WG moblierte 2 Zimmer luxus WG  am Olympiapark Schwabing",
+    "preis_warm": 900.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2er-wg-moblierte-2-zimmer-luxus-wg-am-olympiapark-schwabing/3438659292-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 15:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "2ebbe7605e85b7",
+    "titel": "Schmucke 2 Zimmer mit großem Südwestbalkon",
+    "preis_warm": 1475.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168638645",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 15:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
