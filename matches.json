@@ -3293,5 +3293,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "566db08beff0dc",
+    "titel": "Stilvolles 2-Zimmer Apartment für 2 in München-Lehel, möbliert - Haustierfreundlich, Mindestmiete 3 Monate",
+    "preis_warm": 1780.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvolles-2-zimmer-apartment-fuer-2-in-muenchen-lehel-moebliert-haustierfreundlich-mindestmiete-3-monate/2732050555-203-16338",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80538 Altstadt-​Lehel",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 06:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.41,
+    "verfuegbar_ab": ""
   }
 ]
