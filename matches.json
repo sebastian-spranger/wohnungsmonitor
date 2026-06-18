@@ -3329,5 +3329,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b2f092d9228706",
+    "titel": "Landhaus 5-Teilges Schrankset",
+    "preis_warm": 1200.0,
+    "groesse": 80.0,
+    "zimmer": 5.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/landhaus-5-teilges-schrankset/3438366013-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 09:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
