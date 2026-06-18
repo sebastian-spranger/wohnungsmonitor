@@ -3365,5 +3365,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.82,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e7cc0011e0abcb",
+    "titel": "5 Zimmer Wohnung Glockenbachviertel/ München",
+    "preis_warm": 980.0,
+    "groesse": 89.0,
+    "zimmer": 5.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/5-zimmer-wohnung-glockenbachviertel-muenchen/3438460991-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 11:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
