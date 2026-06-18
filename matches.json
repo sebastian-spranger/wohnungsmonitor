@@ -3491,5 +3491,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d68a480de90590",
+    "titel": "Sanierte 2-Zimmer-Dachgeschosswohnung an der Theresienwiese",
+    "preis_warm": 1458.0,
+    "groesse": 69.42,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/sanierte-2-zimmer-dachgeschosswohnung-an-der-theresienwiese/3389535315-203-6440",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 16:38",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
