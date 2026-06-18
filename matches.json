@@ -3527,5 +3527,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.17,
     "verfuegbar_ab": "2026-06-18"
+  },
+  {
+    "id": "9f10f64b19fdfc",
+    "titel": "SCHMUCKSTÜCK & TOP LAGE - gemütliche 3 Zimmerwohnung mit Gartenanteil",
+    "preis_warm": 1953.0,
+    "groesse": 79.7,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168693341",
+    "quelle": "ImmobilienScout24",
+    "adresse": "St.-Pauls-Platz 9, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 20:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.78,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "7683702275308b",
+    "titel": "Zwischenmiete: 2-Zimmer-Wohnung hochwertig möbliert, Hohenzollernplatz, Schwabing",
+    "preis_warm": 2200.0,
+    "groesse": 80.0,
+    "zimmer": 2.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Schwabing-West.11317856.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Herzogstraße 110, Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 20:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.97,
+    "verfuegbar_ab": "2026-06-01"
   }
 ]
