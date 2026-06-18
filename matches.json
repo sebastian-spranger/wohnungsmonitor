@@ -3347,5 +3347,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "df42918c25d036",
+    "titel": "75 m² soeben renovierte, 75 m², 3-Zi- Altbauwohnung mitten in Haidhausen. KEIN BALKON!",
+    "preis_warm": 1480.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168684948",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Wörthstraße 9, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 10:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.82,
+    "verfuegbar_ab": ""
   }
 ]
