@@ -3401,5 +3401,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a84bb06789123f",
+    "titel": "ERSTBEZUG - Stylisch möbliertes WG-Zimmer in Giesing/Ramersdorf – Einziehen & Wohlfühlen!",
+    "preis_warm": 810.0,
+    "groesse": 72.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/168689654",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Peter-Henlein-Straße 5, Ramersdorf, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 12:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.86,
+    "verfuegbar_ab": ""
   }
 ]
