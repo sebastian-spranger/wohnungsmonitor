@@ -3383,5 +3383,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "858ef02569882a",
+    "titel": "Frisch renovierte 1,5 Zimmer Wohnung mit Blick ins Grüne",
+    "preis_warm": 1475.0,
+    "groesse": 49.3,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/frisch-renovierte-1-5-zimmer-wohnung-mit-blick-ins-gruene/3438467435-203-16362",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.06. 11:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.04,
+    "verfuegbar_ab": ""
   }
 ]
