@@ -3455,5 +3455,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1489857985f2a0",
+    "titel": "2-Zimmer-Dachgeschosswohnung für 18 Monate zur Zwischenmiete, Option auf Übernahme",
+    "preis_warm": 1180.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168695825",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Oberaudorfer Straße 1, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 16:02",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.87,
+    "verfuegbar_ab": ""
   }
 ]
