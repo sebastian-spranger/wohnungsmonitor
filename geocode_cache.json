@@ -785,5 +785,21 @@
     11.4824588
   ],
   "münchen - aubing kaltmiete": null,
-  "münchen - hasenbergl kaltmiete": null
+  "münchen - hasenbergl kaltmiete": null,
+  "weißenseestraße 104, obergiesing, münchen": [
+    48.1090201,
+    11.5828515
+  ],
+  "offenbachstraße 41, obermenzing, münchen": [
+    48.1545735,
+    11.4664918
+  ],
+  "riemerstr 349, riem, münchen": [
+    48.1406477,
+    11.6841941
+  ],
+  "heilwigstraße 21b, trudering, münchen": [
+    48.1156793,
+    11.6811603
+  ]
 }

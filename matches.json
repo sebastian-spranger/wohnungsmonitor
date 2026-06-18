@@ -3509,5 +3509,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ddba5c4d237d69",
+    "titel": "Ab sofort: Stilvolles 1,5 Zimmer Apartment - All inclusive mit Top Ausstattung",
+    "preis_warm": 1520.0,
+    "groesse": 46.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/167983804",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Weißenseestraße 104, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 18:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.17,
+    "verfuegbar_ab": "2026-06-18"
   }
 ]
