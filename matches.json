@@ -3311,5 +3311,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cf831473ccb27f",
+    "titel": "Neu ausgebaute 3-Zimmer-Maisonette über den Dächern der Maxvorstadt ",
+    "preis_warm": 1930.0,
+    "groesse": 60.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168190342",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schellingstraße 20, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "18.06. 08:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.43,
+    "verfuegbar_ab": ""
   }
 ]
