@@ -3617,5 +3617,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.24,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "84ee6b63a7052a",
+    "titel": "3-Zimmer-Wohnung in München Giesing(unbefristet, ab sofort)",
+    "preis_warm": 1790.0,
+    "groesse": 66.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-in-muenchen-giesing-unbefristet-ab-sofort-/3439029605-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.06. 08:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": "2026-06-19"
   }
 ]
