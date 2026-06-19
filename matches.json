@@ -3851,5 +3851,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7d049e29fe0586",
+    "titel": "TOP -  Appartment mit Bürocharakter - Ideal als Wohnbüro",
+    "preis_warm": 1430.0,
+    "groesse": 57.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/155543346",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleissheimer Str. 2, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 14:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.73,
+    "verfuegbar_ab": ""
   }
 ]
