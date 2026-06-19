@@ -3689,5 +3689,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fd1ac3314aff2d",
+    "titel": "Wohnen mit Charakter: Alltagstaugliche 2-Zimmer-Wohnung in Schwabing-West",
+    "preis_warm": 2100.0,
+    "groesse": 56.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168706846",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleissheimerstrasse 181a, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 09:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
