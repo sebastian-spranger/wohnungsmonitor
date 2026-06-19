@@ -3977,5 +3977,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.82,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5eee1a2801f791",
+    "titel": "Ich vermieten einen Zimmer",
+    "preis_warm": 950.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ich-vermieten-einen-zimmer/3439404287-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.06. 22:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
