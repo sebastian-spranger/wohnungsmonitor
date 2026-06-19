@@ -3671,5 +3671,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.82,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "33b58a6a335980",
+    "titel": "Schöne zwei Zimmer Wohnung in München direkt am Hohenzollernplatz",
+    "preis_warm": 1580.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/117676284",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Erich-Kästner-Strasse 2, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 09:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
