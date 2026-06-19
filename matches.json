@@ -3581,5 +3581,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "861e6eba6b7ee3",
+    "titel": "3-Zimmer-Wohnung im Grünen",
+    "preis_warm": 1790.0,
+    "groesse": 67.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168705321",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klagenfurter Straße 67, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 06:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
