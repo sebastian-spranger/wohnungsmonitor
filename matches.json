@@ -3815,5 +3815,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a8626be224eee4",
+    "titel": "Helle und gut geschnittene 3-Zi-Whg. mit sonnigem Balkon (Whg. wird renoviert)",
+    "preis_warm": 2005.0,
+    "groesse": 84.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168719740",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
