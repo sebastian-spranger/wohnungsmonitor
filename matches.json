@@ -3707,5 +3707,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8e1c87349f14c0",
+    "titel": "Furnished 2-room apartment / möblierte 2-Zimmer-Wohnung im 4. OG in Schwabing-West",
+    "preis_warm": 2100.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168706846",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleissheimerstrasse 181a, Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 10:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
