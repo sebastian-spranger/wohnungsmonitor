@@ -3995,5 +3995,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "38cdd4e5eccf94",
+    "titel": "Helles Zuhause im Zentrum von München",
+    "preis_warm": 1500.0,
+    "groesse": 69.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/neat-apartment-in-muenchen/6a356f42628859ce798e333b",
+    "quelle": "Wunderflats",
+    "adresse": "Brienner Straße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "19.06. 23:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.48,
+    "verfuegbar_ab": ""
   }
 ]
