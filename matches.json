@@ -3779,5 +3779,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.62,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "15996eb91e0772",
+    "titel": "Moderne Neubau 3-Zimmer-Wohnung in Daglfing",
+    "preis_warm": 2170.0,
+    "groesse": 66.34,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168719836",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 13:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
