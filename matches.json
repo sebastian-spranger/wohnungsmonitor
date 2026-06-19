@@ -3869,5 +3869,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.73,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "001dcf5a0e220b",
+    "titel": "3 Zimmer Wohnung in Unterschleißheim zu vermieten",
+    "preis_warm": 1400.0,
+    "groesse": 93.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-in-unterschleissheim-zu-vermieten/3439391002-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.06. 15:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
