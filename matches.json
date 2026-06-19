@@ -3959,5 +3959,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b50a8f8756498a",
+    "titel": "Neuwertige 3-Zimmer Wohnung mit Balkon im EG in München-Neuhausen",
+    "preis_warm": 2050.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/167285203",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Arnulfstraße 167, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 21:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.82,
+    "verfuegbar_ab": ""
   }
 ]
