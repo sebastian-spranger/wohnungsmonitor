@@ -3761,5 +3761,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4a13d24e7d0d16",
+    "titel": "Helle und sonnige 2-Zi.-Whg. in Schwabing ",
+    "preis_warm": 1690.0,
+    "groesse": 74.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168718455",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Römerstr. 20, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 13:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.62,
+    "verfuegbar_ab": ""
   }
 ]
