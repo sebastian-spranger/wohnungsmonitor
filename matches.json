@@ -3563,5 +3563,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.97,
     "verfuegbar_ab": "2026-06-01"
+  },
+  {
+    "id": "90457dfdadff5f",
+    "titel": "2,5-Zimmer Altbauwohnung | Zwischenmiete Juli–Oktober in München",
+    "preis_warm": 1510.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-altbauwohnung-zwischenmiete-juli-oktober-in-muenchen/3438957322-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.06. 06:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
