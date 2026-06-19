@@ -3599,5 +3599,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "19241c6f6d5d97",
+    "titel": "Schöne 3-Zimmer-Wohnung in Untergiesing",
+    "preis_warm": 1641.0,
+    "groesse": 76.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/167850694",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Birkenau 31, Au, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 07:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.24,
+    "verfuegbar_ab": ""
   }
 ]
