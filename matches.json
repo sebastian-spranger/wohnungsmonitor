@@ -3635,5 +3635,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": "2026-06-19"
+  },
+  {
+    "id": "1d735aec3207c3",
+    "titel": "Ruhige 3 Zimmer Wohnung mit Balkon und Blick ins Grüne",
+    "preis_warm": 1950.0,
+    "groesse": 67.52,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/93745880",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 08:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "2e2229ff93ecb9",
+    "titel": "Schön geschnittene und helle 2-Zimmer-Wohnung in Top-Lage",
+    "preis_warm": 1259.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168709904",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schlierseestraße 33, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "19.06. 08:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.82,
+    "verfuegbar_ab": ""
   }
 ]
