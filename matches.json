@@ -4121,5 +4121,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7b29db1a8e6b1e",
+    "titel": "Dachgeschosswohnung mit 2 Zimmern · München-Giesing · 14653",
+    "preis_warm": 1380.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-giesing-14653",
+    "quelle": "Mr. Lodge",
+    "adresse": "Schönstraße, Giesing, 81543 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 12:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.56,
+    "verfuegbar_ab": ""
   }
 ]
