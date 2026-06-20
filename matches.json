@@ -4085,5 +4085,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a42909a6733c14",
+    "titel": "2-Zimmer-Wohnung Hochparterre Nähe Elisabethplatz (Schwabing-West)",
+    "preis_warm": 1615.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168732724",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "20.06. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "cef427a9b7f018",
+    "titel": "2-Zimmer-Wohnung mit Balkon in Berg am Laim",
+    "preis_warm": 1975.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168340920",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Grafinger Straße 40, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "20.06. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
