@@ -4175,5 +4175,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ed344a22904f8f",
+    "titel": "3-Zimmer Wohnung Neuhausen ideal als Studenten-WG",
+    "preis_warm": 2100.0,
+    "groesse": 86.5,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-neuhausen-ideal-als-studenten-wg/3440199961-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 17:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "c7f1529097b80f",
+    "titel": "Schöne Gartenwohnung zur Untermiete",
+    "preis_warm": 1030.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-gartenwohnung-zur-untermiete/3440204777-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 17:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
