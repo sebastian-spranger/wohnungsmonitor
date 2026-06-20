@@ -4157,5 +4157,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e0449ddfca4c77",
+    "titel": "1-Zimmer-Wohnung in München",
+    "preis_warm": 390.0,
+    "groesse": 68.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/1-zimmer-wohnung-in-muenchen/3440164900-203-16337",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 16:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
