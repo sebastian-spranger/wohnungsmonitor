@@ -4013,5 +4013,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.48,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "83ed4a43010ee7",
+    "titel": "NEU Schöne, geräumige 3,5-Zimmer Wohnung in München, Haidhausen München - Haidhausen",
+    "preis_warm": 1900.0,
+    "groesse": 111.0,
+    "zimmer": 3.5,
+    "url": "https://www.wohnungsboerse.net/immodetail/40102264",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Haidhausen Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "20.06. 06:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
