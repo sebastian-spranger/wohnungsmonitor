@@ -4031,5 +4031,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7f649d62b93d07",
+    "titel": "Helles, gemütliches Studio in München",
+    "preis_warm": 1550.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/modern-and-beautiful-studio-in-muenchen/6a3595409852ca007c11dca5",
+    "quelle": "Wunderflats",
+    "adresse": "Kaufingerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.23,
+    "verfuegbar_ab": ""
   }
 ]
