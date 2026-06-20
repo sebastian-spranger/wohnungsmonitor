@@ -4139,5 +4139,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.56,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1da4b862005ae1",
+    "titel": "Lichttraum in Denning-Bogenhausen: 3-Zimmer-Wohnung mit Südbalkon und Blick ins Grüne",
+    "preis_warm": 2010.0,
+    "groesse": 92.6,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168722041",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "20.06. 15:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
