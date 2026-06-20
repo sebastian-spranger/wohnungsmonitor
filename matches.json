@@ -4049,5 +4049,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.23,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "aa188349b67b4f",
+    "titel": "2,5 ZIMMER WOHNUNG IM HERZEN VON SCHWABING",
+    "preis_warm": 1760.0,
+    "groesse": 58.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168720805",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Herzogstraße 81, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "20.06. 09:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.82,
+    "verfuegbar_ab": ""
   }
 ]
