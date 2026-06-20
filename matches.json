@@ -4067,5 +4067,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.82,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "437ea233b46dbc",
+    "titel": "Neues Apartment in München",
+    "preis_warm": 1950.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/fashionable-apartment-in-muenchen/6a3570c1628859ce798e513d",
+    "quelle": "Wunderflats",
+    "adresse": "Gabelsbergerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "20.06. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.99,
+    "verfuegbar_ab": ""
   }
 ]
