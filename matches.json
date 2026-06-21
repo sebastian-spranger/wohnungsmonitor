@@ -4355,5 +4355,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.89,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "daf89aed75d30d",
+    "titel": "*** Bogenhausen ***  Sonnige 2- Zimmer mit offenem Kamin und großem West- Balkon | teilmöbliert",
+    "preis_warm": 1900.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168746875",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 16:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
