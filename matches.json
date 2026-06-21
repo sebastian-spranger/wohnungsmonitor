@@ -4229,5 +4229,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "05191f713d5f3d",
+    "titel": "Zuhause mit 2,5 Zimmern und Balkon in Neuhausen",
+    "preis_warm": 1902.0,
+    "groesse": 68.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168740882",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Franziska-Schmitz-Straße 3, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 06:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.84,
+    "verfuegbar_ab": ""
   }
 ]
