@@ -4265,5 +4265,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9372491f876348",
+    "titel": "Innsbruck 3 Zimmer Wohnung zur Zwischenmiete im Sommer",
+    "preis_warm": 1100.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/innsbruck-3-zimmer-wohnung-zur-zwischenmiete-im-sommer/3440698135-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.06. 12:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
