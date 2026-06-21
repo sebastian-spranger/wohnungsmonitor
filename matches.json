@@ -4445,5 +4445,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "469a47c19e85da",
+    "titel": "2 Zimmer Wohnung in München Maxvorstadt - Sucht Nachmieter",
+    "preis_warm": 1750.0,
+    "groesse": 81.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-muenchen-maxvorstadt-sucht-nachmieter/3441250022-203-6441",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.06. 21:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.04,
+    "verfuegbar_ab": ""
   }
 ]
