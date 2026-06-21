@@ -4409,5 +4409,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.32,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6f0a3cff048847",
+    "titel": "Neu renovierte 2 Zimmer Wohnung , möbliert, Zeitmietvertrag",
+    "preis_warm": 1450.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168748600",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Effnerstr 7, Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 19:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.37,
+    "verfuegbar_ab": ""
   }
 ]
