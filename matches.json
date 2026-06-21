@@ -4427,5 +4427,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.37,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3037ceec8c57c6",
+    "titel": "Modernisierte , gut geschnitte 2-Zi-Wohnung in Schwabing-West",
+    "preis_warm": 1560.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168746968",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 20:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
