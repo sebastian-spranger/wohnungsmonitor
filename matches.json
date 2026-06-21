@@ -4319,5 +4319,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.29,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8c398f3a798419",
+    "titel": "Helle 2,5-Zi. Wohnung mit großer Wohnküche – urbanes Wohnen in Giesing/Au",
+    "preis_warm": 1230.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/96660344",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Welfenstr. 31, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 15:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.97,
+    "verfuegbar_ab": ""
   }
 ]
