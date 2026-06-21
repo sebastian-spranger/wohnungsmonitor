@@ -4301,5 +4301,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.62,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "672f58ee2c15e2",
+    "titel": "Modernes und charmantes Studio (München)",
+    "preis_warm": 1500.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/perfect-and-modern-apartment-in-muenchen/6a37bf6d8403eb5f6353f61b",
+    "quelle": "Wunderflats",
+    "adresse": "Westenriederstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "21.06. 15:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.29,
+    "verfuegbar_ab": ""
   }
 ]
