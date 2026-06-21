@@ -4247,5 +4247,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.84,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "383c49b551f9a6",
+    "titel": "Ruhig gelegene, möblierte 2-Zimmer-Wohnung mitten in Schwabing (befristet)",
+    "preis_warm": 1790.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/165150766",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 09:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
