@@ -4391,5 +4391,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "daa4aabd5b9e3d",
+    "titel": "Helle geräumige 2-Zimmer-Wohnung mit EBK in begehrter Lage Münchens",
+    "preis_warm": 1750.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/113820859",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ismaninger 89, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 18:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.32,
+    "verfuegbar_ab": ""
   }
 ]
