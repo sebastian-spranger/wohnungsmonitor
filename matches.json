@@ -4373,5 +4373,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e2f0d955b21ae5",
+    "titel": "NEU Helle 2,5-Zi. Wohnung mit großer Wohnküche – urbanes Wohnen in Giesing/Au München - Haidhausen",
+    "preis_warm": 1100.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.wohnungsboerse.net/immodetail/40106196",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Haidhausen Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 17:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
