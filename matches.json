@@ -4283,5 +4283,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "870ac1b6e760f5",
+    "titel": "Alltagstaugliche 1,5-Zimmer-Wohnung in Bogenhausen",
+    "preis_warm": 1690.0,
+    "groesse": 45.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168745418",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Scheinerstraße 7, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "21.06. 14:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.62,
+    "verfuegbar_ab": ""
   }
 ]
