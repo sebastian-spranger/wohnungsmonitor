@@ -4499,5 +4499,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "74f47d87127de4",
+    "titel": "Helle 2 Zimmer Wohnung in der Landsberger Straße!",
+    "preis_warm": 1476.48,
+    "groesse": 61.92,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168468869",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Landsberger Straße 18, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 07:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.29,
+    "verfuegbar_ab": ""
   }
 ]
