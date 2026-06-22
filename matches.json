@@ -4643,5 +4643,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a10fe7056d61fa",
+    "titel": "Exklusive 2-Zimmerwohnung mit gehobener Innenausstattung in München Sendling",
+    "preis_warm": 1490.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/155807811",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Wackersberger Straße 37, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 12:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.19,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "6ca21572b15258",
+    "titel": "Vermiete Wohnung 75 qm neben Giesing Bahnhofsplatz",
+    "preis_warm": 1950.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168768843",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 12:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
