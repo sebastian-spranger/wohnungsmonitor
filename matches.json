@@ -4769,5 +4769,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9b97e6e63a10b5",
+    "titel": "Zahnärztin sucht 2-3 Zimmerwohnung im südlichen München",
+    "preis_warm": 1400.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zahnaerztin-sucht-2-3-zimmerwohnung-im-suedlichen-muenchen/3441728789-203-16349",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 15:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
