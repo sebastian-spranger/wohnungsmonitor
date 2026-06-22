@@ -5003,5 +5003,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "eaddb636d0e10f",
+    "titel": "Exklusive 2 Zimmer Wohnung mit großer Wohnküche Maxvorstadt",
+    "preis_warm": 1890.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/exklusive-2-zimmer-wohnung-mit-grosser-wohnkueche-maxvorstadt/3441448868-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 21:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
