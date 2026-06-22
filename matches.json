@@ -4679,5 +4679,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "aa908fe3b4b2a3",
+    "titel": "NEU Gepflegte 2-Zimmer-Wohnung in der Ludwigsvorstadt München - Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1680.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40110179",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Ludwigsvorstadt-Isarvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 13:18",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
