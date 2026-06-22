@@ -4535,5 +4535,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9138ddf7100d32",
+    "titel": "Wohnung mit 2 Zimmern · München-Lehel · 11889",
+    "preis_warm": 2100.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-lehel-11889",
+    "quelle": "Mr. Lodge",
+    "adresse": "Thierschplatz, Lehel, 80538 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 10:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.98,
+    "verfuegbar_ab": ""
   }
 ]
