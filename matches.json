@@ -4751,5 +4751,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3493d31ca717e9",
+    "titel": "teilmöblierte Wohnung zur Zwischenmiete",
+    "preis_warm": 1200.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/teilmoeblierte-wohnung-zur-zwischenmiete/3441725290-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 15:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
