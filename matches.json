@@ -4841,5 +4841,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "05206c519a5c96",
+    "titel": "Maxvorstadt: 1-Zimmer-Wohnung mit separater Wohnküche, Einbauküche und neu saniertem Bad",
+    "preis_warm": 1090.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/168749875",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Augustenstraße 104, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 17:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.92,
+    "verfuegbar_ab": ""
   }
 ]
