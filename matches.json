@@ -4985,5 +4985,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a5617e09aaa8f3",
+    "titel": "Nachmieter für 3er WG",
+    "preis_warm": 950.0,
+    "groesse": 68.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-fuer-3er-wg/3441935025-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 20:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
