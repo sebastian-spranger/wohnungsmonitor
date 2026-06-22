@@ -4733,5 +4733,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.91,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "27871921896d5b",
+    "titel": "Möbliert: Sehr schön möblierte Wohnung im Lehel ",
+    "preis_warm": 2100.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168772797",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Lehel, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 14:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.93,
+    "verfuegbar_ab": ""
   }
 ]
