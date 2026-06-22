@@ -4787,5 +4787,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a9d8cdb7f8e950",
+    "titel": "DG-Wohnung im Herzen Schwabings (Hohenzollernstr. 27)",
+    "preis_warm": 1670.0,
+    "groesse": 50.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/dg-wohnung-im-herzen-schwabings-hohenzollernstr-27-/3441772515-203-16374",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80801 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 16:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
