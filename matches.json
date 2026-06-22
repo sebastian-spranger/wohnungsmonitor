@@ -4859,5 +4859,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "88d9692c04e9ef",
+    "titel": "Erstbezug nach Sanierung - 2-Zimmer Wohnung mit Balkon und Aufzug",
+    "preis_warm": 1645.0,
+    "groesse": 69.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/erstbezug-nach-sanierung-2-zimmer-wohnung-mit-balkon-und-aufzug/3441841113-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 17:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
