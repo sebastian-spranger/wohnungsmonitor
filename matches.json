@@ -4895,5 +4895,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8b1425f2d6ebaa",
+    "titel": "Mietwohnung ab 1.7. incl. TG-Stellplatz",
+    "preis_warm": 1150.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/mietwohnung-ab-1-7-incl-tg-stellplatz/3441897508-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 18:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
