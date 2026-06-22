@@ -4697,5 +4697,41 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7200ff806d39da",
+    "titel": "2 Zi.-Wohnung mit Wintergarten",
+    "preis_warm": 890.0,
+    "groesse": 47.37,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168771854",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Altöttinger Str. 2, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.38,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "7bfbdf67119662",
+    "titel": " 2-Zimmer-Wohnung EBK in Untergiesing",
+    "preis_warm": 1286.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168771002",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "22.06. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
