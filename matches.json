@@ -4625,5 +4625,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e0e7bee5c629d8",
+    "titel": "Ruhig und Zentral Wohnen in München-Sendling-Westpark: Renovierte 2-Zi-Wohnung - provisionsfrei",
+    "preis_warm": 1705.0,
+    "groesse": 70.33,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ruhig-und-zentral-wohnen-in-muenchen-sendling-westpark-renovierte-2-zi-wohnung-provisionsfrei/3441439955-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.06. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
