@@ -5057,5 +5057,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ebf4c4bd5cddbb",
+    "titel": "Wohnung mit 1.5 Zimmern · München-Au-Haidhausen · 13929",
+    "preis_warm": 1750.0,
+    "groesse": 45.0,
+    "zimmer": 1.5,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/1-zimmer-wohnung-muenchen-au-haidhausen-13929",
+    "quelle": "Mr. Lodge",
+    "adresse": "Leuchtenbergring, Au-Haidhausen, 81677 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.06. 06:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.99,
+    "verfuegbar_ab": ""
   }
 ]
