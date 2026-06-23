@@ -5201,5 +5201,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5237d131939aca",
+    "titel": "Zuhause mit 2 Zimmern in Neuhausen",
+    "preis_warm": 1960.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168791567",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schulstrasse 42, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 11:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.25,
+    "verfuegbar_ab": ""
   }
 ]
