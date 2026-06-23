@@ -5435,5 +5435,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c169a4d1dcb4a5",
+    "titel": "Grüne Oase im Herzen von Bogenhausen - möbliert, hochwertig ausgestattet",
+    "preis_warm": 1990.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/133037820",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gebelestr. 14, Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 18:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.06,
+    "verfuegbar_ab": ""
   }
 ]
