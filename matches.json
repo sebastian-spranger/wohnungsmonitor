@@ -5021,5 +5021,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "25ea75710ebd83",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1760.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/f784216a-50f6-4275-84a0-d90280fab81c",
+    "quelle": "ImmoWelt",
+    "adresse": "Schwabing-West, München (80804)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.06. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
