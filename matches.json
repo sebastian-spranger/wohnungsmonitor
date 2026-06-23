@@ -5291,5 +5291,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "59066fc88cc27a",
+    "titel": "Möbliert: Gemütliche 2-Zimmer Wohnung in erstklassiger Lage in Schwabing-West",
+    "preis_warm": 2100.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168797721",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 15:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
