@@ -5417,5 +5417,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b23a4c419d18b7",
+    "titel": "Befristet Aug. 26-Jan 27 - Möblierte 2-Zi-Wohnung nahe Englischer Garten & U6, inkl. Strom, WLAN",
+    "preis_warm": 1650.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/145860305",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 18:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
