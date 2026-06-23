@@ -5399,5 +5399,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "25a92435c9bbd2",
+    "titel": "NEU Dachgeschosswohnung mit 2,5 Zimmern in der Maxvorstadt München - Maxvorstadt",
+    "preis_warm": 1900.0,
+    "groesse": 70.0,
+    "zimmer": 2.5,
+    "url": "https://www.wohnungsboerse.net/immodetail/40115263",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 17:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
