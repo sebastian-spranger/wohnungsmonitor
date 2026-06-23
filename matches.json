@@ -5237,5 +5237,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ae1a8dafc2b1be",
+    "titel": "Wohnung mit 2 Zimmern · München-Maxvorstadt · 4289",
+    "preis_warm": 2200.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-maxvorstadt-4289",
+    "quelle": "Mr. Lodge",
+    "adresse": "Augustenstraße, Maxvorstadt, 80333 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.06. 12:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.72,
+    "verfuegbar_ab": ""
   }
 ]
