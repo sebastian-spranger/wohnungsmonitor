@@ -5075,5 +5075,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4a8566d98ca8ee",
+    "titel": "Helle 2-Zimmer-Wohnung  (BJ 2018) mit Balkon und hochwertiger Ausstattung in Sendling",
+    "preis_warm": 1378.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/154492004",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Karwendelstr. 24a, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 08:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.9,
+    "verfuegbar_ab": ""
   }
 ]
