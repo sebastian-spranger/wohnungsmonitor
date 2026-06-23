@@ -5489,5 +5489,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.74,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "557183c2c92382",
+    "titel": "NEU Zeitlose Eleganz im Jugendstil – Exklusive 2-Zimmer-Wohnung in Haidhausen! München - Haidhausen",
+    "preis_warm": 1650.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40115327",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Haidhausen Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 22:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
