@@ -5255,5 +5255,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f8a910abdebcb3",
+    "titel": "Stilvolle, neuwertige 4-Zimmer-Dachgeschosswohnung mit Einbauküche in München",
+    "preis_warm": 1600.0,
+    "groesse": 76.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/137941496",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 12:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
