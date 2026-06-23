@@ -5273,5 +5273,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f826d42aa91525",
+    "titel": "Zeitlose Eleganz im Jugendstil – Exklusive 2-Zimmer-Wohnung in Haidhausen!",
+    "preis_warm": 1725.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168796059",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gallmayer Str. 2, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 14:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.51,
+    "verfuegbar_ab": ""
   }
 ]
