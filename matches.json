@@ -5453,5 +5453,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.06,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4fb89b46060cc2",
+    "titel": "Gartenwohnung mit 2 Terrassen, Hobbyraum und 2 Einzelgaragen in München-Englschalking",
+    "preis_warm": 2050.0,
+    "groesse": 87.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168803411",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 20:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "5e1ca31f22f8e5",
+    "titel": "Neue 2er Wg Wohnung an der Isar in zentraler Lage befristet",
+    "preis_warm": 2000.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168803871",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Kohlstraße 11, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 20:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.74,
+    "verfuegbar_ab": ""
   }
 ]
