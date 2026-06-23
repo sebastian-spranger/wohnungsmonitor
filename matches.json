@@ -5183,5 +5183,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f5f39fcfcc76cd",
+    "titel": "Möbliert: Modern & Gemütlich: Großzügige 1.5-Zimmer Wohnung",
+    "preis_warm": 1750.0,
+    "groesse": 45.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168789900",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Haidhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 11:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.94,
+    "verfuegbar_ab": ""
   }
 ]
