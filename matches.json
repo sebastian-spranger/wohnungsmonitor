@@ -5039,5 +5039,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "18a9120bb5c520",
+    "titel": "NEU Fully furnished at top location in Maxvorstadt: Bright 2-Room Flat near U-Bahn (St.-Benno-Viertel) München - Maxvors",
+    "preis_warm": 1348.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40111811",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "23.06. 06:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
