@@ -5165,5 +5165,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.97,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "961c4cc0b0107c",
+    "titel": "3-Zimmer-Wohnung in Obergiesing zur Zwischenmiete 01.09.–30.11.",
+    "preis_warm": 2000.0,
+    "groesse": 76.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-in-obergiesing-zur-zwischenmiete-01-09-30-11-/3442212036-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.06. 10:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
