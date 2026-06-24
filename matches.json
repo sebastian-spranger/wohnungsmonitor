@@ -5525,5 +5525,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ce85f1913840af",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1850.0,
+    "groesse": 89.0,
+    "zimmer": 4.0,
+    "url": "https://www.immowelt.de/expose/83506d7a-b802-4194-a443-d4360d855ff0",
+    "quelle": "ImmoWelt",
+    "adresse": "Bogenhausen, München (81927)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 04:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "3f6b9659c766e3",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1720.0,
+    "groesse": 68.0,
+    "zimmer": 2.5,
+    "url": "https://www.immowelt.de/expose/b5062c84-cfd0-4255-956b-a2169879511e",
+    "quelle": "ImmoWelt",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München (80337)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 04:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": "2026-07-14"
   }
 ]
