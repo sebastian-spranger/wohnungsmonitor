@@ -5579,5 +5579,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.79,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3769619d64a517",
+    "titel": "NEU Neue 2er Wg Wohnung an der Isar in zentraler Lage befristet München - Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1800.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.wohnungsboerse.net/immodetail/40116412",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Ludwigsvorstadt-Isarvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 06:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
