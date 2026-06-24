@@ -5849,5 +5849,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4ccbc9a638fa75",
+    "titel": "Zwischenmiete: Viel Platz in Sendling mit 3,5 Zimmern",
+    "preis_warm": 1890.0,
+    "groesse": 95.0,
+    "zimmer": 3.5,
+    "url": "https://www.immobilienscout24.de/expose/168828475",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Albert-Roßhaupter-Straße 14, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 19:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.66,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "8dd0df48058f64",
+    "titel": "Möblierte 2,5-Zimmer-Wohnung in Schwabing – vom 8 Juli bis zum 1 September befristet verfügbar ",
+    "preis_warm": 2180.0,
+    "groesse": 48.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/160915415",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Siegesstraße 13, Schwabing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 19:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.65,
+    "verfuegbar_ab": ""
   }
 ]
