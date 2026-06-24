@@ -5507,5 +5507,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f2dc26fd5ce26b",
+    "titel": "Möblierte Wohnung mit eigener Terrasse am wunderschönen Walchensee",
+    "preis_warm": 1399.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/furnished-apartment-with-private-terrace-on-the-beautiful-walchensee-lake/606f5a6ef99eab0008fcc5b0",
+    "quelle": "Wunderflats",
+    "adresse": "Seestraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 02:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
