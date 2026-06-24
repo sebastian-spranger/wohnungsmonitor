@@ -5669,5 +5669,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.06,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8ee082fbc4d495",
+    "titel": "NEU Exklusive 3-Zimmer-Gartenwohnung im Arnulfpark mit West-Terrasse, 2 Bädern und Stellplatz München - Maxvorstadt",
+    "preis_warm": 1872.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40117391",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 10:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
