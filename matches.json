@@ -5795,5 +5795,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b1fc40673c16d",
+    "titel": "Komfortable Wohnung in München in einer angesehenen Gegend",
+    "preis_warm": 500.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/komfortable-wohnung-in-muenchen-in-einer-angesehenen-gegend/3443268096-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 17:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b8160451c4478",
+    "titel": "2-Zimmer-Wohnung mit Balkon in der Maxvorstadt",
+    "preis_warm": 1915.0,
+    "groesse": 58.91,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-mit-balkon-in-der-maxvorstadt/3419118220-203-16339",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 17:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
