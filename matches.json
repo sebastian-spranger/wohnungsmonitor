@@ -5885,5 +5885,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.65,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fad1bddc938ec6",
+    "titel": "Von privat: attraktive 2Zimmer Wohnung in Giesing",
+    "preis_warm": 1350.0,
+    "groesse": 59.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/133922079",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gozbertstraße 5, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 23:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.09,
+    "verfuegbar_ab": ""
   }
 ]
