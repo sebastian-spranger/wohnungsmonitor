@@ -5561,5 +5561,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 1.0,
     "verfuegbar_ab": "2026-07-14"
+  },
+  {
+    "id": "66a738932437ac",
+    "titel": "Ruhiges sonniges 1-Zimmer Apartment mit Balkon in Bogenhausen",
+    "preis_warm": 1400.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/164814431",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Normannenplatz 2, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 05:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.79,
+    "verfuegbar_ab": ""
   }
 ]
