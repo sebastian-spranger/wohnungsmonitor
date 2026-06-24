@@ -5615,5 +5615,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.48,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4ab7d82946f16e",
+    "titel": "2 Zimmer  Dach-Wohnung",
+    "preis_warm": 1980.0,
+    "groesse": 77.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/162258794",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Adalberstr. 38, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "df713952895c2f",
+    "titel": "U-BAHN-NÄHE! SCHÖNE 3-ZI.-WHG. MIT LOGGIA IN MÜNCHEN-LAIM",
+    "preis_warm": 1728.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168816008",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Burgkmairstr. 15, Altstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
