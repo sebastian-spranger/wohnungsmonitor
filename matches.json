@@ -5687,5 +5687,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4bf85877426110",
+    "titel": "Maisonette mit Dachterrasse, Balkon und zentraler Heizung in München – Rumfordstraße",
+    "preis_warm": 2143.57,
+    "groesse": 94.6,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168818401",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rumfordstraße 36-38, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 10:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.42,
+    "verfuegbar_ab": ""
   }
 ]
