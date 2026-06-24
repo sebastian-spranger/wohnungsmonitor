@@ -5597,5 +5597,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fc633be3067287",
+    "titel": "Exklusive 3-Zimmer-Gartenwohnung im Arnulfpark mit West-Terrasse, 2 Bädern und Stellplatz",
+    "preis_warm": 2172.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168777317",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Marlene-Dietrich-Straße 13, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 07:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.48,
+    "verfuegbar_ab": ""
   }
 ]
