@@ -5741,5 +5741,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4cadf71a5a4c62",
+    "titel": "AUFRECHT *MODERN & RUHIG* - Einbauküche, toller Balkon, Flair",
+    "preis_warm": 1530.0,
+    "groesse": 53.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168823522",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 14:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "0b85349b5e53d3",
+    "titel": "BEFRISTETE Untermiete 29.07. - 09.10.2026 | MAXVORSTADT",
+    "preis_warm": 1600.0,
+    "groesse": 68.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/140914297",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 14:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
