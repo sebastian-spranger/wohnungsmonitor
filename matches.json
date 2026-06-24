@@ -5723,5 +5723,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3e2c540e908107",
+    "titel": "3 Zimmer Wohnung in München Maxvorstadt",
+    "preis_warm": 1070.0,
+    "groesse": 58.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168821072",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 13:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
