@@ -5705,5 +5705,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.42,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1c9fb3a79299f7",
+    "titel": "2 Zimmerwohnung Westend",
+    "preis_warm": 1170.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmerwohnung-westend/3443016897-203-16394",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
