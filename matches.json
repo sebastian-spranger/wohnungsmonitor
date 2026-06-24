@@ -5777,5 +5777,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4597cdfcc314f2",
+    "titel": "Kernsaniert und zentraler 2-Zimmer-Wohntraum",
+    "preis_warm": 1378.0,
+    "groesse": 61.23,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/kernsaniert-und-zentraler-2-zimmer-wohntraum/3329634004-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.06. 14:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
