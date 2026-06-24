@@ -5651,5 +5651,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "99df2d034c07fb",
+    "titel": "Ruhige, außergewöhnliche 2-Zimmer-Wohnung in der Nähe zum Heimeranplatz (München)",
+    "preis_warm": 2100.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168470151",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ridlerstraße 29a, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "24.06. 10:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.06,
+    "verfuegbar_ab": ""
   }
 ]
