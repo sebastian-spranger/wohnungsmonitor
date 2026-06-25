@@ -6263,5 +6263,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.19,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "afc5bf77867c10",
+    "titel": "Helle, kürzlich, sanierte 3 Raum Wohnung mit großem Balkon! Giesing!",
+    "preis_warm": 1980.0,
+    "groesse": 73.2,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168854084",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Fischbachauerstraße 14, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 23:59",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.99,
+    "verfuegbar_ab": ""
   }
 ]
