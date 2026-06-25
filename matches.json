@@ -6029,5 +6029,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.96,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fe934a701bd2c0",
+    "titel": "Großzügige Altbauwohnung am Rosenheimer Platz",
+    "preis_warm": 1750.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/grosszuegige-altbauwohnung-am-rosenheimer-platz/3443606299-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.06. 09:48",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
