@@ -6065,5 +6065,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.66,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4212dfde3370b1",
+    "titel": "3 Zimmer Wohnung in Maxvorstadt",
+    "preis_warm": 1160.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168840829",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 11:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "ed62c70644bbef",
+    "titel": "Möbliert: Helle 2‑Zimmer Wohnung in ruhiger, grüner Lage  ",
+    "preis_warm": 1750.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168840848",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 11:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
