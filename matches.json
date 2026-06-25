@@ -6227,5 +6227,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.11,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b04ec5f35f281b",
+    "titel": "AB MITTE JULI: 2-Zimmer-Wohnung in absoluter Traumlage",
+    "preis_warm": 1600.0,
+    "groesse": 67.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168851812",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 20:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
