@@ -6047,5 +6047,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e3b1be253c9698",
+    "titel": "Großzügige Altbauwohnung am Rosenheimer Platz",
+    "preis_warm": 2020.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168838349",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Franziskaner Straße 3, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 09:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.66,
+    "verfuegbar_ab": ""
   }
 ]
