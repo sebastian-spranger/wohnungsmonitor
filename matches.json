@@ -6101,5 +6101,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f06a8022a4941d",
+    "titel": "NEU Lichtdurchflutete Altbauwohnung mit Balkon in Bestlage der Isarvorstadt München - Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1440.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40121964",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Ludwigsvorstadt-Isarvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 11:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
