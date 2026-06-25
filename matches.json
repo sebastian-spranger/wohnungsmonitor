@@ -6209,5 +6209,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "312ea335e13b7f",
+    "titel": "2,5-Zimmer-Wohnung in Sendling",
+    "preis_warm": 1650.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168850088",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ganghoferstraße 83, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 17:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.11,
+    "verfuegbar_ab": ""
   }
 ]
