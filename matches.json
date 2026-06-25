@@ -5993,5 +5993,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b5ebb3a714d467",
+    "titel": "AIGNER - Großzügig geschnittene 2-Zimmer Wohnung im Lehel!",
+    "preis_warm": 2100.0,
+    "groesse": 70.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168834861",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Lehel, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 07:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.93,
+    "verfuegbar_ab": ""
   }
 ]
