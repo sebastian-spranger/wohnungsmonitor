@@ -6011,5 +6011,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "132493bd28f10e",
+    "titel": "1 Zimmer in 2er-WG in Schwabing (LMU/Allianz/RE) - nur für 1 Person",
+    "preis_warm": 1065.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168833527",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ohmstraße 12, Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 09:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.96,
+    "verfuegbar_ab": ""
   }
 ]
