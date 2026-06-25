@@ -6119,5 +6119,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3cfc84f69558ea",
+    "titel": "NEU 3 Zimmer Wohnung in Maxvorstadt München - Maxvorstadt",
+    "preis_warm": 920.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40123054",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.06. 13:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
