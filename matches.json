@@ -6137,5 +6137,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f9cdd5baef9876",
+    "titel": "+ Maxvorstadt + am Alten Nordfriedhof + 2-Zimmer-Wohnung +",
+    "preis_warm": 1500.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168792695",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 13:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
