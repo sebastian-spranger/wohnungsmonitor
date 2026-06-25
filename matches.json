@@ -6173,5 +6173,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "56daaee452d5b4",
+    "titel": "2 Zimmer Wohnung in München für 400,- €",
+    "preis_warm": 400.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-muenchen-fuer-400-/3443915230-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.06. 16:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
