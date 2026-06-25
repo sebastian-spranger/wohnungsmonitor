@@ -6245,5 +6245,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6e980a1d82c244",
+    "titel": "Dein Zuhause in Schwabing – mit Pool, Dachterrasse und Haustier? Klar.",
+    "preis_warm": 1990.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/167927283",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleißheimer Str. 182, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 22:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.19,
+    "verfuegbar_ab": ""
   }
 ]
