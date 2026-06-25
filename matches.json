@@ -5975,5 +5975,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cb2e8d0d2db650",
+    "titel": "Saniert, zentral, ruhig, hoher Freizeitwert",
+    "preis_warm": 1550.0,
+    "groesse": 67.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/168783452",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Roter-Turm-Platz 1, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "25.06. 07:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.41,
+    "verfuegbar_ab": ""
   }
 ]
