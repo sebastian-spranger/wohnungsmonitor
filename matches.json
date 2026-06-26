@@ -6335,5 +6335,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.47,
     "verfuegbar_ab": "2026-06-26"
+  },
+  {
+    "id": "cbc3931fe5ce61",
+    "titel": "Schöne Wohnung in München – 65 m²",
+    "preis_warm": 1600.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-wohnung-in-muenchen-65-m-/3444174726-203-16392",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81377 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 08:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
