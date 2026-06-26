@@ -6353,5 +6353,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a745724fa92334",
+    "titel": "Klein, aber fein! Teilmöblierte Altbauwohnung in Schwanthalerhöhe",
+    "preis_warm": 1400.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/99617573",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Astallerstraße 4, Schwanthalerhöhe, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 08:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.35,
+    "verfuegbar_ab": ""
   }
 ]
