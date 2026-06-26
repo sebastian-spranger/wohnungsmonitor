@@ -6479,5 +6479,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c8f8b5f15bf3c1",
+    "titel": "Charmante 2-Zimmer-Altbauwohnung 51 m²",
+    "preis_warm": 1750.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/charmante-2-zimmer-altbauwohnung-51-m-/3444343261-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 11:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
