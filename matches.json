@@ -6605,5 +6605,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d6e701de49bc65",
+    "titel": "Dachgeschosswohnung mit 2.5 Zimmern · München-Neuhausen · 7084",
+    "preis_warm": 2150.0,
+    "groesse": 45.0,
+    "zimmer": 2.5,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-neuhausen-7084",
+    "quelle": "Mr. Lodge",
+    "adresse": "Donnersbergerstraße, Neuhausen, 80634 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 15:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.51,
+    "verfuegbar_ab": ""
   }
 ]
