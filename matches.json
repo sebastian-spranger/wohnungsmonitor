@@ -6389,5 +6389,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2acbf5a7610495",
+    "titel": "Voll möblierte, moderne 1,5-Zimmer-Wohnung mit Wintergarten in Bogenhausen",
+    "preis_warm": 1700.0,
+    "groesse": 52.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/168868713",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 08:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
