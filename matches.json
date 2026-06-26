@@ -6731,5 +6731,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "02ca5116cef080",
+    "titel": "Möblierte 2-Zimmer-Wohnung mit Tiefgaragenstellplatz",
+    "preis_warm": 1900.0,
+    "groesse": 67.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-mit-tiefgaragenstellplatz/3444702070-203-16360",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 22:00",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
