@@ -6299,5 +6299,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b258ccd9f1e45e",
+    "titel": "Wohnung zu Vermieten",
+    "preis_warm": 600.0,
+    "groesse": 70.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-zu-vermieten/3444085457-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 00:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
