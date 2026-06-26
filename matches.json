@@ -6551,5 +6551,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.76,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c844b19ac816ff",
+    "titel": "WEIGERT: Stilvolle Altbauwohnung mit Süd-Balkon und Kachelofen – Wohnen im Herzen der Maxvorstadt",
+    "preis_warm": 2100.0,
+    "groesse": 83.35,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/weigert-stilvolle-altbauwohnung-mit-sued-balkon-und-kachelofen-wohnen-im-herzen-der-maxvorstadt/3444406887-203-6441",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 13:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.04,
+    "verfuegbar_ab": ""
   }
 ]
