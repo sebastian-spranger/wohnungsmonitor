@@ -6641,5 +6641,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ddb50c1b8ae347",
+    "titel": "Stylishe & lichtdurchflutete 4-Zi-Wohnung in München-Giesing! Top eingerichtet inkl. Internet & TV!",
+    "preis_warm": 1950.0,
+    "groesse": 76.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stylishe-lichtdurchflutete-4-zi-wohnung-in-muenchen-giesing-top-eingerichtet-inkl-internet-tv-/3433717517-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 15:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
