@@ -6317,5 +6317,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7b7d754b235849",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1550.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/26syk4r7apzb",
+    "quelle": "ImmoWelt",
+    "adresse": "Schleißheimer Straße 181 a, Schwabing-West, München (80797)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 04:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": "2026-06-26"
   }
 ]
