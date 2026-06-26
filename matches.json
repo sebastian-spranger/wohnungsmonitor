@@ -6533,5 +6533,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4f15d060409091",
+    "titel": "Wohnung mit 2 Zimmern · München-Neuhausen · 13100",
+    "preis_warm": 2150.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-neuhausen-13100",
+    "quelle": "Mr. Lodge",
+    "adresse": "Volkartstraße, Neuhausen, 80634 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 12:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.76,
+    "verfuegbar_ab": ""
   }
 ]
