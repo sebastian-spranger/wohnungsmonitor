@@ -6425,5 +6425,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b9b09366a1a5e8",
+    "titel": "2,5-Zimmer-Wohnung gehoben, sehr ruhig, möbliert, Obergiesing-Fasangarten  ",
+    "preis_warm": 2130.0,
+    "groesse": 56.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168838034",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 10:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
