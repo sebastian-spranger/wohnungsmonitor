@@ -6623,5 +6623,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c45ad63198b18d",
+    "titel": "2-Zimmer-Wohnung zur Untermiete Juli bis September",
+    "preis_warm": 1500.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-zur-untermiete-juli-bis-september/3444469546-203-6440",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.06. 15:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
