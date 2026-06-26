@@ -6515,5 +6515,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "34b5edf6b96273",
+    "titel": "Moderne 2-Zimmer-Wohnung mit eigenem Privatgarten in Denning",
+    "preis_warm": 1940.0,
+    "groesse": 79.87,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168875483",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 12:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
