@@ -6443,5 +6443,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ba2b021b213a9f",
+    "titel": "NEU Maxvorstadt: Helle 3-Zimmer-Wohnung mit Balkon München - Maxvorstadt",
+    "preis_warm": 1900.0,
+    "groesse": 90.0,
+    "zimmer": 3.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40125337",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "c0cdbd758ae300",
+    "titel": "NEU Klein, aber fein! Teilmöblierte Altbauwohnung in Schwanthalerhöhe München - Schwanthalerhöhe",
+    "preis_warm": 1200.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40125350",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Schwanthalerhöhe Kaltmiete",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "26.06. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
