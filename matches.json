@@ -6929,5 +6929,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "47c238c08c87c0",
+    "titel": "Wohnung mit Garten und großzügigem Balkon, Stellplatz, ruhig",
+    "preis_warm": 1450.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-mit-garten-und-grosszuegigem-balkon-stellplatz-ruhig/3445062145-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 12:59",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
