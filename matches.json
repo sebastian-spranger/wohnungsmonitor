@@ -6785,5 +6785,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.32,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0ed45854bb21d3",
+    "titel": "Hübsche 3-Zimmer Wohnung mit Balkon in Schwabing-West. ",
+    "preis_warm": 1690.0,
+    "groesse": 63.26,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168888572",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klausingweg 2, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 06:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.63,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "0dd0ca1daeb71e",
+    "titel": "Gemütliche 2-Zimmer-Wohnung in Schwabing-West",
+    "preis_warm": 1480.0,
+    "groesse": 52.56,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168888550",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klausingweg 4, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 06:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.65,
+    "verfuegbar_ab": ""
   }
 ]
