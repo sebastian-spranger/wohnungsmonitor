@@ -7019,5 +7019,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1a15e4a047dc22",
+    "titel": "Familienfreundliche 3-Zimmer-Wohnung mit Südbalkon in Bogenhausen/Englschalking",
+    "preis_warm": 1740.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168895399",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 17:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
