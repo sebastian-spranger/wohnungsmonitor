@@ -6857,5 +6857,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "23d7b733ba387b",
+    "titel": "2-Zimmer-Wohnung mit Balkon in der Maxvorstadt",
+    "preis_warm": 1433.4,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168842587",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 10:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
