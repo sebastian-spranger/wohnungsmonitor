@@ -6839,5 +6839,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "40898812f35470",
+    "titel": "Top-sanierte 4-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 1674.0,
+    "groesse": 76.9,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/168889000",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 07:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
