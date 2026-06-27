@@ -6893,5 +6893,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bf35cb4bfb2351",
+    "titel": "WG! Erstbezug 3 er-WG in München Milbertshofen",
+    "preis_warm": 795.0,
+    "groesse": 55.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-erstbezug-3-er-wg-in-muenchen-milbertshofen/3444323257-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 11:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
