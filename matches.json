@@ -7037,5 +7037,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4c51065a535dc2",
+    "titel": "2-Zimmer mit Balkon in Schwabing-West",
+    "preis_warm": 2100.0,
+    "groesse": 74.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168897362",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hörwarthstr. 18, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 22:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.6,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "088663ae708281",
+    "titel": "2-Zimmer mit Balkon in Schwabing-West",
+    "preis_warm": 1800.0,
+    "groesse": 74.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-mit-balkon-in-schwabing-west/3445396370-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 22:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
