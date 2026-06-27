@@ -6749,5 +6749,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5f75823377618c",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1592.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/4e3bf4ab-586a-4f11-891e-b83c204a9dbf",
+    "quelle": "ImmoWelt",
+    "adresse": "Obergiesing, München (81549)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
