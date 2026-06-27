@@ -6875,5 +6875,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1dca65946552e0",
+    "titel": "Schickes Apartment in München",
+    "preis_warm": 1780.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/fantastic-loft-muenchen/6a3edf6e02c9f290fe39e46d",
+    "quelle": "Wunderflats",
+    "adresse": "Altheimer Eck, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.43,
+    "verfuegbar_ab": ""
   }
 ]
