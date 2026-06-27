@@ -6983,5 +6983,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1237e71be0406f",
+    "titel": "+++ Hochwertige Neubauwohnung mit Balkon in zentraler Lage Münchens +++",
+    "preis_warm": 1599.0,
+    "groesse": 57.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/-hochwertige-neubauwohnung-mit-balkon-in-zentraler-lage-muenchens-/3394095466-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.06. 14:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
