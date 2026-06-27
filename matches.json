@@ -6821,5 +6821,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.65,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "17a55ab8b90c48",
+    "titel": "Untermiete im Glockenbach, ab jetzt bis Herbst (flexibel)",
+    "preis_warm": 2200.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168888967",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "27.06. 07:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
