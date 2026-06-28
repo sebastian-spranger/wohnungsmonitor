@@ -7217,5 +7217,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7707fdbb125329",
+    "titel": "Wohnung mit 2 Zimmern · München-Schwabing-West · 14901",
+    "preis_warm": 1750.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-schwabing-west-14901",
+    "quelle": "Mr. Lodge",
+    "adresse": "Adams-Lehmann-Straße, Schwabing-West, 80797 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "28.06. 14:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.18,
+    "verfuegbar_ab": ""
   }
 ]
