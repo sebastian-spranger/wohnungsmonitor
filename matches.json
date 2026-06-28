@@ -7271,5 +7271,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2e5cb875da287d",
+    "titel": "NEU Schöne helle 2-Zimmer-Wohnung in der Maxvorstadt München - Maxvorstadt",
+    "preis_warm": 1400.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.wohnungsboerse.net/immodetail/40132419",
+    "quelle": "Wohnungsboerse",
+    "adresse": "München - Maxvorstadt Kaltmiete",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 17:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
