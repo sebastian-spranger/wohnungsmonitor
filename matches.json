@@ -7307,5 +7307,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8bdf2824004ea2",
+    "titel": "Wundervolles, großartiges Zuhause in Parknähe",
+    "preis_warm": 1950.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/spacious-and-gorgeous-apartment-near-school/6a3efaeb40fe7c61f0c6a6df",
+    "quelle": "Wunderflats",
+    "adresse": "Auerfeldstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "28.06. 21:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.81,
+    "verfuegbar_ab": ""
   }
 ]
