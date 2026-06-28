@@ -7235,5 +7235,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.18,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "73f2b2c21f019c",
+    "titel": "Befristet: Wohnung in der Au - ab sofort bis 30.08.2026",
+    "preis_warm": 1500.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/befristet-wohnung-in-der-au-ab-sofort-bis-30-08-2026/3445952627-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.06. 14:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": "2026-06-28"
   }
 ]
