@@ -7181,5 +7181,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "04761c7694faee",
+    "titel": "3-Zimmer-Wohnung in Bogenhausen frei ab 1.08. ",
+    "preis_warm": 2173.0,
+    "groesse": 84.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168903201",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 13:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "e74b7db24e5675",
+    "titel": "2 Zimmer in Obergiesing",
+    "preis_warm": 1260.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168904551",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 13:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
