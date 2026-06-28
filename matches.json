@@ -7163,5 +7163,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b881241b41ab37",
+    "titel": "Charmante, renovierte, möblierte 2-Zimmer-Altbauwohnung mit Balkon am Schwabinger Tor",
+    "preis_warm": 1750.0,
+    "groesse": 53.67,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/146853449",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 12:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
