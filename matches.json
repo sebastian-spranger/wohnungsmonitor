@@ -7109,5 +7109,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.24,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bdf5a8f2dd8282",
+    "titel": "Furnished 2-Room Apartment in Ludwigpalais for Sublet – Available from 01.08.2026",
+    "preis_warm": 2200.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168902479",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigstr. 6, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.95,
+    "verfuegbar_ab": ""
   }
 ]
