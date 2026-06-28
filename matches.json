@@ -7091,5 +7091,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.59,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a83b0afbdb2a3b",
+    "titel": "Wohnen im Münchner Süden Renovierte 3-Zimmer Wohnung mit Südbalkon und Bergblick",
+    "preis_warm": 1321.0,
+    "groesse": 63.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168902074",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Lissi-Kaeser-Str. 22, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 09:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.24,
+    "verfuegbar_ab": ""
   }
 ]
