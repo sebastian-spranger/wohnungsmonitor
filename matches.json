@@ -7289,5 +7289,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1b197d827c70cc",
+    "titel": "WG-Zimmer in wunderschöner 3-Zimmer-Frauen WG im beliebten Westend",
+    "preis_warm": 750.0,
+    "groesse": 100.2,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-zimmer-in-wunderschoener-3-zimmer-frauen-wg-im-beliebten-westend/3367493921-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.06. 18:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
