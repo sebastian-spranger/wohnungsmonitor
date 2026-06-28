@@ -7127,5 +7127,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.95,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1588dfabc91449",
+    "titel": "Terrassen-Wohnung am Isarhochufer, Privatgarten, für Single",
+    "preis_warm": 1195.0,
+    "groesse": 57.24,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168903083",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 11:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
