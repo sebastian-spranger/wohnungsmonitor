@@ -7145,5 +7145,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d1c706d655df4b",
+    "titel": "Ruhige, neu renovierte 2 Zimmer Wohnung mit U Bahn Anschluss",
+    "preis_warm": 1205.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/148431727",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "28.06. 12:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
