@@ -7631,5 +7631,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4f8d57015cce46",
+    "titel": "Nachmieter für Wohnung am Stemmerhof (Sendling) gesucht",
+    "preis_warm": 1250.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-fuer-wohnung-am-stemmerhof-sendling-gesucht/3446652758-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 14:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
