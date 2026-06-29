@@ -7379,5 +7379,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e87c4447c6efa4",
+    "titel": "Helle EG-Wohnung mit eigenem Garten & Garage in Johanneskirchen",
+    "preis_warm": 1377.0,
+    "groesse": 68.34,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168841032",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f1d91cae8dbef8",
+    "titel": "Zuhause mit 2,5 Zimmern in München-Ramersdorf",
+    "preis_warm": 1800.0,
+    "groesse": 62.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168921629",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Chiemgaustraße 119, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.72,
+    "verfuegbar_ab": ""
   }
 ]
