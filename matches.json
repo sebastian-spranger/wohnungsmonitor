@@ -7415,5 +7415,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e2dbbd68817871",
+    "titel": "Großzügige 3-Zimmer-Altbauwohnung mit Balkon in Neuhausen",
+    "preis_warm": 2192.0,
+    "groesse": 90.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168923978",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Leonrodstr. 45, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 10:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.37,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "8424b3e83eeeb0",
+    "titel": "ZEITMIETVERTRAG bis 28.02.2029 ! Direkt vom Eigentümer",
+    "preis_warm": 1155.0,
+    "groesse": 59.16,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168923519",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Brahmsstr. 25, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 10:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.81,
+    "verfuegbar_ab": ""
   }
 ]
