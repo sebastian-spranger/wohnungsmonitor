@@ -7487,5 +7487,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.15,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a042e41932e2d4",
+    "titel": "Befristete 2-Zimmer-Wohnung mit Balkon und Blick ins Grüne",
+    "preis_warm": 1760.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168926132",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Pestalozzistr. 22, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.99,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "9128802c958795",
+    "titel": "2-Zimmer-Wohnung in zentraler Münchener Innenstadtlage mit Aufzug",
+    "preis_warm": 1556.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168926066",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Herzogspitalstr. 14/16, Altstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.6,
+    "verfuegbar_ab": ""
   }
 ]
