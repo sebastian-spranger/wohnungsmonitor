@@ -7793,5 +7793,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3e0f0a3238bc82",
+    "titel": "Zwischenmiete Westend - 4 Zimmer Whg, Sept - Mitte Dez 2026",
+    "preis_warm": 2200.0,
+    "groesse": 93.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zwischenmiete-westend-4-zimmer-whg-sept-mitte-dez-2026/3447004265-203-27035",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 21:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
