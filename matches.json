@@ -7775,5 +7775,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7085cca3b6bdb2",
+    "titel": "Nachmieter gesucht - 2,5-Zimmerwohnung nahe Volkstheater",
+    "preis_warm": 1400.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-gesucht-2-5-zimmerwohnung-nahe-volkstheater/3446860931-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 19:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
