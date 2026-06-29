@@ -7703,5 +7703,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.55,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "347c4064f40076",
+    "titel": "2-Zimmer-Wohnung in der Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1371.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168936319",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Thalkirchner Str 55, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 17:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.09,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "26802996c7c537",
+    "titel": "🌼Wohnen in Isarnähe - ab dem 1. August - leider WG ungeeignet!",
+    "preis_warm": 1360.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168935171",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sommerstraße 37, Au, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 17:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.01,
+    "verfuegbar_ab": ""
   }
 ]
