@@ -7469,5 +7469,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e789fcb1a9ad2c",
+    "titel": "BEFRISTETE Untermiete 29|07 - 09|10|2026 | MAXVORSTADT",
+    "preis_warm": 1600.0,
+    "groesse": 68.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/befristete-untermiete-29-07-09-10-2026-maxvorstadt/3446486367-203-9616",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.15,
+    "verfuegbar_ab": ""
   }
 ]
