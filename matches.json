@@ -7523,5 +7523,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.6,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c053fb9f2cbda4",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1790.0,
+    "groesse": 58.0,
+    "zimmer": 2.5,
+    "url": "https://www.immowelt.de/expose/266libjgv4lj",
+    "quelle": "ImmoWelt",
+    "adresse": "Leopoldstraße 109, Schwabing-Freimann, München (80802)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 12:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.39,
+    "verfuegbar_ab": "2026-06-29"
   }
 ]
