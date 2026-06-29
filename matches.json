@@ -7667,5 +7667,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c57b54c1c8c1ea",
+    "titel": "Sanierte- 2-Zimmer-Altbauwohnung im Erdgeschoss",
+    "preis_warm": 1600.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168933679",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 15:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
