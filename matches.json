@@ -7325,5 +7325,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.81,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ec1419c17d7fb7",
+    "titel": "Designer-Wohnung in Plauen",
+    "preis_warm": 800.0,
+    "groesse": 97.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/designer-wohnung-in-plauen/3446379671-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.06. 07:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
