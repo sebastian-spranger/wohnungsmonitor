@@ -7343,5 +7343,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fe1c1853910d70",
+    "titel": "2 Zimmerwohnung mit Balkon in Untergiesing-Harlaching",
+    "preis_warm": 1360.0,
+    "groesse": 56.8,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168810650",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Säbenerstr. 13, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 08:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.37,
+    "verfuegbar_ab": ""
   }
 ]
