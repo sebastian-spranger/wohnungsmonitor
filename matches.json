@@ -7829,5 +7829,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bec63967d8d541",
+    "titel": "Vermiete Wohnung 75 qm neben Giesing Bahnhofsplatz",
+    "preis_warm": 1950.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168940040",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schlierseestraße 000, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 22:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.86,
+    "verfuegbar_ab": ""
   }
 ]
