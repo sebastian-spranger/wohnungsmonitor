@@ -7757,5 +7757,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6fa54adfb4c48d",
+    "titel": "Renovierte, helle 63 qm 2 ZKB in ruhigem Haus und grünem Umfeld",
+    "preis_warm": 1800.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168938583",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 18:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
