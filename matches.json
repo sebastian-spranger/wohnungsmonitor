@@ -7613,5 +7613,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.64,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ea0b4a3329a3e2",
+    "titel": "Dachterrassenappartement in München-Johanneskirchen",
+    "preis_warm": 1410.0,
+    "groesse": 59.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/168931125",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 13:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
