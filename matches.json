@@ -7685,5 +7685,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "69737be6f293ec",
+    "titel": "\"Haidhausen\" Wunderschöne 1,5 - Zimmer - Wohnung mit Südwest Balkon",
+    "preis_warm": 995.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168924035",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Haidhauserstraße 18, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "29.06. 16:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.55,
+    "verfuegbar_ab": ""
   }
 ]
