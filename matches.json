@@ -8153,5 +8153,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "208e444d070ca1",
+    "titel": "Helle teilmöblierte 2-Zi.-Whg. mit Westbalkon in BMW-Nähe, EBK",
+    "preis_warm": 1595.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-teilmoeblierte-2-zi-whg-mit-westbalkon-in-bmw-naehe-ebk/3447715769-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "30.06. 21:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
