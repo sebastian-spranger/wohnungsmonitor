@@ -7955,5 +7955,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b6c193bc4bf6a",
+    "titel": "Schöne 2-Zimmer-Wohnung in München / Schwabing OHNE Balkon",
+    "preis_warm": 1230.06,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168954001",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Marschallstr. 12, Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 11:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.08,
+    "verfuegbar_ab": ""
   }
 ]
