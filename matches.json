@@ -7847,5 +7847,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.86,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "97a6107aec08d1",
+    "titel": "Real Schwabing, 2,5 Rooms, in Leopoldstr central but quiet, ready to move. all inclusive (Strom)",
+    "preis_warm": 1990.0,
+    "groesse": 58.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168381341",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Leopoldstraße 109, Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 01:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.39,
+    "verfuegbar_ab": ""
   }
 ]
