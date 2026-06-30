@@ -8081,5 +8081,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.44,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "335ca122e4ad63",
+    "titel": "Hofnaher Balkon mit Blick ins Grüne: 2-Zimmer-Wohnung zur Miete in München-Chiemgaustraße",
+    "preis_warm": 1027.76,
+    "groesse": 46.61,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168962772",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Chiemgaustraße 73, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 16:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
