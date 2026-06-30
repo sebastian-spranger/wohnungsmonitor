@@ -7883,5 +7883,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cea71b7a408860",
+    "titel": "Neuhausen/Maxvorstadt  - Wohnen in hochwertig saniertem Altbau- 3 Zimmer Wohnung mit Balkon",
+    "preis_warm": 1980.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168945998",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 08:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
