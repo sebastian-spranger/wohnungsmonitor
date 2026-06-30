@@ -7865,5 +7865,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.39,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3954ab95d13dc2",
+    "titel": "2-Zimmer - Stilvoll wohnen im Zentrum!",
+    "preis_warm": 2191.66,
+    "groesse": 83.8,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/160399885",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Plattnerstr. 1, Au, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 04:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.04,
+    "verfuegbar_ab": ""
   }
 ]
