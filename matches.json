@@ -7973,5 +7973,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.08,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c5777138d8c048",
+    "titel": "2,5-Zimmer-Wohnung in Berg am Laim",
+    "preis_warm": 1690.0,
+    "groesse": 57.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168954631",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Grafinger Straße 42a, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 12:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.07,
+    "verfuegbar_ab": ""
   }
 ]
