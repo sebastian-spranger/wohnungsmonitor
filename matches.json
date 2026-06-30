@@ -8117,5 +8117,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2df0b07ef61f03",
+    "titel": "Ruhige 2-Zimmer-Altbauwohnung mit Balkon in der Maxvorstadt",
+    "preis_warm": 1710.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/48123202",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schleissheimerstrasse 92B, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 20:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.25,
+    "verfuegbar_ab": ""
   }
 ]
