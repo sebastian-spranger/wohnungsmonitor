@@ -8135,5 +8135,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c543510429d254",
+    "titel": "Stilvolle, möblierte und voll ausgestattete Wohnung mit Westbalkon und freiem Blick über München",
+    "preis_warm": 2100.0,
+    "groesse": 76.9,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvolle-moeblierte-und-voll-ausgestattete-wohnung-mit-westbalkon-und-freiem-blick-ueber-muenchen/3447697535-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "30.06. 20:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
