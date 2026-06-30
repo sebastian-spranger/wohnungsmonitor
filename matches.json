@@ -7991,5 +7991,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.07,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d6472b7b7f16ce",
+    "titel": "Wohnung für Familie 3 zimmer",
+    "preis_warm": 1730.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-fuer-familie-3-zimmer/3447309590-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "30.06. 12:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
