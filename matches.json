@@ -8099,5 +8099,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6edee22b11086b",
+    "titel": "Nachmieter für 3-Zimmer-Wohnung mit Balkon in München",
+    "preis_warm": 1750.0,
+    "groesse": 85.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168964382",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "30.06. 17:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
