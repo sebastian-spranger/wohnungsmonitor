@@ -8531,5 +8531,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "681f5e9fb5b362",
+    "titel": "Exklusive 2-Zimmer-Wohnung mit Balkon und neuer Einbauküche in München",
+    "preis_warm": 2170.0,
+    "groesse": 59.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/145995592",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Müllerstraße 10, Altstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 16:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.5,
+    "verfuegbar_ab": ""
   }
 ]
