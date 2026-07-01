@@ -8189,5 +8189,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.59,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fcaadc48a3e878",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1760.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/c9556b3b-f3ca-4b58-bea2-bdab8be33ba9",
+    "quelle": "ImmoWelt",
+    "adresse": "Maxvorstadt, München (80333)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "01.07. 07:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
