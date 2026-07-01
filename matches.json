@@ -8369,5 +8369,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5b832aee9277c2",
+    "titel": "Komplett sanierte 2,5-Zimmer-Wohnung mit zwei Balkonen",
+    "preis_warm": 1950.0,
+    "groesse": 65.65,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/168977599",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Augustenstraße 41, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 13:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.61,
+    "verfuegbar_ab": ""
   }
 ]
