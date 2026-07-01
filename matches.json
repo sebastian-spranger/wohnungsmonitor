@@ -8423,5 +8423,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a3379dfba9e570",
+    "titel": "Saubere Wohnung zu vermieten",
+    "preis_warm": 925.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/saubere-wohnung-zu-vermieten/3448113804-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "01.07. 13:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
