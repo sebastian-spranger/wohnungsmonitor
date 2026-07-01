@@ -8513,5 +8513,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.59,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "92c6cf81b39e42",
+    "titel": "Helle möblierte Wohnung in M-Obergiesung Nähe U 2",
+    "preis_warm": 1550.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168991385",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Perlacher Str. 13, Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 15:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.72,
+    "verfuegbar_ab": ""
   }
 ]
