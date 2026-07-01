@@ -8261,5 +8261,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b71506e5fe3870",
+    "titel": "Lichtdurchflutete  2-Zimmer-Wohnung mit großem Süd-West Balkon und Tiefgaragenstellplatz ",
+    "preis_warm": 1480.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168885547",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hermann-Weinhauser-Straße xx, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 09:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.97,
+    "verfuegbar_ab": ""
   }
 ]
