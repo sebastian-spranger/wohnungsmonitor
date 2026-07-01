@@ -8477,5 +8477,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.35,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d92c9edbb4df1c",
+    "titel": "Modernisierte 2-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 2060.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168990096",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Volkartstraße 43, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 14:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
