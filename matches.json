@@ -8585,5 +8585,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c6b84e758429bf",
+    "titel": "3-Zimmer-Wohnung mit 2 Balkonen | ca. 68 m² | EBK | Kein Makler - Nachmieter bevorzugt ab 15.07.26",
+    "preis_warm": 1913.81,
+    "groesse": 68.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/167674866",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Kanalstraße 7, Lehel, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 19:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.63,
+    "verfuegbar_ab": "2026-07-15"
   }
 ]
