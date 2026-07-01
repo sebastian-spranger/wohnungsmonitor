@@ -8225,5 +8225,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cc3ef882f86897",
+    "titel": "Altstadtperle – unweit Marienplatz – zur Miete",
+    "preis_warm": 2200.0,
+    "groesse": 81.0,
+    "zimmer": 5.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/altstadtperle-unweit-marienplatz-zur-miete/3447846014-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "01.07. 08:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
