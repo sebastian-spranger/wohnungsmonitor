@@ -8459,5 +8459,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.38,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5572c107b7fecd",
+    "titel": "Obergiesing: DG -Whg. für Individualisten ! 3 Zi. - offener Wohnraum ... Nähe U2",
+    "preis_warm": 2100.0,
+    "groesse": 92.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168759041",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tegernseer Landstraße 47, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 14:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.35,
+    "verfuegbar_ab": ""
   }
 ]
