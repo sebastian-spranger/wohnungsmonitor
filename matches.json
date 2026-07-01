@@ -8387,5 +8387,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c8370818b17246",
+    "titel": "Wohnung mit Balkon - Direkt vom Eigentümer",
+    "preis_warm": 1220.0,
+    "groesse": 56.51,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168988419",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Passauerstr. 4, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 13:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.93,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "06b31cd09bde99",
+    "titel": "Ruhige 2-Zimmer-Wohnung in Haidhausen!",
+    "preis_warm": 1850.0,
+    "groesse": 52.8,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168989215",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 13:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.94,
+    "verfuegbar_ab": ""
   }
 ]
