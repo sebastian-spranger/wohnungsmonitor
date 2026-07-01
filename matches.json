@@ -8351,5 +8351,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.9,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6a01e86de9f364",
+    "titel": "Wohnen mit Charakter: 3-Zimmer-Wohnung in Ramersdorf",
+    "preis_warm": 1825.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/168985716",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 12:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
