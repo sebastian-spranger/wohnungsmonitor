@@ -8333,5 +8333,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.4,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "30f643645ddb66",
+    "titel": "Schöne 4-Zimmer-Wohnung in zentraler Lage von Neuhausen",
+    "preis_warm": 1947.09,
+    "groesse": 85.7,
+    "zimmer": 3.5,
+    "url": "https://www.immobilienscout24.de/expose/168985075",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Dachauer Str. 229, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 11:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.9,
+    "verfuegbar_ab": ""
   }
 ]
