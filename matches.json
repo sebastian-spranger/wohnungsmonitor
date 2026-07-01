@@ -8495,5 +8495,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f4ac8593734752",
+    "titel": "Gemütliche 2-Zimmer-Wohnung Altbauwohnung in Obergiesing",
+    "preis_warm": 2082.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168991298",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Kesselbergstraße 2, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 15:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.59,
+    "verfuegbar_ab": ""
   }
 ]
