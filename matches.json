@@ -8603,5 +8603,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.63,
     "verfuegbar_ab": "2026-07-15"
+  },
+  {
+    "id": "f5e160a48b2540",
+    "titel": "Charmante Wohnung mit Balkon in Neuhausen-Nymphenburg ab 01.08.",
+    "preis_warm": 1520.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168996918",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 20:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
