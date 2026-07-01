@@ -8315,5 +8315,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "465adc0beff4d0",
+    "titel": "WG ZIMMER: Moderne WG in München Schwabing  mit stilvoller Ausstattung",
+    "preis_warm": 830.0,
+    "groesse": 65.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/167899412",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rheinstraße 1, Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 10:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.4,
+    "verfuegbar_ab": ""
   }
 ]
