@@ -8207,5 +8207,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "04f1b9a85308e9",
+    "titel": "Zentrale 2-Zi Whg, Wintergarten, SW Balkon z. Innenhof, Haidhausen / Obergiesing",
+    "preis_warm": 1350.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168967481",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Balanstr. 98, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "01.07. 07:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
