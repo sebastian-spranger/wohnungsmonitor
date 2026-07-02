@@ -8891,5 +8891,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1442ad739cdb0b",
+    "titel": "AIGNER - Kürzlich Sanierte 2-Zimmer-Wohnung mit Ost-Balkon nahe der Münchner Freiheit",
+    "preis_warm": 1995.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169018375",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 15:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
