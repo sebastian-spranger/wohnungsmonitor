@@ -8945,5 +8945,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "94598a09045fac",
+    "titel": "*Zwischenmiete* Wohnung am Isartor - ruhige Innenhof Lage",
+    "preis_warm": 2050.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/-zwischenmiete-wohnung-am-isartor-ruhige-innenhof-lage/3449106130-203-16349",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 17:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
