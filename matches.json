@@ -8927,5 +8927,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.76,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f55ab3eb059962",
+    "titel": "Möbliert: Großzügige Designerwohnung: Renoviert mit Liebe zum Detail ",
+    "preis_warm": 2150.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169021344",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 17:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
