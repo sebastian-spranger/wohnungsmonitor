@@ -8675,5 +8675,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.31,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ada2bdb0cd269d",
+    "titel": "Charmante, ruhige Wohnung mitten in München",
+    "preis_warm": 1750.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen.90.2.1.0.html?asset_id=13707632&pu=22446810&sort_column=1&sort_order=0",
+    "quelle": "WG-Gesucht",
+    "adresse": "Montsalvatstraße, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 05:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.74,
+    "verfuegbar_ab": "2026-07-02"
   }
 ]
