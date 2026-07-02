@@ -8657,5 +8657,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "00692287818db3",
+    "titel": "2 Zi.-Wohnung mit Wohnküche",
+    "preis_warm": 1260.0,
+    "groesse": 64.01,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169001137",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Pilgersheimer Str. 29, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 05:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.31,
+    "verfuegbar_ab": ""
   }
 ]
