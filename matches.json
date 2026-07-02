@@ -8909,5 +8909,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c494e3418c5cbc",
+    "titel": "Sonnige & Ruhige Zweizimmerwohnung Nähe Innenstadt",
+    "preis_warm": 1750.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/sunny-and-quiet-two-room-apartment-near-city-center/6a3cb383962de43df877a27f",
+    "quelle": "Wunderflats",
+    "adresse": "Hochstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 17:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.76,
+    "verfuegbar_ab": ""
   }
 ]
