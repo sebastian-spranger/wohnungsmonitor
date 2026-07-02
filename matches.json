@@ -8999,5 +8999,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7458b8535668f9",
+    "titel": "Sublet 3 Rooms Apartment in Maxvorstadt",
+    "preis_warm": 2180.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169023187",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schraudolphstraße 10, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 21:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.64,
+    "verfuegbar_ab": ""
   }
 ]
