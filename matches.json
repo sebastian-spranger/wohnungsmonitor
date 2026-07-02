@@ -8837,5 +8837,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.15,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "db65bbedac8dfb",
+    "titel": "Wohlfühlatmosphäre -  hübsch renovierte 2 Zimmer-Wohnung im 1. OG mit Westbalkon",
+    "preis_warm": 1350.0,
+    "groesse": 57.33,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169011213",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 12:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
