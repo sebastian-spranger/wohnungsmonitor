@@ -8711,5 +8711,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.2,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f8a0bc55666923",
+    "titel": "Gut geschnittene 2-Zimmer-Wohnung in Neuhausen im Hochparterre",
+    "preis_warm": 1565.38,
+    "groesse": 72.91,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/129255284",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Renatastraße 15, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 08:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.74,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "78ea59f98c7711",
+    "titel": "2-Zimmer-Wohnung im Hochparterre in Neuhausen",
+    "preis_warm": 1105.37,
+    "groesse": 54.83,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/42585306",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Renatastraße 9, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 08:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.73,
+    "verfuegbar_ab": ""
   }
 ]
