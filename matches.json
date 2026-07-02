@@ -8873,5 +8873,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "be3670d1611a78",
+    "titel": "Geschmackvolle, 2-Raum-Hochparterre-Wohnung mit geh. Ausstattung in München Haidhausen, für 6 Monate",
+    "preis_warm": 1950.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/160849866",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Metzstraße 34, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 13:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.93,
+    "verfuegbar_ab": ""
   }
 ]
