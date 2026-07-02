@@ -8693,5 +8693,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.74,
     "verfuegbar_ab": "2026-07-02"
+  },
+  {
+    "id": "bf2f0cdb98c063",
+    "titel": "modernisierte 2-Zimmer-Wohnung in München Bogenhausen",
+    "preis_warm": 1925.46,
+    "groesse": 85.24,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169005050",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Amberger Str. 11, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 08:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.2,
+    "verfuegbar_ab": ""
   }
 ]
