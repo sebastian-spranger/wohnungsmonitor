@@ -8819,5 +8819,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.86,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5d1b59a69d5a4c",
+    "titel": "Traumhafte EG-Wohnung | 100 m² Garten | Fußbodenheizung | TG",
+    "preis_warm": 1650.0,
+    "groesse": 80.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/traumhafte-eg-wohnung-100-m-garten-fussbodenheizung-tg/3448802721-203-9616",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 11:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.15,
+    "verfuegbar_ab": ""
   }
 ]
