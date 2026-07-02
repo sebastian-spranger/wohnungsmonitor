@@ -8783,5 +8783,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": "2026-07-02"
+  },
+  {
+    "id": "2cc722bf8d64db",
+    "titel": "3-Zimmer Balkon Wohnung nächst Fußgängerzone in Kaifbeuren-Neuga",
+    "preis_warm": 1239.0,
+    "groesse": 90.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-balkon-wohnung-naechst-fussgaengerzone-in-kaifbeuren-neuga/3448752238-203-16339",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
