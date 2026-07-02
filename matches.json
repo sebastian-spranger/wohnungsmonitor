@@ -9035,5 +9035,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e0eb35b28a6a8e",
+    "titel": "Maxvorstadt: Kompaktes 1,5-Zimmer-Apartment",
+    "preis_warm": 1010.0,
+    "groesse": 50.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169024249",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Fürstenstraße 7, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 22:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.03,
+    "verfuegbar_ab": ""
   }
 ]
