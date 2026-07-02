@@ -8801,5 +8801,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0b16dc614d88ba",
+    "titel": "Wohnung mit 2 Zimmern · München-Giesing · 8998",
+    "preis_warm": 1800.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-giesing-8998",
+    "quelle": "Mr. Lodge",
+    "adresse": "Schlierseestraße, Giesing, 81539 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "02.07. 11:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.86,
+    "verfuegbar_ab": ""
   }
 ]
