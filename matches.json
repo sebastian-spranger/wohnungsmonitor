@@ -9053,5 +9053,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4711d18c491cbb",
+    "titel": "Schönes Neuhausen: 2,5 Zimmer mit Extra-Büro + viel Licht + Einbauküche + Tageslichtbad + Balkon",
+    "preis_warm": 2125.0,
+    "groesse": 68.73,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/129566134",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Franziska-Schmitz-Str. 3, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "02.07. 22:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.84,
+    "verfuegbar_ab": ""
   }
 ]
