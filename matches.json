@@ -9485,5 +9485,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.74,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fb7ed3d5347f86",
+    "titel": "Wohnung Isarvorstadt Zwischenmiete ab sofort",
+    "preis_warm": 1900.0,
+    "groesse": 126.0,
+    "zimmer": 3.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-isarvorstadt-zwischenmiete-ab-sofort/3449993802-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 22:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
