@@ -9359,5 +9359,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3e29b3fa5346f1",
+    "titel": "Häusliche, neue Wohnung im Herzen der Stadt",
+    "preis_warm": 1600.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/modern-fantastic-apartment-in-excellent-location/6a47ac57425a48cb2071c9d0",
+    "quelle": "Wunderflats",
+    "adresse": "Ohmstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 18:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.99,
+    "verfuegbar_ab": ""
   }
 ]
