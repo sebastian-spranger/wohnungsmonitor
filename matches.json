@@ -9107,5 +9107,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9bc5f651ba412f",
+    "titel": "2-Zimmer-Wohnung mit Aufzug, Kellerabteil und Bauhinweis",
+    "preis_warm": 1530.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169030891",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zenettistr. 37, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 08:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.09,
+    "verfuegbar_ab": ""
   }
 ]
