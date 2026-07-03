@@ -9467,5 +9467,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.95,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f5ee762b878dab",
+    "titel": "Charmante Familienwohnung mit einzigartigem Mid-Century-Vibe in München",
+    "preis_warm": 2090.0,
+    "groesse": 67.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/charming-family-apartment-with-unique-mid-century-vibe-in-munich/6436ece7df0bdeaa14d0f653",
+    "quelle": "Wunderflats",
+    "adresse": "Sachranger Straße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 22:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.74,
+    "verfuegbar_ab": ""
   }
 ]
