@@ -9071,5 +9071,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.84,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "32685c45e324be",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1912.0,
+    "groesse": 57.0,
+    "zimmer": 1.5,
+    "url": "https://www.immowelt.de/expose/b0a199f8-9deb-47b9-a312-035a26edea0a",
+    "quelle": "ImmoWelt",
+    "adresse": "Neuhausen-Nymphenburg, München (80639)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
