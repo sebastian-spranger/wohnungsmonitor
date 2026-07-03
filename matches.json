@@ -9305,5 +9305,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "da3d342fdc4b2d",
+    "titel": "Möbliert: Gepflegte 2-Zimmer Wohnung zur Miete am Tassiloplatz",
+    "preis_warm": 1990.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169048049",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Haidhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 16:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.94,
+    "verfuegbar_ab": ""
   }
 ]
