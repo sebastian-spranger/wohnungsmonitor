@@ -9323,5 +9323,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "92b7217e5aedc8",
+    "titel": "Maisonette Wohnung München Sendling Untermiete Balkon 70qm",
+    "preis_warm": 2000.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/maisonette-wohnung-muenchen-sendling-untermiete-balkon-70qm/3449836161-203-16394",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 17:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
