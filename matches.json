@@ -9431,5 +9431,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.86,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "49980e2f5e73bd",
+    "titel": "Sonnig, helle 3-Zimmer-Wohnung in Bogenhausen - mit Alpenblick",
+    "preis_warm": 2150.0,
+    "groesse": 84.5,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169050903",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 20:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
