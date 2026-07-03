@@ -9341,5 +9341,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0a214fe03f129a",
+    "titel": "26qm Zimmer best Lage Haidhausen ",
+    "preis_warm": 1250.0,
+    "groesse": 111.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/169049235",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Weißenburger Platz 10, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 18:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.78,
+    "verfuegbar_ab": ""
   }
 ]
