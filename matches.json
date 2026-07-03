@@ -9197,5 +9197,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "be7601f41e974d",
+    "titel": "Helle 3-Zimmer-Wohnung mit Seeblick in München",
+    "preis_warm": 500.0,
+    "groesse": 78.9,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-3-zimmer-wohnung-mit-seeblick-in-muenchen/3449646007-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 13:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
