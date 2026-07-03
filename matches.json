@@ -9179,5 +9179,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a5782dd354c9a2",
+    "titel": "*** Schöne teilmöblierte 2-Zimmer-Wohnung mit Tiefgaragenstellplatz - Schwanthalerhöhe***",
+    "preis_warm": 1590.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169033125",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthalerhöhe, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 12:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
