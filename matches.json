@@ -9089,5 +9089,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "521f41a69a18b7",
+    "titel": "Möbliertes Apartment, Balkon, + grosszügige Küche, Maxvorstadt, bis zu 3 Jahre anzumieten",
+    "preis_warm": 1680.0,
+    "groesse": 48.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169029049",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 07:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
