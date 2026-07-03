@@ -9449,5 +9449,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6ef47e25836c6f",
+    "titel": "Moderne und wundervolle Wohnung auf Zeit",
+    "preis_warm": 1920.0,
+    "groesse": 83.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/spacious-and-beautiful-apartment/6a47ae17425a48cb20720867",
+    "quelle": "Wunderflats",
+    "adresse": "Ganghoferstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.07. 21:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.95,
+    "verfuegbar_ab": ""
   }
 ]
