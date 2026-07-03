@@ -9143,5 +9143,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "036318b62bc40e",
+    "titel": "München erleben:WG in  2-Zimmer-Wohnung in Schwabing-West",
+    "preis_warm": 1500.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169036526",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rankestraße 1b, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.83,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "2c15294c83f7b2",
+    "titel": "Helle und ruhige  2-Zimmer-Wohnung zum Innenhof  mit EBK und Balkon in Ramersdorf / Giesing",
+    "preis_warm": 1290.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/167411622",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "03.07. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
