@@ -9665,5 +9665,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ceb69f75cf0505",
+    "titel": "Charmante Dachgeschosswohnung in ruhiger Bestlage von Sendling",
+    "preis_warm": 1209.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169060416",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Alois-Gilg-Weg 7, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 12:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.32,
+    "verfuegbar_ab": ""
   }
 ]
