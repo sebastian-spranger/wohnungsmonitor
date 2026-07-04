@@ -9575,5 +9575,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3d29e8db9c6d79",
+    "titel": "Untervermietung: Sehr schöne 2,5 Zimmer-Wohnung in Schwabing Nord",
+    "preis_warm": 2080.0,
+    "groesse": 75.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169058270",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 10:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
