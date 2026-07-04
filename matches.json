@@ -9557,5 +9557,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f497c37486adda",
+    "titel": "WG-Zimmer im Herzen der Maxvorstadt",
+    "preis_warm": 890.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-zimmer-im-herzen-der-maxvorstadt/3450205965-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.07. 10:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
