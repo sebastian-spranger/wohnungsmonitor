@@ -9503,5 +9503,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8cf34ac2918ae1",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1592.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/cd098602-c34f-4f64-ad22-39ac4f4f9c93",
+    "quelle": "ImmoWelt",
+    "adresse": "Untergiesing-Harlaching, München (81547)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.07. 04:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": "2026-07-04"
   }
 ]
