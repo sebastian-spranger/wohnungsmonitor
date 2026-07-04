@@ -9683,5 +9683,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.32,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8b4b8bd783c166",
+    "titel": "Wohnung mit 2 Zimmern · München-Schwabing-West · 14841",
+    "preis_warm": 2100.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-schwabing-west-14841",
+    "quelle": "Mr. Lodge",
+    "adresse": "Schleißheimer Straße, Schwabing-West, 80796 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "04.07. 15:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.81,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "d58f656fcfd97d",
+    "titel": "Wohnung mit 2 Zimmern · München-Au-Haidhausen · 14353",
+    "preis_warm": 1990.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-au-haidhausen-14353",
+    "quelle": "Mr. Lodge",
+    "adresse": "Welfenstraße, Au-Haidhausen, 81541 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "04.07. 15:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.0,
+    "verfuegbar_ab": ""
   }
 ]
