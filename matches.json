@@ -9755,5 +9755,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "416f5aa60fd5f1",
+    "titel": "Wohnen im Museumsviertel: Erstbezug nach Kernsanierung",
+    "preis_warm": 1680.0,
+    "groesse": 47.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169064036",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Barer Straße 32, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 18:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.08,
+    "verfuegbar_ab": ""
   }
 ]
