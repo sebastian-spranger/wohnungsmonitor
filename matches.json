@@ -9647,5 +9647,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.56,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0b4e6ccbb48c24",
+    "titel": "Schwabing  sonnige 2 Zi Wohnung in der Luisenstraße",
+    "preis_warm": 1825.0,
+    "groesse": 66.26,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169059638",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 11:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
