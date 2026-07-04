@@ -9773,5 +9773,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.08,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "01f2bae330ca57",
+    "titel": "Wohnung am Gärtnerplatz für 1 Jahr zur Zwischenmiete",
+    "preis_warm": 1790.0,
+    "groesse": 46.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/161831545",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 20:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
