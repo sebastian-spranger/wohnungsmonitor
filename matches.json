@@ -9539,5 +9539,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "957a60b5bf55cc",
+    "titel": "Wunderschöne 2 ZKB mit Jugendstil-Flair!",
+    "preis_warm": 1675.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169030879",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gallmayerstraße 2, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 06:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.51,
+    "verfuegbar_ab": ""
   }
 ]
