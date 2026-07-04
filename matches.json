@@ -9593,5 +9593,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c6e039c38392c9",
+    "titel": "2-Zimmer-Wohnung in Haidhausen",
+    "preis_warm": 1600.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169059129",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hochstraße 39, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 10:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.56,
+    "verfuegbar_ab": ""
   }
 ]
