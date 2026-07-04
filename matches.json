@@ -9719,5 +9719,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9788a553b6f780",
+    "titel": "Stilvolle, sanierte 3.5-Zi-Wo mit gehobener Ausstatt. ohne Balkon in Schwanthalerhöhe, Mchn, ab 1.8.",
+    "preis_warm": 1990.0,
+    "groesse": 71.0,
+    "zimmer": 3.5,
+    "url": "https://www.immobilienscout24.de/expose/159388985",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "04.07. 15:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
