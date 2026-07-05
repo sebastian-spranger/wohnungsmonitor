@@ -9791,5 +9791,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "370e6ec3aadbb5",
+    "titel": "STUDENTENWOHNUNG möbliert,auf Zeit,für 1 Person",
+    "preis_warm": 780.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/studentenwohnung-moebliert-auf-zeit-fuer-1-person-/3450912824-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
