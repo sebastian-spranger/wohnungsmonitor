@@ -10043,5 +10043,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.7,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "25861784a3174b",
+    "titel": "Helle 3 Zimmer Wohnung mit herrlichem Blick ins Grüne",
+    "preis_warm": 1600.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169074405",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 15:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
