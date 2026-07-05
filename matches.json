@@ -9917,5 +9917,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2fa32204d8c9ce",
+    "titel": "voll möblierte 2-Zimmer-Wohnung im Erdgeschoss zu vermieten",
+    "preis_warm": 1590.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/voll-moeblierte-2-zimmer-wohnung-im-erdgeschoss-zu-vermieten/3451352944-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 12:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
