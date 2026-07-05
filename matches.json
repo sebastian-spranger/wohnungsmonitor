@@ -10061,5 +10061,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d9c5a84103b3b6",
+    "titel": "Zuhause mit 2 Zimmern und Balkon in Obergiesing",
+    "preis_warm": 1940.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169074158",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Deisenhofener Straße 16 a, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 15:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.57,
+    "verfuegbar_ab": ""
   }
 ]
