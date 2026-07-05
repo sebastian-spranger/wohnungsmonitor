@@ -9827,5 +9827,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.44,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b8d1897de12e17",
+    "titel": "Zuhause mit 2 Zimmern und Südloggia in Schwabing direkt an der Leopoldstraße",
+    "preis_warm": 2050.0,
+    "groesse": 67.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169071853",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 11:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
