@@ -9863,5 +9863,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "97cdd846dbd6cf",
+    "titel": "Stilvolle 2-Zimmer-Wohnung in München - Schwabing-West",
+    "preis_warm": 1890.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvolle-2-zimmer-wohnung-in-muenchen-schwabing-west/3451288598-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 12:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "e25e3dcf982ae7",
+    "titel": "Wohnbüro in Giesing",
+    "preis_warm": 1850.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnbuero-in-giesing/3451281993-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 12:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
