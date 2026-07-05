@@ -10007,5 +10007,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.39,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "919a473c527680",
+    "titel": "Wohnen mit Charakter: 1-Zimmer-Apartment in zentraler Lage von München-Lehel",
+    "preis_warm": 1415.0,
+    "groesse": 48.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169073917",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Oettingenstraße 20, Lehel, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 14:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.51,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "4a7d9b2dfd904b",
+    "titel": "Ruhige zwei Zimmer Wohnung in München, Sendling-Westpark",
+    "preis_warm": 1480.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/112603835",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Drachenseestr. 3b, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 14:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.7,
+    "verfuegbar_ab": ""
   }
 ]
