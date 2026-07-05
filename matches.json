@@ -9989,5 +9989,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "035995d7e48c96",
+    "titel": "Möblierte, helle 2-Zimmer-Wohnung mit Balkon (Untergiesing) in Isarnähe",
+    "preis_warm": 2136.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169072865",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gerhardstraße 5, Untergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 13:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.39,
+    "verfuegbar_ab": ""
   }
 ]
