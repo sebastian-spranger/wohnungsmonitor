@@ -10133,5 +10133,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "03928edc31d9b7",
+    "titel": "Zuhause mit 2 Zimmern an der Poccistraße im Zentrum von München",
+    "preis_warm": 1850.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169075674",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zenettistraße -, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 18:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.04,
+    "verfuegbar_ab": ""
   }
 ]
