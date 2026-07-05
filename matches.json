@@ -9935,5 +9935,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2cc753ba236be8",
+    "titel": "Neue möbl. Whg., zentral, ruhig, WLAN / new apartment, furnished, quiet",
+    "preis_warm": 1990.0,
+    "groesse": 49.5,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169072959",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schmellerstr. U3 + U6 0, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 13:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "68f80be323e44c",
+    "titel": "Vollmöblierte 2.Z-Wohnung zur Untermiete für 6 bzw. 12 Monate. Anschließend Hauptmietvertrag möglich",
+    "preis_warm": 1550.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169071377",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Berchtesgadener Straße 7, Untergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 13:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.44,
+    "verfuegbar_ab": ""
   }
 ]
