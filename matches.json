@@ -9845,5 +9845,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "782f43cd7b0553",
+    "titel": "Alltagstaugliche 2-Zimmer-Wohnung in Schwabing-West",
+    "preis_warm": 1718.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169072049",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Pündterplatz 7, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 12:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.92,
+    "verfuegbar_ab": ""
   }
 ]
