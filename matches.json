@@ -9809,5 +9809,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b169014f2406a2",
+    "titel": "Zuhause mit 2 Zimmern in Untergiesing",
+    "preis_warm": 1550.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169071377",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Berchtesgadener Straße 7, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 11:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.44,
+    "verfuegbar_ab": ""
   }
 ]
