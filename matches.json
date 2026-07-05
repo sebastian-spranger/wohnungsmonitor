@@ -10169,5 +10169,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.63,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "395366c2b715eb",
+    "titel": "2-Zimmer-Wohnung in Sendling mit grandiosem Ausblick",
+    "preis_warm": 1530.0,
+    "groesse": 69.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169077710",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Plinganserstr. 49, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 21:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.45,
+    "verfuegbar_ab": ""
   }
 ]
