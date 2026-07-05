@@ -10115,5 +10115,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5c66e4da42f537",
+    "titel": "Modernisierte 2-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 1900.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/modernisierte-2-zimmer-wohnung-in-neuhausen/3451786255-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 18:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
