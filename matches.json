@@ -10151,5 +10151,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8b167003f90fd3",
+    "titel": "Beste Lage Schwanthalerhöhe",
+    "preis_warm": 1980.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169077736",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gollierstr. 39, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "05.07. 20:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.63,
+    "verfuegbar_ab": ""
   }
 ]
