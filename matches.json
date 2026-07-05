@@ -9971,5 +9971,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.44,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "be580e7a6526c0",
+    "titel": "München Neuhausen - 2-Zimmer Wohnung - August 2026",
+    "preis_warm": 2170.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/muenchen-neuhausen-2-zimmer-wohnung-august-2026/3451401532-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.07. 13:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
