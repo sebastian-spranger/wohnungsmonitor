@@ -10889,5 +10889,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "dacdd4031835ba",
+    "titel": "Moderne Wohnung auf Zeit in lebendiger Straße, München",
+    "preis_warm": 1600.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/amazing-studio-in-nice-area-muenchen/6a4be80f7d0524158c595518",
+    "quelle": "Wunderflats",
+    "adresse": "Rindermarkt, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 21:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.09,
+    "verfuegbar_ab": ""
   }
 ]
