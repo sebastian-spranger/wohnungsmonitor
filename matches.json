@@ -10817,5 +10817,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "924142b558e251",
+    "titel": "vermiete Wohnung 75 qm neben Giesing Bahnhofsplatz",
+    "preis_warm": 1950.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169105512",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 19:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
