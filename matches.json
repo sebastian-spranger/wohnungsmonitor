@@ -10421,5 +10421,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.59,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2f2fbd5cbca241",
+    "titel": "3-Zi. mit Balkon & EBK - komplett renoviert - sofort verfügbar!",
+    "preis_warm": 1890.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169097281",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zasingerstraße 11, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 13:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.98,
+    "verfuegbar_ab": "2026-07-06"
   }
 ]
