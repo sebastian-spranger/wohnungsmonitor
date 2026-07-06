@@ -10223,5 +10223,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.66,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "975934d35ecd66",
+    "titel": "Apartment mit großer Dachterrasse",
+    "preis_warm": 1205.0,
+    "groesse": 57.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/128176178",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Westendstr. 185, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 08:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.89,
+    "verfuegbar_ab": ""
   }
 ]
