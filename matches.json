@@ -10439,5 +10439,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.98,
     "verfuegbar_ab": "2026-07-06"
+  },
+  {
+    "id": "261e8d14427c93",
+    "titel": "1,5-Zimmer-Wohnung mit Balkon in Bogenhausen",
+    "preis_warm": 1850.0,
+    "groesse": 59.04,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169098407",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Vogelweidestraße 5, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 14:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.25,
+    "verfuegbar_ab": ""
   }
 ]
