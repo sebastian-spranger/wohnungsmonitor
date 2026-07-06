@@ -10547,5 +10547,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "58bb6017d9b9b3",
+    "titel": "Dachgeschosswohnung mit 2 Zimmern · München-Giesing · 6583",
+    "preis_warm": 1800.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-giesing-6583",
+    "quelle": "Mr. Lodge",
+    "adresse": "Schwanseestraße, Giesing, 81549 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 15:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.97,
+    "verfuegbar_ab": ""
   }
 ]
