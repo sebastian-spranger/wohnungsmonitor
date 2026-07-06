@@ -10259,5 +10259,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.42,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7935c3c1185afa",
+    "titel": "++ Frisch RENOVIERT - Sehr ruhige 2-Zimmer-Wohnung Altbauwohnung im EG -- Nähe Leonrodplatz ++",
+    "preis_warm": 1240.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169017396",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Dachauerstraße 189, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.39,
+    "verfuegbar_ab": ""
   }
 ]
