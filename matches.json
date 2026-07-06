@@ -10583,5 +10583,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.48,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9bed8a6b9e4adf",
+    "titel": "Zentrale 2-Zimmer-Wohnung",
+    "preis_warm": 1251.0,
+    "groesse": 46.92,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zentrale-2-zimmer-wohnung/3441565370-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 15:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "9417b0ac06a7af",
+    "titel": "Zwischenmiete 2-Zimmer-Wohnung nahe Theresienwiese",
+    "preis_warm": 1700.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zwischenmiete-2-zimmer-wohnung-nahe-theresienwiese/3452506518-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 15:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
   }
 ]
