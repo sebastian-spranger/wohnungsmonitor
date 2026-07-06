@@ -10313,5 +10313,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e55f0962720407",
+    "titel": "1 Zi.-Wohnung mit Wohnküche und Balkon",
+    "preis_warm": 900.0,
+    "groesse": 47.5,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169094631",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Balanstr. 106, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 11:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.13,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f613e6c9795d75",
+    "titel": "WG geeignete 2-Zi.-Whg. mit Wohnküche und Balkon nähe Donnersberger Brücke",
+    "preis_warm": 1710.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169093933",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Richelstr. 30, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 11:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.54,
+    "verfuegbar_ab": ""
   }
 ]
