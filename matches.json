@@ -10457,5 +10457,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "897d7e13207c21",
+    "titel": "Wohnung mit 2 Zimmern · München-Schwabing-West · 14894",
+    "preis_warm": 2000.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-schwabing-west-14894",
+    "quelle": "Mr. Lodge",
+    "adresse": "Römerstraße, Schwabing-West, 80801 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.49,
+    "verfuegbar_ab": ""
   }
 ]
