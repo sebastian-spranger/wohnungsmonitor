@@ -10295,5 +10295,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.74,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c76381e6ebd19b",
+    "titel": "helles Zimmer mit eigenem Bad und Balkon (auch für Paare)",
+    "preis_warm": 1390.0,
+    "groesse": 149.0,
+    "zimmer": 5.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helles-zimmer-mit-eigenem-bad-und-balkon-auch-fuer-paare-/3452272383-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
