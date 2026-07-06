@@ -10565,5 +10565,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.97,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d8ca53d890b4a6",
+    "titel": "Wohnen im Herzen der Münchner Altstadt ",
+    "preis_warm": 2040.0,
+    "groesse": 53.69,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169088979",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hildegardstr. 4, Altstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 15:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.48,
+    "verfuegbar_ab": ""
   }
 ]
