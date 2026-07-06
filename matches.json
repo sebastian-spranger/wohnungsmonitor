@@ -10637,5 +10637,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a364151d64e104",
+    "titel": "Moderne 2-Zimmer-Erdgeschosswohnung mit Terrasse zum ruhigen Innenhof und Einbauküche",
+    "preis_warm": 1695.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169103078",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hansastraße 183, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 16:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.67,
+    "verfuegbar_ab": ""
   }
 ]
