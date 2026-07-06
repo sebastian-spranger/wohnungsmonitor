@@ -10835,5 +10835,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "671f8f53f5f824",
+    "titel": "Wohnen über den Dächern Münchens – Stilvolle 1,5-Zimmer-Wohnung mit Balkon & Klimaanlage",
+    "preis_warm": 1775.0,
+    "groesse": 52.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169104366",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rüthlingstraße 1, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 20:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.41,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "c59fe63af6096c",
+    "titel": "Alltagstaugliche 1,5-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 1780.0,
+    "groesse": 48.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169104469",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rüthlingstraße 1, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 20:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.41,
+    "verfuegbar_ab": ""
   }
 ]
