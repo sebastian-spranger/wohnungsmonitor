@@ -10277,5 +10277,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.39,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "11ec15844b9518",
+    "titel": "Schöne 3-Zimmer Wohnung in Giesing",
+    "preis_warm": 1560.8,
+    "groesse": 77.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169092862",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schloß-Berg-Str. 1, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 10:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.74,
+    "verfuegbar_ab": ""
   }
 ]
