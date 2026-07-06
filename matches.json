@@ -10241,5 +10241,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.89,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1fc2c4691053e9",
+    "titel": "2,5 Zi.-Wohnung mit Wintergarten",
+    "preis_warm": 1120.0,
+    "groesse": 59.72,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169090537",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Altöttinger Str. 6, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 09:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.42,
+    "verfuegbar_ab": ""
   }
 ]
