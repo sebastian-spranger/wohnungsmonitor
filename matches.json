@@ -10871,5 +10871,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7eebbada092e15",
+    "titel": "Haus in Tirol zu vermieten",
+    "preis_warm": 1200.0,
+    "groesse": 100.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/haus-in-tirol-zu-vermieten/3452752052-203-6457",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81679 Bogenhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 20:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.71,
+    "verfuegbar_ab": ""
   }
 ]
