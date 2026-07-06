@@ -10385,5 +10385,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b8e2d4dfb55124",
+    "titel": "Zwischen Viktualienmarkt und Gärtnerplatz - Schöne 2-Zimmer-Wohnung mit Wohnküche und Süd-Balkon",
+    "preis_warm": 1960.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169096274",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rumfordstr. 4, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 12:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.45,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "5de298d5a0c20f",
+    "titel": "2-Zimmer-Wohnung mit Balkon in der Maxvorstadt",
+    "preis_warm": 1515.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169095187",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gabelsbergerstr. 59, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 12:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.59,
+    "verfuegbar_ab": ""
   }
 ]
