@@ -10619,5 +10619,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "170bdce07f2a37",
+    "titel": "MÖBLIERTE, gepflegte 2-Zimmer-Wohnung in München-Sendling",
+    "preis_warm": 1700.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168992724",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sendling, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 16:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
