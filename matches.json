@@ -10493,5 +10493,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a47dc08a455f57",
+    "titel": "Nachmieter - Ruhige 2-Zimmer-Wohnung mit Balkon in Bestlage am Mangfallplatz",
+    "preis_warm": 1906.99,
+    "groesse": 62.17,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169098462",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 14:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
