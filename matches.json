@@ -10655,5 +10655,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.67,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f90b67504a5e48",
+    "titel": "Moderne 2-Zimmer-Wohnung im 3. Obergeschoss mit Balkon und Einbauküche",
+    "preis_warm": 2099.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169103699",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Daxenbergerstraße 8, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 17:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
