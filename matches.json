@@ -10799,5 +10799,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2f84cba3014499",
+    "titel": "Möbliert: Möblierte Dachgeschosswohnung in Giesing",
+    "preis_warm": 1800.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169105491",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 19:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
