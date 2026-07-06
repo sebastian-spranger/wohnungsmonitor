@@ -10529,5 +10529,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "502bc47cc27f3e",
+    "titel": "Helles 1 Zimmer Apartment in Top zentraler ruhiger Lage.",
+    "preis_warm": 1350.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/166400603",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 15:02",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.94,
+    "verfuegbar_ab": ""
   }
 ]
