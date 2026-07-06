@@ -10187,5 +10187,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.45,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3faef46cdd3225",
+    "titel": "Helle 1-Zimmer-Wohnung mit Südbalkon im exklusiven Herzogpark – zentrumsnah und ruhig",
+    "preis_warm": 1850.0,
+    "groesse": 55.0,
+    "zimmer": 1.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/bright-studio-apartment-with-south-facing-balcony-in-exclusive-herzogpark-quiet-and-close-to-the-city-center/684aafa427961774ea6e4aa2",
+    "quelle": "Wunderflats",
+    "adresse": "Haushoferstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "06.07. 02:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
