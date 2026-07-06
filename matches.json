@@ -10691,5 +10691,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6a2006d4a0d09a",
+    "titel": "Zuhause mit 2 Zimmern und Balkon in Sendling-Westpark",
+    "preis_warm": 1969.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169104066",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Daxenbergerstraße 8, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 17:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "cb1d1b0967e403",
+    "titel": "Zentrale Möblierte Wohnung 50m2 in Lehel, Isar- und Englischer-Garten-Nähe bis 5. September",
+    "preis_warm": 2150.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169103906",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Lehel, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 17:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.93,
+    "verfuegbar_ab": ""
   }
 ]
