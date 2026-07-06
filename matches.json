@@ -10349,5 +10349,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.54,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a6912bd86c48c2",
+    "titel": "Exklusive Single-Wohnung am Friedensengel, die keine Wünsche offen lässt",
+    "preis_warm": 2000.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/122134681",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ismaningerstrasse 27, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 11:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.71,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "d23d006cc3c38a",
+    "titel": "3 Zimmer Wohnung mit Dachterrasse und Klimaanlage",
+    "preis_warm": 2200.0,
+    "groesse": 74.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169094718",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Trausnitzstraße 8, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 11:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.88,
+    "verfuegbar_ab": ""
   }
 ]
