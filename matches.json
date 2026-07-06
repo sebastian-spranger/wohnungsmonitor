@@ -10907,5 +10907,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bd3aa35694ec78",
+    "titel": "Stilvoll wohnen – Vollmöblierte 1,5-Zimmer-Wohnung mit Balkon über den Dächern Münchens",
+    "preis_warm": 1780.0,
+    "groesse": 48.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169104469",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rüthlingstraße 1, Neuhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "06.07. 22:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.41,
+    "verfuegbar_ab": ""
   }
 ]
