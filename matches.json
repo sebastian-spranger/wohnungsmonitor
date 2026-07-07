@@ -11429,5 +11429,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.92,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1a3c6faf530151",
+    "titel": "Maxvorstadt: Zentral gelegene 2-Zimmer-Wohnung ",
+    "preis_warm": 1370.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169126299",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Pappenheimstraße 7, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 20:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.11,
+    "verfuegbar_ab": ""
   }
 ]
