@@ -11249,5 +11249,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "34694c439c4096",
+    "titel": "Charmante 1,5-Zimmerwohnung mit Wohlfühlfaktor",
+    "preis_warm": 1800.0,
+    "groesse": 52.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169122450",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rosenheimerstraße 30, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 13:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.35,
+    "verfuegbar_ab": ""
   }
 ]
