@@ -11321,5 +11321,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b1186be5cfca5c",
+    "titel": "2,5-Zimmer-Stilaltbauwohnung in München-Neuhausen",
+    "preis_warm": 1730.0,
+    "groesse": 61.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169123940",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hübnerstraße 7, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 16:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.62,
+    "verfuegbar_ab": ""
   }
 ]
