@@ -11303,5 +11303,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.95,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f6925302313b23",
+    "titel": "Möbliert: Klassisch und modern möblierte 2-Zimmer Wohnung",
+    "preis_warm": 2000.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169125082",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 14:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
