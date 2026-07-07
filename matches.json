@@ -11051,5 +11051,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.02,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fb5b3c48196da2",
+    "titel": "Gemütliche 2-Zimmer-Wohnung in moderner Wohnanlage",
+    "preis_warm": 1788.98,
+    "groesse": 62.54,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/148222994",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tübinger Straße 3c, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 09:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.82,
+    "verfuegbar_ab": ""
   }
 ]
