@@ -11033,5 +11033,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "65f34b86fd9677",
+    "titel": "Charmante 4,5-Zimmer-Wohnung",
+    "preis_warm": 1985.97,
+    "groesse": 103.13,
+    "zimmer": 4.5,
+    "url": "https://www.immobilienscout24.de/expose/169113156",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Nymphenburger Straße 119, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 08:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.02,
+    "verfuegbar_ab": ""
   }
 ]
