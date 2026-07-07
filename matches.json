@@ -11285,5 +11285,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.21,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a42535f77a5465",
+    "titel": "Frisch renovierte Altbauwohnung in München Sendling",
+    "preis_warm": 1200.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169124584",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Alramstraße 25, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 14:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.95,
+    "verfuegbar_ab": ""
   }
 ]
