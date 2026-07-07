@@ -11015,5 +11015,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "13a139f0c867f5",
+    "titel": "BIETE schöne 2,5 Zi-Wohnung in Haidhausen",
+    "preis_warm": 1370.0,
+    "groesse": 84.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/biete-schoene-2-5-zi-wohnung-in-haidhausen/3452980859-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 08:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
