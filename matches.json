@@ -11141,5 +11141,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.83,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7bae31e8263eb8",
+    "titel": "Top 2 Zi.-Altbauwohnung mit Balkon in ruhiger Lage, Schwanthalerhöhe - bis 31.08.27 verfügbar",
+    "preis_warm": 1990.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169119769",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 11:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "b1c5302ad616d2",
+    "titel": "Modern möbliertes 2-Zi-Business-Apt mit kleinem Garten in München-Harlaching",
+    "preis_warm": 1710.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169119586",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 11:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
