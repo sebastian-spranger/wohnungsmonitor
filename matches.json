@@ -10961,5 +10961,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.45,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3bf9da9455050e",
+    "titel": "Geschmackvolle Wohnung mit zweieinhalb Zimmern sowie Südbalkon und EBK in Sendling, München",
+    "preis_warm": 1420.0,
+    "groesse": 63.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/134620034",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 06:52",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
