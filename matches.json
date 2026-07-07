@@ -11411,5 +11411,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d09d97def99cc4",
+    "titel": "Ansprechende 2-Zimmer Wohnung, nur Steinwurf vom Westpark entfernt!",
+    "preis_warm": 1660.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169116952",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zillertalstr. 33, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 20:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.92,
+    "verfuegbar_ab": ""
   }
 ]
