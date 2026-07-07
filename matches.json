@@ -11447,5 +11447,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.11,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ea873542b08ece",
+    "titel": "Schöne 85m² Wohnung in der Maxvorstadt",
+    "preis_warm": 650.0,
+    "groesse": 85.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169133477",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 22:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
