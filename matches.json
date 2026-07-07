@@ -11195,5 +11195,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "df49915b3e41bb",
+    "titel": "Schwabing-West: WG auf Zeit 2-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 1100.0,
+    "groesse": 64.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169117934",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rankestraße 1b, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 12:04",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.83,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "270af70c09690b",
+    "titel": "Kernsanierte 3-Zimmer Wohnung im schönen Schwabing",
+    "preis_warm": 2100.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169119896",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 12:04",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
