@@ -10979,5 +10979,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5ec150115bc742",
+    "titel": "Charmante, wunderschöne Wohnung im Zentrum von München",
+    "preis_warm": 2100.0,
+    "groesse": 113.0,
+    "zimmer": 4.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/wonderful-and-neat-apartment-in-muenchen/6a4beabffef8e3dea3f2b53b",
+    "quelle": "Wunderflats",
+    "adresse": "Klenzestraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.83,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "8d8c651a854bf4",
+    "titel": "Helles Loft in München",
+    "preis_warm": 1800.0,
+    "groesse": 82.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/spacious-apartment-located-in-muenchen/6a4be98efef8e3dea3f2987c",
+    "quelle": "Wunderflats",
+    "adresse": "Gozbertstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.09,
+    "verfuegbar_ab": ""
   }
 ]
