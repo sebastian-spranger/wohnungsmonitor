@@ -11123,5 +11123,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.58,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bf2f6a107ce7d3",
+    "titel": "Gemütliche, großzügige 1-Zimmer-Wohnung in moderner Wohnanlage",
+    "preis_warm": 1581.49,
+    "groesse": 47.79,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169117717",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tübinger Straße 3b, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 10:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.83,
+    "verfuegbar_ab": ""
   }
 ]
