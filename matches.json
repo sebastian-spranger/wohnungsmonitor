@@ -11339,5 +11339,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.62,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5ab6d70bda8bc2",
+    "titel": "Suchen Nachmieter für 2,5 Zi Wg Schwabing",
+    "preis_warm": 1390.0,
+    "groesse": 75.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/suchen-nachmieter-fuer-2-5-zi-wg-schwabing/3453411988-203-6462",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80796 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 17:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "86a9fa76a35746",
+    "titel": "2-Zimmer Wohnung in Schwabing- West zur Zwischenmiete Aug-Sep",
+    "preis_warm": 1400.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-schwabing-west-zur-zwischenmiete-aug-sep/3453411916-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 17:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
