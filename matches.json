@@ -11267,5 +11267,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.35,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "87254e6de4ac2d",
+    "titel": "Untergiesing: 2,5-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 1750.0,
+    "groesse": 70.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169123148",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Mondstraße 3, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 13:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.21,
+    "verfuegbar_ab": ""
   }
 ]
