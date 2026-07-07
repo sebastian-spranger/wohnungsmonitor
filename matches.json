@@ -10925,5 +10925,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2f63564993daea",
+    "titel": "Möblierte Wohnung auf Zeit | keine WG |  max. 9 Monate | Isarvorstadt",
+    "preis_warm": 2200.0,
+    "groesse": 81.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169108281",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "07.07. 03:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
