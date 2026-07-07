@@ -11177,5 +11177,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.91,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "19489c6b54cc6e",
+    "titel": "2-Zimmer-Dachgeschossapartment mit Süd-Balk",
+    "preis_warm": 1490.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-dachgeschossapartment-mit-sued-balk/3453122196-203-16392",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81377 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.07. 11:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
