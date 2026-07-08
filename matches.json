@@ -11771,5 +11771,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "946c09a8f25483",
+    "titel": "Stilvoll möblierte 2- Zimmer- Wohnung mit großem Balkon in München- Haidhausen",
+    "preis_warm": 1550.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvoll-moeblierte-2-zimmer-wohnung-mit-grossem-balkon-in-muenchen-haidhausen/3454257493-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 17:54",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
