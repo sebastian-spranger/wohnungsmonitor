@@ -11681,5 +11681,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.62,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "44758e8df45f29",
+    "titel": "Helle 2-Zimmer Wohnung in zentraler Lage ",
+    "preis_warm": 1905.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169152190",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zenettistraße 45a, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 13:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.08,
+    "verfuegbar_ab": ""
   }
 ]
