@@ -11573,5 +11573,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4e5a2093644e18",
+    "titel": "Zwischenmiete: 2,5 Zimmerwohnung  (Aug-Dez)",
+    "preis_warm": 1663.0,
+    "groesse": 67.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169144465",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Raglovichstraße 1, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 10:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.65,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "3b21376ada81db",
+    "titel": "MÖBLIERT: Modern möbliertes Apartment mit großem Balkon im Herzogpark",
+    "preis_warm": 1450.0,
+    "groesse": 46.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169146681",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 10:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
