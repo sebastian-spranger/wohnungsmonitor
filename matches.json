@@ -11555,5 +11555,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.65,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c6a6bb429dd568",
+    "titel": "Möblierte 2 Zimmerwohnung in München",
+    "preis_warm": 1680.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmerwohnung-in-muenchen/3453810294-203-16351",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 10:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
