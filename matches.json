@@ -11789,5 +11789,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "851c50e86291d8",
+    "titel": "Stilvoll möblierte 2- Zimmer- Wohnung mit großem Balkon in München- Haidhausen",
+    "preis_warm": 1800.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169159040",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rablstraße 18, Haidhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 18:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.57,
+    "verfuegbar_ab": ""
   }
 ]
