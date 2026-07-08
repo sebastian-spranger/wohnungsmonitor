@@ -11519,5 +11519,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c059f5965522f8",
+    "titel": "Hochwertig modernisierte 2 Zi. Altbau Traum Wohnung in Top Lage",
+    "preis_warm": 2200.0,
+    "groesse": 55.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169102084",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Isabellastr. 6, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 09:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.12,
+    "verfuegbar_ab": ""
   }
 ]
