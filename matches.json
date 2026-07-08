@@ -11897,5 +11897,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 1.44,
     "verfuegbar_ab": "2026-07-08"
+  },
+  {
+    "id": "6fc1bfdff257d0",
+    "titel": "Dachgeschosswohnung mit Galerie an den Isarauen",
+    "preis_warm": 1440.0,
+    "groesse": 57.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169155661",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 22:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
