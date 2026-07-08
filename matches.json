@@ -11807,5 +11807,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.57,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c055a93ca24fe8",
+    "titel": "Nachmieter gesucht - Traumwohnung in erster Reihe zur Isar",
+    "preis_warm": 1862.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-gesucht-traumwohnung-in-erster-reihe-zur-isar/3454279285-203-16349",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 18:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
