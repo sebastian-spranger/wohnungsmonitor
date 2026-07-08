@@ -11861,5 +11861,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "edd183719db67f",
+    "titel": "2-Zimmer Wohnung",
+    "preis_warm": 1100.0,
+    "groesse": 47.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169155170",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Lucile-Grahn-Straße 27, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 19:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.31,
+    "verfuegbar_ab": ""
   }
 ]
