@@ -11465,5 +11465,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b07c322d54b6e",
+    "titel": "Hochwertige 1,5-Zi.-Wohnung mit Balkon – Nahe Sendling-Westpark & U6",
+    "preis_warm": 1956.48,
+    "groesse": 55.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169071280",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Hansastraße 183, Sendling-Westpark, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 07:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.67,
+    "verfuegbar_ab": ""
   }
 ]
