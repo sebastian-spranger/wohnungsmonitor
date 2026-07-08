@@ -11537,5 +11537,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.12,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1cc24cedd39fac",
+    "titel": "2,5 Zimmerwohnung zur Zwischenmiete (Aug-Dez)",
+    "preis_warm": 1663.0,
+    "groesse": 67.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169144465",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Raglovichstraße 1, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 09:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.65,
+    "verfuegbar_ab": ""
   }
 ]
