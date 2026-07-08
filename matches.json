@@ -11753,5 +11753,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2a5de15afe9dea",
+    "titel": "3-Zi-Wohnung in perfekter Lage Haidhausen-Bogenhausen",
+    "preis_warm": 1872.0,
+    "groesse": 86.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/138386330",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Einsteinstraße 177, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 15:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
