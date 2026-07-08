@@ -11663,5 +11663,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.38,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a184450e34d5d5",
+    "titel": "Im Herzen der Maxvorstadt: 2 ZI- Wohnung möbliert ",
+    "preis_warm": 1800.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169149680",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Blütenstr.  5, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 12:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.62,
+    "verfuegbar_ab": ""
   }
 ]
