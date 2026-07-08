@@ -11627,5 +11627,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b6b445a46c47b7",
+    "titel": "Schön geschnittene helle 2 Zimmer Wohnung in 81379 Sendling EG - Zeitmietvertrag!",
+    "preis_warm": 1200.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169147919",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 11:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "77bf9e038069b5",
+    "titel": "Wohnung mit 2 Zimmern und Balkon in Sendling",
+    "preis_warm": 1730.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169145686",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schanzenbachstraße 15, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.07. 11:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.38,
+    "verfuegbar_ab": ""
   }
 ]
