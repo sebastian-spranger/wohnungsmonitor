@@ -11825,5 +11825,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9c29184e27753c",
+    "titel": "Charmante 2,5-Zimmer-Wohnung im ruhigen Rückgebäude (Erstbezug nach Kernsanierung)",
+    "preis_warm": 2200.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/charmante-2-5-zimmer-wohnung-im-ruhigen-rueckgebaeude-erstbezug-nach-kernsanierung-/3454306611-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 19:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "412c70f82ccf5b",
+    "titel": "Charmante Erdgeschosswohnung mit urbanem Kleingarten im ruhigen Rückgebäude",
+    "preis_warm": 2200.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/charmante-erdgeschosswohnung-mit-urbanem-kleingarten-im-ruhigen-rueckgebaeude/3454304212-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 19:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
