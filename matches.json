@@ -11879,5 +11879,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.31,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "726d0ce2249d3c",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1718.0,
+    "groesse": 68.7,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/3316f85b-fef4-4270-81d3-f1e64bdf8ecd",
+    "quelle": "ImmoWelt",
+    "adresse": "Goethestraße 30 - 34, Ludwigsvorstadt-Isarvorstadt, München (80336)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 21:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 1.44,
+    "verfuegbar_ab": "2026-07-08"
   }
 ]
