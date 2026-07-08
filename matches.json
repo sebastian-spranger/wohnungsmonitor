@@ -11609,5 +11609,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "39fa332d3bcf3f",
+    "titel": "Schön geschnittene helle 2 Zimmer Wohnung in 81379 Sendling EG - Zeitmietvertrag!",
+    "preis_warm": 1000.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoen-geschnittene-helle-2-zimmer-wohnung-in-81379-sendling-eg-zeitmietvertrag-/3453878811-203-16388",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81379 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.07. 11:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
