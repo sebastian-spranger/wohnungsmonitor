@@ -12293,5 +12293,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "118388e2ff2761",
+    "titel": "Altbaucharme: 3‑Zi.‑Whg. mit Süd‑Loggia in Ramersdorf",
+    "preis_warm": 1550.0,
+    "groesse": 66.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169153856",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rosenheimer Str. 226, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 20:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.6,
+    "verfuegbar_ab": ""
   }
 ]
