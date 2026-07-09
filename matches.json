@@ -12311,5 +12311,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.6,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d20383ef657608",
+    "titel": "Helle 3-Zimmer-Dachgeschosswohnung mit grossem Wohn-Essbereich",
+    "preis_warm": 1850.0,
+    "groesse": 82.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/136244058",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ruppertstraße 26, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 20:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.32,
+    "verfuegbar_ab": ""
   }
 ]
