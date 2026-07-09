@@ -12257,5 +12257,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ef5560da94778a",
+    "titel": "Grosse 2-Zimmer DG-Whg. - Jugendstilaltbau in Sendling",
+    "preis_warm": 1500.0,
+    "groesse": 76.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/100730902",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Plinganserstrasse 24, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 15:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
