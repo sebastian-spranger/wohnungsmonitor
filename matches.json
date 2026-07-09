@@ -12203,5 +12203,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8f3e4ce4aea7af",
+    "titel": "3,5/4 Zimmer Wohnung für August& September in Maxvorstadt",
+    "preis_warm": 300.0,
+    "groesse": 84.0,
+    "zimmer": 3.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-5-4-zimmer-wohnung-fuer-august-september-in-maxvorstadt/3454821834-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.07. 14:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
