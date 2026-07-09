@@ -12167,5 +12167,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b607ce85001bfc",
+    "titel": "MÖBLIERTE WOHNUNG IN MAXVORSTADT BEFRISTET ZUM 30.06.27",
+    "preis_warm": 1910.0,
+    "groesse": 79.9,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-wohnung-in-maxvorstadt-befristet-zum-30-06-27/3454779644-203-16355",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Maxvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "09.07. 13:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.69,
+    "verfuegbar_ab": ""
   }
 ]
