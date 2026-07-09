@@ -12023,5 +12023,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.07,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2cfce0f11593be",
+    "titel": "Hochwertige 1,5-Zi.-Neubauwohnung mit Balkon zur Nachmiete",
+    "preis_warm": 1957.0,
+    "groesse": 55.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/hochwertige-1-5-zi-neubauwohnung-mit-balkon-zur-nachmiete/3454690796-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.07. 11:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
