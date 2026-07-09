@@ -11951,5 +11951,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.32,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8fd9e5d7e76ff0",
+    "titel": "Wohnen mit Charakter: 3-Zimmer-Wohnung in der Maxvorstadt",
+    "preis_warm": 2150.0,
+    "groesse": 71.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169168727",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 08:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
