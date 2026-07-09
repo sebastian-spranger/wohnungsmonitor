@@ -12149,5 +12149,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.94,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7796b5988bbc87",
+    "titel": "MÖBLIERTE WOHNUNG IN MAXVORSTADT BEFRISTET ZUM 30.06.27",
+    "preis_warm": 2170.0,
+    "groesse": 79.9,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169179971",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 13:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
