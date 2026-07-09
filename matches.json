@@ -11915,5 +11915,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.91,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cceabaf6ef4540",
+    "titel": "Stilvoll wohnen in Schwabing-West – Exklusive 1,5-Zimmer-Wohnung mit Sonnenterrasse",
+    "preis_warm": 2040.0,
+    "groesse": 53.87,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169166734",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 06:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
