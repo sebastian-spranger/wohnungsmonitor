@@ -12041,5 +12041,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "79bf208df49229",
+    "titel": "Außergewöhnliche Wohnmöglichkeit in München-Haidhausen – 2-Zimmer",
+    "preis_warm": 1150.0,
+    "groesse": 59.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/aussergewoehnliche-wohnmoeglichkeit-in-muenchen-haidhausen-2-zimmer/3454704867-203-16346",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81675 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.07. 11:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.99,
+    "verfuegbar_ab": ""
   }
 ]
