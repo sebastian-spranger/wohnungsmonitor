@@ -3361,5 +3361,29 @@
   "fürstenrieder str. 309, sendling-westpark, münchen": [
     48.105961,
     11.5024662
+  ],
+  "sommerstr. 48, au, münchen": [
+    48.1188369,
+    11.5705881
+  ],
+  "alfred-döblin-straße 11, perlach, münchen": [
+    48.0949648,
+    11.6582251
+  ],
+  "gerhart-hauptmann-ring 70, perlach, münchen": [
+    48.098627,
+    11.6554009
+  ],
+  "gerhart-hauptmann-ring 64, perlach, münchen": [
+    48.0988112,
+    11.6545101
+  ],
+  "andechser straße 1, sendling-westpark, münchen": [
+    48.1161313,
+    11.534118
+  ],
+  "kidlerstraße 22, sendling, münchen": [
+    48.1199397,
+    11.5419026
   ]
 }
