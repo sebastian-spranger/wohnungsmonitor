@@ -12059,5 +12059,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1a57a997d2344c",
+    "titel": "Zuhause mit zwei Zimmern in Haidhausen",
+    "preis_warm": 1525.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169177667",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Welfenstraße 29, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 12:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.97,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "323003ed7f2c8d",
+    "titel": "*3-Zimmer-Whg.*in München-Schwabing*",
+    "preis_warm": 1585.51,
+    "groesse": 65.86,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169177505",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bonner Str. 23, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "09.07. 12:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.53,
+    "verfuegbar_ab": ""
   }
 ]
