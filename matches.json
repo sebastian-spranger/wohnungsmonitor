@@ -12347,5 +12347,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.58,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3ece4fdfa63c61",
+    "titel": "Befristet - Möblierte 2 Zimmer mit Süd Balkon im Herzen Maxvorstadt",
+    "preis_warm": 1550.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169194810",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schraudolphstraße 6, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 08:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.58,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "33d3f5f5785d70",
+    "titel": "SONNIG - MODERN - BEZUGSFREI! \nLichterfüllte 3-Zimmer-Wohnung mit Ausblick ins Grüne.",
+    "preis_warm": 1950.0,
+    "groesse": 82.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169195844",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 08:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": "2026-07-10"
   }
 ]
