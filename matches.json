@@ -12635,5 +12635,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "26097d81713b41",
+    "titel": "Wundervolles, neues Apartment in München",
+    "preis_warm": 1600.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/neat-and-beautiful-flat-in-muenchen/6a510d14abc1361f88f46203",
+    "quelle": "Wunderflats",
+    "adresse": "Ohmstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "10.07. 20:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.99,
+    "verfuegbar_ab": ""
   }
 ]
