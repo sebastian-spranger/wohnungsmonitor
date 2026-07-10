@@ -12563,5 +12563,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.6,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d1b9e313fbbc8b",
+    "titel": "Helle 2,5-Zimmer-Wohnung mit Parkett - direkt gegenüber dem Olympiapark",
+    "preis_warm": 1605.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169210343",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 16:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
