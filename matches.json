@@ -12383,5 +12383,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": "2026-07-10"
+  },
+  {
+    "id": "9e6438eef2b972",
+    "titel": "Zwischenmiete 12 Monate  - Möblierte 2 Zimmer mit Süd Balkon im Herzen Maxvorstadt",
+    "preis_warm": 1550.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169194810",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schraudolphstraße 6, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.58,
+    "verfuegbar_ab": ""
   }
 ]
