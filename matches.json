@@ -12599,5 +12599,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "926879db85ae7a",
+    "titel": "Möbliert: Dachterrassenwohnung mit freiem Blick",
+    "preis_warm": 1850.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169212524",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Neuhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 18:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
