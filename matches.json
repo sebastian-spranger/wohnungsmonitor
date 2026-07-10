@@ -12419,5 +12419,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.38,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ed27b47daa27f2",
+    "titel": "WG-Zimmer in 4er WG Neugründung direkt an der U-Bahn",
+    "preis_warm": 745.0,
+    "groesse": 61.5,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-zimmer-in-4er-wg-neugruendung-direkt-an-der-u-bahn/3455425867-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.07. 11:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
