@@ -12527,5 +12527,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.38,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e7783f07ec9810",
+    "titel": "Urban wohnen, naturnah leben – 2-Zimmer-Wohnung mit Ostbalkon und TG-Stellplatz!",
+    "preis_warm": 1728.0,
+    "groesse": 58.51,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169209042",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Saleggstraße 11, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 15:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.5,
+    "verfuegbar_ab": ""
   }
 ]
