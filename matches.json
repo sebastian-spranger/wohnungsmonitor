@@ -12437,5 +12437,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f8d5757165c294",
+    "titel": "WG-Zimmer in 4er WG Neugründung direkt an der U-Bahn",
+    "preis_warm": 820.0,
+    "groesse": 61.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/169202026",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ampfingstraße 53, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.0,
+    "verfuegbar_ab": ""
   }
 ]
