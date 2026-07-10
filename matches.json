@@ -12509,5 +12509,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1b452b25329e27",
+    "titel": "Stylische, ruhige 2-Zi.-Balk.-Whg. im Glockenbach! Edler Altbau!",
+    "preis_warm": 2190.0,
+    "groesse": 66.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169207984",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Palmstraße 8, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 15:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.38,
+    "verfuegbar_ab": ""
   }
 ]
