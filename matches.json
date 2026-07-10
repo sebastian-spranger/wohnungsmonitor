@@ -12401,5 +12401,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.58,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c533666dcd25c9",
+    "titel": "4-Zimmer-Wohnung in der Rosenheimer Straße",
+    "preis_warm": 2188.0,
+    "groesse": 120.0,
+    "zimmer": 4.0,
+    "url": "https://www.immobilienscout24.de/expose/169198281",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Rosenheimer Straße 30 81669, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "10.07. 10:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.38,
+    "verfuegbar_ab": ""
   }
 ]
