@@ -12617,5 +12617,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "42c024f9cf9f81",
+    "titel": "Gemütliche 1-Zimmer-Wohnung in München zu vermieten",
+    "preis_warm": 375.0,
+    "groesse": 55.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-1-zimmer-wohnung-in-muenchen-zu-vermieten/3455801329-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.07. 18:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
