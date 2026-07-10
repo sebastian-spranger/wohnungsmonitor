@@ -12581,5 +12581,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "af6d31d3b9d3e9",
+    "titel": "Modernes 1-Zimmer-Wohnung in München",
+    "preis_warm": 360.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/modernes-1-zimmer-wohnung-in-muenchen/3455722512-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.07. 17:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
