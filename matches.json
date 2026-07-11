@@ -13067,5 +13067,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "288c0efe4403bf",
+    "titel": "Zwischenmiete: Helle möblierte 2-Zimmer-Wohnung mit Garten & Terrasse in München-Haidhausen",
+    "preis_warm": 1950.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169228096",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Michael-Huber-Weg 14, Haidhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 16:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
