@@ -21,6 +21,7 @@ import asyncio
 import hashlib
 import json
 import logging
+import os
 import re
 import subprocess
 import sys
@@ -32,8 +33,8 @@ from pathlib import Path
 #  K O N F I G U R A T I O N  – hier anpassen
 # ═══════════════════════════════════════════════════════════════════════════════
 
-TELEGRAM_TOKEN   = "8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY"
-TELEGRAM_CHAT_ID = "7647141150"
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")     # set via env var / GitHub Actions secret
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")   # set via env var / GitHub Actions secret
 
 MAX_WARM_MIETE = 2200   # € Gesamtmiete warm (inkl. Nebenkosten)
 # Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),

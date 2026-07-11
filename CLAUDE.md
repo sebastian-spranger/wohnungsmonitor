@@ -25,8 +25,8 @@ monitor.log       – Automatisch generiert: Laufzeit-Log
 ## Konfiguration (oben in monitor.py)
 
 ```python
-TELEGRAM_TOKEN   = "8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY"
-TELEGRAM_CHAT_ID = "<deine Chat-ID>"   # → einmalig eintragen (siehe unten)
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")     # via env / GitHub Actions secret
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")   # via env / GitHub Actions secret
 
 MAX_WARM_MIETE = 2300   # € warm
 MIN_GROESSE    = 45     # qm
@@ -63,8 +63,8 @@ git push -u origin main
 
 **3. GitHub Secrets setzen**
 - Repo-Seite → Settings → Secrets and variables → Actions → „New repository secret"
-- Secret 1: `TELEGRAM_TOKEN` = `8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY`
-- Secret 2: `TELEGRAM_CHAT_ID` = `7647141150`
+- Secret 1: `TELEGRAM_TOKEN` = `<dein Bot-Token von @BotFather>`
+- Secret 2: `TELEGRAM_CHAT_ID` = `<deine Telegram Chat-ID>`
 
 **4. Actions aktivieren**
 - Repo → Tab „Actions" → „I understand my workflows, enable them"
@@ -93,7 +93,7 @@ Installiert: playwright, beautifulsoup4, httpx + Chromium-Browser (headless).
 1. Schreib dem Bot `/start` in Telegram: [@Noapartmentsbot](https://t.me/Noapartmentsbot)
 2. Öffne diese URL im Browser:
    ```
-   https://api.telegram.org/bot8887219904:AAE6WGlD-b7qmWnuVGZGBNUMZvPh-yz8ciY/getUpdates
+   https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
    ```
 3. In der JSON-Antwort steht `"chat":{"id": 123456789}` – diese Zahl in `monitor.py` eintragen
 
