@@ -12887,5 +12887,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2d929f569aaef8",
+    "titel": "UNTERMIETE: Wunderschöne Zwei Zimmer Wohnung an der Donnersbergerbrücke  (7 Monate: Sep-Mär)",
+    "preis_warm": 1550.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168811278",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Landsberger Straße 106, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 13:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.97,
+    "verfuegbar_ab": ""
   }
 ]
