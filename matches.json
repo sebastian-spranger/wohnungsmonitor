@@ -12959,5 +12959,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.39,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4ef80c9eb6cca0",
+    "titel": "Alltagstaugliche 2-Zimmer-Wohnung in München Ramersdorf",
+    "preis_warm": 1530.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169226850",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Chiemgaustr. 117, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 15:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.72,
+    "verfuegbar_ab": ""
   }
 ]
