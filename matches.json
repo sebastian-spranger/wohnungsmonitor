@@ -12869,5 +12869,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d676c2496b471c",
+    "titel": "2-Zi. Wohnung | 7 Tage Wiesn Bedienung | HBF | München",
+    "preis_warm": 1800.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zi-wohnung-7-tage-wiesn-bedienung-hbf-muenchen/3456265431-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "11.07. 12:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
