@@ -12671,5 +12671,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.28,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7369625da1d7a1",
+    "titel": "Charmante & neue Wohnung in München",
+    "preis_warm": 1830.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/cute-amazing-apartment-in-muenchen/6a5125756f5812ce7a89df04",
+    "quelle": "Wunderflats",
+    "adresse": "⁠Barer Str, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "11.07. 06:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.2,
+    "verfuegbar_ab": ""
   }
 ]
