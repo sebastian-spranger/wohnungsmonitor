@@ -12689,5 +12689,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.2,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cb51cfd42cc90a",
+    "titel": "Panoramablick 7. Stock. Gepflegte 2-Raum-Wohnung in Schwabing-West",
+    "preis_warm": 1590.0,
+    "groesse": 53.24,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169221334",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klausingweg 2, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 07:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.63,
+    "verfuegbar_ab": ""
   }
 ]
