@@ -12761,5 +12761,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.64,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3a86ce43e3c6e8",
+    "titel": "Sofort verfügbar: 2 Zimmer Wohnung mit EBK und Balkon im schönen Giesing",
+    "preis_warm": 1489.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169223312",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zasingerstraße 9, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 10:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.97,
+    "verfuegbar_ab": "2026-07-11"
+  },
+  {
+    "id": "447dc07dfbf85b",
+    "titel": "Wunderschöne Zwei Zimmer Wohnung an der Donnersbergerbrücke  zur Untermiete",
+    "preis_warm": 1550.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168811278",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Landsberger Straße 106, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 10:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.97,
+    "verfuegbar_ab": ""
   }
 ]
