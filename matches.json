@@ -13085,5 +13085,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ffc2c381c1d683",
+    "titel": "**UNTERMIETE** Bright and Spacious Flat Available for Sublet (Q1 2027)",
+    "preis_warm": 1500.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/155269084",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Einsteinstr. 102, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 20:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.4,
+    "verfuegbar_ab": ""
   }
 ]
