@@ -12725,5 +12725,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ab4fd76ae2d2e3",
+    "titel": "2-Zimmer-Wohnung mit Balkon in Bogenhausen",
+    "preis_warm": 1784.75,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/168465001",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Zaubzerstraße 41, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 09:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.95,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "73a559a36caf07",
+    "titel": "Einzigartiges Wohnjuwel im Herzen von Bogenhausen",
+    "preis_warm": 1240.0,
+    "groesse": 46.3,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169223103",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Gotthelfstr. 20a, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "11.07. 09:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.64,
+    "verfuegbar_ab": ""
   }
 ]
