@@ -13193,5 +13193,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b1cae951c6c271",
+    "titel": "Helle Wohnung 58qm am Nockherberg",
+    "preis_warm": 1960.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-wohnung-58qm-am-nockherberg/3457466498-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.07. 17:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
