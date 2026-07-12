@@ -13103,5 +13103,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.4,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3aa860cbd911f4",
+    "titel": "Exklusive, ruhige 2-Zimmer-Wohnung in zentraler Lage in München-Maxvorstadt",
+    "preis_warm": 1920.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169234842",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Linprunstraße 21, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "12.07. 10:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.09,
+    "verfuegbar_ab": ""
   }
 ]
