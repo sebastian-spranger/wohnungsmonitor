@@ -13175,5 +13175,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b8d76d11946c86",
+    "titel": "Sanierte 2-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 1750.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169240590",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Volkartstraße 61, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "12.07. 15:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.46,
+    "verfuegbar_ab": ""
   }
 ]
