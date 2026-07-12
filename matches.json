@@ -13139,5 +13139,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "165926a8c42bf0",
+    "titel": "Helle 2-Zimmer-Wohnung mit Balkon in München - Goethestraße",
+    "preis_warm": 1718.0,
+    "groesse": 68.7,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-2-zimmer-wohnung-mit-balkon-in-muenchen-goethestrasse/3407096752-203-6440",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.07. 13:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
