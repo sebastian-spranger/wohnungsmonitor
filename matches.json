@@ -13157,5 +13157,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6609d6af12ded4",
+    "titel": "Helles 1-Zimmer-Apartment in Sendling nähe Flaucher und U-Bahn",
+    "preis_warm": 1150.0,
+    "groesse": 48.0,
+    "zimmer": 1.0,
+    "url": "https://www.immobilienscout24.de/expose/169236790",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "12.07. 13:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
