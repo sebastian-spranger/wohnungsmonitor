@@ -13229,5 +13229,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fe615f85398eaa",
+    "titel": "Traumhafte möblierte  2 Zi-Neubau-Whg am Park, Nähe U2/S7/Bus,  1. OG, Loggia, 1.575 €, v. privat! ",
+    "preis_warm": 1630.0,
+    "groesse": 48.54,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169235052",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Oggersheimer str. 20, Ramersdorf, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "12.07. 20:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.24,
+    "verfuegbar_ab": ""
   }
 ]
