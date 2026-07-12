@@ -13121,5 +13121,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "19775ec7a413d8",
+    "titel": "ruh, helle 2 Zimmer + gr. Wohnküche, BLK zum Innenhof, Lift",
+    "preis_warm": 1710.0,
+    "groesse": 61.2,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169236624",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Tegernseer Platz 3, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "12.07. 11:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.41,
+    "verfuegbar_ab": ""
   }
 ]
