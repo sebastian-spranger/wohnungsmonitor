@@ -13589,5 +13589,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c7443676eadc0c",
+    "titel": "3,5-Zi-Whg, 85qm, Zwischenmiete, München (Nähe BMW) Sep-Jan ‘27",
+    "preis_warm": 2200.0,
+    "groesse": 85.0,
+    "zimmer": 3.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-5-zi-whg-85qm-zwischenmiete-muenchen-naehe-bmw-sep-jan-27/3458247359-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 16:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
