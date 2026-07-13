@@ -13625,5 +13625,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0bdcc6839b44e6",
+    "titel": "Gemütliche und helle 1-Zimmer-Wohnung in München",
+    "preis_warm": 560.0,
+    "groesse": 46.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-und-helle-1-zimmer-wohnung-in-muenchen/3458277638-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 17:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
   }
 ]
