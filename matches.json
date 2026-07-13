@@ -13841,5 +13841,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6f629899a02231",
+    "titel": "2-Zimmer-Wohnung zu vermieten",
+    "preis_warm": 960.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-zu-vermieten/3458375454-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 20:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
