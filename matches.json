@@ -13769,5 +13769,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.3,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "28984715a75297",
+    "titel": " 2-Zimmer-Wohnung mit Balkon in Obergiesing",
+    "preis_warm": 1380.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169274440",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Heimgartenstraße 10, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 19:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
