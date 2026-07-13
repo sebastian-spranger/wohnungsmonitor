@@ -13553,5 +13553,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8516968f3b287c",
+    "titel": "Gemütliche und helle 2-Zimmer-Wohnung mit hochwertiger Ausstattun",
+    "preis_warm": 620.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-und-helle-2-zimmer-wohnung-mit-hochwertiger-ausstattun/3458198569-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 16:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
