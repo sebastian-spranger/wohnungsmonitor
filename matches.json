@@ -13301,5 +13301,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.13,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2c3e1502e90501",
+    "titel": "Gemütliche und stilvoll renovierte 1-Zimmer-Wohnung",
+    "preis_warm": 560.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-und-stilvoll-renovierte-1-zimmer-wohnung/3457834569-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 09:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
