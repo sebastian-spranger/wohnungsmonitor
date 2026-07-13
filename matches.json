@@ -13373,5 +13373,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.29,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "85a61a35fb073e",
+    "titel": "Helle 2-Zimmer-Wohnung im lebendigen Haidhausen",
+    "preis_warm": 1980.0,
+    "groesse": 88.97,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169258783",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Kirchenstr. 27, Haidhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 10:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.95,
+    "verfuegbar_ab": ""
   }
 ]
