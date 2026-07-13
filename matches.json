@@ -13481,5 +13481,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "17a24e91e36afd",
+    "titel": "Möblierte 2-Zimmer-Wohnung in München",
+    "preis_warm": 850.0,
+    "groesse": 75.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-in-muenchen/3458077495-203-16388",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81379 Sendling-​Westpark",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 13:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
