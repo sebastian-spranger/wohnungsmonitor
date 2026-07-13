@@ -13409,5 +13409,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e3b941c568f52f",
+    "titel": "Schwabing pur: ruhige 3,5 Zimmer-Wohnung auf 86 m² mit 2 Loggien - hochwertig saniert,  frei ab 1.9.",
+    "preis_warm": 2180.0,
+    "groesse": 86.0,
+    "zimmer": 3.5,
+    "url": "https://www.immobilienscout24.de/expose/169157759",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Düsseldorfer Straße 13, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 11:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.52,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "b9c4c1fedcd93c",
+    "titel": "EINZIEHEN und WOHL FÜHLEN! Moderne 3-Zimmer-Wohnung mit hochwertiger Einbauküche und schöner Loggia",
+    "preis_warm": 1980.0,
+    "groesse": 76.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/152518332",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 11:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
