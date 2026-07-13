@@ -13643,5 +13643,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d0e2a4470103ff",
+    "titel": "Wochnungsuche ",
+    "preis_warm": 1000.0,
+    "groesse": 65.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169273191",
+    "quelle": "ImmobilienScout24",
+    "adresse": ". ., Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 17:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
