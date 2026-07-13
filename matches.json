@@ -13607,5 +13607,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2abb58f365e7bf",
+    "titel": "Befristet SEPTEMBER - Helle 2-Zimmer Wohnung zur Untermiete",
+    "preis_warm": 2100.0,
+    "groesse": 68.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/befristet-september-helle-2-zimmer-wohnung-zur-untermiete/3458250400-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 17:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
