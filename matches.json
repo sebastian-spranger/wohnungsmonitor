@@ -13571,5 +13571,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8e01f01abf9cf3",
+    "titel": "Helle DG-Wohnung über den Dächern Giesings - teilmöbliert & bezugsfertig",
+    "preis_warm": 1475.47,
+    "groesse": 49.29,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169271715",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 16:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
