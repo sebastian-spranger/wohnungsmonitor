@@ -13859,5 +13859,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "01b1ba6c5c0222",
+    "titel": "2-Zimmer-Wohnung Glockenbachviertel München mit Balkon und EBK",
+    "preis_warm": 1900.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-glockenbachviertel-muenchen-mit-balkon-und-ebk/3458330810-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 21:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
