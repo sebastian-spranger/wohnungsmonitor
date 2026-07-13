@@ -13715,5 +13715,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.4,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "af0e57447fac42",
+    "titel": "Möblierte 2 Zimmer Wohnung, Untermiete in München, Haidhausen",
+    "preis_warm": 2200.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-untermiete-in-muenchen-haidhausen/3458330540-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "13.07. 18:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
