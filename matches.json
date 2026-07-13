@@ -13355,5 +13355,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3c3e9b91e370db",
+    "titel": "helle 2-Zimmerwohnung Maxvorstadt (vorläufig für 1 Jahr)",
+    "preis_warm": 1600.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169260344",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Winzererstr. 28, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 10:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.29,
+    "verfuegbar_ab": ""
   }
 ]
