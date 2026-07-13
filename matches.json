@@ -13877,5 +13877,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8f248529e1cc68",
+    "titel": "Helle Dachgeschosswohnung im Herzen von Schwabing mit freiem Blick (teilmöbliert)",
+    "preis_warm": 1930.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169275345",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 21:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
