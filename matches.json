@@ -13499,5 +13499,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "97072c726bf777",
+    "titel": "Glockenbachviertel - gemütliche 2-Zimmer-Wohnung/neu renoviert mit Wohnküche; WG-geeignet!",
+    "preis_warm": 2000.0,
+    "groesse": 62.09,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/90920876",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 14:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "978d0181c00c2a",
+    "titel": "Möbliert: Zeitlos möblierte 1,5-Zimmer Wohnung",
+    "preis_warm": 1980.0,
+    "groesse": 56.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169269586",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 14:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
