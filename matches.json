@@ -13805,5 +13805,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.16,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bc7a1ad1295abd",
+    "titel": "Top 2 Zi-DG Wohnung mit sep. Küche in M-Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1095.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169274980",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthaler Str. 83, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 20:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.65,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "a1a6a317026684",
+    "titel": "Schöne 2-Zimmer-Wohnung in der Ludwigsvorstadt",
+    "preis_warm": 1820.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169274919",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 20:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
