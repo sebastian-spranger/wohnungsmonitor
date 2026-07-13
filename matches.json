@@ -13787,5 +13787,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6c5360e2cb9f1a",
+    "titel": "Schöne ruhige 2-Zimmer Wohnung im Zentrum von München",
+    "preis_warm": 1280.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169274605",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwarzstraße 4, Au, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 19:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.16,
+    "verfuegbar_ab": ""
   }
 ]
