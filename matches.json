@@ -13697,5 +13697,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "36ee60d3d31438",
+    "titel": "3 Zimmerwohnung mit Balkon ins Grüne",
+    "preis_warm": 1909.24,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169129334",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Franz-Fischer-Straße 5, Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 18:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.4,
+    "verfuegbar_ab": ""
   }
 ]
