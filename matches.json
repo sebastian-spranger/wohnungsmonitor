@@ -13265,5 +13265,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8df9e7950b0157",
+    "titel": "Modernes 1,5-Zimmer City Apartment in der Maxvorstadt mit Glasatrium - teilmöbliert",
+    "preis_warm": 1587.0,
+    "groesse": 52.0,
+    "zimmer": 1.5,
+    "url": "https://www.immobilienscout24.de/expose/169251950",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 08:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
