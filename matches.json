@@ -13733,5 +13733,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "89157008bf02bc",
+    "titel": "Erstbezug nach Sanierung 2026: Moderne 3-Zimmer-Stadtwohnung mit Balkon in München-Ramersdorf",
+    "preis_warm": 1800.0,
+    "groesse": 72.8,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169273688",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klagenfurter Straße 2, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 18:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.44,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "7889af97cc67c8",
+    "titel": "ZWISCHENMIETER für 3 Zimmerwohnung in Sendling gesucht.",
+    "preis_warm": 2120.0,
+    "groesse": 83.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169273760",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schanzenbachstraße 3, Sendling, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 18:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.3,
+    "verfuegbar_ab": ""
   }
 ]
