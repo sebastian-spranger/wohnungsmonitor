@@ -13463,5 +13463,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b0ec5a169ae3ff",
+    "titel": "Modernisierte 2-Raum-Wohnung mit Balkon und EBK in München-Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1670.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/128567032",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "13.07. 13:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
