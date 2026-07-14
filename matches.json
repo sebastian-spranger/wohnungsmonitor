@@ -14057,5 +14057,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.57,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a56419be1b2865",
+    "titel": "Helle 2-Zimmer Wohnung mit Balkon.",
+    "preis_warm": 1430.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169283912",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 10:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
