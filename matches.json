@@ -14255,5 +14255,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.62,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "901cfd59fbae95",
+    "titel": "2-Zimmer-Wohnung in  Sendling/ Westpark-Nachmieter gesucht",
+    "preis_warm": 1502.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-sendling-westpark-nachmieter-gesucht/3459156009-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.07. 19:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
