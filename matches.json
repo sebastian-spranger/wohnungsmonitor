@@ -14237,5 +14237,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "07e0d6884303c3",
+    "titel": "WOHNKOMFORT IN MÜNCHEN NEBEN WEIßENSEEPARK* 2-Zimmer Wohnung mit Südbalkon - möbliert",
+    "preis_warm": 1800.0,
+    "groesse": 57.8,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169298519",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bacherstraße 47, Obergiesing, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 19:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.62,
+    "verfuegbar_ab": ""
   }
 ]
