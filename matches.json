@@ -14309,5 +14309,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7b0168e0910616",
+    "titel": "Vermiete Wohnung 75 qm U-Bahn, Bus, S-Bahn, Trambahn-Anbindung nebenan",
+    "preis_warm": 1950.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169300137",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schlierseestraße 105, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 22:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.15,
+    "verfuegbar_ab": ""
   }
 ]
