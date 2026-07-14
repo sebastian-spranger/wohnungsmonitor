@@ -14003,5 +14003,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.11,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a2171e1c0c30b0",
+    "titel": "Helle und gemütliche 1-Zimmer-Wohnung mit hochwertiger Ausstattun",
+    "preis_warm": 560.0,
+    "groesse": 46.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-und-gemuetliche-1-zimmer-wohnung-mit-hochwertiger-ausstattun/3458608957-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.07. 08:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
