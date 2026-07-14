@@ -14219,5 +14219,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.13,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4ad27712cf802e",
+    "titel": "Ruhige 2-Zimmer-Wohnung in Schwabing (Nähe Bonner Platz)",
+    "preis_warm": 1800.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/147386421",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 19:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
