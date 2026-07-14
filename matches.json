@@ -14183,5 +14183,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.68,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3fe968461c37e9",
+    "titel": "Zentrale Dachgeschoss Apartment ",
+    "preis_warm": 1090.0,
+    "groesse": 100.0,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169293212",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schyrenstr 5, Au, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 15:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
