@@ -14165,5 +14165,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ad95244eeedd9f",
+    "titel": "Sehr schöne, komplett renovierte 2-Zi-Wohnung mit Südbalkon im Zentrum",
+    "preis_warm": 1587.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/143527668",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthalerstr. 76, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 14:19",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.68,
+    "verfuegbar_ab": ""
   }
 ]
