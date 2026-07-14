@@ -14093,5 +14093,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9dbb0db08650d2",
+    "titel": "Schöne 2-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 1587.31,
+    "groesse": 67.5,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169290374",
+    "quelle": "ImmobilienScout24",
+    "adresse": "St.-Cajetan-Str. 32, Ramersdorf, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 13:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.59,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f35918d39a739b",
+    "titel": "Möbliert: Zentral gelegen, mit Blick in den ruhigen Innenhof",
+    "preis_warm": 2000.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169290478",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 13:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.0,
+    "verfuegbar_ab": ""
   }
 ]
