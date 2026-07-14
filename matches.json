@@ -13985,5 +13985,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "989032c156cb54",
+    "titel": "Wohnung mit 2 Zimmern · München-Sendling · 9100",
+    "preis_warm": 1990.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-sendling-9100",
+    "quelle": "Mr. Lodge",
+    "adresse": "Ganghoferstraße, Sendling, 81373 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "14.07. 08:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.11,
+    "verfuegbar_ab": ""
   }
 ]
