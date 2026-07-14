@@ -13895,5 +13895,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.78,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e99bf6654fd2dd",
+    "titel": "2 Zimmer Wohnung nähe Theresienwiese/Oktoberfest zu vermieten",
+    "preis_warm": 1500.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-naehe-theresienwiese-oktoberfest-zu-vermieten/3458460884-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.07. 05:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "e1ba80ef61f2bd",
+    "titel": "Helle 3-Zimmer Altbauwohnung im 4. OG in München Altstadt ZEITMIETVERTRAG FÜR 2,5  JAHRE",
+    "preis_warm": 2060.0,
+    "groesse": 78.26,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169241724",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Westenriederstraße 31, Altstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 05:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.32,
+    "verfuegbar_ab": ""
   }
 ]
