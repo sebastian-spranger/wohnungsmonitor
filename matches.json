@@ -14039,5 +14039,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "61d11906fcadc4",
+    "titel": "2-Zimmer-Wohnung in Giesing",
+    "preis_warm": 1260.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169272229",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Säbener Straße 34, Untergiesing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "14.07. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.57,
+    "verfuegbar_ab": ""
   }
 ]
