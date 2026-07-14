@@ -13967,5 +13967,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a1d9f6095527c7",
+    "titel": "ein  WG-Zimmer ab 15 Oktober für 6 Monate",
+    "preis_warm": 900.0,
+    "groesse": 53.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ein-wg-zimmer-ab-15-oktober-fuer-6-monate/3458513165-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.07. 08:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
