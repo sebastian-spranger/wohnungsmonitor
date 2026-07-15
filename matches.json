@@ -14489,5 +14489,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.02,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4fd6f4ca0252ff",
+    "titel": "Neu renovierte 2-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 1179.19,
+    "groesse": 64.57,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169311189",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Renatastraße 3, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 12:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.66,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "6e8b74d6a29111",
+    "titel": "Gut geschnittene 2-Zimmer-Wohnung in  Neuhausen im Hochparterre",
+    "preis_warm": 1178.11,
+    "groesse": 52.83,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/63617946",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Menradstr.  5, Neuhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 12:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.76,
+    "verfuegbar_ab": ""
   }
 ]
