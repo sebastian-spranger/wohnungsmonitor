@@ -14327,5 +14327,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.15,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "069177c13d7343",
+    "titel": "Stilvoll modernisiert: 2-Zimmer-Wohnung in der Isarvorstadt",
+    "preis_warm": 2020.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169300516",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Klenzestraße 44, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 00:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.76,
+    "verfuegbar_ab": ""
   }
 ]
