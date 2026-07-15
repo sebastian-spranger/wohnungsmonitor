@@ -14381,5 +14381,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6ef956bb011cd2",
+    "titel": "Lebendig wohnen: 2-Zimmer-Wohnung in Berg am Laim",
+    "preis_warm": 560.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169300740",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Westerhamer Straße 37, Berg am Laim, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 08:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
