@@ -14543,5 +14543,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5df8e70d469d02",
+    "titel": "Wohnen mit Charakter: 2-Zimmer-Wohnung am Heimeranplatz",
+    "preis_warm": 1460.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169226364",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Heimeranplatz 5, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 16:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.12,
+    "verfuegbar_ab": ""
   }
 ]
