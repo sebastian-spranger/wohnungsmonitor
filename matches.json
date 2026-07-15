@@ -14579,5 +14579,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.29,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b7b247e033a281",
+    "titel": "Schöne 2-Zimmer-Wohnung mit Einbauküche in der Maxvorstadt, München",
+    "preis_warm": 1340.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/124190445",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Augustenstraße x4x, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 18:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
