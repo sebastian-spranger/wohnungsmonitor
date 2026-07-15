@@ -14561,5 +14561,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.12,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d8767cd88572e8",
+    "titel": "::Wohnen im Türmchen mit Blick auf den Elisabethmarkt::",
+    "preis_warm": 1061.98,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/101279213",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Franz Joseph Str. 48, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 16:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.29,
+    "verfuegbar_ab": ""
   }
 ]
