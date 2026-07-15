@@ -14417,5 +14417,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.03,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4085475c548a19",
+    "titel": "Ruhige 2-Zimmer-Wohnung mit Balkon & Einbauküche Maxvorstadt – Nordendstraße, ",
+    "preis_warm": 2100.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/167771005",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 08:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.85,
+    "verfuegbar_ab": ""
   }
 ]
