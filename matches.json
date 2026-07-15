@@ -14363,5 +14363,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e9aaaedd489cbf",
+    "titel": "Westend-Bestlage - TOP sanierte 2-Zimmer-AB-Wohnung mit Wohnküche -  absolut ruhig",
+    "preis_warm": 1730.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169306070",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 07:11",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
