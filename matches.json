@@ -14471,5 +14471,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e83a8f84c82034",
+    "titel": "München erleben: 2-Zimmer-Wohnung in Schwabing-West",
+    "preis_warm": 1078.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169299642",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Fallmerayerstraße 28, Schwabing-West, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 10:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.02,
+    "verfuegbar_ab": ""
   }
 ]
