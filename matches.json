@@ -14615,5 +14615,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.29,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "15bed3529eb17a",
+    "titel": "Helle 3-Zi.-Wohnung mit Balkon nahe Englischem Garten",
+    "preis_warm": 2060.0,
+    "groesse": 93.2,
+    "zimmer": 3.0,
+    "url": "https://www.immobilienscout24.de/expose/169325653",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Schwabing, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 18:49",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.78,
+    "verfuegbar_ab": ""
   }
 ]
