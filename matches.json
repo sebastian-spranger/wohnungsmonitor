@@ -14345,5 +14345,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.76,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cb61bb6b23c2f2",
+    "titel": "Schöne 3-Zimmer-Wohnung in Sendling(Nähe Partnachplatz & Westpark",
+    "preis_warm": 1700.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-3-zimmer-wohnung-in-sendling-naehe-partnachplatz-westpark/3459267937-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.07. 05:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
