@@ -14525,5 +14525,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.76,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "11327c57f5cabc",
+    "titel": "Schöne renovierte 2 Zi. Wohnung an der Donnersbergerbrücke",
+    "preis_warm": 1590.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-renovierte-2-zi-wohnung-an-der-donnersbergerbruecke/3459597230-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.07. 13:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
