@@ -14399,5 +14399,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "659f48e24bfcfc",
+    "titel": "Großzügige 2-Zimmer-Erdgeschosswohnung mit kleiner Terrasse in ruhiger TOP Lage am Arabellapark!",
+    "preis_warm": 1630.0,
+    "groesse": 65.3,
+    "zimmer": 2.0,
+    "url": "https://www.immobilienscout24.de/expose/169309623",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Bogenhausen, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 08:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": ""
   }
 ]
