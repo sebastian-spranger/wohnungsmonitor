@@ -14453,5 +14453,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6c76ab56ceb856",
+    "titel": "Nachmieter Schwabing-Mitte mit ruhiger Lage im Rückgebäude",
+    "preis_warm": 1200.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-schwabing-mitte-mit-ruhiger-lage-im-rueckgebaeude/3459425558-203-16356",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80802 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "15.07. 09:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.8,
+    "verfuegbar_ab": ""
   }
 ]
