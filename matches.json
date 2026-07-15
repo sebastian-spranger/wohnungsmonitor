@@ -14597,5 +14597,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "648265d28d2a4b",
+    "titel": "Wohnen mit Charakter: 2,5-Zimmer-Wohnung in der Ludwigsvorstadt-Isarvorstadt",
+    "preis_warm": 1545.0,
+    "groesse": 55.0,
+    "zimmer": 2.5,
+    "url": "https://www.immobilienscout24.de/expose/169322037",
+    "quelle": "ImmobilienScout24",
+    "adresse": "Reifenstuelstraße 10, Ludwigsvorstadt-Isarvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "15.07. 18:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.29,
+    "verfuegbar_ab": ""
   }
 ]
