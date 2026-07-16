@@ -14813,5 +14813,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "43ae58fdcbd776",
+    "titel": "Stilvolle 3-Zimmer Altbauwohnung in Neuhausen – Erstbezug nach Kernsanierung",
+    "preis_warm": 2200.0,
+    "groesse": 70.51,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvolle-3-zimmer-altbauwohnung-in-neuhausen-erstbezug-nach-kernsanierung/3424172981-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 19:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
