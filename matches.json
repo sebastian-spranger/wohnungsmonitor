@@ -14777,5 +14777,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5f7f24934aa10c",
+    "titel": "Beschauliche 2-Zimmer-Wohnung in zentraler Lage - Schwanthalerhöhe",
+    "preis_warm": 1000.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/beschauliche-2-zimmer-wohnung-in-zentraler-lage-schwanthalerhoehe/3460455792-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 14:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
