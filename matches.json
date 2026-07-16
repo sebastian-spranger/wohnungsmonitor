@@ -14651,5 +14651,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d9f208785f17ea",
+    "titel": "Feinstes, großartiges Studio Apartment in 85777 (Unterschleißheim, Eching, Neufahrn, Garching, Flugahfen, Freising, Dachau)",
+    "preis_warm": 1050.0,
+    "groesse": 50.0,
+    "zimmer": 1.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/amazing-wonderful-apartment-located-in-85777-unterschleissheim-eching-neufahrn-garchin-airport-freising-dachau/5ed80d6ea0c1ef0007d13d83",
+    "quelle": "Wunderflats",
+    "adresse": "Römerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 02:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.49,
+    "verfuegbar_ab": ""
   }
 ]
