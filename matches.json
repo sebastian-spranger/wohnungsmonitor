@@ -14687,5 +14687,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1ca6ade2b2fe62",
+    "titel": "Helle und gemütliche 2-Zimmer-Wohnung in München",
+    "preis_warm": 650.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-und-gemuetliche-2-zimmer-wohnung-in-muenchen/3460224775-203-16340",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
