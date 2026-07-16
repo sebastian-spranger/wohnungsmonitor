@@ -14669,5 +14669,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6079eee5bdb609",
+    "titel": "Untermiete ein Jahr Obergiesing 2 Zimmer",
+    "preis_warm": 1030.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/untermiete-ein-jahr-obergiesing-2-zimmer/3460103917-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 07:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
