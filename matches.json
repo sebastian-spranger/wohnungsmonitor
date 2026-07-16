@@ -14705,5 +14705,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ef8097fa01da6c",
+    "titel": "Charmante und lichtdurchflutete 2-Zimmer-Wohnung in München",
+    "preis_warm": 640.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/charmante-und-lichtdurchflutete-2-zimmer-wohnung-in-muenchen/3460296670-203-16339",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 11:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
