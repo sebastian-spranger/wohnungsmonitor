@@ -14759,5 +14759,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e2466fab49b804",
+    "titel": "Befristete 2-Zimmerwohnung im Glockenbachviertel (5 Monate)",
+    "preis_warm": 1930.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/befristete-2-zimmerwohnung-im-glockenbachviertel-5-monate-/3460350301-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "16.07. 12:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
