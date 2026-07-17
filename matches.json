@@ -14903,5 +14903,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b320d2c76eb764",
+    "titel": "Dachgeschoss-Wohntraum mit EInbauküche!",
+    "preis_warm": 2025.0,
+    "groesse": 96.39,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/dachgeschoss-wohntraum-mit-einbaukueche-/3449593228-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.07. 09:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
