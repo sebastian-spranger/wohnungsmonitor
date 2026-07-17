@@ -14975,5 +14975,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a30fd379966899",
+    "titel": "2 Zimmer Wohnung in München Giesing - befristet bis Sep. 2028",
+    "preis_warm": 990.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-muenchen-giesing-befristet-bis-sep-2028/3461448899-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 20:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
