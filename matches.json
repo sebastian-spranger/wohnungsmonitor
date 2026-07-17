@@ -14849,5 +14849,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c78a417ba3c8cf",
+    "titel": "Zimmer in 4er WG in 81371 München zu vermieten",
+    "preis_warm": 735.0,
+    "groesse": 67.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zimmer-in-4er-wg-in-81371-muenchen-zu-vermieten/3460893422-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 09:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
