@@ -14993,5 +14993,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "71ca238053b900",
+    "titel": "Miete zu hoch? Mietsenkung prüfen lassen - Rechtsanwalt München",
+    "preis_warm": 190.0,
+    "groesse": 0.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/miete-zu-hoch-mietsenkung-pruefen-lassen-rechtsanwalt-muenchen/3461483356-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 22:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
