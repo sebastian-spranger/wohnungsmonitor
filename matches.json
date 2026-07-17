@@ -14957,5 +14957,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6d274565911904",
+    "titel": "2 Zimmer Wohnung Sendling Brudermühlstraße",
+    "preis_warm": 1900.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-sendling-brudermuehlstrasse/3461201305-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 14:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
