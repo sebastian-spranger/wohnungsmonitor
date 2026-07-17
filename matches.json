@@ -14831,5 +14831,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c1751922bbffac",
+    "titel": "Möblierte 2-Zimmer-Wohnung am Oberanger – 67 m² – sofort bezugsfr",
+    "preis_warm": 1600.0,
+    "groesse": 67.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-am-oberanger-67-m-sofort-bezugsfr/3460866872-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 08:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
