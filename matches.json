@@ -14867,5 +14867,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e82f411de7c578",
+    "titel": "Modernisierte Gartenwohnung mit neuer Einbauküche, Terrasse und ruhiger Grünlage - Isarnähe!",
+    "preis_warm": 1570.0,
+    "groesse": 56.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/modernisierte-gartenwohnung-mit-neuer-einbaukueche-terrasse-und-ruhiger-gruenlage-isarnaehe-/3460921301-203-16344",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81543 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "17.07. 09:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "329041c2f53e41",
+    "titel": "zur Miete: 2-Zimmerwohnung mit traumhafter Dachterrasse",
+    "preis_warm": 1303.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zur-miete-2-zimmerwohnung-mit-traumhafter-dachterrasse/3460922454-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "17.07. 09:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
