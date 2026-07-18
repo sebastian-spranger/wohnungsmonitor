@@ -15029,5 +15029,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "923a0324a6a13c",
+    "titel": "Hochwertig renovierte 2Z-Wohnung mit neuem Designerbad & Erker",
+    "preis_warm": 1900.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/hochwertig-renovierte-2z-wohnung-mit-neuem-designerbad-erker/3461842416-203-16360",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.07. 11:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
