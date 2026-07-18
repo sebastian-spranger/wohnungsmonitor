@@ -15065,5 +15065,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "81471dba6ac5aa",
+    "titel": "3 fortnät accounts",
+    "preis_warm": 300.0,
+    "groesse": 67.0,
+    "zimmer": 67.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-fortnaet-accounts/3462251581-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "18.07. 18:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
