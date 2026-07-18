@@ -15011,5 +15011,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9f9f109e14e3f4",
+    "titel": "möbliertes Apartment in München – Schweppermannstraße",
+    "preis_warm": 500.0,
+    "groesse": 72.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moebliertes-apartment-in-muenchen-schweppermannstrasse/3461517863-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "18.07. 05:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
