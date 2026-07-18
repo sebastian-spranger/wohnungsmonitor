@@ -15047,5 +15047,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "aaa88bac43e178",
+    "titel": "Wohnung mit 1.5 Zimmern · München-Au-Haidhausen · 14922",
+    "preis_warm": 1850.0,
+    "groesse": 46.0,
+    "zimmer": 1.5,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/1-zimmer-wohnung-muenchen-au-haidhausen-14922",
+    "quelle": "Mr. Lodge",
+    "adresse": "St.-Cajetan-Straße, Au-Haidhausen, 81669 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "18.07. 15:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
