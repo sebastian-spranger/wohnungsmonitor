@@ -15119,5 +15119,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "40717d1f9ff6af",
+    "titel": "WG: Modisches & charmantes Zimmer Mitten in Maxvorstadt",
+    "preis_warm": 947.0,
+    "groesse": 70.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-modisches-charmantes-zimmer-mitten-in-maxvorstadt/3404095827-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 08:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
