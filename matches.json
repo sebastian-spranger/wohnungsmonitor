@@ -15083,5 +15083,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ed63f63081386d",
+    "titel": "Möblierte 3-Zimmer-Wohnung im Glockenbachviertel zur Untermiete |",
+    "preis_warm": 600.0,
+    "groesse": 90.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-3-zimmer-wohnung-im-glockenbachviertel-zur-untermiete-/3462407099-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 06:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
