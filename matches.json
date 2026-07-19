@@ -15101,5 +15101,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b8138540577c39",
+    "titel": "Moderne 2-Zimmer-Wohnung im Glockenbachviertel | Voll möbliert |",
+    "preis_warm": 395.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moderne-2-zimmer-wohnung-im-glockenbachviertel-voll-moebliert-/3462409628-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 06:51",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
