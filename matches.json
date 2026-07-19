@@ -15173,5 +15173,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.15,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d338fedc255cfc",
+    "titel": "Wohnung wird frei",
+    "preis_warm": 1310.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-wird-frei/3462700029-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 10:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
