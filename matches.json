@@ -15209,5 +15209,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "85869c695e5a64",
+    "titel": "Ruhiges Wohnen mit Balkon & Stellplatz: Helle 2-Zimmer-Wohnung (56 m²) in Erlenbach",
+    "preis_warm": 830.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ruhiges-wohnen-mit-balkon-stellplatz-helle-2-zimmer-wohnung-56-m-in-erlenbach/3462863129-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 12:28",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
