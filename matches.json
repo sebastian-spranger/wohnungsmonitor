@@ -15191,5 +15191,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6670cc75e6cb4f",
+    "titel": "Altbauwohnung nahe Theresienwiese wird frei",
+    "preis_warm": 1350.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/altbauwohnung-nahe-theresienwiese-wird-frei/3462727418-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 11:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
