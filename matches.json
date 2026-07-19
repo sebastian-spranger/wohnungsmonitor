@@ -15155,5 +15155,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.64,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e9fb05c5dd1d9a",
+    "titel": "2,5 Zimmer Wohnung Maxvorstadt Zwischenmiete (19.09.-22.12.2026)",
+    "preis_warm": 1850.0,
+    "groesse": 69.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-wohnung-maxvorstadt-zwischenmiete-19-09-22-12-2026-/3462662574-203-9616",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 10:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.15,
+    "verfuegbar_ab": ""
   }
 ]
