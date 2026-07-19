@@ -15137,5 +15137,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c8e2f632a97bb4",
+    "titel": "Wohnung mit 1.5 Zimmern · München-Schwabing · 4679",
+    "preis_warm": 1950.0,
+    "groesse": 50.0,
+    "zimmer": 1.5,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/1-zimmer-wohnung-muenchen-schwabing-4679",
+    "quelle": "Mr. Lodge",
+    "adresse": "Hiltenspergerstraße, Schwabing, 80798 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "19.07. 10:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.64,
+    "verfuegbar_ab": ""
   }
 ]
