@@ -15263,5 +15263,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.86,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4beca9fa2357e3",
+    "titel": "2 Zimmer Wohnung im sanierten Altbau in Neuhausen (teilmöbliert)",
+    "preis_warm": 1850.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-im-sanierten-altbau-in-neuhausen-teilmoebliert-/3463678963-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "20.07. 09:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
