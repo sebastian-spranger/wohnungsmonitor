@@ -15245,5 +15245,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "51780b91c106e0",
+    "titel": "Modisches & ruhiges Loft mit guter Verkehrsanbindung (Hebertshausen)",
+    "preis_warm": 1270.0,
+    "groesse": 65.0,
+    "zimmer": 1.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/wunderschoenes-appartement-auf-zeit/6a5cecfcce23fa35d9d979fa",
+    "quelle": "Wunderflats",
+    "adresse": "Dachauer Straße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "20.07. 06:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.86,
+    "verfuegbar_ab": ""
   }
 ]
