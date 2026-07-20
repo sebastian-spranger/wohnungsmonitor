@@ -15335,5 +15335,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "659fd94cf3d399",
+    "titel": "Studenten WG",
+    "preis_warm": 300.0,
+    "groesse": 500.0,
+    "zimmer": 10.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/studenten-wg/3423292058-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "20.07. 20:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
