@@ -15299,5 +15299,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "aa56d6e10d986c",
+    "titel": "Moderne 2-Zimmer-Wohnung mit Balkon & Aufzug – München",
+    "preis_warm": 1100.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moderne-2-zimmer-wohnung-mit-balkon-aufzug-muenchen/3464046979-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "20.07. 16:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
