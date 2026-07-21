@@ -49,7 +49,12 @@ jobs:
         run: |
           git config user.name  "Wohnungsmonitor[bot]"
           git config user.email "bot@noreply.github.com"
-          git add seen.json matches.json fahrtzeit_cache.json geocode_cache.json user_filters.json telegram_offset.json 2>/dev/null || true
+          # Einzeln adden statt in einem Aufruf: git add bricht sonst komplett ab
+          # (staged GAR NICHTS) sobald eine der Dateien fehlt – z.B. user_filters.json,
+          # bevor der erste Empfänger einen eigenen Filter gesetzt hat.
+          for f in seen.json matches.json fahrtzeit_cache.json geocode_cache.json user_filters.json telegram_offset.json; do
+            git add "$f" 2>/dev/null || true
+          done
           if git diff --staged --quiet; then
             echo "Keine Änderungen zu speichern."
             exit 0
