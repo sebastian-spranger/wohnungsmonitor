@@ -15389,5 +15389,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f8f52f9700195a",
+    "titel": "Großzügige 3-Zimmer-Wohnung in Top-Lage am Gärtnerplatz – Untermi",
+    "preis_warm": 1470.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/grosszuegige-3-zimmer-wohnung-in-top-lage-am-gaertnerplatz-untermi/3464729757-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.07. 13:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
