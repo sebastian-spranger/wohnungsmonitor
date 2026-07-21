@@ -15353,5 +15353,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b2dfcd2225a8ae",
+    "titel": "Helle und Renovierte 3-Zimmer Wohnung in Augsburg-Haunstetten",
+    "preis_warm": 1080.0,
+    "groesse": 75.5,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-und-renovierte-3-zimmer-wohnung-in-augsburg-haunstetten/3464342434-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.07. 01:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
