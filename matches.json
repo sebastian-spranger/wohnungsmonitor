@@ -15407,5 +15407,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bf6138560c0686",
+    "titel": "Nachmieter gesucht: Zentrale und günstige 3-Zimmer Wohnung",
+    "preis_warm": 930.0,
+    "groesse": 77.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-gesucht-zentrale-und-guenstige-3-zimmer-wohnung/3464824852-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.07. 15:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
   }
 ]
