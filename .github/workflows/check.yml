@@ -40,7 +40,7 @@ jobs:
           MAX_KALT_MIETE:   "1950"
           MIN_GROESSE:      "45"
           MAX_RADIUS_KM:    "4.0"
-          VERFUEGBAR_BIS:   "2026-07-15"
+          VERFUEGBAR_BIS:   "2027-12-31"
         # xvfb-run: virtueller Bildschirm → Chromium läuft headful (IS24 umgeht so die Bot-Sperre)
         run: xvfb-run -a python monitor_lite.py
 
