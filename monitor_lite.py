@@ -402,6 +402,7 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
         print(f"getUpdates-Fehler: {e}")
         return
 
+    print(f"Telegram: {len(updates)} neue Nachricht(en) seit offset {offset}")
     for upd in updates:
         offset = max(offset, upd["update_id"])
         msg = upd.get("message") or {}
@@ -410,9 +411,11 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
         text = (msg.get("text") or "").strip()
         if not cid or not text:
             continue
+        print(f"  [{cid}] {text[:60]!r}")
 
         if text.lower() == "/start":
-            await send_telegram(cid, WILLKOMMEN_TEXT, client)
+            ok = await send_telegram(cid, WILLKOMMEN_TEXT, client)
+            print(f"    → Willkommensnachricht: {'✓' if ok else '✗'}")
             continue
         if text.lower() == "/status":
             eff = {**DEFAULT_FILTER, **user_filters.get(cid, {})}
@@ -426,22 +429,25 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
 
         parsed = await deepseek_parse_filter(text, client)
         if not parsed:
-            await send_telegram(
+            ok = await send_telegram(
                 cid,
                 "🤔 Das konnte ich nicht als Filter verstehen. Beispiel:\n"
                 "_\"max 1800 warm, ab 2 Zimmer, min 50qm, Glockenbachviertel oder Schwabing\"_",
                 client,
             )
+            print(f"    → DeepSeek: nicht verstanden, Hinweis gesendet: {'✓' if ok else '✗'}")
             continue
         current = user_filters.get(cid, {})
         current.update(parsed)
         current["updated_at"] = date.today().isoformat()
         user_filters[cid] = current
         save_user_filters(user_filters)
+        print(f"    → Filter gesetzt: {parsed}")
         eff = {**DEFAULT_FILTER, **current}
         await send_telegram(cid, f"✅ Filter aktualisiert:\n{format_filter_summary(eff)}", client)
 
     save_telegram_offset(offset)
+    print(f"Telegram-Offset gespeichert: {offset}")
 
 
 # ─── Deduplication ───────────────────────────────────────────────────────────
