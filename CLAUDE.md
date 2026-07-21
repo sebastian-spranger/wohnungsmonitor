@@ -10,6 +10,11 @@ und schickt bei einem Match sofort eine Telegram-Push-Nachricht + macOS-Notifica
 - Neue Matches → Telegram-Bot `@Noapartmentsbot` + macOS-Ton-Notification
 - Alle Matches werden in `matches.json` gespeichert (Backup)
 - Bereits gesehene Inserate werden in `seen.json` gemerkt und übersprungen
+- **Mehrere Empfänger, eigene Filter**: Jeder Kontakt des Bots kann ihm einfach
+  schreiben, wonach er sucht (z.B. „max 1600 warm, ab 2 Zimmer, min 55qm, Schwabing
+  oder Maxvorstadt") – DeepSeek übersetzt das in Filter, die nur für diesen Kontakt
+  gelten (`user_filters.json`, siehe unten). `/status` zeigt die eigenen Filter,
+  `/reset` setzt sie zurück auf den Standard.
 
 ## Dateien
 
@@ -17,9 +22,11 @@ und schickt bei einem Match sofort eine Telegram-Push-Nachricht + macOS-Notifica
 monitor.py        – Hauptskript (Scraper + Filter + Notifier)
 requirements.txt  – Python-Abhängigkeiten
 setup.sh          – Einmaliges Setup-Skript
-seen.json         – Automatisch generiert: gesehene Inserate-IDs
-matches.json      – Automatisch generiert: alle bisherigen Matches
-monitor.log       – Automatisch generiert: Laufzeit-Log
+seen.json           – Automatisch generiert: gesehene Inserate-IDs
+matches.json        – Automatisch generiert: alle bisherigen Matches
+user_filters.json   – Automatisch generiert: eigene Filter pro Telegram-Empfänger
+telegram_offset.json – Automatisch generiert: zuletzt verarbeitete Telegram-Nachricht
+monitor.log         – Automatisch generiert: Laufzeit-Log
 ```
 
 ## Konfiguration (oben in monitor.py)
@@ -64,7 +71,9 @@ git push -u origin main
 **3. GitHub Secrets setzen**
 - Repo-Seite → Settings → Secrets and variables → Actions → „New repository secret"
 - Secret 1: `TELEGRAM_TOKEN` = `<dein Bot-Token von @BotFather>`
-- Secret 2: `TELEGRAM_CHAT_ID` = `<deine Telegram Chat-ID>`
+- Secret 2: `TELEGRAM_CHAT_ID` = `<deine Telegram Chat-ID>` (mehrere: kommagetrennt)
+- Secret 3 (optional): `DEEPSEEK_API_KEY` = `<API-Key von platform.deepseek.com>`
+  – nur nötig, wenn Empfänger ihre Filter per Telegram-Nachricht selbst setzen sollen
 
 **4. Actions aktivieren**
 - Repo → Tab „Actions" → „I understand my workflows, enable them"

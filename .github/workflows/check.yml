@@ -36,6 +36,7 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           MAX_WARM_MIETE:   "2200"
           MAX_KALT_MIETE:   "1950"
           MIN_GROESSE:      "45"
@@ -48,7 +49,7 @@ jobs:
         run: |
           git config user.name  "Wohnungsmonitor[bot]"
           git config user.email "bot@noreply.github.com"
-          git add seen.json matches.json fahrtzeit_cache.json geocode_cache.json 2>/dev/null || true
+          git add seen.json matches.json fahrtzeit_cache.json geocode_cache.json user_filters.json telegram_offset.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Keine Änderungen zu speichern."
             exit 0

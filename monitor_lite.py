@@ -34,6 +34,7 @@ except ImportError:
 # Werte kommen aus GitHub Secrets (nie im Code speichern!)
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_IDS = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 MAX_WARM_MIETE   = int(os.environ.get("MAX_WARM_MIETE",   "2200"))
 # Sicherheitsabschlag: zeigt ein Inserat nur die Kaltmiete (oder unklar),
@@ -47,8 +48,22 @@ MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "4.0"))  # km Luftlini
 # "Verfügbar ab"-Datum werden verworfen. Unbekannte Verfügbarkeit bleibt drin.
 VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-15")
 
+# Standard-Filter für Empfänger ohne eigene Einstellungen (Momentaufnahme der
+# Basiswerte, BEVOR sie unten pro Lauf für den breiten Scrape-Filter aufgeweitet
+# werden – siehe user_filters/DEFAULT_FILTER-Nutzung in main()).
+DEFAULT_FILTER = {
+    "max_warm_miete": MAX_WARM_MIETE,
+    "max_kalt_miete": MAX_KALT_MIETE,
+    "min_groesse": MIN_GROESSE,
+    "min_zimmer": 0.0,
+    "max_radius_km": MAX_RADIUS_KM,
+    "bezirke_erlaubt": None,
+}
+
 SEEN_FILE           = Path("seen.json")
 MATCHES_FILE        = Path("matches.json")
+USER_FILTERS_FILE   = Path("user_filters.json")
+TELEGRAM_OFFSET_FILE = Path("telegram_offset.json")
 FAHRTZEIT_CACHE_FILE = Path("fahrtzeit_cache.json")
 GEOCODE_CACHE_FILE   = Path("geocode_cache.json")
 
@@ -134,24 +149,40 @@ class Wohnung:
     entfernung_km: float | None = None   # Luftlinie zum Marienplatz (None = noch nicht geprüft)
     verfuegbar_ab: str = ""               # ISO-Datum "YYYY-MM-DD" oder "" (unbekannt)
 
-    def passt(self) -> tuple[bool, list[str]]:
+    def passt(self, filt: dict | None = None) -> tuple[bool, list[str]]:
+        """Prüft gegen einen Filter. Ohne Argument gelten die aktuellen globalen
+        Konstanten (ggf. für den breiten Scrape-Pass aufgeweitet); mit einem
+        expliziten filt-dict (siehe DEFAULT_FILTER) gilt dieser statt der Globals –
+        so bekommt jeder Telegram-Empfänger seine eigenen Grenzen geprüft."""
+        f = filt if filt is not None else {}
+        max_warm = f.get("max_warm_miete", MAX_WARM_MIETE)
+        max_kalt = f.get("max_kalt_miete", MAX_KALT_MIETE)
+        min_groesse = f.get("min_groesse", MIN_GROESSE)
+        min_zimmer = f.get("min_zimmer") or 0
+        max_radius = f.get("max_radius_km", MAX_RADIUS_KM)
+        bezirke_erlaubt = f.get("bezirke_erlaubt") or None
+
         fails = []
         if self.preis_warm == 0 and self.groesse == 0:
             fails.append("Kein Preis und keine Größe – kein echtes Inserat")
         if self.preis_warm > 0:
             # klar kalt → strenger (Warm ≈ +NK); warm oder unklar → großzügig (nichts verpassen)
             if self.preis_ist_kalt and not self.preis_ist_warm:
-                limit, label = MAX_KALT_MIETE, "kalt"
+                limit, label = max_kalt, "kalt"
             else:
-                limit = MAX_WARM_MIETE
+                limit = max_warm
                 label = "warm" if self.preis_ist_warm else "unklar"
             if self.preis_warm > limit:
                 fails.append(f"Preis {self.preis_warm:.0f}€ ({label}) > {limit}€")
-        if self.groesse > 0 and self.groesse < MIN_GROESSE:
-            fails.append(f"Größe {self.groesse:.0f}qm < {MIN_GROESSE}qm")
+        if self.groesse > 0 and self.groesse < min_groesse:
+            fails.append(f"Größe {self.groesse:.0f}qm < {min_groesse}qm")
+        if self.zimmer > 0 and min_zimmer and self.zimmer < min_zimmer:
+            fails.append(f"{self.zimmer:.1f} Zimmer < {min_zimmer} gewünscht")
         combined = (self.titel + " " + self.adresse).lower()
-        if self.entfernung_km is not None and self.entfernung_km > MAX_RADIUS_KM:
-            fails.append(f"{self.entfernung_km:.1f} km vom Zentrum > {MAX_RADIUS_KM:.0f} km")
+        if self.entfernung_km is not None and self.entfernung_km > max_radius:
+            fails.append(f"{self.entfernung_km:.1f} km vom Zentrum > {max_radius:.0f} km")
+        if bezirke_erlaubt and not any(b in combined for b in bezirke_erlaubt):
+            fails.append(f"Nicht in Wunschlage ({', '.join(bezirke_erlaubt)})")
         ausland = next((a for a in AUSLAND_KEYWORDS if a in combined), None)
         if ausland:
             fails.append(f"Nicht München ('{ausland}')")
@@ -214,25 +245,203 @@ class Wohnung:
 
 # ─── Notifier ────────────────────────────────────────────────────────────────
 
-async def telegram(text: str, client: httpx.AsyncClient) -> bool:
+async def send_telegram(chat_id: str, text: str, client: httpx.AsyncClient) -> bool:
     if not TELEGRAM_TOKEN:
         print("⚠  TELEGRAM_TOKEN nicht gesetzt")
         return False
-    success = True
-    for chat_id in TELEGRAM_CHAT_IDS:
+    try:
+        r = await client.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+            json={"chat_id": chat_id, "text": text,
+                  "parse_mode": "Markdown", "disable_web_page_preview": False},
+            timeout=10,
+        )
+        if r.status_code != 200:
+            print(f"Telegram-Fehler ({chat_id}): HTTP {r.status_code} – {r.text[:150]}")
+        return r.status_code == 200
+    except Exception as e:
+        print(f"Telegram-Fehler ({chat_id}): {e}")
+        return False
+
+
+async def telegram(text: str, client: httpx.AsyncClient) -> bool:
+    """Broadcast an alle konfigurierten Empfänger (für generische Meldungen ohne
+    Empfänger-spezifischen Filter, z.B. Fehlermeldungen)."""
+    if not TELEGRAM_CHAT_IDS:
+        print("⚠  Keine Telegram-Empfänger konfiguriert")
+        return False
+    ok = [await send_telegram(cid, text, client) for cid in TELEGRAM_CHAT_IDS]
+    return any(ok)
+
+
+# ─── Eigene Filter pro Empfänger ─────────────────────────────────────────────
+# Jeder Telegram-Kontakt kann dem Bot einfach schreiben, wonach er sucht
+# ("max 1600 warm, ab 2 Zimmer, min 55qm, Schwabing oder Maxvorstadt") – DeepSeek
+# übersetzt das in Filter-Felder, die hier persistiert und pro Empfänger beim
+# Versand angewendet werden. Ohne eigene Nachricht gilt DEFAULT_FILTER.
+
+def load_user_filters() -> dict:
+    if USER_FILTERS_FILE.exists():
         try:
-            r = await client.post(
-                f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-                json={"chat_id": chat_id, "text": text,
-                      "parse_mode": "Markdown", "disable_web_page_preview": False},
-                timeout=10,
+            return json.loads(USER_FILTERS_FILE.read_text())
+        except Exception:
+            return {}
+    return {}
+
+
+def save_user_filters(filters: dict):
+    USER_FILTERS_FILE.write_text(json.dumps(filters, ensure_ascii=False, indent=2))
+
+
+def load_telegram_offset() -> int:
+    if TELEGRAM_OFFSET_FILE.exists():
+        try:
+            return json.loads(TELEGRAM_OFFSET_FILE.read_text()).get("offset", 0)
+        except Exception:
+            return 0
+    return 0
+
+
+def save_telegram_offset(offset: int):
+    TELEGRAM_OFFSET_FILE.write_text(json.dumps({"offset": offset}))
+
+
+def format_filter_summary(f: dict) -> str:
+    teile = []
+    if f.get("max_warm_miete"):
+        teile.append(f"max {f['max_warm_miete']:.0f}€ warm")
+    if f.get("max_kalt_miete"):
+        teile.append(f"max {f['max_kalt_miete']:.0f}€ kalt")
+    if f.get("min_groesse"):
+        teile.append(f"min {f['min_groesse']:.0f}qm")
+    if f.get("min_zimmer"):
+        teile.append(f"ab {f['min_zimmer']:.1f} Zi.")
+    if f.get("max_radius_km"):
+        teile.append(f"max {f['max_radius_km']:.1f}km vom Zentrum")
+    if f.get("bezirke_erlaubt"):
+        teile.append("nur: " + ", ".join(f["bezirke_erlaubt"]))
+    return " · ".join(teile) if teile else "Standard-Filter (keine eigenen Einstellungen)"
+
+
+WILLKOMMEN_TEXT = (
+    "👋 Willkommen beim München-Wohnungsmonitor!\n\n"
+    "Schreib mir einfach in eigenen Worten, wonach du suchst, z.B.:\n"
+    "_\"max 1600 warm, ab 2 Zimmer, min 55qm, am liebsten Schwabing oder Maxvorstadt\"_\n\n"
+    "Befehle:\n"
+    "/status – zeigt deine aktuellen Filter\n"
+    "/reset – setzt auf Standard zurück"
+)
+
+DEEPSEEK_SYSTEM_PROMPT = """Du extrahierst Wohnungssuche-Filter aus einer deutschen Chat-Nachricht.
+Gib AUSSCHLIESSLICH ein JSON-Objekt zurück mit genau diesen Feldern (nur setzen, was die Nachricht wirklich hergibt, sonst null):
+{
+  "max_warm_miete": number|null,    // € Gesamtmiete warm, inkl. Nebenkosten
+  "max_kalt_miete": number|null,    // € Kaltmiete, nur falls explizit getrennt genannt
+  "min_groesse": number|null,       // Quadratmeter
+  "min_zimmer": number|null,        // Mindestanzahl Zimmer
+  "max_radius_km": number|null,     // km Umkreis um die Münchner Innenstadt (Marienplatz)
+  "bezirke_erlaubt": [string]|null, // gewünschte Stadtteile/Bezirke, kleingeschrieben, z.B. ["schwabing","maxvorstadt"]
+  "verstanden": boolean             // false, wenn die Nachricht KEINE Filterangabe enthält (z.B. Smalltalk)
+}
+Nenne keine Erklärung, gib nur das JSON-Objekt zurück."""
+
+
+async def deepseek_parse_filter(text: str, client: httpx.AsyncClient) -> dict | None:
+    if not DEEPSEEK_API_KEY:
+        return None
+    try:
+        r = await client.post(
+            "https://api.deepseek.com/chat/completions",
+            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}"},
+            json={
+                "model": "deepseek-chat",
+                "messages": [
+                    {"role": "system", "content": DEEPSEEK_SYSTEM_PROMPT},
+                    {"role": "user", "content": text},
+                ],
+                "response_format": {"type": "json_object"},
+                "temperature": 0,
+            },
+            timeout=20,
+        )
+        if r.status_code != 200:
+            print(f"DeepSeek-Fehler: HTTP {r.status_code} – {r.text[:200]}")
+            return None
+        content = r.json()["choices"][0]["message"]["content"]
+        data = json.loads(content)
+        if not data.get("verstanden", True):
+            return None
+        parsed = {k: v for k, v in data.items() if k != "verstanden" and v is not None}
+        # Modell hält sich nicht immer an "kleingeschrieben" – für den späteren
+        # Substring-Abgleich gegen die (lowercase) Adresse selbst normalisieren.
+        if parsed.get("bezirke_erlaubt"):
+            parsed["bezirke_erlaubt"] = [str(b).lower().strip() for b in parsed["bezirke_erlaubt"]]
+        return parsed
+    except Exception as e:
+        print(f"DeepSeek-Fehler: {e}")
+        return None
+
+
+async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) -> None:
+    """Holt neue Telegram-Nachrichten seit dem letzten Lauf, interpretiert sie als
+    Filter-Wunsch (oder Befehl) und aktualisiert user_filters in-place + auf Disk."""
+    if not TELEGRAM_TOKEN:
+        return
+    offset = load_telegram_offset()
+    try:
+        r = await client.get(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates",
+            params={"offset": offset + 1, "timeout": 0},
+            timeout=15,
+        )
+        if r.status_code != 200:
+            print(f"getUpdates-Fehler: HTTP {r.status_code}")
+            return
+        updates = r.json().get("result", [])
+    except Exception as e:
+        print(f"getUpdates-Fehler: {e}")
+        return
+
+    for upd in updates:
+        offset = max(offset, upd["update_id"])
+        msg = upd.get("message") or {}
+        chat = msg.get("chat") or {}
+        cid = str(chat.get("id", ""))
+        text = (msg.get("text") or "").strip()
+        if not cid or not text:
+            continue
+
+        if text.lower() == "/start":
+            await send_telegram(cid, WILLKOMMEN_TEXT, client)
+            continue
+        if text.lower() == "/status":
+            eff = {**DEFAULT_FILTER, **user_filters.get(cid, {})}
+            await send_telegram(cid, f"📋 Deine aktuellen Filter:\n{format_filter_summary(eff)}", client)
+            continue
+        if text.lower() == "/reset":
+            user_filters.pop(cid, None)
+            save_user_filters(user_filters)
+            await send_telegram(cid, "🔄 Zurück auf Standard-Filter gesetzt.", client)
+            continue
+
+        parsed = await deepseek_parse_filter(text, client)
+        if not parsed:
+            await send_telegram(
+                cid,
+                "🤔 Das konnte ich nicht als Filter verstehen. Beispiel:\n"
+                "_\"max 1800 warm, ab 2 Zimmer, min 50qm, Glockenbachviertel oder Schwabing\"_",
+                client,
             )
-            if r.status_code != 200:
-                success = False
-        except Exception as e:
-            print(f"Telegram-Fehler ({chat_id}): {e}")
-            success = False
-    return success
+            continue
+        current = user_filters.get(cid, {})
+        current.update(parsed)
+        current["updated_at"] = date.today().isoformat()
+        user_filters[cid] = current
+        save_user_filters(user_filters)
+        eff = {**DEFAULT_FILTER, **current}
+        await send_telegram(cid, f"✅ Filter aktualisiert:\n{format_filter_summary(eff)}", client)
+
+    save_telegram_offset(offset)
 
 
 # ─── Deduplication ───────────────────────────────────────────────────────────
@@ -1050,14 +1259,33 @@ async def scrape_browser_portale() -> list[Wohnung]:
 
 async def main():
     print(f"=== Wohnungsmonitor Lite – {datetime.now().strftime('%d.%m.%Y %H:%M')} ===")
-    print(f"Filter: max {MAX_WARM_MIETE}€ warm, min {MIN_GROESSE}qm")
 
     seen = load_seen()
     fahrtzeit_cache = load_fahrtzeit_cache()
     geocode_cache = load_geocode_cache()
+    user_filters = load_user_filters()
     print(f"Bereits bekannte Inserate: {len(seen)}")
+    print(f"Empfänger mit eigenen Filtern: {len(user_filters)}")
 
     async with httpx.AsyncClient(http2=True) as client:
+        await poll_telegram_commands(client, user_filters)
+
+        # Scrape-Grenzen einmal gemeinsam auf den lockersten aller Wünsche aufweiten
+        # (die Portale werden nur einmal durchsucht) – die enge Auswahl pro Empfänger
+        # passiert unten in passt(effektiver_filter).
+        global MAX_WARM_MIETE, MAX_KALT_MIETE, MIN_GROESSE, MAX_RADIUS_KM
+        for f in user_filters.values():
+            if f.get("max_warm_miete"):
+                MAX_WARM_MIETE = max(MAX_WARM_MIETE, f["max_warm_miete"])
+            if f.get("max_kalt_miete"):
+                MAX_KALT_MIETE = max(MAX_KALT_MIETE, f["max_kalt_miete"])
+            if f.get("min_groesse") is not None:
+                MIN_GROESSE = min(MIN_GROESSE, f["min_groesse"])
+            if f.get("max_radius_km"):
+                MAX_RADIUS_KM = max(MAX_RADIUS_KM, f["max_radius_km"])
+        print(f"Filter (weitester Suchradius über alle Empfänger): "
+              f"max {MAX_WARM_MIETE}€ warm, min {MIN_GROESSE}qm, max {MAX_RADIUS_KM:.1f}km")
+
         alle: list[Wohnung] = []
         # httpx-Portale parallel + Browser-Portale (IS24/HA) gemeinsam ausführen
         results = await asyncio.gather(
@@ -1106,10 +1334,18 @@ async def main():
         neue_matches = 0
         for w in neue_wohnungen:
             sc = scores.get(w.id, 0)
+            # Wer genau will DIESE Wohnung? Jeder Empfänger hat seinen eigenen
+            # effektiven Filter (Standard + eigene Wünsche via Telegram-Nachricht).
+            treffer_fuer = [
+                cid for cid in TELEGRAM_CHAT_IDS
+                if w.passt({**DEFAULT_FILTER, **user_filters.get(cid, {})})[0]
+            ]
+            if not treffer_fuer:
+                continue
             neue_matches += 1
-            print(f"  ✅ MATCH [score={sc:+d}]: {w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
-            ok = await telegram(w.als_nachricht(sc), client)
-            print(f"     Telegram: {'✓' if ok else '✗'}")
+            gesendet = sum([await send_telegram(cid, w.als_nachricht(sc), client) for cid in treffer_fuer])
+            print(f"  ✅ MATCH [score={sc:+d}] → {gesendet}/{len(treffer_fuer)} Empfänger: "
+                  f"{w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
             # Backup
             matches = []
             if MATCHES_FILE.exists():
