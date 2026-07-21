@@ -15371,5 +15371,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b1538c80e3b6ef",
+    "titel": "KENSINGTON Wohnen über den Dächern von Neuhausen-Nymphenburg",
+    "preis_warm": 1780.0,
+    "groesse": 89.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/kensington-wohnen-ueber-den-daechern-von-neuhausen-nymphenburg/3464586334-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "21.07. 10:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
