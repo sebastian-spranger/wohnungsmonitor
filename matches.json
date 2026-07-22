@@ -15551,5 +15551,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f9c31815bf26cd",
+    "titel": "Ruhiges Rückgebäude - Charmante EG Terrassen Wohnung mit urbanem Kleingarten",
+    "preis_warm": 1950.0,
+    "groesse": 73.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ruhiges-rueckgebaeude-charmante-eg-terrassen-wohnung-mit-urbanem-kleingarten/3454304212-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 14:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
