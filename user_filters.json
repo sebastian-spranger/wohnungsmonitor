@@ -1,0 +1,15 @@
+{
+  "8828301331": {
+    "max_warm_miete": 1900,
+    "min_zimmer": 2,
+    "bezirke_erlaubt": [
+      "lehel",
+      "maxvorstadt",
+      "isarvorstadt",
+      "ludwigsvorstadt",
+      "au",
+      "haidhausen"
+    ],
+    "updated_at": "2026-07-22"
+  }
+}
