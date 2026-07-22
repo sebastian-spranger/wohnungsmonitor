@@ -15443,5 +15443,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3f49c55bf3c0b6",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1850.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/3bd4c2b7-5080-4586-8780-eec101006f94",
+    "quelle": "ImmoWelt",
+    "adresse": "Donnersbergerstr. 10, Neuhausen-Nymphenburg, München (80634)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 04:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": ""
   }
 ]
