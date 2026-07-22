@@ -15533,5 +15533,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d5dd883f0c0942",
+    "titel": "MAXVORSTADT (befristet) möblierte 2-Zi-Whng unterzuvermieten",
+    "preis_warm": 2000.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/maxvorstadt-befristet-moeblierte-2-zi-whng-unterzuvermieten/3465469450-203-16341",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80539 Altstadt-​Lehel",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 11:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
