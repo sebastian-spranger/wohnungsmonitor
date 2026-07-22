@@ -15461,5 +15461,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.49,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d1d523732479e3",
+    "titel": "2 Zimmer EG Wohnung  Altbauhaus von Privat in  München Sendling",
+    "preis_warm": 1080.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-eg-wohnung-altbauhaus-von-privat-in-muenchen-sendling/3465179258-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 05:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
