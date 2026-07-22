@@ -15515,5 +15515,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b3136c1e56db8a",
+    "titel": "Vollmöblierte Wohnung in Thalkirchen zur Zwischenmiete",
+    "preis_warm": 1800.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/vollmoeblierte-wohnung-in-thalkirchen-zur-zwischenmiete/3465333417-203-16388",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81379 Sendling-​Westpark",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 09:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
