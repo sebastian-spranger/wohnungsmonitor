@@ -15497,5 +15497,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "712d73f6ac1a69",
+    "titel": "Wohnung mit 2 Zimmern · München-Neuhausen · 14523",
+    "preis_warm": 2200.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-neuhausen-14523",
+    "quelle": "Mr. Lodge",
+    "adresse": "Nymphenburger Straße, Neuhausen, 80636 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "22.07. 08:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.25,
+    "verfuegbar_ab": ""
   }
 ]
