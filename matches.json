@@ -15749,5 +15749,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.18,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a69b4f1db7e717",
+    "titel": "Wohnen in Toplage! 2-Zimmer-Wohnung mit 2 Balkonen sowie TG-Stellplatz",
+    "preis_warm": 1910.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnen-in-toplage-2-zimmer-wohnung-mit-2-balkonen-sowie-tg-stellplatz/3466483642-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 15:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
