@@ -15713,5 +15713,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "be96506ee0f0dc",
+    "titel": "3-Zimmer Wohnung in Sendling-Westpark zur Miete",
+    "preis_warm": 1250.0,
+    "groesse": 65.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-in-sendling-westpark-zur-miete-/3466157066-203-16392",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81377 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 09:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
