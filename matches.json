@@ -15803,5 +15803,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0e6f3f57e0d58a",
+    "titel": "Möblierte 3 Zimmerwohnung in München zur Zwischenmiete",
+    "preis_warm": 1900.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Au-Haidhausen.9902807.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Schweigerstr 6, Au-Haidhausen, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 16:36",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.18,
+    "verfuegbar_ab": "2026-08-01"
   }
 ]
