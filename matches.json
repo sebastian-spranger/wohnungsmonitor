@@ -15767,5 +15767,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b2808a3f5baa3",
+    "titel": "An WG zu vemieten: 2 Zi-Wohnung direkt am Flaucher! renoviert, 3 Zi Wohnküche!",
+    "preis_warm": 1500.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/an-wg-zu-vemieten-2-zi-wohnung-direkt-am-flaucher-renoviert-3-zi-wohnkueche-/3466534937-203-16344",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81543 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "23.07. 16:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "defc8b67493e3b",
+    "titel": "2-Zimmer-Wohnung Rotkreuzplatz",
+    "preis_warm": 1800.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-rotkreuzplatz/3466500374-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 16:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
