@@ -15821,5 +15821,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.18,
     "verfuegbar_ab": "2026-08-01"
+  },
+  {
+    "id": "0b9c12d6d92a7f",
+    "titel": "2,5 Zimmer Wohnung möbliert befristet Maxvorstadt",
+    "preis_warm": 2100.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-wohnung-moebliert-befristet-maxvorstadt/3466709205-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 19:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
