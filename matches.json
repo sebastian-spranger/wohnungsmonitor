@@ -15857,5 +15857,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "68c5891e9ead25",
+    "titel": "Erstbezug Kernsanierung 1 Zimmer + Balkon WG-Wohnung Schwabing",
+    "preis_warm": 910.0,
+    "groesse": 53.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/erstbezug-kernsanierung-1-zimmer-balkon-wg-wohnung-schwabing/3466730277-203-16356",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80802 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 20:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.8,
+    "verfuegbar_ab": ""
   }
 ]
