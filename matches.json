@@ -15731,5 +15731,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "70c6c75a018084",
+    "titel": "Wohnung mit 2 Zimmern · München-Giesing · 12147",
+    "preis_warm": 2000.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-giesing-12147",
+    "quelle": "Mr. Lodge",
+    "adresse": "Weißenseestraße, Giesing, 81539 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 13:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.18,
+    "verfuegbar_ab": ""
   }
 ]
