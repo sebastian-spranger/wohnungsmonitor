@@ -15677,5 +15677,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.69,
     "verfuegbar_ab": "2026-08-01"
+  },
+  {
+    "id": "904778a828f2b1",
+    "titel": "Feinstes und großartiges Studio Apartment im Münchner Westend",
+    "preis_warm": 1999.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/wonderful-and-charming-flat-in-muenchen-westend/693d75683d4c76466dd14466",
+    "quelle": "Wunderflats",
+    "adresse": "Ridlerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "23.07. 02:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.91,
+    "verfuegbar_ab": ""
   }
 ]
