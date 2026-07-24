@@ -15947,5 +15947,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c01fd8ab44ce3f",
+    "titel": "Wunderschönes Studio in München",
+    "preis_warm": 1630.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/gorgeous-apartment-in-muenchen/6a6383838b9175084fd49ed9",
+    "quelle": "Wunderflats",
+    "adresse": "Theatinerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "24.07. 21:26",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.27,
+    "verfuegbar_ab": ""
   }
 ]
