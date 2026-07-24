@@ -15911,5 +15911,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "27fc8cc9f7702b",
+    "titel": "02.08.-03.11. Zwischenmiete 2 Zimmer Wohnung München Maxvorstadt",
+    "preis_warm": 1300.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/02-08-03-11-zwischenmiete-2-zimmer-wohnung-muenchen-maxvorstadt/3453174590-203-16341",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80539 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.07. 09:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
