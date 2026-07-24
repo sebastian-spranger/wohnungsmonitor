@@ -15875,5 +15875,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d66d462a40965c",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1680.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/c44247f9-7a8e-44eb-bb0a-c1020e654f55",
+    "quelle": "ImmoWelt",
+    "adresse": "Au-Haidhausen, München (81541)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "24.07. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 1.83,
+    "verfuegbar_ab": "2026-08-31"
   }
 ]
