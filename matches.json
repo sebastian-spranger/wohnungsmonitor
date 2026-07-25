@@ -15983,5 +15983,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.03,
     "verfuegbar_ab": "2026-09-30"
+  },
+  {
+    "id": "ba8b2039fccea2",
+    "titel": "Großes Zimmer mit Balkon in schöner 200-qm-WG am Rotkreuzplatz Ab",
+    "preis_warm": 1150.0,
+    "groesse": 200.0,
+    "zimmer": 20.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/grosses-zimmer-mit-balkon-in-schoener-200-qm-wg-am-rotkreuzplatz-ab/3467694029-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.07. 09:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
