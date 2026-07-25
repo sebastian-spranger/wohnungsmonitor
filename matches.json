@@ -15965,5 +15965,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3931dbdd9e4b6c",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1400.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/03614b20-9649-47b7-aff8-9726f4866a64",
+    "quelle": "ImmoWelt",
+    "adresse": "Bogenhausen, München (81925)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.07. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.03,
+    "verfuegbar_ab": "2026-09-30"
   }
 ]
