@@ -16037,5 +16037,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8598b4f08b5078",
+    "titel": "Pendlerwohnung mitten in München",
+    "preis_warm": 790.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/pendlerwohnung-mitten-in-muenchen/3467891236-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "25.07. 11:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
