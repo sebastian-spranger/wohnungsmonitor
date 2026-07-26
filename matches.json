@@ -16055,5 +16055,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "140fae32f5ffde",
+    "titel": "Wohnung zur Untermiete November bis Januar",
+    "preis_warm": 2032.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-zur-untermiete-november-bis-januar/3468475075-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.07. 08:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
