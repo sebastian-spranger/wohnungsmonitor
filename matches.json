@@ -16181,5 +16181,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "c0df9209f36152",
+    "titel": "Mitbewohner/in für eine schöne Wohnung Nähe Ostbahnhof/Innsbrucke",
+    "preis_warm": 650.0,
+    "groesse": 74.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/mitbewohner-in-fuer-eine-schoene-wohnung-naehe-ostbahnhof-innsbrucke/3469361127-203-16343",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81671 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "26.07. 19:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
