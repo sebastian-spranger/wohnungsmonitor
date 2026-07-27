@@ -16235,5 +16235,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ed976a02d987a6",
+    "titel": "Helle und gemütliche 2-Zimmer-Wohnung in München",
+    "preis_warm": 650.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-und-gemuetliche-2-zimmer-wohnung-in-muenchen/3469649326-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 10:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
