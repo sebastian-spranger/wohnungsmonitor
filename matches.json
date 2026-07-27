@@ -16379,5 +16379,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9457bff5f53bfa",
+    "titel": "Schöne, voll möblierte 2-Zimmer-Wohnung – sofort bezugsfrei",
+    "preis_warm": 650.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-voll-moeblierte-2-zimmer-wohnung-sofort-bezugsfrei/3470085574-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 17:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
