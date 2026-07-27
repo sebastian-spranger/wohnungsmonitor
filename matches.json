@@ -16415,5 +16415,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "998790b80c1b92",
+    "titel": "vermiete 3 Zimmer WHG U-, S-, Tram-Bahn, Bushaltestelle nebenan",
+    "preis_warm": 1750.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/vermiete-3-zimmer-whg-u-s-tram-bahn-bushaltestelle-nebenan/3470273604-203-6427",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81539 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 21:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": ""
   }
 ]
