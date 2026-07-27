@@ -16361,5 +16361,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "30277db27662f7",
+    "titel": "WG-Zimmer in 3er-WG direkt an der U-Bahn",
+    "preis_warm": 860.0,
+    "groesse": 63.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-zimmer-in-3er-wg-direkt-an-der-u-bahn/3470019085-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 16:06",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
