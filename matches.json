@@ -16307,5 +16307,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "df4e22ac4e05ec",
+    "titel": "Lager zu vermieten 120 qm",
+    "preis_warm": 1000.0,
+    "groesse": 120.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/lager-zu-vermieten-120-qm/3469757140-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 12:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
