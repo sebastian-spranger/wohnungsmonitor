@@ -16253,5 +16253,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bdb1c56b719f64",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1800.0,
+    "groesse": 63.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/a75887f8-02c2-41e1-b2b1-c79eb99cc47b",
+    "quelle": "ImmoWelt",
+    "adresse": "Albert-Roßhaupter-Str. 46, Sendling-Westpark, München (81369)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 10:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.93,
+    "verfuegbar_ab": ""
   }
 ]
