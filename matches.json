@@ -16199,5 +16199,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "027e5c8dd86bb8",
+    "titel": "Subrent - Fully Furnished 2 room apartment in Müncher Freihet",
+    "preis_warm": 1000.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/subrent-fully-furnished-2-room-apartment-in-muencher-freihet/3469453632-203-6470",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80803 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 00:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
