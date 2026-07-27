@@ -16217,5 +16217,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ca1c6e459f6f27",
+    "titel": "2.5- Zimmer- Apartment mit Balkon in begehrter Bestlage der Münchener Maxvorstadt",
+    "preis_warm": 1590.0,
+    "groesse": 45.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-apartment-mit-balkon-in-begehrter-bestlage-der-muenchener-maxvorstadt/3469568190-203-16355",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 09:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.69,
+    "verfuegbar_ab": ""
   }
 ]
