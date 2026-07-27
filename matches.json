@@ -16271,5 +16271,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.93,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f129edf0855c06",
+    "titel": "2-Zimmer Altbauwohnung in Schwabing - zentral und ruhig",
+    "preis_warm": 1950.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/2-bedroom-apartment-central-yet-quiet/697a6d8980062c8c58d2a1bf",
+    "quelle": "Wunderflats",
+    "adresse": "Viktoriastraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "27.07. 10:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.09,
+    "verfuegbar_ab": ""
   }
 ]
