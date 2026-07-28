@@ -16523,5 +16523,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "eac6afa3f55a84",
+    "titel": "WG Leonrodplatz Nachmieter/in gesucht!",
+    "preis_warm": 825.0,
+    "groesse": 60.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wg-leonrodplatz-nachmieter-in-gesucht-/3470634897-203-6423",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Nymphenburg",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 12:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
