@@ -16505,5 +16505,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.15,
     "verfuegbar_ab": "2026-07-18"
+  },
+  {
+    "id": "511091d22de3bc",
+    "titel": "Möblierte 3-Zimmer-Wohnung, 73 m², 2 Schlafzimmer",
+    "preis_warm": 535.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-3-zimmer-wohnung-73-m-2-schlafzimmer/3470586998-203-16354",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Maxvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 12:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.47,
+    "verfuegbar_ab": ""
   }
 ]
