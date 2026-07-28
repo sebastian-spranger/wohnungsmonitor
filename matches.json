@@ -16559,5 +16559,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4082a91998dc8e",
+    "titel": "Schönes WG-Zimmer in Obersendling mit großem Balkon",
+    "preis_warm": 953.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoenes-wg-zimmer-in-obersendling-mit-grossem-balkon/3470795109-203-16388",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81379 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 15:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
