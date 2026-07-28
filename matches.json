@@ -16577,5 +16577,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a953f3492c8d3d",
+    "titel": "Renovierte Altbauwohnung sucht Nachmieter/in",
+    "preis_warm": 1800.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/renovierte-altbauwohnung-sucht-nachmieter-in/3470805555-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 15:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
