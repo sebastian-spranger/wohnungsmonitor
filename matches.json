@@ -16451,5 +16451,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e5e8e7f2225211",
+    "titel": "WIEN – großzügiges, stilvolles Apartment in Bestlage",
+    "preis_warm": 1500.0,
+    "groesse": 60.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wien-grosszuegiges-stilvolles-apartment-in-bestlage/3470501168-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 10:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
