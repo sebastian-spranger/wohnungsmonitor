@@ -16595,5 +16595,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5ad310a3639c92",
+    "titel": "Stilvolle Wohnung im Herzen von Bayern | Top-Lage",
+    "preis_warm": 350.0,
+    "groesse": 91.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/stilvolle-wohnung-im-herzen-von-bayern-top-lage/3470811753-203-16375",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 15:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
