@@ -16541,5 +16541,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "4385ce9abae19b",
+    "titel": "Gemütliche 2-Zimmer-Wohnung in München",
+    "preis_warm": 660.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-2-zimmer-wohnung-in-muenchen/3470792016-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "28.07. 15:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
