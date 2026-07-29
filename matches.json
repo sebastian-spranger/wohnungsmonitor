@@ -16649,5 +16649,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f4a097e136e6c2",
+    "titel": "Wohnung Seeblick auf Zeit, direkt am Schliersee",
+    "preis_warm": 2000.0,
+    "groesse": 66.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/temporary-apartment-with-lake-view-directly-on-lake-schliersee/6a54989555cc125ede874203",
+    "quelle": "Wunderflats",
+    "adresse": "Seestraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 02:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.61,
+    "verfuegbar_ab": ""
   }
 ]
