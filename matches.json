@@ -16757,5 +16757,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9203d79574b752",
+    "titel": "Helle 2-Zimmer-Wohnung in München – komplett möbliert",
+    "preis_warm": 650.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-2-zimmer-wohnung-in-muenchen-komplett-moebliert/3471610873-203-16345",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81669 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 16:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
