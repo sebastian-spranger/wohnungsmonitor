@@ -16667,5 +16667,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bb07a9db422707",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1560.0,
+    "groesse": 50.0,
+    "zimmer": 1.5,
+    "url": "https://www.immowelt.de/expose/9b2bd37e-d054-4a48-b130-1508e83deb71",
+    "quelle": "ImmoWelt",
+    "adresse": "Schwabing-West, München (80798)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.49,
+    "verfuegbar_ab": "2026-07-31"
+  },
+  {
+    "id": "af23227ab8d66d",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1920.0,
+    "groesse": 83.0,
+    "zimmer": 3.0,
+    "url": "https://www.immowelt.de/expose/28cb423b-0488-4ea1-87f3-5497b03063b0",
+    "quelle": "ImmoWelt",
+    "adresse": "Obergiesing, München (81549)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 04:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.05,
+    "verfuegbar_ab": ""
   }
 ]
