@@ -16721,5 +16721,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a5ee9e15eba4b1",
+    "titel": "Gemütliche Altbauwohnung zur Zwischenmiete in Obergiesing (Okt 26 –März 27)",
+    "preis_warm": 2060.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Obergiesing.13629827.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Kesselbergstraße, Obergiesing, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 10:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.66,
+    "verfuegbar_ab": "2026-10-01"
   }
 ]
