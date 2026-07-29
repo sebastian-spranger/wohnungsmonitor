@@ -16703,5 +16703,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.05,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9f5bdf22867ba5",
+    "titel": "Helle und freundliche Wohnung in Markt Schwaben von privat",
+    "preis_warm": 1300.0,
+    "groesse": 86.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-und-freundliche-wohnung-in-markt-schwaben-von-privat/3471124965-203-6457",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81679 Bogenhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 06:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.71,
+    "verfuegbar_ab": ""
   }
 ]
