@@ -16775,5 +16775,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8dd8e04a95fb35",
+    "titel": "Helle & ruhige Isar‑Oase – voll möbliertes 2‑Zimmer‑Apartment mit 2 Balkonen",
+    "preis_warm": 2150.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/bright-and-quiet-isar-oasis-fully-furnished-2-room-apartment-with-2-balconies/6a26ea2772bca0ebb7a11356",
+    "quelle": "Wunderflats",
+    "adresse": "Sommerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "29.07. 18:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.61,
+    "verfuegbar_ab": ""
   }
 ]
