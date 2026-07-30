@@ -16793,5 +16793,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.61,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "dea10b7ae870e4",
+    "titel": "2,5 Zimmerwohnung zur Untermiete von September 2026 - Juli 2027",
+    "preis_warm": 1600.0,
+    "groesse": 75.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmerwohnung-zur-untermiete-von-september-2026-juli-2027/3471843502-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "30.07. 06:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
