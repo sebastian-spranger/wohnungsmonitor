@@ -16811,5 +16811,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7235c228d37a6b",
+    "titel": "3 Zimmer Gartenwohnung",
+    "preis_warm": 1800.0,
+    "groesse": 72.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-gartenwohnung/3472253032-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "30.07. 15:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
