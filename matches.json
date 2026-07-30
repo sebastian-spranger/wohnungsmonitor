@@ -16865,5 +16865,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "94b81bed7c9cae",
+    "titel": "Teilmöblierte Wohnung auf 1 Jahr in Haidhausen zu vermieten",
+    "preis_warm": 1800.0,
+    "groesse": 73.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/teilmoeblierte-wohnung-auf-1-jahr-in-haidhausen-zu-vermieten/3472445161-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "30.07. 19:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
