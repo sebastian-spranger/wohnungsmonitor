@@ -16901,5 +16901,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "376200cdc57fb0",
+    "titel": "1 WG Zimmer zum vermieten für 1 Jahr",
+    "preis_warm": 500.0,
+    "groesse": 0.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/1-wg-zimmer-zum-vermieten-fuer-1-jahr/3472588705-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
