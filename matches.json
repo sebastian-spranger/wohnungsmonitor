@@ -17045,5 +17045,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8e9dd556692a8d",
+    "titel": "Zu vermieten ab sofort",
+    "preis_warm": 1550.0,
+    "groesse": 46.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zu-vermieten-ab-sofort/3472900905-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 14:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
