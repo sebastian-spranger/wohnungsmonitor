@@ -16919,5 +16919,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7ab41dae316829",
+    "titel": "Wunderschönes WG Zimmer in 2er Mädels WG",
+    "preis_warm": 1660.0,
+    "groesse": 73.0,
+    "zimmer": 20.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wunderschoenes-wg-zimmer-in-2er-maedels-wg/3472615079-203-16346",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81675 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 08:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.99,
+    "verfuegbar_ab": ""
   }
 ]
