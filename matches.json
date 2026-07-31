@@ -16973,5 +16973,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e42846e1092348",
+    "titel": "2er WG stigelmeierplatz",
+    "preis_warm": 1000.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2er-wg-stigelmeierplatz/3472735543-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 10:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
