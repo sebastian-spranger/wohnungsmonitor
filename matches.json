@@ -16937,5 +16937,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "043c9256428a15",
+    "titel": "Gemütliche 3 Zimmer Wohnung in Gaisenfeld-Rottenegg",
+    "preis_warm": 650.0,
+    "groesse": 45.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-3-zimmer-wohnung-in-gaisenfeld-rottenegg/3472704980-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 09:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
