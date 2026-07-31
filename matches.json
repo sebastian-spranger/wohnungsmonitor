@@ -17081,5 +17081,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "b7769572482b81",
+    "titel": "Helle möblierte 2-Zimmer-Wohnung, 61 m²",
+    "preis_warm": 645.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-moeblierte-2-zimmer-wohnung-61-m-/3473145238-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "31.07. 19:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
