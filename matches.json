@@ -17189,5 +17189,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "12eccfadd3391c",
+    "titel": "Helles Apartment im Zentrum von München",
+    "preis_warm": 1890.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/new-suite-in-muenchen/655354ba4bf44930b3c6e789",
+    "quelle": "Wunderflats",
+    "adresse": "Thorwaldsenstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "01.08. 15:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.66,
+    "verfuegbar_ab": ""
   }
 ]
