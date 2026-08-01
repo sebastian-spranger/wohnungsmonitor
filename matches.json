@@ -17153,5 +17153,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "dd69e404fab1a6",
+    "titel": "Schönes Loft in München",
+    "preis_warm": 2150.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/pretty-loft-in-muenchen/6a6d31ff1e27847205cbe38a",
+    "quelle": "Wunderflats",
+    "adresse": "Theatinerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "01.08. 13:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.27,
+    "verfuegbar_ab": ""
   }
 ]
