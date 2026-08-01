@@ -17135,5 +17135,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d3484189d6b437",
+    "titel": "Moderne 2-Zi.-Neubauwohnung (2016) möbliert, Loggia, EBK & TG Ste",
+    "preis_warm": 2100.0,
+    "groesse": 66.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moderne-2-zi-neubauwohnung-2016-moebliert-loggia-ebk-tg-ste/3473534755-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "01.08. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
