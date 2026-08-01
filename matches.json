@@ -17207,5 +17207,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.66,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "158673e69dd64d",
+    "titel": "Möblierte 2-Zimmer-Neubauwohnung, 50 m²",
+    "preis_warm": 565.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-neubauwohnung-50-m-/3473985476-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "01.08. 18:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
