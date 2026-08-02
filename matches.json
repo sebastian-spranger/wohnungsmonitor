@@ -17315,5 +17315,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": "2026-11-01"
+  },
+  {
+    "id": "cfce6e48811f9a",
+    "titel": "Möblierte 3-Zimmer-Wohnung, 75 m²,",
+    "preis_warm": 645.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-3-zimmer-wohnung-75-m-/3474692502-203-6439",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "02.08. 14:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.03,
+    "verfuegbar_ab": ""
   }
 ]
