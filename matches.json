@@ -17351,5 +17351,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.99,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "57fe0b58009d25",
+    "titel": "Möblierte 2-Zimmer-Wohnung in Sendling-Westpark für Pärchen",
+    "preis_warm": 1650.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-in-sendling-westpark-fuer-paerchen/3474966728-203-16392",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81377 Sendling-​Westpark",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "02.08. 18:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
