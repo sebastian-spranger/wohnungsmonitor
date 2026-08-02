@@ -17243,5 +17243,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "68b5d94257c378",
+    "titel": "Möblierte 2-Zimmer-Wohnung zur Zwischenmiete in München",
+    "preis_warm": 1650.0,
+    "groesse": 56.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-zur-zwischenmiete-in-muenchen/3474219954-203-16355",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Maxvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "02.08. 08:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.69,
+    "verfuegbar_ab": ""
   }
 ]
