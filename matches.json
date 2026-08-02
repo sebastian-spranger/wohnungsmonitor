@@ -17297,5 +17297,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fb46c19986d8da",
+    "titel": "3-Zi. Wohnung zur Zwischenmiete (01.11.26-31.01.27)",
+    "preis_warm": 1970.0,
+    "groesse": 68.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zi-wohnung-zur-zwischenmiete-01-11-26-31-01-27-/3474593809-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "02.08. 13:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": "2026-11-01"
   }
 ]
