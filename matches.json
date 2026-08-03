@@ -17621,5 +17621,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "dc643f971ff77e",
+    "titel": "3,5-Zimmer-Wohnung in Neuhausen",
+    "preis_warm": 500.0,
+    "groesse": 98.0,
+    "zimmer": 3.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-5-zimmer-wohnung-in-neuhausen/3475816408-203-16354",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 19:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.47,
+    "verfuegbar_ab": ""
   }
 ]
