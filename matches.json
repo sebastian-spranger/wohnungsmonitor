@@ -17477,5 +17477,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "205071940f8da9",
+    "titel": "Furnished apartment near Gärtnerplatz, subway U1, U2, U7, U8",
+    "preis_warm": 1430.0,
+    "groesse": 45.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/furnished-apartment-near-gaertnerplatz-subway-u1-u2-u7-u8/3475424661-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 12:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "15d195ba92094f",
+    "titel": "2 ZKB *Nachmieter gesucht*",
+    "preis_warm": 1670.0,
+    "groesse": 58.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zkb-nachmieter-gesucht-/3475416538-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 12:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
