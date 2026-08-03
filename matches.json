@@ -17603,5 +17603,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2bd6430c17e0a5",
+    "titel": "Zweizimmerwohnung in Schwabing, München",
+    "preis_warm": 600.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zweizimmerwohnung-in-schwabing-muenchen/3475746164-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 17:46",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
