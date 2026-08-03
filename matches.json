@@ -17423,5 +17423,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1d37f9f6010825",
+    "titel": "Wohnung mit 2 Zimmern · München-Ludwigsvorstadt · 7480",
+    "preis_warm": 2100.0,
+    "groesse": 51.0,
+    "zimmer": 2.0,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/2-zimmer-wohnung-muenchen-ludwigsvorstadt-7480",
+    "quelle": "Mr. Lodge",
+    "adresse": "Poccistraße, Ludwigsvorstadt, 80336 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 07:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.31,
+    "verfuegbar_ab": ""
   }
 ]
