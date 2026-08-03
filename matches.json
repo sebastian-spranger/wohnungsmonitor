@@ -17459,5 +17459,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "ada1ceb95af3a7",
+    "titel": "UNTERMIETE 3-Zimmer-Wohnung in Sendling (17.08.–17.10., flexibel)",
+    "preis_warm": 1700.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/untermiete-3-zimmer-wohnung-in-sendling-17-08-17-10-flexibel-/3475383240-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 11:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
