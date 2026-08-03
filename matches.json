@@ -17369,5 +17369,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fe23c215797a3c",
+    "titel": "Wunderschöne & aufwendig möblierte Wohnung (München)",
+    "preis_warm": 1868.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/beautiful-apartment-in-great-loaction/5ed7d2d3e2d1a50006ce69ad",
+    "quelle": "Wunderflats",
+    "adresse": "Einsteinstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 03:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.82,
+    "verfuegbar_ab": ""
   }
 ]
