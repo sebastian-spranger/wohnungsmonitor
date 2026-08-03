@@ -17387,5 +17387,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.82,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "95d19ae7c4578f",
+    "titel": "Wohnung 75m2, 3 Zimmer Brudermühlstr, bis 31.10",
+    "preis_warm": 1200.0,
+    "groesse": 75.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-75m2-3-zimmer-brudermuehlstr-bis-31-10/3475153687-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 06:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
