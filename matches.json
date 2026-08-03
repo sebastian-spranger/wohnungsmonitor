@@ -17405,5 +17405,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.27,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "757dbd662b7893",
+    "titel": "2 Zimmer Wohnung möbliert für 1-4 Monate zu vermieten",
+    "preis_warm": 1600.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-moebliert-fuer-1-4-monate-zu-vermieten/3475178992-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 07:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
