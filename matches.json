@@ -17639,5 +17639,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d5d9cd3b2f7646",
+    "titel": "20m2 Zimmer in Au-Haidhausen für August",
+    "preis_warm": 600.0,
+    "groesse": 74.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/20m2-zimmer-in-au-haidhausen-fuer-august/3475852075-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 20:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "73e1d33075f82c",
+    "titel": "München - Schwantalerhöhe WG-Zimmer ab September",
+    "preis_warm": 840.0,
+    "groesse": 73.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/muenchen-schwantalerhoehe-wg-zimmer-ab-september/3475857713-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "03.08. 20:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": "2026-09-01"
   }
 ]
