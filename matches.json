@@ -17711,5 +17711,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f5570dcf759040",
+    "titel": "kleines Häuschen mit Ofenheizung",
+    "preis_warm": 800.0,
+    "groesse": 56.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/kleines-haeuschen-mit-ofenheizung/3476271043-203-16375",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80799 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 12:56",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
