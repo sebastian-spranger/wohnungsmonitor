@@ -17765,5 +17765,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "902ae130f0cbbd",
+    "titel": "2-Zimmer-Wohnung mit Balkon",
+    "preis_warm": 480.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-mit-balkon/3476496330-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 16:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
