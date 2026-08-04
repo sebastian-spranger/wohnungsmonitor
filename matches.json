@@ -17801,5 +17801,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d48a081491b710",
+    "titel": "Möblierte 2-Zimmer Dachgeschoss-Wohnung in der Münchner Schwanthalerhöhe",
+    "preis_warm": 1560.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Schwanthalerhoehe.13578336.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Schwanthalerstraße 154, Schwanthalerhöhe, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 19:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.36,
+    "verfuegbar_ab": "2026-09-01"
   }
 ]
