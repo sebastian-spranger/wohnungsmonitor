@@ -17747,5 +17747,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "da817e8c710216",
+    "titel": "Ersteinzug nach Sanierung! 3 Zimmer Wohnung in Bogenhausen",
+    "preis_warm": 1150.0,
+    "groesse": 66.5,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ersteinzug-nach-sanierung-3-zimmer-wohnung-in-bogenhausen/3476467276-203-6457",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81679 Bogenhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 16:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.71,
+    "verfuegbar_ab": ""
   }
 ]
