@@ -17693,5 +17693,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a900cafc025ba7",
+    "titel": "Nachmieter gesucht: Schöne 1.5-Zimmer-Wohnung in München,",
+    "preis_warm": 1158.0,
+    "groesse": 48.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-gesucht-schoene-1-5-zimmer-wohnung-in-muenchen-/3476114988-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 10:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
