@@ -17675,5 +17675,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": "2026-09-01"
+  },
+  {
+    "id": "2c23b30a89e5e9",
+    "titel": "Sehr helle vollmöblierte Dachgeschosswohnung nähe Nordbad",
+    "preis_warm": 1600.0,
+    "groesse": 52.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/sehr-helle-vollmoeblierte-dachgeschosswohnung-naehe-nordbad/3476007481-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 08:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
