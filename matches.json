@@ -17819,5 +17819,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.36,
     "verfuegbar_ab": "2026-09-01"
+  },
+  {
+    "id": "5e99e785b3d1ac",
+    "titel": "Nachmieter gesucht für unsere 80 qm Wohnung am Effnerplatz",
+    "preis_warm": 1900.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-gesucht-fuer-unsere-80-qm-wohnung-am-effnerplatz/3476665827-203-6457",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81679 Bogenhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "04.08. 21:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.71,
+    "verfuegbar_ab": ""
   }
 ]
