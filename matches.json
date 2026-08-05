@@ -17981,5 +17981,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7b5115998fe8a5",
+    "titel": "Helle 1-Zimmer-Wohnung in München modern ruhig lichtdurchflutet",
+    "preis_warm": 380.0,
+    "groesse": 53.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-1-zimmer-wohnung-in-muenchen-modern-ruhig-lichtdurchflutet/3477036418-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 12:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
