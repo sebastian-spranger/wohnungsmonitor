@@ -18017,5 +18017,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.26,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e1ec1716dab788",
+    "titel": "2,5-Zimmer-Wohnung in zentraler Lage",
+    "preis_warm": 675.0,
+    "groesse": 68.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-wohnung-in-zentraler-lage/3477222206-203-6465",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80804 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 15:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
