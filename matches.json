@@ -18053,5 +18053,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e975e9371d2317",
+    "titel": "Möblierte 2 Zimmer Wohnung zur Wiesnzeit",
+    "preis_warm": 350.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-wohnung-zur-wiesnzeit/3477463776-203-6416",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81371 Sendling",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 21:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.27,
+    "verfuegbar_ab": ""
   }
 ]
