@@ -17855,5 +17855,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.05,
     "verfuegbar_ab": "2026-08-05"
+  },
+  {
+    "id": "f76199c0c97dff",
+    "titel": "Executive Living in Munich – 2 Zimmer Gartenwohnung Maxvorstadt",
+    "preis_warm": 1895.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/executive-living-in-munich-2-zimmer-gartenwohnung-maxvorstadt/3476717971-203-6464",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80797 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 05:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
