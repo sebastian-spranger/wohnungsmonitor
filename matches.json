@@ -17945,5 +17945,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8be60784b54578",
+    "titel": "2-Zimmer-Apartment, 50 m² – München",
+    "preis_warm": 540.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-apartment-50-m-muenchen/3476916466-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 10:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
