@@ -18035,5 +18035,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e2f013a9872353",
+    "titel": "Großzügige 2-Zimmer-Wohnung in München Altstadt | 76 m² | 690 € W",
+    "preis_warm": 690.0,
+    "groesse": 76.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/grosszuegige-2-zimmer-wohnung-in-muenchen-altstadt-76-m-690-w/3477356252-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 18:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
