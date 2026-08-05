@@ -17891,5 +17891,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "69b343b7a7a666",
+    "titel": "Wohnung zur Miete / zu Vermieten Theresienwiese 85qm",
+    "preis_warm": 1850.0,
+    "groesse": 85.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-zur-miete-zu-vermieten-theresienwiese-85qm/3476765286-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 07:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "5f31b875e966ef",
+    "titel": "Nachmieter für 2 Zi-Wohnung gesucht",
+    "preis_warm": 1955.0,
+    "groesse": 72.5,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/nachmieter-fuer-2-zi-wohnung-gesucht/3476763353-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 07:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
   }
 ]
