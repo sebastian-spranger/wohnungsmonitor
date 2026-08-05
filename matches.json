@@ -17999,5 +17999,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e3297a7d4ac82a",
+    "titel": "2-Zimmer-Wohnung mit Balkon am Mangfallplatz",
+    "preis_warm": 1477.0,
+    "groesse": 62.17,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-mit-balkon-am-mangfallplatz/3477070026-203-16364",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81547 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "05.08. 13:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.26,
+    "verfuegbar_ab": ""
   }
 ]
