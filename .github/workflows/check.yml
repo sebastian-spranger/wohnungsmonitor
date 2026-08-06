@@ -5,6 +5,12 @@ on:
     - cron: '*/5 * * * *'   # alle 5 Minuten, 24/7
   workflow_dispatch:          # auch manuell startbar über GitHub UI
 
+# NIE parallele Runs: verhindert Queue-Staus (10+ hängende Runs) und
+# Push-Races auf seen.json, die Fehler-Emails verursacht haben.
+concurrency:
+  group: wohnungsmonitor
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -49,9 +55,8 @@ jobs:
         run: |
           git config user.name  "Wohnungsmonitor[bot]"
           git config user.email "bot@noreply.github.com"
-          # Einzeln adden statt in einem Aufruf: git add bricht sonst komplett ab
-          # (staged GAR NICHTS) sobald eine der Dateien fehlt – z.B. user_filters.json,
-          # bevor der erste Empfänger einen eigenen Filter gesetzt hat.
+          # Einzeln adden: git add bricht sonst komplett ab, sobald eine der
+          # Dateien fehlt (z.B. user_filters.json vor dem ersten eigenen Filter).
           for f in seen.json matches.json fahrtzeit_cache.json geocode_cache.json user_filters.json telegram_offset.json; do
             git add "$f" 2>/dev/null || true
           done
@@ -60,10 +65,18 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update seen [skip ci]"
-          # Remote kann inzwischen weitergewandert sein → rebase + retry
-          for i in 1 2 3; do
-            git pull --rebase --autostash origin main && git push && exit 0
-            echo "Push fehlgeschlagen (Versuch $i), neuer Versuch..."
+          # Race-sicherer Push: Die State-Dateien sind Caches, die lokal bereits den
+          # frisch geladenen Remote-Stand enthalten (beim Checkout) → bei Konflikt
+          # gewinnt die lokale (neuere) Version via Merge-Strategie 'ours'.
+          for i in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main 2>&1 && git push 2>&1; then
+              exit 0
+            fi
+            echo "Push fehlgeschlagen (Versuch $i) – Rebase aufraeumen, Merge mit 'ours' versuchen..."
+            git rebase --abort 2>/dev/null || true
+            if git pull --no-rebase -X ours origin main 2>&1 && git push 2>&1; then
+              exit 0
+            fi
             sleep 5
           done
           echo "Push endgültig fehlgeschlagen" >&2
