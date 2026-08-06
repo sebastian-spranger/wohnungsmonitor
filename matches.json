@@ -18125,5 +18125,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "416cc7003d16d3",
+    "titel": "Exklusives Wohnen im Lehel – Neuwertige Wohnung mit Lift & Klimatisierung & Garten",
+    "preis_warm": 2012.0,
+    "groesse": 50.31,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/exklusives-wohnen-im-lehel-neuwertige-wohnung-mit-lift-klimatisierung-garten/3477670724-203-16338",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80538 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.08. 09:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.41,
+    "verfuegbar_ab": ""
   }
 ]
