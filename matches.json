@@ -18089,5 +18089,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.49,
     "verfuegbar_ab": "2026-08-31"
+  },
+  {
+    "id": "7b29ad42738b43",
+    "titel": "Neuhausen , 2-Zimmer  Vollmöblierte Wohnung im Untergeschoss mit",
+    "preis_warm": 1475.0,
+    "groesse": 52.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/neuhausen-2-zimmer-vollmoeblierte-wohnung-im-untergeschoss-mit-/3477570007-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "06.08. 08:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
