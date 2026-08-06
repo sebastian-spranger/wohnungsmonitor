@@ -18107,5 +18107,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5ae69a5a34e1f0",
+    "titel": "Gemütliche 2-Zimmer-Wohnung in München",
+    "preis_warm": 653.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gemuetliche-2-zimmer-wohnung-in-muenchen/3477664266-203-6434",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "06.08. 09:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
