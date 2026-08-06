@@ -7,9 +7,10 @@ on:
 
 # NIE parallele Runs: verhindert Queue-Staus (10+ hängende Runs) und
 # Push-Races auf seen.json, die Fehler-Emails verursacht haben.
+# cancel-in-progress NICHT setzen: sonst bricht der nächste 5-Min-Trigger den
+# laufenden Run ab und es wird nie ein Lauf fertig.
 concurrency:
   group: wohnungsmonitor
-  cancel-in-progress: true
 
 jobs:
   check:
