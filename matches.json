@@ -18269,5 +18269,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "31444b2603cec6",
+    "titel": "Moderne 2-Zimmer-Wohnung mit Balkon in München - Schwabing",
+    "preis_warm": 600.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moderne-2-zimmer-wohnung-mit-balkon-in-muenchen-schwabing/3478663042-203-6462",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80796 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 13:43",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "9a69789e135393",
+    "titel": "Helle 2-Zimmer-Wohnung mit neuer Ausstattung in München",
+    "preis_warm": 664.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/helle-2-zimmer-wohnung-mit-neuer-ausstattung-in-muenchen/3478669273-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 13:43",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
