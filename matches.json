@@ -18143,5 +18143,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.41,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1f3d4165a9d70d",
+    "titel": "Wohnung Ludwig Isarvorstadt",
+    "preis_warm": 2200.0,
+    "groesse": 72.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-ludwig-isarvorstadt/3478318809-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "938ce337c35248",
+    "titel": "Zentrale Helle Wohnung",
+    "preis_warm": 2200.0,
+    "groesse": 72.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zentrale-helle-wohnung/3478321591-203-16383",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80336 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.47,
+    "verfuegbar_ab": ""
   }
 ]
