@@ -18323,5 +18323,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "66501be6d29a6f",
+    "titel": "Gepflegte 2-Zimmer-Wohnung in Universitätsnähe",
+    "preis_warm": 980.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/gepflegte-2-zimmer-wohnung-in-universitaetsnaehe/3479036123-203-6442",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 22:47",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
