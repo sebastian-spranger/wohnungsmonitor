@@ -18197,5 +18197,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d289009da6fa30",
+    "titel": "Wohnung in Palma Altstadt zu vermieten1.11-30.4.",
+    "preis_warm": 1500.0,
+    "groesse": 100.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-in-palma-altstadt-zu-vermieten1-11-30-4-/3478403891-203-6441",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 09:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.04,
+    "verfuegbar_ab": ""
   }
 ]
