@@ -18179,5 +18179,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.47,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "1f172a70990765",
+    "titel": "2-Zimmerwohnung am Westpark/Ganghoferstraße",
+    "preis_warm": 1270.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmerwohnung-am-westpark-ganghoferstrasse/3478389607-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 08:47",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
