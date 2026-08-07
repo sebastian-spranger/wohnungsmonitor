@@ -18215,5 +18215,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fc12fa802f3aa7",
+    "titel": "3-Zimmer Wohnung im Herzen Münchens / Schwanthalerhöhe",
+    "preis_warm": 2180.0,
+    "groesse": 64.22,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-im-herzen-muenchens-schwanthalerhoehe/3478501747-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 10:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
