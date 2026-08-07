@@ -18305,5 +18305,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.25,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e2245586793e75",
+    "titel": "Fully Furnished 2-Room Flat in Josefplatz, Munich – Agnesstrasse",
+    "preis_warm": 1600.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/fully-furnished-2-room-flat-in-josefplatz-munich-agnesstrasse/3478693112-203-6459",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "07.08. 14:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
