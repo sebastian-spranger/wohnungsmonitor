@@ -18467,5 +18467,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2b6954abe7411b",
+    "titel": "2-Zimmer-Wohnung Mit EBK in der Ludwigsvorstadt",
+    "preis_warm": 790.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-mit-ebk-in-der-ludwigsvorstadt/3479679046-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 16:13",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
