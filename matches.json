@@ -18395,5 +18395,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.85,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fde162a0abba7f",
+    "titel": "Ab Sep, ideal für ein Paar! 1.5 Zimmer Sendlinger-Westpark",
+    "preis_warm": 1157.0,
+    "groesse": 48.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/ab-sep-ideal-fuer-ein-paar-1-5-zimmer-sendlinger-westpark/3479144230-203-6444",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80339 Schwanthalerhöhe",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 07:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.8,
+    "verfuegbar_ab": ""
   }
 ]
