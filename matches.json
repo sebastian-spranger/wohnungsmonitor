@@ -18413,5 +18413,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "765e94d967fee2",
+    "titel": "Lindwurmstraße – Fully Furnished 3-Room Apartment near Sendlinger",
+    "preis_warm": 800.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/lindwurmstrasse-fully-furnished-3-room-apartment-near-sendlinger/3479298349-203-16351",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 10:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
