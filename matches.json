@@ -18449,5 +18449,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3e45ae4171b10a",
+    "titel": "Große 1 Zimmer Wohnung mit Garten, Terrasse, EBK, TG Stellplatz",
+    "preis_warm": 1100.0,
+    "groesse": 60.0,
+    "zimmer": 1.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/grosse-1-zimmer-wohnung-mit-garten-terrasse-ebk-tg-stellplatz/3479598378-203-6462",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80796 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 14:52",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
