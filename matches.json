@@ -18503,5 +18503,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.23,
     "verfuegbar_ab": "2026-09-19"
+  },
+  {
+    "id": "bc5aee85809dc6",
+    "titel": "Newly renovated, super central, modern flat, 2 rooms plus kitchen and balcony",
+    "preis_warm": 800.0,
+    "groesse": 70.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/newly-renovated-super-central-modern-flat-2-rooms-plus-kitchen-and-balcony/3479717090-203-16339",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.08. 17:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
