@@ -18377,5 +18377,23 @@
     "preis_ist_kalt": true,
     "entfernung_km": 3.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "a7e67854b816df",
+    "titel": "2 Zi - sanierter Altbau - ruhig, gut geschnitten und unbefristet - Küche/Balkon - 2.OG mit Aufzug",
+    "preis_warm": 1390.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zi-sanierter-altbau-ruhig-gut-geschnitten-und-unbefristet-kueche-balkon-2-og-mit-aufzug/3479069852-203-16360",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80636 Neuhausen",
+    "moebliert": false,
+    "mit_kueche": true,
+    "gefunden_um": "08.08. 05:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.85,
+    "verfuegbar_ab": ""
   }
 ]
