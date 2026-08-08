@@ -18539,5 +18539,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "cb70eba6de5a81",
+    "titel": "Die helle, nach Westen ausgerichtete Wohnung bietet eine Gesamtfläche von 113,5 m².",
+    "preis_warm": 890.0,
+    "groesse": 103.0,
+    "zimmer": 4.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/die-helle-nach-westen-ausgerichtete-wohnung-bietet-eine-gesamtflaeche-von-113-5-m-/3479873665-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 22:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
