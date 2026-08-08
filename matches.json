@@ -18485,5 +18485,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "7c81f4cf4d71e1",
+    "titel": "OKTOBERFEST SUBLEASE: beautiful apartment next to Wiesn",
+    "preis_warm": 500.0,
+    "groesse": 45.0,
+    "zimmer": 3.5,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Westend.12848710.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Landsberger Straße 10, Westend, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 16:41",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.23,
+    "verfuegbar_ab": "2026-09-19"
   }
 ]
