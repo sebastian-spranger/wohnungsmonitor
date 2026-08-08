@@ -18341,5 +18341,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "91a9a77f4a1cc2",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1680.0,
+    "groesse": 49.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/7b4f1378-3cfa-4afb-84bc-740995131d70",
+    "quelle": "ImmoWelt",
+    "adresse": "Altstadt-Lehel, München (80538)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 05:00",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 0.12,
+    "verfuegbar_ab": "2026-10-14"
+  },
+  {
+    "id": "7eb209980d86ca",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1744.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/de4d8164-cab8-44f9-b182-ba5ea9f43907",
+    "quelle": "ImmoWelt",
+    "adresse": "Neuhausen-Nymphenburg, München (80637)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "08.08. 05:00",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.8,
+    "verfuegbar_ab": ""
   }
 ]
