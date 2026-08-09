@@ -18593,5 +18593,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.82,
     "verfuegbar_ab": "2026-08-03"
+  },
+  {
+    "id": "7b3e1084bb1b04",
+    "titel": "2 Zimmer WHG 50 QM möbliert direkt am Olympiapark",
+    "preis_warm": 1400.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-whg-50-qm-moebliert-direkt-am-olympiapark-/3480371516-203-16373",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80809 Schwabing-​West",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 13:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
