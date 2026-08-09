@@ -18557,5 +18557,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0180f1fae77bbc",
+    "titel": "Grüne Oase mitten im Glockenbachviertel",
+    "preis_warm": 2150.0,
+    "groesse": 65.0,
+    "zimmer": 2.0,
+    "url": "https://wunderflats.com/en/furnished-apartment/green-oasis-in-the-middle-of-glockenbachviertel/61127668ac540c0009809b20",
+    "quelle": "Wunderflats",
+    "adresse": "Am Glockenbach, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 01:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.32,
+    "verfuegbar_ab": ""
   }
 ]
