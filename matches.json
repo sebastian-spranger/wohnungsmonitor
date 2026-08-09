@@ -18665,5 +18665,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": "2026-08-08"
+  },
+  {
+    "id": "488382251c5174",
+    "titel": "Möblierte Wohnung in Neuhausen, 55 m², mit Terrasse",
+    "preis_warm": 1690.0,
+    "groesse": 55.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-wohnung-in-neuhausen-55-m-mit-terrasse/3480772391-203-6424",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80634 Neuhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 18:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.69,
+    "verfuegbar_ab": ""
   }
 ]
