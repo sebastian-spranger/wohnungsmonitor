@@ -18683,5 +18683,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.69,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f31b0333fadb39",
+    "titel": "Schöne Wohnung Haidhausen, u.a. fürs Oktoberfest",
+    "preis_warm": 200.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/schoene-wohnung-haidhausen-u-a-fuers-oktoberfest/3480833455-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 19:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
