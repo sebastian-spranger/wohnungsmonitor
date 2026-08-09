@@ -18701,5 +18701,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d321d3903e3769",
+    "titel": "2-Zi. Wohnung für Sept./Okt. in Haidhausen, u.a. fürs Oktoberfest",
+    "preis_warm": 200.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zi-wohnung-fuer-sept-okt-in-haidhausen-u-a-fuers-oktoberfest/3480833455-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 19:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
