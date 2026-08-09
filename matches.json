@@ -18575,5 +18575,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.32,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "2849ea74bf2418",
+    "titel": "Wohnung in Schwabing im August",
+    "preis_warm": 1200.0,
+    "groesse": 65.0,
+    "zimmer": 1.5,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Schwabing-Freimann.13554192.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Biedersteiner Str., Schwabing-Freimann, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 11:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.82,
+    "verfuegbar_ab": "2026-08-03"
   }
 ]
