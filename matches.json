@@ -18647,5 +18647,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "f67bdee0cc517d",
+    "titel": "Möblierte Wohnung / WG-Zimmer in der Maxvorstadt – Nähe Josephsplatz (März–April)",
+    "preis_warm": 1850.0,
+    "groesse": 65.0,
+    "zimmer": 2.5,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Maxvorstadt.12882744.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Agnesstraße, Maxvorstadt, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "09.08. 17:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": "2026-08-08"
   }
 ]
