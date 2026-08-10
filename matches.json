@@ -18773,5 +18773,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "092a23120f46c6",
+    "titel": "Hochwertige 2-Zimmer-Wohnung mit Westbalkon - Sendling-Westpark",
+    "preis_warm": 1280.0,
+    "groesse": 52.11,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/hochwertige-2-zimmer-wohnung-mit-westbalkon-sendling-westpark/3481447635-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.08. 15:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
