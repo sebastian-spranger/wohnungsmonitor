@@ -18737,5 +18737,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.8,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "3218b838fa73f5",
+    "titel": "Zwischenmiete 2-Zimmer-Wohnung 1.9.-31.1. Thalkirchen",
+    "preis_warm": 1449.0,
+    "groesse": 48.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/zwischenmiete-2-zimmer-wohnung-1-9-31-1-thalkirchen/3481195228-203-16388",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81379 Sendling-​Westpark",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.08. 11:35",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.33,
+    "verfuegbar_ab": ""
   }
 ]
