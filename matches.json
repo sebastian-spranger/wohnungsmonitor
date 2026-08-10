@@ -18755,5 +18755,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.33,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "661b741500ecbd",
+    "titel": "2,5-Zimmer-Wohnung, 62 m² in zentraler Lage – Nürnberg",
+    "preis_warm": 670.0,
+    "groesse": 62.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-wohnung-62-m-in-zentraler-lage-nuernberg/3481405257-203-16341",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80539 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "10.08. 15:10",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
