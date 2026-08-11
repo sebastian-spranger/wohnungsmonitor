@@ -18791,5 +18791,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "5190971b8bce63",
+    "titel": "Exklusives, großzügiges Zimmer in riesiger Designerwohnung mit Balkon (WG 200 qm)",
+    "preis_warm": 1800.0,
+    "groesse": 200.0,
+    "zimmer": 3.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen.90.2.1.0.html?asset_id=13912813&pu=22446810&sort_column=1&sort_order=0",
+    "quelle": "WG-Gesucht",
+    "adresse": "Jutastraße, Maxvorstadt, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 05:50",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": "2026-10-01"
   }
 ]
