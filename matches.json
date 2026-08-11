@@ -18863,5 +18863,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "606c22e700b33c",
+    "titel": "3 Zimmer möbliert - Grüne Oase Toplage Haidhausen",
+    "preis_warm": 870.0,
+    "groesse": 85.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-moebliert-gruene-oase-toplage-haidhausen/3482022282-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 11:16",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
