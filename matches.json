@@ -18917,5 +18917,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "bd07d3cb0b5246",
+    "titel": "DG App Schwabing auf Zeit 01.11.2026 bis 30.11.2027",
+    "preis_warm": 1600.0,
+    "groesse": 50.0,
+    "zimmer": 1.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/dg-app-schwabing-auf-zeit-01-11-2026-bis-30-11-2027/3482285025-203-6470",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80803 Schwabing-​West",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 15:45",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.75,
+    "verfuegbar_ab": ""
   }
 ]
