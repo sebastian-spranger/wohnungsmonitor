@@ -18809,5 +18809,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.0,
     "verfuegbar_ab": "2026-10-01"
+  },
+  {
+    "id": "76418641d8fc96",
+    "titel": "Wohnung mit 1.5 Zimmern · München-Westpark · 11464",
+    "preis_warm": 1880.0,
+    "groesse": 49.0,
+    "zimmer": 1.5,
+    "url": "https://www.mrlodge.de/wohnen-auf-zeit/1-zimmer-wohnung-muenchen-westpark-11464",
+    "quelle": "Mr. Lodge",
+    "adresse": "Hansastraße, Westpark, 80686 München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 08:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.72,
+    "verfuegbar_ab": ""
   }
 ]
