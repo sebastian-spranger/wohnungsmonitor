@@ -18845,5 +18845,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "650df8bdad53b9",
+    "titel": "Paar auf Wohnungssuche -  2-3 Zimmer in München",
+    "preis_warm": 1700.0,
+    "groesse": 70.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/paar-auf-wohnungssuche-2-3-zimmer-in-muenchen/3473833913-203-9616",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80798 Maxvorstadt\n                    \n                    \n                    \n                        \n                            \n                                \n                            \n                            \n                        \n                        \n                            \n                                (0.0 km)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 10:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.0,
+    "verfuegbar_ab": ""
   }
 ]
