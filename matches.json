@@ -18827,5 +18827,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.72,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "9a13bb53ab69d9",
+    "titel": "Befristet 1.10-15.12.26: 2 Zimmerwohnung im Grünen Westpark",
+    "preis_warm": 1500.0,
+    "groesse": 59.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/befristet-1-10-15-12-26-2-zimmerwohnung-im-gruenen-westpark/3481906892-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "11.08. 09:17",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
