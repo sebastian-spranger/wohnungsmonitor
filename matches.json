@@ -19007,5 +19007,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0b1557117aec1b",
+    "titel": "2-Zimmer UG Wohnung in München Bogenhausen - ab 01.10.2026",
+    "preis_warm": 1600.0,
+    "groesse": 54.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-ug-wohnung-in-muenchen-bogenhausen-ab-01-10-2026/3482775907-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 10:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": "2026-10-01"
   }
 ]
