@@ -18953,5 +18953,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.88,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0bccbe204c60c7",
+    "titel": "2-Zimmer-Wohnung, 60 m² – Dortmund",
+    "preis_warm": 550.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-60-m-dortmund/3482595899-203-16341",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80539 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 06:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
   }
 ]
