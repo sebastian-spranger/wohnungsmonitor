@@ -19151,5 +19151,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "d56b938bf7aa39",
+    "titel": "Wiesn-Wohnung NUR für Bedienungen/Personal",
+    "preis_warm": 1500.0,
+    "groesse": 60.0,
+    "zimmer": 2.5,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Neuhausen-Nymphenburg.13673645.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Maria-Luiko-Straße, Neuhausen-Nymphenburg, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 14:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.1,
+    "verfuegbar_ab": "2026-09-19"
   }
 ]
