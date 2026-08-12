@@ -19043,5 +19043,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.75,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "e40cdc5749f903",
+    "titel": "Möblierte 2 Zimmer mit Einbauküche",
+    "preis_warm": 600.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-mit-einbaukueche/3482821700-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "12.08. 10:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
