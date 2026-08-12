@@ -19169,5 +19169,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": "2026-09-19"
+  },
+  {
+    "id": "f44053466b8992",
+    "titel": "Wohnung in München für Wohnung in Freiburg",
+    "preis_warm": 1400.0,
+    "groesse": 70.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-in-muenchen-fuer-wohnung-in-freiburg/3483085412-203-6441",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80333 Maxvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 15:30",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.04,
+    "verfuegbar_ab": ""
   }
 ]
