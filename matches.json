@@ -19079,5 +19079,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "05ba7358448d44",
+    "titel": "Apartment in Tumblingerstraße, Munich",
+    "preis_warm": 1149.0,
+    "groesse": 108.0,
+    "zimmer": 0,
+    "url": "https://housinganywhere.com/room/ut1732663/de/Munich/tumblingerstra-e",
+    "quelle": "HousingAnywhere",
+    "adresse": "Tumblingerstraße, München",
+    "moebliert": true,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 13:31",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": true,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.6,
+    "verfuegbar_ab": ""
   }
 ]
