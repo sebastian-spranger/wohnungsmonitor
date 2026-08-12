@@ -18971,5 +18971,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "6e2e914fb06383",
+    "titel": "Möblierte 2 Zimmer mit Einbauküche - befristet auf max. 36 Monate",
+    "preis_warm": 1750.0,
+    "groesse": 50.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/moeblierte-2-zimmer-mit-einbaukueche-befristet-auf-max-36-monate/3482648447-203-6426",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Au-​Haidhausen",
+    "moebliert": true,
+    "mit_kueche": true,
+    "gefunden_um": "12.08. 07:40",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
