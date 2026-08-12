@@ -18989,5 +18989,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "490035464c70d7",
+    "titel": "Wunderschöne 2 Zimmer Wohnung",
+    "preis_warm": 840.0,
+    "groesse": 60.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wunderschoene-2-zimmer-wohnung/3482765509-203-6454",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81667 Au-​Haidhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 09:55",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.88,
+    "verfuegbar_ab": ""
   }
 ]
