@@ -19115,5 +19115,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.97,
     "verfuegbar_ab": "2026-09-01"
+  },
+  {
+    "id": "e2f3fdffaec6a4",
+    "titel": "2,5-Zimmer-Wohnung, 62 m² – Nürnberg",
+    "preis_warm": 590.0,
+    "groesse": 62.0,
+    "zimmer": 2.5,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-5-zimmer-wohnung-62-m-nuernberg/3483027220-203-16341",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80539 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 14:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.51,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "b120744f74c047",
+    "titel": "Top-Wohnung zum Oktoberfest in Sendling (max. 4 Personen)",
+    "preis_warm": 100.0,
+    "groesse": 54.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/top-wohnung-zum-oktoberfest-in-sendling-max-4-personen-/3482981376-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 14:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
