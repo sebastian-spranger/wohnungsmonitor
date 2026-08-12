@@ -19097,5 +19097,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.6,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "44b855285258df",
+    "titel": "Wunderschöne 2-Zimmer Wohnung zur Untermiete, München Schwanthalerhöhe",
+    "preis_warm": 1550.0,
+    "groesse": 45.0,
+    "zimmer": 2.0,
+    "url": "https://www.wg-gesucht.de/wohnungen-in-Muenchen-Schwanthalerhoehe.13669394.html",
+    "quelle": "WG-Gesucht",
+    "adresse": "Landsberger Str. 106, Schwanthalerhöhe, München",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "12.08. 14:21",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.97,
+    "verfuegbar_ab": "2026-09-01"
   }
 ]
