@@ -19187,5 +19187,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.04,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "8685c8da40ecc0",
+    "titel": "Wohnung zur Miete",
+    "preis_warm": 1592.0,
+    "groesse": 53.0,
+    "zimmer": 2.0,
+    "url": "https://www.immowelt.de/expose/ba422920-ea2b-4f77-9f63-3b0022564ed5",
+    "quelle": "ImmoWelt",
+    "adresse": "Sendling, München (81373)",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.08. 04:15",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": true,
+    "entfernung_km": 3.47,
+    "verfuegbar_ab": ""
   }
 ]
