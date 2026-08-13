@@ -19223,5 +19223,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 0.51,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "24b97adca2e789",
+    "titel": "3-Zimmer-Wohnung, 98 m² – Olching-München",
+    "preis_warm": 850.0,
+    "groesse": 98.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/3-zimmer-wohnung-98-m-olching-muenchen/3483477975-203-16350",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80335 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.08. 09:01",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.46,
+    "verfuegbar_ab": ""
   }
 ]
