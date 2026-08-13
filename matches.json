@@ -19241,5 +19241,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.46,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "226ab29ee1746f",
+    "titel": "Wohnung Viltualienmarkt September",
+    "preis_warm": 2000.0,
+    "groesse": 65.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/wohnung-viltualienmarkt-september/3483578677-203-6443",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80331 Altstadt-​Lehel",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "13.08. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 0.25,
+    "verfuegbar_ab": ""
   }
 ]
