@@ -138,6 +138,15 @@ HEADERS = {
 
 # ─── Datenmodell ─────────────────────────────────────────────────────────────
 
+def _md_escape(s: str) -> str:
+    """Telegram-Markdown (legacy) Sonderzeichen escapen. Titel/Adressen kommen
+    von den Portal-Websites — ohne Escaping würde z.B. ein `_` im Titel die
+    sendMessage mit HTTP 400 scheitern lassen (Match geht verloren)."""
+    for ch in "\\_*[]()~`>#+-=|{}.!":
+        s = s.replace(ch, "\\" + ch)
+    return s
+
+
 @dataclass
 class Wohnung:
     id: str
@@ -212,7 +221,7 @@ class Wohnung:
 
     def als_nachricht(self, score: int = 0) -> str:
         sterne = "⭐" * max(1, min(5, 1 + (score + 5) // 10))
-        zeilen = [f"🏠 *{self.titel[:70]}*  {sterne}"]
+        zeilen = [f"🏠 *{_md_escape(self.titel[:70])}*  {sterne}"]
         quelle_zeit = f"🏷 {self.quelle}"
         if hasattr(self, 'gefunden_um') and self.gefunden_um:
             quelle_zeit += f" · {self.gefunden_um}"
@@ -229,7 +238,7 @@ class Wohnung:
             zeilen.append(groesse_str)
         if self.adresse:
             q = self.adresse.replace(' ', '+').replace(',', '%2C')
-            zeilen.append(f"📍 [{self.adresse}](https://maps.google.com/?q={q})")
+            zeilen.append(f"📍 [{_md_escape(self.adresse)}](https://maps.google.com/?q={q})")
         if self.entfernung_km is not None and self.entfernung_km < 900:
             zeilen.append(f"📌 {self.entfernung_km:.1f} km zum Zentrum")
         if self.verfuegbar_ab:

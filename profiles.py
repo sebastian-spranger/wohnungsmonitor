@@ -25,10 +25,11 @@ import json
 import os
 import secrets
 import sqlite3
+from contextlib import contextmanager
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Iterator, List, Optional
 
 DB_PATH    = os.environ.get("APP_DB", "data/app.db")
 # Telegram-Link-Codes verfallen schnell — das Dashboard münzt bei jedem Aufruf
@@ -80,12 +81,22 @@ class Profile:
 
 # ── DB-Zugriff ─────────────────────────────────────────────────────────────
 
-def _conn() -> sqlite3.Connection:
+@contextmanager
+def _conn() -> Iterator[sqlite3.Connection]:
+    """Connection mit Transaktions-Handling (commit/rollback) — und wird IMMER
+    geschlossen (kein Leck im 90s-Engine-Loop / Webapp-Betrieb)."""
     conn = sqlite3.connect(DB_PATH, timeout=15)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA foreign_keys=ON")
-    return conn
+    try:
+        yield conn
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def init_db() -> None:
@@ -366,8 +377,14 @@ def claim_code(code: str, chat_id: str) -> Optional[str]:
                 return None
         except Exception:
             pass  # nicht parsebares ts -> nur beim Alter großzügig sein
-        c.execute("UPDATE reg_codes SET used=1, ts=? WHERE code=?",
-                  (_now(), code))
+        # Atomar brennen (AND used=0 + rowcount): zwei gleichzeitige Claims
+        # desselben Codes können so NIE beide durchkommen.
+        cur = c.execute(
+            "UPDATE reg_codes SET used=1, ts=? WHERE code=? AND used=0",
+            (_now(), code),
+        )
+        if cur.rowcount != 1:
+            return None
         uid = row["uid"]
     link_chat(str(chat_id), uid)
     return uid

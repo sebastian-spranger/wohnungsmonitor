@@ -300,7 +300,9 @@ def onboard_submit(request: Request, invite: str = Form(...)):
         return page(request, "Einladung",
                     '<div class="card"><b>Zu viele Versuche.</b> '
                     '<a href="/onboard">Erneut versuchen</a>.</div>', email)
-    if not profiles.use_invite(invite.strip(), email):
+    # Codes sind Großbuchstaben (CLI erzeugt sie so) — klein geschriebene
+    # Eingaben normalisieren, damit Abtippen nicht unnötig scheitert.
+    if not profiles.use_invite(invite.strip().upper(), email):
         return page(request, "Einladung",
                     '<div class="card"><b>Ungültiger oder bereits benutzter '
                     'Einladungscode.</b> <a href="/onboard">Zurück</a>.</div>', email)
