@@ -19331,5 +19331,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 2.43,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "961894d0eaffe5",
+    "titel": "2-Zimmer-Wohnung in München 62 m²",
+    "preis_warm": 560.0,
+    "groesse": 62.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-in-muenchen-62-m-/3484186135-203-16349",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80469 Ludwigsvorstadt-​Isarvorstadt",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.08. 08:05",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 1.09,
+    "verfuegbar_ab": ""
   }
 ]
