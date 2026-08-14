@@ -18179,5 +18179,41 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.71,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "db6692bd9b67ae",
+    "titel": "2-Zimmerwohung in der Montgelasstraße in München",
+    "preis_warm": 1590.0,
+    "groesse": 69.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmerwohung-in-der-montgelasstrasse-in-muenchen/3484350763-203-6457",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81679 Bogenhausen",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.08. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.71,
+    "verfuegbar_ab": ""
+  },
+  {
+    "id": "f45b2bc709b71e",
+    "titel": "59 m² Komfort-Wohnung im 1. Obergeschoss mit sonnigem Balkon",
+    "preis_warm": 1330.0,
+    "groesse": 59.15,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/59-m-komfort-wohnung-im-1-obergeschoss-mit-sonnigem-balkon/3484362871-203-16362",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81541 Obergiesing",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.08. 11:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.04,
+    "verfuegbar_ab": ""
   }
 ]
