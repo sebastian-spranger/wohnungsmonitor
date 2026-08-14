@@ -1,0 +1,36 @@
+[Unit]
+# Always-on Wohnungsmonitor-Engine (Scraper + Filter + Telegram-Bot).
+# Placeholders __USER__ / __DIR__ / __PY__ werden von deploy/oracle-setup.sh ersetzt.
+Description=Wohnungsmonitor engine (scraper + Telegram bot, --serve)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__DIR__
+# Die Engine liest KEINE .env selbst — systemd injiziert sie als Prozess-Umgebung.
+EnvironmentFile=__DIR__/.env
+# Ungepufferte Ausgabe, damit journalctl Live-Logs zeigt (Python block-buffert sonst).
+Environment=PYTHONUNBUFFERED=1
+# IS24/HousingAnywhere werden headful gescraped (umgeht die Bot-Sperre) → xvfb
+# liefert den virtuellen Bildschirm, genau wie im GitHub-Actions-Workflow.
+ExecStart=/usr/bin/xvfb-run -a __PY__ __DIR__/monitor_lite.py --serve
+Restart=always
+RestartSec=10
+# Log nach journald -> ansehen mit: journalctl -u wohnungsmonitor -f
+StandardOutput=journal
+StandardError=journal
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=full
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target

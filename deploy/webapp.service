@@ -1,0 +1,34 @@
+[Unit]
+# Onboarding-Webapp (FastAPI/uvicorn) für den Wohnungsmonitor.
+# Placeholders __USER__ / __DIR__ / __PY__ werden von deploy/oracle-setup.sh ersetzt.
+# Port 8001: 8000 gehört zur Jobmonitor-Webapp (nojobs.duckdns.org) — keine Kollision.
+Description=Wohnungsmonitor onboarding web app (FastAPI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__DIR__
+# Die App lädt ihre eigene .env aus WorkingDirectory (CLERK_PUBLISHABLE_KEY,
+# BASE_URL, SESSION_SECRET, BOT_USERNAME, ...) – kein EnvironmentFile nötig.
+ExecStart=__PY__ -m uvicorn webapp.main:app --host 127.0.0.1 --port 8001
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=full
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+# Ressourcen deckeln, damit die kleine VM nicht überlastet wird.
+MemoryMax=512M
+TasksMax=100
+
+[Install]
+WantedBy=multi-user.target

@@ -1,14 +1,13 @@
 name: Wohnungsmonitor
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'   # alle 5 Minuten, 24/7
-  workflow_dispatch:          # auch manuell startbar über GitHub UI
+  # HAUPTBETRIEB läuft jetzt als systemd-Service auf der Oracle-VM
+  # (monitor_lite.py --serve, alle 90s) — siehe deploy/oracle-setup.sh.
+  # Dieser Workflow ist NUR noch der manuelle Fallback: kein Cron, damit
+  # GitHub-Actions-Läufe die VM-Engine nicht doppelt schedelen und sich
+  # Push-Races auf seen.json nicht mehr häufen.
+  workflow_dispatch:          # manuell startbar über GitHub UI
 
-# NIE parallele Runs: verhindert Queue-Staus (10+ hängende Runs) und
-# Push-Races auf seen.json, die Fehler-Emails verursacht haben.
-# cancel-in-progress NICHT setzen: sonst bricht der nächste 5-Min-Trigger den
-# laufenden Run ab und es wird nie ein Lauf fertig.
 concurrency:
   group: wohnungsmonitor
 

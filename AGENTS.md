@@ -68,7 +68,7 @@ CHECK_INTERVAL = 90     # Sekunden
 ```bash
 cd ~/Documents/Projects/wohnungsmonitor
 git init
-git add monitor_lite.py .github/ .gitignore requirements.txt CLAUDE.md
+git add monitor_lite.py .github/ .gitignore requirements.txt AGENTS.md
 git commit -m "init"
 git remote add origin https://github.com/DEIN_USERNAME/wohnungsmonitor.git
 git push -u origin main

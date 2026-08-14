@@ -1,0 +1,15 @@
+# Caddy-Reverse-Proxy zur Onboarding-Webapp, mit automatischem HTTPS
+# (Let's Encrypt). __DOMAIN__ durch deinen Hostnamen ersetzen (DuckDNS-Subdomain
+# oder echte Domain, A-Record auf die VM-IP). Erfordert offene Ports 80 + 443
+# in der Oracle-Security-List. Installation:
+#   sudo apt install caddy
+#   sudo cp deploy/Caddyfile /etc/caddy/Caddyfile   (nach Ersetzen von __DOMAIN__)
+#   sudo systemctl restart caddy
+__DOMAIN__ {
+    encode gzip
+    # Oversized Bodies am Rand ablehnen (die App akzeptiert nur kleine Formulare)
+    request_body {
+        max_size 1MB
+    }
+    reverse_proxy 127.0.0.1:8000
+}

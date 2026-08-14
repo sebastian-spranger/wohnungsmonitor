@@ -22,6 +22,11 @@ from pathlib import Path
 import httpx
 from bs4 import BeautifulSoup
 
+# Multi-User-Store: Nutzer, Einladungen, Telegram-Verknüpfungen (SQLite).
+# Solange die DB keine Nutzer kennt, verhält sich alles wie vorher (Env-IDs +
+# user_filters.json) – siehe profiles.recipients_and_filters().
+import profiles
+
 # Playwright ist optional: nur für die JS-/Bot-geschützten Portale (IS24, HousingAnywhere).
 # Fehlt es (z.B. lokaler Schnell-Lauf ohne Browser), laufen einfach nur die httpx-Portale.
 try:
@@ -47,6 +52,9 @@ MAX_RADIUS_KM    = float(os.environ.get("MAX_RADIUS_KM",  "4.0"))  # km Luftlini
 # Spätestes Einzugs-/Verfügbarkeitsdatum (ISO). Inserate mit erkennbar späterem
 # "Verfügbar ab"-Datum werden verworfen. Unbekannte Verfügbarkeit bleibt drin.
 VERFUEGBAR_BIS   = os.environ.get("VERFUEGBAR_BIS", "2026-07-15")
+
+# Always-on-Modus (--serve, z.B. auf der Oracle-VM): Pause zwischen Läufen
+SERVE_INTERVAL   = int(os.environ.get("SERVE_INTERVAL", "90"))   # Sekunden
 
 # Standard-Filter für Empfänger ohne eigene Einstellungen (Momentaufnahme der
 # Basiswerte, BEVOR sie unten pro Lauf für den breiten Scrape-Filter aufgeweitet
@@ -265,12 +273,14 @@ async def send_telegram(chat_id: str, text: str, client: httpx.AsyncClient) -> b
 
 
 async def telegram(text: str, client: httpx.AsyncClient) -> bool:
-    """Broadcast an alle konfigurierten Empfänger (für generische Meldungen ohne
-    Empfänger-spezifischen Filter, z.B. Fehlermeldungen)."""
-    if not TELEGRAM_CHAT_IDS:
+    """Broadcast an alle aktiven Empfänger (DB-Profile bzw. Legacy-Env), für
+    generische Meldungen ohne Empfänger-spezifischen Filter (z.B. Fehler)."""
+    recipients, _ = profiles.recipients_and_filters(
+        TELEGRAM_CHAT_IDS, load_user_filters())
+    if not recipients:
         print("⚠  Keine Telegram-Empfänger konfiguriert")
         return False
-    ok = [await send_telegram(cid, text, client) for cid in TELEGRAM_CHAT_IDS]
+    ok = [await send_telegram(cid, text, client) for cid in recipients]
     return any(ok)
 
 
@@ -325,7 +335,10 @@ def format_filter_summary(f: dict) -> str:
 
 WILLKOMMEN_TEXT = (
     "👋 Willkommen beim München-Wohnungsmonitor!\n\n"
-    "Schreib mir einfach in eigenen Worten, wonach du suchst, z.B.:\n"
+    "Wenn du dich gerade über das Web registriert hast, klicke auf den "
+    "„Telegram verknüpfen“-Button in deinem Dashboard — dann bekommst du "
+    "passende Wohnungen automatisch hierher.\n\n"
+    "Schreib mir auch in eigenen Worten, wonach du suchst, z.B.:\n"
     "_\"max 1600 warm, ab 2 Zimmer, min 55qm, am liebsten Schwabing oder Maxvorstadt\"_\n\n"
     "Befehle:\n"
     "/status – zeigt deine aktuellen Filter\n"
@@ -382,11 +395,21 @@ async def deepseek_parse_filter(text: str, client: httpx.AsyncClient) -> dict | 
         return None
 
 
-async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) -> None:
-    """Holt neue Telegram-Nachrichten seit dem letzten Lauf, interpretiert sie als
-    Filter-Wunsch (oder Befehl) und aktualisiert user_filters in-place + auf Disk."""
+async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict,
+                                 recipients: list | None = None) -> list:
+    """Holt neue Telegram-Nachrichten seit dem letzten Lauf und verarbeitet sie:
+      - `/start <code>`   → Telegram-Chat mit Web-Account verknüpfen (Pairing)
+      - `/start`          → Willkommensnachricht
+      - `/status` `/reset`→ eigene Filter anzeigen / zurücksetzen
+      - freier Text       → DeepSeek übersetzt ihn in Filter-Felder
+
+    `user_filters` wird in-place aktualisiert (chat_id -> filter-dict). Chats,
+    die per `/start <code>` NEU verknüpft wurden, werden an `recipients`
+    angehängt (falls übergeben) — so fließen sie noch im selben Lauf ein.
+    Rückgabe: Liste der neu verknüpften (chat_id, filter_dict)."""
+    newly: list = []
     if not TELEGRAM_TOKEN:
-        return
+        return newly
     offset = load_telegram_offset()
     try:
         r = await client.get(
@@ -396,11 +419,11 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
         )
         if r.status_code != 200:
             print(f"getUpdates-Fehler: HTTP {r.status_code}")
-            return
+            return newly
         updates = r.json().get("result", [])
     except Exception as e:
         print(f"getUpdates-Fehler: {e}")
-        return
+        return newly
 
     print(f"Telegram: {len(updates)} neue Nachricht(en) seit offset {offset}")
     for upd in updates:
@@ -413,7 +436,35 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
             continue
         print(f"  [{cid}] {text[:60]!r}")
 
-        if text.lower() == "/start":
+        if text.lower().startswith("/start"):
+            token = text.split(None, 1)[1].strip() if " " in text else ""
+            if token:
+                # Pairing: Web-Dashboard hat einen Code gemünzt → Chat verknüpfen
+                uid = profiles.claim_code(token, cid)
+                if uid:
+                    prof = profiles.get_user(uid)
+                    filt = dict(prof.filters) if prof else {}
+                    user_filters[cid] = filt
+                    newly.append((cid, filt))
+                    if recipients is not None and cid not in recipients:
+                        recipients.append(cid)
+                    ok = await send_telegram(
+                        cid,
+                        "✅ Telegram verbunden! Du bekommst ab jetzt passende "
+                        "Wohnungen hierher geschickt.\n"
+                        "Deine Filter kannst du jederzeit im Dashboard anpassen.",
+                        client,
+                    )
+                    print(f"    → Pairing OK ({uid}): {'✓' if ok else '✗'}")
+                else:
+                    ok = await send_telegram(
+                        cid,
+                        "❌ Ungültiger oder abgelaufener Verbindungscode.\n"
+                        "Öffne dein Dashboard für einen frischen Code.",
+                        client,
+                    )
+                    print(f"    → Pairing fehlgeschlagen: {'✓' if ok else '✗'}")
+                continue
             ok = await send_telegram(cid, WILLKOMMEN_TEXT, client)
             print(f"    → Willkommensnachricht: {'✓' if ok else '✗'}")
             continue
@@ -422,8 +473,13 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
             await send_telegram(cid, f"📋 Deine aktuellen Filter:\n{format_filter_summary(eff)}", client)
             continue
         if text.lower() == "/reset":
-            user_filters.pop(cid, None)
-            save_user_filters(user_filters)
+            prof = profiles.profile_for_chat(cid)
+            if prof:
+                profiles.clear_filters(prof.uid)
+                user_filters.pop(cid, None)
+            else:
+                user_filters.pop(cid, None)
+                save_user_filters(user_filters)
             await send_telegram(cid, "🔄 Zurück auf Standard-Filter gesetzt.", client)
             continue
 
@@ -441,13 +497,19 @@ async def poll_telegram_commands(client: httpx.AsyncClient, user_filters: dict) 
         current.update(parsed)
         current["updated_at"] = date.today().isoformat()
         user_filters[cid] = current
-        save_user_filters(user_filters)
+        prof = profiles.profile_for_chat(cid)
+        if prof:
+            # Web-Nutzer: Filter landen in der DB (die Quelle der Wahrheit)
+            profiles.update_filters(prof.uid, {k: v for k, v in parsed.items()})
+        else:
+            save_user_filters(user_filters)
         print(f"    → Filter gesetzt: {parsed}")
         eff = {**DEFAULT_FILTER, **current}
         await send_telegram(cid, f"✅ Filter aktualisiert:\n{format_filter_summary(eff)}", client)
 
     save_telegram_offset(offset)
     print(f"Telegram-Offset gespeichert: {offset}")
+    return newly
 
 
 # ─── Deduplication ───────────────────────────────────────────────────────────
@@ -1269,12 +1331,21 @@ async def main():
     seen = load_seen()
     fahrtzeit_cache = load_fahrtzeit_cache()
     geocode_cache = load_geocode_cache()
-    user_filters = load_user_filters()
+    # Empfänger + ihre eigenen Filter: DB-Profile (Web-Registrierung) gewinnen,
+    # ohne DB-Nutzer greift der Legacy-Pfad (TELEGRAM_CHAT_IDS + user_filters.json)
+    # mit einmaliger Migration – siehe profiles.recipients_and_filters().
+    recipients, user_filters = profiles.recipients_and_filters(
+        TELEGRAM_CHAT_IDS, load_user_filters())
     print(f"Bereits bekannte Inserate: {len(seen)}")
-    print(f"Empfänger mit eigenen Filtern: {len(user_filters)}")
+    print(f"Empfänger: {len(recipients)} · davon mit eigenen Filtern: {len(user_filters)}")
 
     async with httpx.AsyncClient(http2=True) as client:
-        await poll_telegram_commands(client, user_filters)
+        # Neue /start <code>-Verknüpfungen fließen noch im selben Lauf ein
+        newly = await poll_telegram_commands(client, user_filters, recipients)
+        for cid, filt in newly:
+            user_filters.setdefault(cid, filt)
+        if newly:
+            print(f"→ {len(newly)} neue Telegram-Verknüpfung(en) in diesem Lauf")
 
         # Scrape-Grenzen einmal gemeinsam auf den lockersten aller Wünsche aufweiten
         # (die Portale werden nur einmal durchsucht) – die enge Auswahl pro Empfänger
@@ -1341,9 +1412,10 @@ async def main():
         for w in neue_wohnungen:
             sc = scores.get(w.id, 0)
             # Wer genau will DIESE Wohnung? Jeder Empfänger hat seinen eigenen
-            # effektiven Filter (Standard + eigene Wünsche via Telegram-Nachricht).
+            # effektiven Filter (Standard + eigene Wünsche via Web-Dashboard oder
+            # Telegram-Nachricht).
             treffer_fuer = [
-                cid for cid in TELEGRAM_CHAT_IDS
+                cid for cid in recipients
                 if w.passt({**DEFAULT_FILTER, **user_filters.get(cid, {})})[0]
             ]
             if not treffer_fuer:
@@ -1369,6 +1441,20 @@ async def main():
     print(f"\n=== Fertig: {neue_matches} neue Match{'es' if neue_matches != 1 else ''} ===")
 
 
+async def _serve_loop() -> None:
+    """Always-on-Modus für die Oracle-VM: Lauf → Pause → nächster Lauf.
+    Ein Lauf-Fehler darf den Service nie beenden (systemd-Restart wäre zwar
+    ok, aber so bleibt der Rhythmus stabil)."""
+    print(f"=== --serve Modus: Läufe alle {SERVE_INTERVAL}s ===")
+    while True:
+        try:
+            await main()
+        except Exception as e:
+            print(f"⚠ Lauf fehlgeschlagen: {e}")
+        print(f"… nächster Lauf in {SERVE_INTERVAL}s")
+        await asyncio.sleep(SERVE_INTERVAL)
+
+
 if __name__ == "__main__":
     # Abhängigkeiten prüfen
     missing = []
@@ -1387,4 +1473,7 @@ if __name__ == "__main__":
         import h2  # für http2=True
     except ImportError:
         pass  # optional, kein Fehler
-    asyncio.run(main())
+    if "--serve" in sys.argv:
+        asyncio.run(_serve_loop())
+    else:
+        asyncio.run(main())
