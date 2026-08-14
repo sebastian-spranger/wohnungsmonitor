@@ -19349,5 +19349,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 1.09,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "fa3ac887821a7d",
+    "titel": "An Staatsbedienstete: 2 Zimmer in 3-Zimmer Wohnung Westpark",
+    "preis_warm": 650.0,
+    "groesse": 80.0,
+    "zimmer": 3.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/an-staatsbedienstete-2-zimmer-in-3-zimmer-wohnung-westpark/3484245571-203-6417",
+    "quelle": "Kleinanzeigen",
+    "adresse": "81373 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.08. 09:20",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 3.71,
+    "verfuegbar_ab": ""
   }
 ]
