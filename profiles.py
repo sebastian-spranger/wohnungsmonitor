@@ -282,6 +282,16 @@ def profile_for_chat(chat_id: str) -> Optional[Profile]:
 
 # ── Einladungscodes ────────────────────────────────────────────────────────
 
+INVITE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"  # ohne 0/O, 1/I/L
+
+
+def generate_invite_code(prefix: str = "WOHN") -> str:
+    """Lesbaren Einladungscode erzeugen (z.B. WOHN-X7K2MP). Wird von der
+    Admin-Webseite UND der Admin-CLI (scripts/invites.py) genutzt."""
+    body = "".join(secrets.choice(INVITE_ALPHABET) for _ in range(6))
+    return f"{prefix}-{body}"
+
+
 def add_invite(code: str) -> bool:
     """Einen neuen Einladungscode anlegen. False, wenn er schon existiert."""
     init_db()

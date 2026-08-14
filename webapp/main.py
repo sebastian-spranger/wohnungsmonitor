@@ -22,9 +22,12 @@ Clerk-Login aktiviert sich mit CLERK_PUBLISHABLE_KEY (+ BASE_URL).
 from __future__ import annotations
 
 import html
+import json
 import os
 import re
 import secrets
+from datetime import date, datetime
+from pathlib import Path
 
 from fastapi import FastAPI, Request, Form, HTTPException
 from fastapi.responses import HTMLResponse, RedirectResponse
@@ -63,6 +66,10 @@ SESSION_SECRET = os.environ.get("SESSION_SECRET", "") or secrets.token_hex(16)
 # ehren, selbst wenn eine kopierte .env ihn setzt.
 ALLOW_DEV_LOGIN = os.environ.get("ALLOW_DEV_LOGIN", "").strip() in ("1", "true") and _IS_LOCAL
 BOT_USERNAME    = os.environ.get("BOT_USERNAME", "Noapartmentsbot")
+# Admin-Zugang (Admin-Panel /admin): kommagetrennte E-Mails.
+ADMIN_EMAILS    = {e.strip().lower() for e in
+                   os.environ.get("ADMIN_EMAILS", "sebastianspranger699@gmail.com").split(",")
+                   if e.strip()}
 
 app = FastAPI(title="Wohnungsmonitor Onboarding")
 # Sicheres Cookie: HttpOnly (Starlette-Default) + Secure auf HTTPS + SameSite=lax
@@ -91,6 +98,19 @@ def _require(request: Request):
     if not auth:
         raise HTTPException(303, headers={"Location": "/"})
     return auth
+
+
+def _is_admin(email: str) -> bool:
+    return (email or "").strip().lower() in ADMIN_EMAILS
+
+
+def _require_admin(request: Request):
+    """Nur Admins: sonst 403 (kein Umweg über Redirect, damit nicht verraten
+    wird, dass das Admin-Panel existiert)."""
+    uid, email = _require(request)
+    if not _is_admin(email):
+        raise HTTPException(403, "Kein Admin-Zugang")
+    return uid, email
 
 
 def _num(v: str):
@@ -181,8 +201,9 @@ code{background:#f3f4f6;padding:1px 6px;border-radius:6px;font-size:.9em}
 def page(request: Request, title: str, body: str, email: str = None) -> HTMLResponse:
     top = ""
     if email:
+        admin = '<a href="/admin">Admin</a> · ' if _is_admin(email) else ""
         top = ('<div class="topbar"><span class="muted">' + _esc(email)
-               + '</span><a href="/logout">Abmelden</a></div>')
+               + '</span>' + admin + '<a href="/logout">Abmelden</a></div>')
     return HTMLResponse(
         '<!doctype html><html lang="de"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -434,6 +455,164 @@ def delete(request: Request):
         profiles.delete_user(uid)
     request.session.clear()
     return RedirectResponse("/", status_code=303)
+
+
+# ── Admin-Panel ─────────────────────────────────────────────────────────────
+
+def _state_stats() -> dict:
+    """Kennzahlen aus den State-Dateien (seen/delivered/matches) — die Webapp
+    läuft im Projekt-WorkingDirectory, die Dateien liegen direkt dort."""
+    stats = {"seen": 0, "letzter_lauf": "–",
+             "delivered_eintraege": 0, "delivered_nachrichten": 0,
+             "matches_gesamt": 0, "matches_heute": 0, "matches_pro_quelle": {},
+             "letzte_matches": []}
+    try:
+        s = Path("seen.json")
+        stats["seen"] = len(json.loads(s.read_text()).get("ids", []))
+        stats["letzter_lauf"] = datetime.fromtimestamp(s.stat().st_mtime) \
+            .strftime("%d.%m.%Y %H:%M")
+    except Exception:
+        pass
+    try:
+        d = json.loads(Path("delivered.json").read_text())
+        stats["delivered_eintraege"] = len(d)
+        stats["delivered_nachrichten"] = sum(len(v) for v in d.values())
+    except Exception:
+        pass
+    try:
+        ms = json.loads(Path("matches.json").read_text())
+        stats["matches_gesamt"] = len(ms)
+        heute = date.today().strftime("%d.%m.")
+        quelle: dict = {}
+        for m in ms:
+            q = m.get("quelle", "?")
+            quelle[q] = quelle.get(q, 0) + 1
+            if (m.get("gefunden_um") or "")[:5] == heute:
+                stats["matches_heute"] += 1
+        stats["matches_pro_quelle"] = dict(sorted(quelle.items(), key=lambda x: -x[1]))
+        stats["letzte_matches"] = ms[-10:][::-1]
+    except Exception:
+        pass
+    return stats
+
+
+def _admin_html(request: Request, email: str, flash: str = "") -> HTMLResponse:
+    stats = _state_stats()
+    users = profiles.list_users()
+    invites = profiles.list_invites()
+
+    nutzer_aktiv = sum(1 for u in users if u["active"])
+    nutzer_chat = sum(1 for u in users if u["chat_ids"])
+    nutzer_filter = sum(1 for u in profiles.load_active_profiles() if u.filters)
+
+    def _karte(label: str, wert) -> str:
+        return (f'<div class="card" style="flex:1;margin:0;text-align:center">'
+                f'<div style="font-size:1.7rem;font-weight:700">{_esc(wert)}</div>'
+                f'<div class="muted">{_esc(label)}</div></div>')
+
+    cards = (_karte("Nutzer", len(users)) + _karte("davon aktiv", nutzer_aktiv)
+             + _karte("mit Telegram", nutzer_chat) + _karte("mit eigenen Filtern", nutzer_filter)
+             + _karte("Matches gesamt", stats["matches_gesamt"])
+             + _karte("heute", stats["matches_heute"])
+             + _karte("bekannte Inserate", stats["seen"])
+             + _karte("Zustellungen", stats["delivered_nachrichten"]))
+
+    quellen = " · ".join(f"{_esc(q)}: {n}" for q, n in stats["matches_pro_quelle"].items()) \
+        or "–"
+
+    # Nutzer-Tabelle
+    if users:
+        rows = "".join(
+            f'<tr><td>{_esc(u["uid"][:24])}</td><td>{_esc(u["email"] or "–")}</td>'
+            f'<td>{"✅" if u["active"] else "⏸"}</td>'
+            f'<td>{", ".join(_esc(c) for c in u["chat_ids"]) or "–"}</td>'
+            f'<td class="muted">{_esc((u.get("created_at") or "")[:10])}</td></tr>'
+            for u in users)
+        nutzer_tabelle = ('<table style="width:100%;border-collapse:collapse;font-size:.9rem">'
+                          '<tr><th align="left">uid</th><th align="left">E-Mail</th>'
+                          '<th align="left">aktiv</th><th align="left">Telegram</th>'
+                          '<th align="left">registriert</th></tr>' + rows + '</table>')
+    else:
+        nutzer_tabelle = '<p class="muted">Noch keine Nutzer.</p>'
+
+    # Einladungscodes
+    code_rows = "".join(
+        f'<tr><td><code>{_esc(i["code"])}</code></td>'
+        f'<td>{"✅ benutzt" if i["used"] else "🟢 offen"}</td>'
+        f'<td class="muted">{_esc(i.get("used_by") or "")}</td>'
+        f'<td>' + ('' if i["used"] else
+                   f'<form method="post" action="/admin/revoke" style="margin:0">'
+                   f'<input type="hidden" name="code" value="{_esc(i["code"])}">'
+                   f'<button class="warn" style="padding:2px 10px;margin:0">widerrufen</button>'
+                   f'</form>') + '</td></tr>'
+        for i in invites)
+    code_tabelle = ('<table style="width:100%;border-collapse:collapse;font-size:.9rem">'
+                    '<tr><th align="left">Code</th><th align="left">Status</th>'
+                    '<th align="left">benutzt von</th><th></th></tr>' + code_rows + '</table>')
+
+    # Letzte Matches
+    if stats["letzte_matches"]:
+        mrows = "".join(
+            f'<li>🔗 <a href="{_esc(m.get("url","#"))}" target="_blank" rel="noopener">'
+            f'{_esc((m.get("titel") or "")[:70])}</a> '
+            f'<span class="muted">— {_esc(str(m.get("preis_warm","")))}€ · '
+            f'{_esc(str(m.get("groesse","")))}qm · {_esc(m.get("quelle",""))}'
+            f' · {_esc(m.get("gefunden_um",""))}</span></li>'
+            for m in stats["letzte_matches"])
+        letzte = '<ul style="padding-left:18px;margin:4px 0">' + mrows + '</ul>'
+    else:
+        letzte = '<p class="muted">Noch keine Matches.</p>'
+
+    body = (
+        '<h1>Admin-Panel</h1>' + (f'<p class="pill ok">{_esc(flash)}</p>' if flash else "")
+        + '<div class="card"><h2>Übersicht</h2>'
+        f'<div style="display:flex;gap:10px;flex-wrap:wrap">{cards}</div></div>'
+        '<div class="card"><h2>🎟 Einladungscodes</h2>'
+        '<form method="post" action="/admin/codes" style="display:flex;gap:8px;align-items:end">'
+        '<div><label>Anzahl</label>'
+        '<input name="count" type="number" min="1" max="50" value="1" style="width:80px"></div>'
+        '<div><label>Präfix</label>'
+        f'<input name="prefix" value="WOHN" style="width:120px" maxlength="12"></div>'
+        '<button>Erzeugen</button></form>'
+        f'<p class="muted">Codes sind single-use und werden beim Onboarding verbraucht.</p>'
+        f'{code_tabelle}</div>'
+        '<div class="card"><h2>📈 Kennzahlen</h2>'
+        f'<p class="muted" style="margin-top:0">Letzter Engine-Lauf: {_esc(stats["letzter_lauf"])} '
+        f'· Matches nach Quelle: {quellen}</p>'
+        f'{nutzer_tabelle}</div>'
+        '<div class="card"><h2>🕘 Letzte Matches</h2>' + letzte + '</div>'
+    )
+    return page(request, "Admin", body, email)
+
+
+@app.get("/admin", response_class=HTMLResponse)
+def admin(request: Request):
+    _, email = _require_admin(request)
+    return _admin_html(request, email)
+
+
+@app.post("/admin/codes")
+def admin_codes(request: Request, count: int = Form(1), prefix: str = Form("WOHN")):
+    uid, email = _require_admin(request)
+    if not ratelimit.hit(f"admin-codes:{uid}", [(10, 600)])[0]:
+        return _admin_html(request, email, "Zu viele Anfragen — kurz warten.")
+    count = max(1, min(count, 50))
+    prefix = re.sub(r"[^A-Za-z0-9]", "", prefix)[:12] or "WOHN"
+    erzeugt = 0
+    for _ in range(count):
+        if profiles.add_invite(profiles.generate_invite_code(prefix)):
+            erzeugt += 1
+    return _admin_html(request, email, f"{erzeugt} Code(s) erzeugt.")
+
+
+@app.post("/admin/revoke")
+def admin_revoke(request: Request, code: str = Form("")):
+    uid, email = _require_admin(request)
+    if not ratelimit.hit(f"admin-revoke:{uid}", [(20, 300)])[0]:
+        return _admin_html(request, email, "Zu viele Anfragen — kurz warten.")
+    code = code.strip().upper()
+    ok = profiles.use_invite(code, "(revoked)") if code else False
+    return _admin_html(request, email, f"Code {code} widerrufen." if ok else f"Code {code} nicht gefunden.")
 
 
 @app.get("/healthz")
