@@ -19313,5 +19313,23 @@
     "preis_ist_kalt": false,
     "entfernung_km": 3.1,
     "verfuegbar_ab": ""
+  },
+  {
+    "id": "0fe684d11892b4",
+    "titel": "2-Zimmer-Wohnung, 61 m² – München",
+    "preis_warm": 690.0,
+    "groesse": 61.0,
+    "zimmer": 2.0,
+    "url": "https://www.kleinanzeigen.de/s-anzeige/2-zimmer-wohnung-61-m-muenchen/3484155940-203-16385",
+    "quelle": "Kleinanzeigen",
+    "adresse": "80337 Sendling",
+    "moebliert": false,
+    "mit_kueche": false,
+    "gefunden_um": "14.08. 07:25",
+    "fahrtzeit_min": null,
+    "preis_ist_warm": false,
+    "preis_ist_kalt": false,
+    "entfernung_km": 2.43,
+    "verfuegbar_ab": ""
   }
 ]
