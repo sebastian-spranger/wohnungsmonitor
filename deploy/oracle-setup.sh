@@ -63,7 +63,7 @@ cd "$APP_DIR"
 # Diese Dateien schreibt die Engine selbst; skip-worktree verhindert, dass
 # git pull sie überschreibt oder Konflikte entstehen.
 say "Live-State-Dateien von git-Tracking abkoppeln (skip-worktree)…"
-for f in seen.json matches.json fahrtzeit_cache.json geocode_cache.json \
+for f in seen.json matches.json delivered.json fahrtzeit_cache.json geocode_cache.json \
          user_filters.json telegram_offset.json; do
     git ls-files --error-unmatch "$f" >/dev/null 2>&1 && git update-index --skip-worktree "$f" || true
 done
