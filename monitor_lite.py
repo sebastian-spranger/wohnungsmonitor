@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import asyncio
 import hashlib
+import html
 import json
 import os
 import re
@@ -139,13 +140,12 @@ HEADERS = {
 
 # ─── Datenmodell ─────────────────────────────────────────────────────────────
 
-def _md_escape(s: str) -> str:
-    """Telegram-Markdown (legacy) Sonderzeichen escapen. Titel/Adressen kommen
-    von den Portal-Websites — ohne Escaping würde z.B. ein `_` im Titel die
-    sendMessage mit HTTP 400 scheitern lassen (Match geht verloren)."""
-    for ch in "\\_*[]()~`>#+-=|{}.!":
-        s = s.replace(ch, "\\" + ch)
-    return s
+def _esc_html(s: str) -> str:
+    """HTML-Escaping für parse_mode='HTML'. Portal-Titel/Adressen enthalten
+    beliebige Sonderzeichen (*, _, [, ], &, ...) — HTML ist hier deutlich
+    robuster als Telegram-Legacy-Markdown (das bei escapeten Zeichen in
+    Formatierung mit HTTP 400 scheitert)."""
+    return html.escape(str(s or ""), quote=True)
 
 
 @dataclass
@@ -222,14 +222,14 @@ class Wohnung:
 
     def als_nachricht(self, score: int = 0) -> str:
         sterne = "⭐" * max(1, min(5, 1 + (score + 5) // 10))
-        zeilen = [f"🏠 *{_md_escape(self.titel[:70])}*  {sterne}"]
+        zeilen = [f"🏠 <b>{_esc_html(self.titel[:70])}</b>  {sterne}"]
         quelle_zeit = f"🏷 {self.quelle}"
         if hasattr(self, 'gefunden_um') and self.gefunden_um:
             quelle_zeit += f" · {self.gefunden_um}"
         zeilen.append(quelle_zeit)
         zeilen.append("")
         if self.preis_warm > 0:
-            pqm_str = f"  _({self.preis_warm/self.groesse:.0f}€/qm)_" if self.groesse > 0 else ""
+            pqm_str = f"  <i>({self.preis_warm/self.groesse:.0f}€/qm)</i>" if self.groesse > 0 else ""
             miet_label = "warm" if self.preis_ist_warm else ("kalt" if self.preis_ist_kalt else "ca.")
             zeilen.append(f"💰 {self.preis_warm:.0f}€ {miet_label}{pqm_str}")
         groesse_str = f"📐 {self.groesse:.0f} qm" if self.groesse > 0 else ""
@@ -239,7 +239,8 @@ class Wohnung:
             zeilen.append(groesse_str)
         if self.adresse:
             q = self.adresse.replace(' ', '+').replace(',', '%2C')
-            zeilen.append(f"📍 [{_md_escape(self.adresse)}](https://maps.google.com/?q={q})")
+            zeilen.append(f'📍 <a href="https://maps.google.com/?q={_esc_html(q)}">'
+                          f'{_esc_html(self.adresse)}</a>')
         if self.entfernung_km is not None and self.entfernung_km < 900:
             zeilen.append(f"📌 {self.entfernung_km:.1f} km zum Zentrum")
         if self.verfuegbar_ab:
@@ -254,7 +255,7 @@ class Wohnung:
             flags.append("EBK")
         if flags:
             zeilen.append("✅ " + " · ".join(flags))
-        zeilen.append(f"\n🔗 [Zum Inserat]({self.url})")
+        zeilen.append(f'\n🔗 <a href="{_esc_html(self.url)}">Zum Inserat</a>')
         return "\n".join(zeilen)
 
     def to_dict(self) -> dict:
@@ -271,7 +272,7 @@ async def send_telegram(chat_id: str, text: str, client: httpx.AsyncClient) -> b
         r = await client.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             json={"chat_id": chat_id, "text": text,
-                  "parse_mode": "Markdown", "disable_web_page_preview": False},
+                  "parse_mode": "HTML", "disable_web_page_preview": False},
             timeout=10,
         )
         if r.status_code != 200:
@@ -1080,6 +1081,135 @@ async def scrape_immowelt_lite(client: httpx.AsyncClient) -> list[Wohnung]:
     return out
 
 
+async def scrape_immobiliende(client: httpx.AsyncClient) -> list[Wohnung]:
+    """Immobilien.de — großes deutsches Portal, server-rendered Karten (.lr-card)
+    mit stabilen Fakten-Labeln (Kaltmiete/Fläche/Zimmer). Funktioniert auch von
+    Rechenzentrums-IPs (getestet von der Oracle-VM)."""
+    url = f"https://www.immobilien.de/mieten/wohnung/muenchen/?priceTo={MAX_WARM_MIETE}&areaFrom={MIN_GROESSE}"
+    out = []
+    try:
+        r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
+        soup = BeautifulSoup(r.text, "html.parser")
+        # Jede Karte ist ein <a itemprop="itemListElement" href="/wohnen/<id>">,
+        # das die .lr-card umschließt — über die Wrapper iterieren.
+        items = soup.select('[itemprop="itemListElement"]')
+        if not items:
+            items = soup.select(".lr-card")
+        print(f"Immobilien.de: {len(items)} Einträge")
+        for item in items[:30]:
+            try:
+                href = item.get("href") or item.get("data-href") or ""
+                if not href:
+                    a = item.find("a", href=True)
+                    href = a["href"] if a else ""
+                if not href or href.startswith("#"):
+                    continue
+                card = item.select_one(".lr-card") or item
+                href = href.split("?")[0]
+                if href.startswith("/"):
+                    href = "https://www.immobilien.de" + href
+
+                # Fakten als Label->Wert-Paare (stabile Klassen)
+                labels = [e.get_text(" ", strip=True) for e in card.select(".lr-card__fact-label")]
+                values = [e.get_text(" ", strip=True) for e in card.select(".lr-card__fact-value")]
+                facts = dict(zip(labels, values))
+
+                def fact(name):
+                    v = facts.get(name, "")
+                    m = re.search(r"([\d.,]+)", v)
+                    return float(m.group(1).replace(".", "").replace(",", ".")) if m else 0.0
+
+                card_text = card.get_text(" ", strip=True)
+                # Preis €-verankert (Karten-Text enthält andere Zahlen, z.B. Badges)
+                preis = 0.0
+                m = re.search(r"([\d.,]+)\s*€", card_text)
+                if m:
+                    preis = parse_preis(m.group(1))
+                groesse = fact("Fläche") or parse_groesse(card_text)
+                zimmer = fact("Zimmer") or parse_zimmer(card_text)
+
+                titel = ""
+                for sel in (".lr-card__title", "h2", "h3", ".lr-card__gallery-img"):
+                    el = card.select_one(sel)
+                    t = el.get_text(" ", strip=True) if el else ""
+                    if t:
+                        titel = t
+                        break
+                if not titel:
+                    titel = card_text.split("€")[0].strip()[-80:]
+
+                # Adresse: Straße + PLZ-Ort (Zeile zwischen Mietpreis und Fläche)
+                adresse = ""
+                m = re.search(r"Kaltmiete\s+(.+?)\s+Fläche", card_text)
+                if m:
+                    adresse = m.group(1).strip(" ,")
+                if not adresse:
+                    m = re.search(r"\d{5}\s+[A-ZÄÖÜa-zäöüß-]+", card_text)
+                    adresse = m.group(0) if m else ""
+
+                text = card_text + " Kaltmiete"
+                out.append(make_wohnung(listing_id(href, titel), titel, preis,
+                                        groesse, zimmer, href, "Immobilien.de", adresse, text))
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"Immobilien.de Fehler: {e}")
+    return out
+
+
+async def scrape_sz_immobilien(client: httpx.AsyncClient) -> list[Wohnung]:
+    """SZ-Immobilien (immobilien.sueddeutsche.de) — München-lastig, viele
+    Exklusiv-/Maklerinserate, server-rendered (.js-serp-item)."""
+    url = "https://immobilien.sueddeutsche.de/suche/mieten-wohnung-in-muenchen"
+    out = []
+    try:
+        r = await client.get(url, headers=HEADERS, timeout=25, follow_redirects=True)
+        soup = BeautifulSoup(r.text, "html.parser")
+        items = soup.select(".js-serp-item")
+        print(f"SZ-Immobilien: {len(items)} Einträge")
+        for item in items[:30]:
+            try:
+                link = item.find("a", href=True)
+                if not link or "immobilien" not in str(link["href"]):
+                    continue
+                href = link["href"].split("?")[0]
+                if href.startswith("/"):
+                    href = "https://immobilien.sueddeutsche.de" + href
+
+                text = item.get_text(" ", strip=True)
+                titel = link.get_text(" ", strip=True).strip()
+                # SZ markiert Premium-Inserate mit wörtlichen * rund um den Titel
+                titel = titel.strip().strip("*").strip()
+                if not titel or len(titel) > 120:
+                    titel = ""
+                    for h in item.select("h2, h3, .card-title"):
+                        if h.get_text(" ", strip=True):
+                            titel = h.get_text(" ", strip=True)
+                            break
+                # Preis €-verankert (card enthält Galerie-Zähler wie "1/13", die
+                # parse_preis sonst als ersten Treffer nehmen würde)
+                preis = 0.0
+                m = re.search(r"([\d.,]+)\s*€", text)
+                if m:
+                    preis = parse_preis(m.group(1))
+                # SZ zeigt "216 m" (ohne ² im Textfluss) → m²-Form ergänzen
+                groesse = parse_groesse(text)
+                if groesse == 0:
+                    m = re.search(r"(\d+(?:[.,]\d+)?)\s*m\b", text)
+                    groesse = float(m.group(1).replace(",", ".")) if m else 0.0
+                zimmer = parse_zimmer(text)
+
+                m = re.search(r"\d{5}\s+[A-ZÄÖÜa-zäöüß-]+", text)
+                adresse = m.group(0) if m else ""
+                out.append(make_wohnung(listing_id(href, titel), titel, preis,
+                                        groesse, zimmer, href, "SZ-Immobilien", adresse, text))
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"SZ-Immobilien Fehler: {e}")
+    return out
+
+
 async def scrape_wunderflats(client: httpx.AsyncClient) -> list[Wohnung]:
     """Wunderflats (möbliertes Wohnen auf Zeit). Daten aus dem eingebetteten
     'data-hydrant'-JSON. Preise sind All-in (warm) und in Cent angegeben."""
@@ -1365,14 +1495,18 @@ async def scrape_browser_portale() -> list[Wohnung]:
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 async def _sende(w, sc: int, chat_ids: list, delivered: dict, client) -> int:
-    """Nachricht an `chat_ids` senden, Zustellung pro Nutzer in delivered.json
-    vermerken und den Match in matches.json (Backup) schreiben."""
-    gesendet = sum([await send_telegram(cid, w.als_nachricht(sc), client) for cid in chat_ids])
+    """Nachricht an `chat_ids` senden und die Zustellung pro Nutzer in
+    delivered.json vermerken — NUR erfolgreich gesendete Chats werden als
+    zugestellt markiert (sonst ginge ein fehlgeschlagener Versand verloren)."""
+    erhalten = set(delivered.get(w.id, []))
+    gesendet = 0
+    for cid in chat_ids:
+        if await send_telegram(cid, w.als_nachricht(sc), client):
+            gesendet += 1
+            erhalten.add(cid)
+    delivered[w.id] = sorted(erhalten)
     print(f"  ✅ MATCH [score={sc:+d}] → {gesendet}/{len(chat_ids)} Empfänger: "
           f"{w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
-    erhalten = set(delivered.get(w.id, []))
-    erhalten.update(chat_ids)
-    delivered[w.id] = sorted(erhalten)
     matches = []
     if MATCHES_FILE.exists():
         try:
@@ -1440,6 +1574,8 @@ async def main():
             scrape_wggesucht(client),
             scrape_wohnungsboerse(client),
             scrape_immowelt_lite(client),
+            scrape_immobiliende(client),
+            scrape_sz_immobilien(client),
             scrape_mrlodge(client),
             scrape_wunderflats(client),
             scrape_browser_portale(),
