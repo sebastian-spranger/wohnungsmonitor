@@ -199,9 +199,17 @@ def _clerk_login_html() -> str:
         '<script async crossorigin="anonymous" data-clerk-publishable-key="' + pk + '" '
         'src="' + src + '" onload="'
         "var el=document.getElementById('clerk-signin');"
+        "window.addEventListener('load',async function(){"
+        "try{"
+        "await Clerk.load();"
         "if(Clerk.user){window.location='/auth/clerk';return;}"
         "Clerk.mountSignIn(el,{afterSignInUrl:'/auth/clerk',afterSignUpUrl:'/auth/clerk',"
-        "appearance:{variables:{colorPrimary:'#1d4ed8'}}})"
+        "appearance:{variables:{colorPrimary:'#1d4ed8'}}});"
+        "}catch(err){"
+        "el.innerHTML='<p>Anmeldung fehlgeschlagen — bitte Seite neu laden.</p>';"
+        "console.error(err);"
+        "}"
+        "});"
         '"></script>'
     )
 
