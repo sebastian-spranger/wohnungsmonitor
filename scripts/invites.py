@@ -19,7 +19,6 @@ from __future__ import annotations
 
 import argparse
 import os
-import secrets
 import sys
 from pathlib import Path
 
@@ -30,13 +29,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import profiles  # noqa: E402
 
 # Lesbares Alphabet ohne verwechselbare Zeichen (0/O, 1/I/l)
-_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
 _DEFAULT_PREFIX = "WOHN"
 
 
 def _code(prefix: str) -> str:
-    body = "".join(secrets.choice(_ALPHABET) for _ in range(6))
-    return f"{prefix}-{body}"
+    return profiles.generate_invite_code(prefix)
 
 
 def cmd_new(args: argparse.Namespace) -> int:
