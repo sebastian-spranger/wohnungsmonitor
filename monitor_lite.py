@@ -70,6 +70,7 @@ DEFAULT_FILTER = {
 
 SEEN_FILE           = Path("seen.json")
 MATCHES_FILE        = Path("matches.json")
+DELIVERED_FILE      = Path("delivered.json")   # pro-Nutzer-Zustellung: id -> [chat_ids]
 USER_FILTERS_FILE   = Path("user_filters.json")
 TELEGRAM_OFFSET_FILE = Path("telegram_offset.json")
 FAHRTZEIT_CACHE_FILE = Path("fahrtzeit_cache.json")
@@ -535,6 +536,35 @@ def load_seen() -> set[str]:
 def save_seen(seen: set[str]):
     ids = list(seen)[-50_000:]
     SEEN_FILE.write_text(json.dumps({"ids": ids}))
+
+
+def load_delivered() -> dict:
+    """Pro-Nutzer-Zustell-Historie: listing_id -> [chat_ids, die es erhalten haben].
+    Jede Wohnung geht an JEDEN Empfänger, dessen Filter sie trifft und der sie
+    noch NICHT hat — auch Inserate, die schon vor seiner Registrierung liefen
+    (solange sie noch auf den Portalen gelistet sind)."""
+    if DELIVERED_FILE.exists():
+        try:
+            return json.loads(DELIVERED_FILE.read_text())
+        except Exception:
+            return {}
+    return {}
+
+
+def save_delivered(delivered: dict):
+    DELIVERED_FILE.write_text(json.dumps(delivered, ensure_ascii=False, indent=2))
+
+
+def _seed_delivered(known_ids: set, recipients: list, preexisting_chats: set) -> dict:
+    """Einmalige Migration von seen.json → delivered.json (idempotent, nur wenn
+    delivered.json noch fehlt): Alte, global gesehene Inserate gelten als an die
+    VOR-WEB-Empfänger (TELEGRAM_CHAT_IDS-Env) zugestellt. Web-Nutzer sind NICHT
+    markiert → sie bekommen den aktuellen Markt einmalig nachgeliefert, ohne
+    dass Alt-Empfänger doppelt geflutet werden."""
+    out = {}
+    for lid in known_ids:
+        out[lid] = [c for c in recipients if c in preexisting_chats]
+    return out
 
 
 def listing_id(url: str, titel: str) -> str:
@@ -1334,12 +1364,33 @@ async def scrape_browser_portale() -> list[Wohnung]:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
+async def _sende(w, sc: int, chat_ids: list, delivered: dict, client) -> int:
+    """Nachricht an `chat_ids` senden, Zustellung pro Nutzer in delivered.json
+    vermerken und den Match in matches.json (Backup) schreiben."""
+    gesendet = sum([await send_telegram(cid, w.als_nachricht(sc), client) for cid in chat_ids])
+    print(f"  ✅ MATCH [score={sc:+d}] → {gesendet}/{len(chat_ids)} Empfänger: "
+          f"{w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
+    erhalten = set(delivered.get(w.id, []))
+    erhalten.update(chat_ids)
+    delivered[w.id] = sorted(erhalten)
+    matches = []
+    if MATCHES_FILE.exists():
+        try:
+            matches = json.loads(MATCHES_FILE.read_text())
+        except Exception:
+            pass
+    matches.append(w.to_dict())
+    MATCHES_FILE.write_text(json.dumps(matches, ensure_ascii=False, indent=2))
+    return gesendet
+
+
 async def main():
     print(f"=== Wohnungsmonitor Lite – {datetime.now().strftime('%d.%m.%Y %H:%M')} ===")
 
     seen = load_seen()
     fahrtzeit_cache = load_fahrtzeit_cache()
     geocode_cache = load_geocode_cache()
+    delivered = load_delivered()
     # Empfänger + ihre eigenen Filter: DB-Profile (Web-Registrierung) gewinnen,
     # ohne DB-Nutzer greift der Legacy-Pfad (TELEGRAM_CHAT_IDS + user_filters.json)
     # mit einmaliger Migration – siehe profiles.recipients_and_filters().
@@ -1347,6 +1398,16 @@ async def main():
         TELEGRAM_CHAT_IDS, load_user_filters())
     print(f"Bereits bekannte Inserate: {len(seen)}")
     print(f"Empfänger: {len(recipients)} · davon mit eigenen Filtern: {len(user_filters)}")
+
+    # Einmalige Migration (nur wenn delivered.json fehlt): alte seen.json-Inserate
+    # gelten als an die VOR-WEB-Empfänger zugestellt — neue Web-Nutzer bekommen
+    # den aktuellen Markt einmalig nachgeliefert (pro-Nutzer-Zustellung).
+    if not delivered and SEEN_FILE.exists():
+        delivered = _seed_delivered(load_seen(), recipients, {str(c) for c in TELEGRAM_CHAT_IDS})
+        if delivered:
+            save_delivered(delivered)
+            print(f"→ seen.json nach delivered.json migriert "
+                  f"({len(delivered)} Inserate; Backlog für neue Nutzer)")
 
     async with httpx.AsyncClient(http2=True) as client:
         # Neue /start <code>-Verknüpfungen fließen noch im selben Lauf ein
@@ -1396,18 +1457,37 @@ async def main():
         # Precompute scores for all listings
         scores = {w.id: berechne_score(w) for w in alle}
 
-        # Collect new matches, sort by score descending before sending
+        # Pro-Nutzer-Zustellung: jede Wohnung geht an JEDEN Empfänger, dessen
+        # Filter sie trifft UND der sie noch nicht erhalten hat (delivered.json).
+        # Auch ältere Inserate (bereits in seen) werden für neu hinzugekommene
+        # Empfänger bewertet — die Entfernung kommt aus dem Geocode-Cache.
         neue_wohnungen = []
+        neue_matches = 0
         for w in alle:
+            erhalten = set(delivered.get(w.id, []))
+            neu_fuer = [cid for cid in recipients if cid not in erhalten]
+            if not neu_fuer:
+                continue            # alle aktuellen Empfänger haben es schon
             if w.id in seen:
+                # Bekanntes Inserat — nur für neue Empfänger relevant
+                w.entfernung_km = await entfernung_zum_zentrum(w, geocode_cache, client)
+                passt, gruende = w.passt()
+                if not passt:
+                    continue
+                treffer = [
+                    cid for cid in neu_fuer
+                    if w.passt({**DEFAULT_FILTER, **user_filters.get(cid, {})})[0]
+                ]
+                if treffer:
+                    await _sende(w, scores.get(w.id, 0), treffer, delivered, client)
+                    neue_matches += 1
                 continue
+            # Neues Inserat: Erstcheck ohne Geo (spart Geocoder-Calls)
             seen.add(w.id)
-            # Erstcheck ohne Geo (spart Geocoder-Calls für unpassende Inserate)
             passt, gruende = w.passt()
             if not passt:
                 print(f"  ✗ {w.titel[:55]} → {', '.join(gruende)}")
                 continue
-            # Entfernung zum Zentrum (Marienplatz) prüfen
             w.entfernung_km = await entfernung_zum_zentrum(w, geocode_cache, client)
             passt, gruende = w.passt()
             if passt:
@@ -1417,32 +1497,19 @@ async def main():
 
         neue_wohnungen.sort(key=lambda w: scores.get(w.id, 0), reverse=True)
 
-        neue_matches = 0
         for w in neue_wohnungen:
             sc = scores.get(w.id, 0)
-            # Wer genau will DIESE Wohnung? Jeder Empfänger hat seinen eigenen
-            # effektiven Filter (Standard + eigene Wünsche via Web-Dashboard oder
-            # Telegram-Nachricht).
             treffer_fuer = [
                 cid for cid in recipients
-                if w.passt({**DEFAULT_FILTER, **user_filters.get(cid, {})})[0]
+                if cid not in delivered.get(w.id, [])
+                and w.passt({**DEFAULT_FILTER, **user_filters.get(cid, {})})[0]
             ]
             if not treffer_fuer:
                 continue
             neue_matches += 1
-            gesendet = sum([await send_telegram(cid, w.als_nachricht(sc), client) for cid in treffer_fuer])
-            print(f"  ✅ MATCH [score={sc:+d}] → {gesendet}/{len(treffer_fuer)} Empfänger: "
-                  f"{w.titel} | {w.preis_warm:.0f}€ | {w.groesse:.0f}qm | {w.quelle}")
-            # Backup
-            matches = []
-            if MATCHES_FILE.exists():
-                try:
-                    matches = json.loads(MATCHES_FILE.read_text())
-                except Exception:
-                    pass
-            matches.append(w.to_dict())
-            MATCHES_FILE.write_text(json.dumps(matches, ensure_ascii=False, indent=2))
+            await _sende(w, sc, treffer_fuer, delivered, client)
 
+        save_delivered(delivered)
         save_seen(seen)
         save_fahrtzeit_cache(fahrtzeit_cache)
         save_geocode_cache(geocode_cache)
